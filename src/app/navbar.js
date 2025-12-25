@@ -1,21 +1,14 @@
 import { Box, Container, Flex, HStack, Text, Link, Button, SimpleGrid, Heading, VStack, IconButton, Dialog} from "@chakra-ui/react";
 import { FaWhatsapp, FaBars } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import AjukanModal from "./ajukanmodal";
 
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
-    const [mounted, setMounted] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
-    const pathname = usePathname();
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-    if (!mounted) return null;
     return (
         <>
-        {/* AJUKAN MODAL */}
         <AjukanModal isOpen={modalOpen} setOpen={setModalOpen} />
 
         {/* NAVBAR */}
@@ -98,10 +91,9 @@ function Navbar(){
                 <Dialog.CloseTrigger />
                 <Dialog.Body>
                 <VStack spacing={6} align="stretch" mt={10}>
-                    <Link href="/" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Mobil</Link>
-                    <Link href="/pembiayaan-rumah" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Rumah</Link>
-                    <Link href="/privacy-policy" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Privasi</Link>
-                    <Link href="/tentang-kami" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Tentang Kami</Link>
+                    <Link href="#home" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Home</Link>
+                    <Link href="#keunggulan_kami" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Keunggulan Kami</Link>
+                    <Link href="#simulasi" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} onClick={() => setMenuOpen(false)}>Simulasi</Link>
                         <Button mt={6} colorScheme="green" borderRadius="full" onClick={() => { setMenuOpen(false); setModalOpen(true); }}>
                     <FaWhatsapp /> &nbsp; Apply Sekarang
                     </Button>
