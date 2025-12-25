@@ -74,12 +74,11 @@ export default function Home() {
   if (!mounted) return null;
   return (
     <Box bg="green.100" minH="100vh">
-      {/* Hero */}
-
       <Box
         bg="green.100"
         color="white"
         py={{ base: 16, md: 24 }}
+        id="home"
       >
         <Container maxW="6xl">
           <SimpleGrid
@@ -230,8 +229,8 @@ export default function Home() {
       </Container> */}
 
       {/* Fitur */}
-      <Box bg="white" py={16}>
-        <Container maxW="6xl">
+      <Box bg="white" py={16} id="keunggulan_kami">
+        <Container maxW="6xl" pt={5}>
           <Heading textAlign="center" mb={4} fontSize="2xl">
             Kenapa DanaAuto Finance?
           </Heading>
@@ -266,7 +265,7 @@ export default function Home() {
       </Box>
 
       {/* Form Estimasi */}
-      <Container maxW="lg" py={16}>
+      <Container maxW="lg" py={16} id="simulasi">
         <Box
           bg="white"
           borderRadius="2xl"

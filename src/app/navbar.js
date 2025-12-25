@@ -31,21 +31,7 @@ function Navbar(){
             <Flex align="center" justify="space-between" py={3}>
               {/* LOGO */}
               <HStack spacing={3}>
-                <Box
-                  w={12}
-                  h={8}
-                  borderRadius="md"
-                  bg="green.600"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  color="white"
-                  fontWeight="bold"
-                  fontSize="sm"
-                  boxShadow="md"
-                >
-                  DAF
-                </Box>
+                <Link href="#home" display="flex" alignItems="center" _hover={{ textDecoration: "none" }}>
                 <Box>
                   <Text fontWeight="bold" fontSize="lg" color="green.600">
                     DanaAuto Finance
@@ -54,6 +40,7 @@ function Navbar(){
                     Pembiayaan Mobil & Rumah
                   </Text>
                 </Box>
+                </Link>
               </HStack>
   
               {/* MENU DESKTOP */}
@@ -62,13 +49,10 @@ function Navbar(){
                 display={{ base: "none", md: "flex" }}
                 align="center"
               >
-                <Link href="/" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} color={pathname === "/" ? "green.600" : "gray.600"}>Mobil</Link>
-                <Link href="/pembiayaan-rumah" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} color={pathname === "/pembiayaan-rumah" ? "green.600" : "gray.600"}>Rumah</Link>
-                <Link href="/tentang-kami" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} color={pathname === "/tentang-kami" ? "green.600" : "gray.600"}>
-                  Tentang Kami
-                </Link>
-                <Link href="/privacy-policy" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} color={pathname === "/privacy-policy" ? "green.600" : "gray.600"}>
-                  Privasi
+                <Link href="#home" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >Home</Link>
+                <Link href="#keunggulan_kami" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >Keunggulan Kami</Link>
+                <Link href="#simulasi" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >
+                  Simulasi
                 </Link>
               </HStack>
   
