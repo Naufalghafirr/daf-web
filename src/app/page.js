@@ -1,574 +1,1206 @@
 "use client";
+
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
-  Box,
-  Container,
-  Heading,
-  Text,
-  Image,
-  SimpleGrid,
-  Button,
-  Input,
-  Field,
-  Slider,
-  VStack,
-  Flex,
-  Link,
-  HStack,
-  Dialog,
-  Portal,
-  Accordion,
-} from "@chakra-ui/react";
+  FaBolt,
+  FaUsers,
+  FaCheck,
+  FaShieldAlt,
+  FaClipboardList,
+  FaCoins,
+  FaCogs,
+  FaCarSide,
+  FaPhoneAlt,
+  FaHome,
+  FaArrowRight,
+  FaFileAlt,
+} from "react-icons/fa";
 
-import { FaCar } from "react-icons/fa";
-import { FaHouse } from "react-icons/fa6";
-import AjukanModal from "./ajukanmodal";
 export default function Home() {
-  
   const [modalOpen, setModalOpen] = useState(false);
-  const [pinjaman, setPinjaman] = useState(null);
-  const [bunga, setBunga] = useState(null);
-  const [tenor, setTenor] = useState(null);
+  const [pinjaman, setPinjaman] = useState("");
+  const [bunga] = useState(0.76);
+  const [tenor, setTenor] = useState("");
   const [cicilan, setCicilan] = useState(null);
-
-  const [whyDanaAutoFinance, setWhyDanaAutoFinance] = useState([
-    {
-      title: "Proses Digital",
-      desc: "Proses digital tanpa kertas termasuk verifikasi panggilan dan penyerahan dokumen secara daring.",
-    },
-    {
-      title: "Banyak Pilihan Mitra",
-      desc: "Penawaran pinjaman dari lebih dari 10 mitra lembaga keuangan dengan beragam pilihan.",
-    },
-    {
-      title: "Persetujuan Cepat",
-      desc: "Lengkapi aplikasi untuk mendapatkan pencairan pinjaman cepat, mulai dari 48 jam*.",
-    },
-    {
-      title: "Transparansi Lengkap",
-      desc: "Semua syarat & ketentuan ditampilkan di muka agar Anda tetap terinformasi di setiap langkah.",
-    },
-  ]);
-  
   const [mounted, setMounted] = useState(false);
+  const [openFaq, setOpenFaq] = useState([]);
+
   const hitungCicilan = () => {
     const r = bunga / 12 / 100;
     const n = tenor;
-  
     if (!pinjaman || !bunga || !tenor) return;
-  
     const c = (pinjaman * r) / (1 - Math.pow(1 + r, -n));
     setCicilan(c);
   };
 
   useEffect(() => {
     setMounted(true);
-
     if (pinjaman && bunga && tenor) {
       hitungCicilan();
-    }else{
+    } else {
       setCicilan(null);
     }
-
   }, [pinjaman, bunga, tenor]);
+
+  const toggleFaq = (index) => {
+    setOpenFaq((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
+
   if (!mounted) return null;
+
+  const features = [
+    {
+      icon: <FaBolt />,
+      title: "Proses Digital",
+      desc: "Proses digital tanpa kertas termasuk verifikasi panggilan dan penyerahan dokumen secara daring.",
+      color: "#3b82f6",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Banyak Pilihan Mitra",
+      desc: "Penawaran pinjaman dari lebih dari 10 mitra lembaga keuangan dengan beragam pilihan.",
+      color: "#a855f7",
+    },
+    {
+      icon: <FaCheck />,
+      title: "Persetujuan Cepat",
+      desc: "Lengkapi aplikasi untuk mendapatkan pencairan pinjaman cepat, mulai dari 48 jam*.",
+      color: "#10b981",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Transparansi Lengkap",
+      desc: "Semua syarat & ketentuan ditampilkan di muka agar Anda tetap terinformasi di setiap langkah.",
+      color: "#f97316",
+    },
+  ];
+
+  const steps = [
+    {
+      title: "Ajukan & Verifikasi",
+      desc: "Bagikan detail dasar dan sediakan dokumen dasar kendaraan serta data pribadi Anda.",
+      icon: <FaClipboardList />,
+    },
+    {
+      title: "Tentukan Kebutuhan",
+      desc: "Tentukan persyaratan pinjaman sesuai kebutuhan dalam batas yang disetujui.",
+      icon: <FaCoins />,
+    },
+    {
+      title: "Proses Berlangsung",
+      desc: "Serahkan koordinasi kepada kami dan mitra lembaga keuangan untuk proses lebih lanjut.",
+      icon: <FaCogs />,
+    },
+    {
+      title: "Dana Cair",
+      desc: "Terima penawaran pinjaman paling menguntungkan, akses dana, dan tetap kendarai kendaraan Anda.",
+      icon: <FaCarSide />,
+    },
+  ];
+
+  const guarantees = [
+    {
+      title: "Terdaftar & Diawasi OJK",
+      desc: "Financier terdaftar dan diawasi OJK untuk keamanan dan kenyamanan Anda.",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Pinjaman Hingga 1 Miliar",
+      desc: "Pinjaman yang cair hingga 1 Miliar Rupiah* untuk kebutuhan Anda.",
+      icon: <FaCoins />,
+    },
+    {
+      title: "Terpercaya Luas",
+      desc: "Dipercaya oleh ratusan agen dan pelanggan di berbagai daerah.",
+      icon: <FaCheck />,
+    },
+  ];
+
+  const testimonials = [
+    {
+      quote: "Dana cepat cair, proses sangat mudah. Terima kasih DanaAuto Finance!",
+      name: "Budi Santoso",
+      car: "Toyota Avanza",
+      rating: 5,
+    },
+    {
+      quote: "Proses cepat, mobil tetap bisa digunakan. Sangat puas dengan pelayanannya.",
+      name: "Rina Sari",
+      car: "Honda Brio",
+      rating: 5,
+    },
+    {
+      quote: "Cepat dan praktis, tanpa ribet. Sangat direkomendasikan untuk kebutuhan dana darurat.",
+      name: "Agus Pratama",
+      car: "Suzuki Ertiga",
+      rating: 5,
+    },
+    {
+      quote: "Mobil tetap bisa dipakai, dan dana cair cepat. Layanan benar-benar membantu.",
+      name: "Siti Nuraini",
+      car: "Daihatsu Xenia",
+      rating: 5,
+    },
+  ];
+
+  const faqs = [
+    {
+      q: "Apa itu Kredit Multiguna?",
+      a: "Produk pinjaman dengan agunan/jaminan, misalnya kendaraan. Besar pinjaman disesuaikan dengan nilai jaminan yang Anda miliki.",
+    },
+    {
+      q: "Berapa nilai mobil saya yang dapat saya pinjam?",
+      a: "Melalui layanan seperti DanaAuto Finance, Anda umumnya dapat meminjam hingga sekitar 80–85% dari nilai taksiran mobil Anda.",
+    },
+    {
+      q: "Berapa lama proses persetujuan dan pencairan?",
+      a: "Setelah dokumen lengkap, persetujuan biasanya memakan waktu beberapa hari kerja, dan dana segera dicairkan setelah disetujui.",
+    },
+    {
+      q: "Apakah saya tetap dapat menggunakan kendaraan saya?",
+      a: "Ya, kendaraan tetap dapat digunakan selama masa pinjaman, sementara BPKB dijadikan agunan oleh pemodal.",
+    },
+  ];
+
   return (
-    <Box bg="green.100" minH="100vh">
-      <Box
-        bg="green.100"
-        color="white"
-        py={{ base: 16, md: 24 }}
-        id="home"
+    <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }}>
+      {/* Hero Section */}
+      <div
+        style={{
+          position: "relative",
+          background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+          padding: "96px 0",
+          overflow: "hidden",
+        }}
       >
-        <Container maxW="6xl">
-          <SimpleGrid
-            columns={{ base: 1, md: 2 }}
-            spacing={10}
-            alignItems="center"
-          >
-            <Box textAlign={{ base: "center", md: "left" }}>
-              <Text
-                fontSize="sm"
-                letterSpacing="wide"
-                mb={2}
-                opacity={0.9}
-                color="green.600"
-              >
-                DanaAuto Finance — Pembiayaan Mobil
-              </Text>
-              <Heading
-                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                mb={4}
-                color="black"
-                lineHeight="short"
-              >
-                Pembiayaan Mobil Lengkap:
-                <br />
-                Baru, Bekas, dan Refinance
-              </Heading>
-              <Text fontSize={{ base: "md", md: "lg" }} color="black" mb={8} opacity={0.95}>
-                Bunga terbaik, pilihan tenor beragam, dan proses digital yang
-                cepat, mudah, serta aman. Ajukan pembiayaan atau refinance
-                kendaraan Anda tanpa harus berhenti berkendara.
-              </Text>
-              <VStack
-                spacing={6}
-                align={{ base: "center", md: "flex-start" }}
-              >
-                <Flex display="flex" gap={4} flexWrap="wrap" direction={{ base: "column", md: "row" }}>
-                  <Button
-                    colorScheme="orange"
-                    size="lg"
-                    borderRadius="full"
-                    onClick={() => setModalOpen(true)}
-                    _hover={{ bg: "blackAlpha.400" }}
-                  >
-                    <FaHouse />
-                    Kredit Multiguna
-                  </Button>
-                  <Button
-                    variant="outline"
-                    colorScheme="green"
-                    size="lg"
-                    borderRadius="full"
-                    onClick={() => setModalOpen(true)}
-                    _hover={{ bg: "green.200" }}
-                    bg="green.500"
-                    color="white"
-                  >
-                    <FaCar />
-                    Kredit Mobil Baru
-                  </Button>
-                </Flex>
-                <Text fontSize="sm" color="gray.700">
-                  Proses cepat & transparan, didukung mitra lembaga keuangan
-                  terdaftar dan diawasi OJK.
-                </Text>
-              </VStack>
-            </Box>
+        <div style={{ position: "absolute", inset: 0, opacity: 0.1 }}>
+          <div
+            style={{
+              position: "absolute",
+              top: "10%",
+              left: "5%",
+              width: "400px",
+              height: "400px",
+              background: "white",
+              borderRadius: "50%",
+              filter: "blur(100px)",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              bottom: "10%",
+              right: "5%",
+              width: "500px",
+              height: "500px",
+              background: "white",
+              borderRadius: "50%",
+              filter: "blur(120px)",
+            }}
+          />
+        </div>
 
-            <Box display={{ base: "none", md: "block" }} textAlign="center">
-              <Box
-                bg="whiteAlpha.200"
-                borderRadius="2xl"
-                p={6}
-                backdropFilter="blur(6px)"
-                borderWidth="1px"
-                borderColor="whiteAlpha.400"
-              >
-                <Image
-                  src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg"
-                  alt="Ilustrasi pembiayaan kendaraan"
-                  mx="auto"
-                  maxH="260px"
-                  w="100%"
-                  objectFit="cover"
-                  borderRadius="xl"
-                />
-              </Box>
-            </Box>
-          </SimpleGrid>
-        </Container>
-      </Box>
-    
-    <AjukanModal isOpen={modalOpen} setOpen={setModalOpen} />
-      {/* Mitra Keuangan */}
-      {/* <Container maxW="6xl" py={16}>
-        <Heading textAlign="center" mb={4} fontSize="2xl">
-          Mitra Lembaga Keuangan
-        </Heading>
-        <Text textAlign="center" color="gray.600" mb={10}>
-          Terhubung dengan berbagai lembaga pembiayaan terpercaya untuk
-          memberikan Anda pilihan terbaik.
-        </Text>
-        <Box
-          bg="white"
-          borderRadius="2xl"
-          p={{ base: 6, md: 8 }}
-          boxShadow="sm"
-        >
-          <SimpleGrid
-            columns={{ base: 3, md: 6 }}
-            spacing={{ base: 4, md: 8 }}
-            alignItems="center"
-          > */}
-            {/* Ganti src dengan logo yang sesuai */}
-            {/* {[
-              "adira-finance",
-              "mega-finance",
-              "bfi-finance",
-              "kredit-plus",
-              "mandiri-utama-finance",
-              "mizuho",
-              "mnc-finance",
-              "mofi",
-              "smart-finance",
-              "true-finance",
-              "wom-finance",
-              "nsc-finance",
-            ].map((name) => (
-              <Image
-                key={name}
-                src={`/logos/${name}.png`}
-                alt={name}
-                mx="auto"
-                boxSize="60px"
-                objectFit="contain"
-                filter="grayscale(100%)"
-                opacity={0.85}
-                _hover={{
-                  filter: "none",
-                  opacity: 1,
-                  transform: "scale(1.05)",
+        <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1, padding: "0 32px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "64px", alignItems: "center" }}>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              style={{ display: "flex", flexDirection: "column", gap: "32px" }}
+            >
+              <span
+                style={{
+                  background: "white",
+                  color: "#15803d",
+                  padding: "8px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                  width: "fit-content",
                 }}
-                transition="all 0.2s"
-              />
-            ))} */}
-          {/* </SimpleGrid>
-        </Box>
-      </Container> */}
-
-      {/* Fitur */}
-      <Box bg="white" py={16} id="keunggulan_kami">
-        <Container maxW="6xl" pt={5}>
-          <Heading textAlign="center" mb={4} fontSize="2xl">
-            Kenapa DanaAuto Finance?
-          </Heading>
-          <Text textAlign="center" color="gray.600" mb={10}>
-            Proses digital dari awal hingga akhir, banyak penawaran pinjaman,
-            persetujuan cepat, dan transparansi penuh di setiap langkah.
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
-            {[
-              ...whyDanaAutoFinance,
-            ].map((item) => (
-              <Box
-                key={item.title}
-                p={7}
-                m={2}
-                bg="gray.50"
-                rounded="xl"
-                boxShadow="sm"
-                borderWidth="1px"
-                borderColor="gray.100"
-                _hover={{ boxShadow: "md", transform: "translateY(-3px)" }}
-                transition="all 0.2s"
               >
-                <Heading size="md" mb={3}>
-                  {item.title}
-                </Heading>
-                <Text color="gray.600">{item.desc}</Text>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </Box>
+                🚗 Pembiayaan Kendaraan Terpercaya
+              </span>
 
-      {/* Form Estimasi */}
-      <Container maxW="lg" py={16} id="simulasi">
-        <Box
-          bg="white"
-          borderRadius="2xl"
-          p={{ base: 6, md: 8 }}
-          boxShadow="lg"
-          borderWidth="1px"
-          borderColor="gray.100"
-        >
-          <Heading textAlign="center" mb={3} fontSize="2xl">
-            Hitung cicilan Anda
-          </Heading>
-          <Text textAlign="center" color="gray.600" mb={6} fontSize="sm">
-            Masukkan jumlah pinjaman, bunga, dan tenor untuk melihat estimasi
-            cicilan bulanan Anda.
-          </Text>
-          <VStack spacing={6}>
-            <Field.Root>
-              <Field.Label>Jumlah Pinjaman</Field.Label>
-              <Input type="number" min={0} placeholder="Masukkan jumlah pinjaman" value={pinjaman} onChange={(e) => setPinjaman(e.target.value)} />
-            </Field.Root>
-            <Field.Root>
-              <Field.Label>Bunga</Field.Label>
-              <Input type="number" placeholder="Masukkan bunga" value={bunga} onChange={(e) => setBunga(e.target.value)} />
-            </Field.Root>
-            <Field.Root>
-              <Field.Label>Tenor</Field.Label>
-              <Input type="number" placeholder="Masukkan tenor" value={tenor} onChange={(e) => setTenor(e.target.value)} />
-            </Field.Root>
-          </VStack>
-          {cicilan && (
-            <>
-            <Box
-              w="full"
-              p={4}
-              mt={4}
-              bg="blue.50"
-              borderRadius="xl"
-              borderWidth="1px"
-              borderColor="blue.100"
-            >
-              <Text fontSize="sm" color="blue.700">
-                Estimasi Cicilan / Bulan
-              </Text>
-              <Text fontSize="2xl" fontWeight="bold" color="blue.900">
-                Rp {Math.round(cicilan).toLocaleString("id-ID")}
-              </Text>
-            </Box>
-            <Box w="full" p={4} mt={4} bg="blue.50" borderRadius="xl" borderWidth="1px" borderColor="blue.100">
-              <Text fontSize="sm" color="blue.700">
-                Total Pembayaran:
-                <Text fontSize="2xl" fontWeight="bold" color="blue.900">
-                  Rp {Math.round(cicilan * tenor).toLocaleString("id-ID")}
-                </Text>
-                <Text fontSize="sm" color="blue.700">
-                (Rp {Math.round(cicilan).toLocaleString("id-ID")} x {tenor} bulan)
-                </Text>
-                <Text fontSize="sm" color="blue.700">
-                Total Bunga: Rp {Math.round(cicilan * tenor * bunga / 100).toLocaleString("id-ID")}
-                </Text>
-              </Text>
-            </Box>
-            </>
-          )}
+              <h1
+                style={{
+                  fontSize: "clamp(36px, 5vw, 60px)",
+                  color: "white",
+                  lineHeight: "1.2",
+                  fontWeight: "800",
+                  margin: 0,
+                }}
+              >
+                Pembiayaan Mobil{" "}
+                <span style={{ color: "#a7f3d0" }}>Cepat & Mudah</span>
+              </h1>
 
-        </Box>
-      </Container>
+              <p style={{ fontSize: "20px", color: "#d1fae5", lineHeight: "1.8", maxWidth: "550px", margin: 0 }}>
+                Bunga kompetitif mulai dari 0.76%, proses digital yang cepat, dan pencairan dana
+                hingga 1 Miliar. Kendaraan tetap bisa digunakan!
+              </p>
 
-      {/* Cara Kerja */}
-      <Box bg="gray.50" py={16}>
-        <Container maxW="5xl">
-          <Heading textAlign="center" mb={4} fontSize="2xl">
-            Bagaimana Cara Saya Ajukan?
-          </Heading>
-          <Text textAlign="center" color="gray.600" mb={10}>
-            Ikuti langkah-langkah berikut untuk mendapatkan penawaran pinjaman
-            terbaik dan tetap berkendara dengan nyaman.
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
-            {[
-              "Bagikan detail dasar dan sediakan dokumen dasar kendaraan serta data pribadi Anda.",
-              "Tentukan persyaratan pinjaman sesuai kebutuhan dalam batas yang disetujui.",
-              "Serahkan koordinasi kepada kami dan mitra lembaga keuangan untuk proses lebih lanjut.",
-              "Terima penawaran pinjaman paling menguntungkan, akses dana, dan tetap kendarai kendaraan Anda.",
-            ].map((step, i) => (
-              <Box key={i} textAlign="center">
-                <Box
-                  mx="auto"
-                  mb={4}
-                  w={12}
-                  h={12}
-                  borderRadius="full"
-                  bg="blue.600"
-                  color="white"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  fontWeight="bold"
-                  fontSize="lg"
-                  boxShadow="md"
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
+                <button
+                  onClick={() => setModalOpen(true)}
+                  style={{
+                    background: "white",
+                    color: "#15803d",
+                    padding: "16px 32px",
+                    fontSize: "18px",
+                    fontWeight: "700",
+                    borderRadius: "12px",
+                    border: "none",
+                    cursor: "pointer",
+                    transition: "all 0.3s",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                  onMouseOver={(e) => (e.target.style.transform = "translateY(-2px)")}
+                  onMouseOut={(e) => (e.target.style.transform = "translateY(0)")}
                 >
-                  {i + 1}
-                </Box>
-                <Text color="gray.700">{step}</Text>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </Box>
+                  🚗 Ajukan Sekarang
+                </button>
+                <button
+                  onClick={() => setModalOpen(true)}
+                  style={{
+                    background: "transparent",
+                    color: "white",
+                    padding: "16px 32px",
+                    fontSize: "18px",
+                    fontWeight: "700",
+                    borderRadius: "12px",
+                    border: "2px solid white",
+                    cursor: "pointer",
+                    transition: "all 0.3s",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                  onMouseOver={(e) => {
+                    e.target.style.background = "rgba(255, 255, 255, 0.2)";
+                    e.target.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.background = "transparent";
+                    e.target.style.transform = "translateY(0)";
+                  }}
+                >
+                  🏠 Kredit Multiguna
+                </button>
+              </div>
 
-      {/* Jaminan Penawaran Terbaik */}
-      <Box bg="white" py={16}>
-        <Container maxW="4xl">
-          <Heading textAlign="center" mb={4} fontSize="2xl">
-            Jaminan Penawaran Terbaik
-          </Heading>
-          <Text textAlign="center" color="gray.600" mb={10}>
-            DanaAuto Finance bekerja sama dengan pemodal terdaftar dan diawasi OJK
-            untuk memastikan Anda mendapatkan penawaran yang aman dan
-            menguntungkan.
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 3 }}  spacing={8}>
-            {[
-              "Financier terdaftar dan diawasi OJK.",
-              "Pinjaman yang cair hingga 1 Miliar Rupiah*.",
-              "Dipercaya oleh ratusan agen dan pelanggan di berbagai daerah.",
-            ].map((point) => (
-              <Box
-                key={point}
-                p={6}
-                m={2}
-                bg="gray.50"
-                rounded="xl"
-                borderWidth="1px"
-                borderColor="gray.100"
-              >
-                <Text color="gray.700">{point}</Text>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </Box>
-
-      {/* Testimonial */}
-      <Container maxW="6xl" py={16}>
-        <Heading textAlign="center" mb={4} fontSize="2xl">
-          Testimonial
-        </Heading>
-        <Text textAlign="center" color="gray.600" mb={10}>
-          Apa pendapat pelanggan tentang kami.
-        </Text>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
-          {[
-            {
-              quote:
-                "Dana cepat cair, proses sangat mudah. Terima kasih DanaAuto Finance!",
-              name: "Budi Santoso",
-              car: "Toyota Avanza",
-            },
-            {
-              quote:
-                "Proses cepat, mobil tetap bisa digunakan. Sangat puas dengan pelayanannya.",
-              name: "Rina Sari",
-              car: "Honda Brio",
-            },
-            {
-              quote:
-                "Cepat dan praktis, tanpa ribet. Sangat direkomendasikan untuk kebutuhan dana darurat.",
-              name: "Agus Pratama",
-              car: "Suzuki Ertiga",
-            },
-            {
-              quote:
-                "Mobil tetap bisa dipakai, dan dana cair cepat. Layanan benar-benar membantu.",
-              name: "Siti Nuraini",
-              car: "Daihatsu Xenia",
-            },
-          ].map((item) => (
-            <Box
-              key={item.name + item.car}
-              p={7}
-              m={2}
-              bg="white"
-              rounded="2xl"
-              boxShadow="md"
-              borderWidth="1px"
-              borderColor="gray.100"
-            >
-              <Text color="gray.700" mb={4}>
-                “{item.quote}”
-              </Text>
-              <Text fontWeight="semibold" color="gray.900">
-                {item.name}
-              </Text>
-              <Text fontSize="sm" color="gray.500">
-                {item.car}
-              </Text>
-            </Box>
-          ))}
-        </SimpleGrid>
-      </Container>
-
-      {/* Persyaratan & Dokumen */}
-      <Box bg="gray.50" py={16}>
-        <Container maxW="6xl">
-          <Heading textAlign="center" mb={4} fontSize="2xl">
-            Persyaratan pinjaman & dokumen yang diperlukan
-          </Heading>
-          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} mt={8}>
-            <Box
-              p={7}
-              bg="white"
-              rounded="2xl"
-              m={2}
-              boxShadow="sm"
-              borderWidth="1px"
-              borderColor="gray.100"
-            >
-              <Heading size="md" mb={4}>
-                Persyaratan 👍
-              </Heading>
-              <VStack align="flex-start" spacing={2}>
-                {["WNI", "Minimal usia 21 tahun", "Memiliki penghasilan tetap", "Dokumen pendukung lainnya"].map(
-                  (item) => (
-                    <Text key={item} color="gray.700">
-                      • {item}
-                    </Text>
-                  )
-                )}
-              </VStack>
-            </Box>
-            <Box
-              p={7}
-              bg="white"
-              rounded="2xl"
-              m={2}
-              boxShadow="sm"
-              borderWidth="1px"
-              borderColor="gray.100"
-            >
-              <Heading size="md" mb={4}>
-                Dokumen 📃
-              </Heading>
-              <VStack align="flex-start" spacing={2}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "32px" }}>
                 {[
-                  "KTP",
-                  "KTP Pasangan (jika sudah menikah)",
-                  "Kartu Keluarga (KK)",
-                  "STNK & dokumen kendaraan terkait",
-                ].map((item) => (
-                  <Text key={item} color="gray.700">
-                    • {item}
-                  </Text>
+                  { icon: "⚡", text: "Proses 48 Jam" },
+                  { icon: "🔒", text: "Aman & Terpercaya" },
+                  { icon: "✓", text: "Diawasi OJK" },
+                ].map((item, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px", color: "white" }}>
+                    <span style={{ fontSize: "18px" }}>{item.icon}</span>
+                    <span style={{ fontSize: "14px", fontWeight: "500" }}>{item.text}</span>
+                  </div>
                 ))}
-              </VStack>
-            </Box>
-          </SimpleGrid>
-        </Container>
-      </Box>
+              </div>
+            </motion.div>
 
-      {/* FAQ singkat */}
-      <Box bg="white" py={16}>
-        <Container maxW="6xl">
-          <Heading textAlign="center" mb={4} fontSize="2xl">
-            Pertanyaan yang Sering Diajukan
-          </Heading>
-          <Accordion.Root multiple collapsible>
-            {[
-              {
-                q: "Apa itu Kredit Multiguna?",
-                a: "Produk pinjaman dengan agunan/jaminan, misalnya kendaraan. Besar pinjaman disesuaikan dengan nilai jaminan yang Anda miliki.",
-              },
-              {
-                q: "Berapa nilai mobil saya yang dapat saya pinjam?",
-                a: "Melalui layanan seperti DanaAuto Finance, Anda umumnya dapat meminjam hingga sekitar 80–85% dari nilai taksiran mobil Anda.",
-              },
-              {
-                q: "Berapa lama proses persetujuan dan pencairan?",
-                a: "Setelah dokumen lengkap, persetujuan biasanya memakan waktu beberapa hari kerja, dan dana segera dicairkan setelah disetujui.",
-              },
-              {
-                q: "Apakah saya tetap dapat menggunakan kendaraan saya?",
-                a: "Ya, kendaraan tetap dapat digunakan selama masa pinjaman, sementara BPKB dijadikan agunan oleh pemodal.",
-              },
-            ].map((item, index) => (
-              <Accordion.Item key={index} _hover={{ bg: "gray.100" }} p={3} value={index.toString()}>
-                <Accordion.ItemTrigger>
-                  <Text fontWeight="semibold" color="gray.900">
-                    {item.q}
-                  </Text>
-                </Accordion.ItemTrigger>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
+              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              style={{ position: "relative" }}
+            >
+              <div
+                style={{
+                  borderRadius: "24px",
+                  overflow: "hidden",
+                  boxShadow: "0 20px 50px rgba(0,0,0,0.3)",
+                  transform: "rotate(-2deg)",
+                  transition: "transform 0.3s",
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.transform = "rotate(0deg) scale(1.02)")}
+                onMouseOut={(e) => (e.currentTarget.style.transform = "rotate(-2deg)")}
+              >
+                <img
+                  src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg"
+                  alt="Pembiayaan Kendaraan"
+                  style={{ width: "100%", height: "450px", objectFit: "cover", display: "block" }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: "linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 60%)",
+                  }}
+                />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
-                <Accordion.ItemContent>
-                  <Text color="gray.700" pt={2}>
-                    {item.a}
-                  </Text>
-                </Accordion.ItemContent>
-              </Accordion.Item>
-            ))}
-          </Accordion.Root>
+      {/* Features Section */}
+      <div style={{ padding: "96px 0", background: "#f9fafb" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+            <div style={{ textAlign: "center", maxWidth: "768px", margin: "0 auto" }}>
+              <span
+                style={{
+                  background: "#d1fae5",
+                  color: "#15803d",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Keunggulan Kami
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Kenapa Memilih <span style={{ color: "#10b981" }}>DanaAuto Finance</span>?
+              </h2>
+              <p style={{ fontSize: "18px", color: "#6b7280", lineHeight: "1.8" }}>
+                Solusi pembiayaan terpercaya dengan proses yang mudah dan transparan
+              </p>
+            </div>
 
-        </Container>
-      </Box>
-      
-    </Box>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -8 }}
+                  style={{
+                    background: "white",
+                    padding: "32px",
+                    borderRadius: "16px",
+                    border: "1px solid #e5e7eb",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "-20px",
+                      right: "-20px",
+                      width: "80px",
+                      height: "80px",
+                      background: `${feature.color}20`,
+                      borderRadius: "50%",
+                      opacity: 0.5,
+                    }}
+                  />
+                  <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
+                    <div
+                      style={{
+                        background: feature.color,
+                        color: "white",
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "12px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "24px",
+                      }}
+                    >
+                      {feature.icon}
+                    </div>
+                    <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{feature.title}</h3>
+                    <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0 }}>
+                      {feature.desc}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Calculator Section */}
+      <div style={{ padding: "96px 0", background: "white" }} id="simulasi">
+        <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+            <div style={{ textAlign: "center", maxWidth: "768px", margin: "0 auto" }}>
+              <span
+                style={{
+                  background: "#dbeafe",
+                  color: "#1e40af",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Simulasi Kredit
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Hitung Cicilan Anda
+              </h2>
+              <p style={{ fontSize: "18px", color: "#6b7280" }}>
+                Masukkan jumlah pinjaman dan tenor untuk melihat estimasi cicilan bulanan
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%)",
+                borderRadius: "24px",
+                padding: "48px",
+                boxShadow: "0 20px 50px rgba(0,0,0,0.1)",
+                border: "1px solid #e5e7eb",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
+                  <div>
+                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                      Jumlah Pinjaman
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="Contoh: 100000000"
+                      value={pinjaman}
+                      onChange={(e) => setPinjaman(e.target.value)}
+                      style={{
+                        width: "100%",
+                        padding: "12px 16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: "white",
+                        outline: "none",
+                      }}
+                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                      Bunga (%)
+                    </label>
+                    <input
+                      type="number"
+                      value={0.76}
+                      disabled
+                      style={{
+                        width: "100%",
+                        padding: "12px 16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: "#f3f4f6",
+                        cursor: "not-allowed",
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                      Tenor (bulan)
+                    </label>
+                    <select
+                      value={tenor}
+                      onChange={(e) => setTenor(Number(e.target.value) || "")}
+                      style={{
+                        width: "100%",
+                        padding: "12px 16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: "white",
+                        outline: "none",
+                        cursor: "pointer",
+                      }}
+                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                    >
+                      <option value="">Pilih tenor</option>
+                      <option value={6}>6 bulan</option>
+                      <option value={12}>12 bulan (1 tahun)</option>
+                      <option value={24}>24 bulan (2 tahun)</option>
+                      <option value={36}>36 bulan (3 tahun)</option>
+                      <option value={48}>48 bulan (4 tahun)</option>
+                      <option value={60}>60 bulan (5 tahun)</option>
+                    </select>
+                  </div>
+                </div>
+
+                {cicilan && (
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+                    <div
+                      style={{
+                        background: "white",
+                        padding: "32px",
+                        borderRadius: "16px",
+                        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                        border: "2px solid #86efac",
+                      }}
+                    >
+                      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                          <div
+                            style={{
+                              background: "#10b981",
+                              color: "white",
+                              width: "32px",
+                              height: "32px",
+                              borderRadius: "8px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            ⚡
+                          </div>
+                          <span style={{ fontSize: "14px", fontWeight: "600", color: "#15803d" }}>
+                            Cicilan per Bulan
+                          </span>
+                        </div>
+                        <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#15803d", margin: 0 }}>
+                          Rp {Math.round(cicilan).toLocaleString("id-ID")}
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div
+                      style={{
+                        background: "white",
+                        padding: "32px",
+                        borderRadius: "16px",
+                        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                        border: "2px solid #93c5fd",
+                      }}
+                    >
+                      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                          <div
+                            style={{
+                              background: "#3b82f6",
+                              color: "white",
+                              width: "32px",
+                              height: "32px",
+                              borderRadius: "8px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            💰
+                          </div>
+                          <span style={{ fontSize: "14px", fontWeight: "600", color: "#1e40af" }}>
+                            Total Pembayaran
+                          </span>
+                        </div>
+                        <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#1e40af", margin: 0 }}>
+                          Rp {Math.round(cicilan * tenor).toLocaleString("id-ID")}
+                        </h3>
+                        <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
+                          Total Bunga: Rp {Math.round((cicilan * tenor * bunga) / 100).toLocaleString("id-ID")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Steps Section */}
+      <div style={{ padding: "96px 0", background: "#111827", color: "white" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+            <div style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  background: "#10b981",
+                  color: "white",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Cara Kerja
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", margin: "16px 0" }}>
+                4 Langkah Mudah Mendapatkan Dana
+              </h2>
+              <p style={{ fontSize: "18px", color: "#9ca3af", maxWidth: "768px", margin: "0 auto" }}>
+                Proses yang sederhana dan transparan untuk kebutuhan pembiayaan Anda
+              </p>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
+              {steps.map((step, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  style={{ position: "relative", textAlign: "center" }}
+                >
+                  <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "80px",
+                        height: "80px",
+                        background: "#10b981",
+                        borderRadius: "50%",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "36px",
+                        boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
+                      }}
+                    >
+                      {step.icon}
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: "-4px",
+                          right: "-4px",
+                          background: "white",
+                          color: "#15803d",
+                          width: "32px",
+                          height: "32px",
+                          borderRadius: "50%",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontWeight: "700",
+                          fontSize: "14px",
+                        }}
+                      >
+                        {i + 1}
+                      </div>
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: "20px", margin: "0 0 8px 0" }}>{step.title}</h3>
+                      <p style={{ color: "#9ca3af", fontSize: "14px", lineHeight: "1.8", margin: 0 }}>
+                        {step.desc}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Guarantees Section */}
+      <div style={{ padding: "96px 0", background: "white" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+            <div style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  background: "#fed7aa",
+                  color: "#c2410c",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Jaminan Kami
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Mengapa Kami Terpercaya?
+              </h2>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "32px" }}>
+              {guarantees.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  whileHover={{ y: -8 }}
+                  style={{
+                    background: "linear-gradient(135deg, #f9fafb 0%, white 100%)",
+                    padding: "40px",
+                    borderRadius: "16px",
+                    border: "2px solid #e5e7eb",
+                    textAlign: "center",
+                  }}
+                >
+                  <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                    <span style={{ fontSize: "60px" }}>{item.icon}</span>
+                    <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{item.title}</h3>
+                    <p style={{ color: "#6b7280", lineHeight: "1.8", margin: 0 }}>{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div style={{ padding: "96px 0", background: "#f9fafb" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+            <div style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  background: "#e9d5ff",
+                  color: "#7e22ce",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Testimoni
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Apa Kata Mereka?
+              </h2>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+              {testimonials.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  whileHover={{ y: -4 }}
+                  style={{
+                    background: "white",
+                    padding: "24px",
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+                    border: "1px solid #e5e7eb",
+                  }}
+                >
+                  <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                    <div style={{ display: "flex", gap: "4px" }}>
+                      {[...Array(5)].map((_, j) => (
+                        <span key={j} style={{ color: j < item.rating ? "#fbbf24" : "#d1d5db", fontSize: "18px" }}>
+                          ⭐
+                        </span>
+                      ))}
+                    </div>
+                    <p style={{ color: "#374151", fontSize: "14px", lineHeight: "1.8", fontStyle: "italic", margin: 0 }}>
+                      "{item.quote}"
+                    </p>
+                    <div style={{ paddingTop: "16px", borderTop: "1px solid #e5e7eb" }}>
+                      <p style={{ fontWeight: "700", color: "#111827", margin: "0 0 4px 0" }}>{item.name}</p>
+                      <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>{item.car}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Requirements Section */}
+      <div style={{ padding: "96px 0", background: "white" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+            <div style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  background: "#fecaca",
+                  color: "#b91c1c",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Persyaratan
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Yang Anda Butuhkan
+              </h2>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "32px" }}>
+              <div
+                style={{
+                  background: "#f0fdf4",
+                  padding: "40px",
+                  borderRadius: "16px",
+                  border: "2px solid #86efac",
+                }}
+              >
+                <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <div
+                      style={{
+                        background: "#10b981",
+                        color: "white",
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "12px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "24px",
+                      }}
+                    >
+                      👤
+                    </div>
+                    <h3 style={{ fontSize: "24px", color: "#111827", margin: 0 }}>Persyaratan</h3>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                    {["WNI", "Minimal usia 21 tahun", "Memiliki penghasilan tetap", "Dokumen pendukung lainnya"].map(
+                      (item, i) => (
+                        <div key={i} style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                          <div
+                            style={{
+                              background: "#10b981",
+                              color: "white",
+                              width: "24px",
+                              height: "24px",
+                              borderRadius: "50%",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              fontSize: "12px",
+                              flexShrink: 0,
+                            }}
+                          >
+                            ✓
+                          </div>
+                          <span style={{ color: "#374151", fontSize: "16px" }}>{item}</span>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  background: "#eff6ff",
+                  padding: "40px",
+                  borderRadius: "16px",
+                  border: "2px solid #93c5fd",
+                }}
+              >
+                <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                    <div
+                      style={{
+                        background: "#3b82f6",
+                        color: "white",
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "12px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontSize: "24px",
+                      }}
+                    >
+                      📄
+                    </div>
+                    <h3 style={{ fontSize: "24px", color: "#111827", margin: 0 }}>Dokumen</h3>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                    {[
+                      "KTP",
+                      "KTP Pasangan (jika sudah menikah)",
+                      "Kartu Keluarga (KK)",
+                      "STNK & dokumen kendaraan terkait",
+                    ].map((item, i) => (
+                      <div key={i} style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                        <div
+                          style={{
+                            background: "#3b82f6",
+                            color: "white",
+                            width: "24px",
+                            height: "24px",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "12px",
+                            flexShrink: 0,
+                          }}
+                        >
+                          ✓
+                        </div>
+                        <span style={{ color: "#374151", fontSize: "16px" }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div style={{ padding: "96px 0", background: "#f9fafb" }}>
+        <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+            <div style={{ textAlign: "center" }}>
+              <span
+                style={{
+                  background: "#cffafe",
+                  color: "#0e7490",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                FAQ
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Pertanyaan yang Sering Diajukan
+              </h2>
+              <p style={{ fontSize: "18px", color: "#6b7280", maxWidth: "768px", margin: "0 auto" }}>
+                Informasi singkat untuk membantu Anda memahami proses dan ketentuan pembiayaan
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "white",
+                borderRadius: "16px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                border: "1px solid #e5e7eb",
+                overflow: "hidden",
+              }}
+            >
+              {faqs.map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderBottom: index !== faqs.length - 1 ? "1px solid #e5e7eb" : "none",
+                  }}
+                >
+                  <div
+                    onClick={() => toggleFaq(index)}
+                    style={{
+                      padding: "24px 32px",
+                      cursor: "pointer",
+                      transition: "background 0.2s",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      gap: "16px",
+                    }}
+                    onMouseOver={(e) => (e.currentTarget.style.background = "#f9fafb")}
+                    onMouseOut={(e) => (e.currentTarget.style.background = "white")}
+                  >
+                    <span style={{ fontWeight: "600", color: "#111827", fontSize: "16px", textAlign: "left" }}>
+                      {item.q}
+                    </span>
+                    <div
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        background: "#d1fae5",
+                        color: "#15803d",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontWeight: "700",
+                        fontSize: "20px",
+                        flexShrink: 0,
+                        transform: openFaq.includes(index) ? "rotate(45deg)" : "rotate(0deg)",
+                        transition: "transform 0.3s",
+                      }}
+                    >
+                      +
+                    </div>
+                  </div>
+
+                  {openFaq.includes(index) && (
+                    <div style={{ padding: "0 32px 24px 32px" }}>
+                      <p style={{ color: "#374151", lineHeight: "1.8", fontSize: "16px", margin: 0 }}>
+                        {item.a}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div
+        style={{
+          padding: "96px 0",
+          background: "#111827",
+          color: "white",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div style={{ position: "absolute", inset: 0, opacity: 0.1 }}>
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "600px",
+              height: "600px",
+              background: "#10b981",
+              borderRadius: "50%",
+              filter: "blur(150px)",
+            }}
+          />
+        </div>
+
+        <div style={{ maxWidth: "1152px", margin: "0 auto", position: "relative", zIndex: 1, padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "32px", textAlign: "center", alignItems: "center" }}>
+            <span
+              style={{
+                background: "#10b981",
+                color: "white",
+                padding: "8px 16px",
+                borderRadius: "999px",
+                fontSize: "14px",
+                fontWeight: "600",
+              }}
+            >
+              Siap Memulai?
+            </span>
+            <h2 style={{ fontSize: "clamp(32px, 5vw, 60px)", lineHeight: "1.2", margin: 0 }}>
+              Ajukan Pembiayaan Anda{" "}
+              <span style={{ color: "#6ee7b7" }}>Sekarang Juga</span>
+            </h2>
+            <p style={{ fontSize: "20px", color: "#9ca3af", maxWidth: "768px", margin: 0 }}>
+              Proses cepat, aman, dan terpercaya. Dapatkan dana yang Anda butuhkan dalam waktu singkat.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "center" }}>
+              <button
+                onClick={() => setModalOpen(true)}
+                style={{
+                  background: "#10b981",
+                  color: "white",
+                  padding: "20px 40px",
+                  fontSize: "18px",
+                  fontWeight: "700",
+                  borderRadius: "12px",
+                  border: "none",
+                  cursor: "pointer",
+                  transition: "all 0.3s",
+                }}
+                onMouseOver={(e) => {
+                  e.target.style.background = "#059669";
+                  e.target.style.transform = "translateY(-2px)";
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.background = "#10b981";
+                  e.target.style.transform = "translateY(0)";
+                }}
+              >
+                🚗 Ajukan Pembiayaan Mobil
+              </button>
+              <button
+                onClick={() => setModalOpen(true)}
+                style={{
+                  background: "transparent",
+                  color: "white",
+                  padding: "20px 40px",
+                  fontSize: "18px",
+                  fontWeight: "700",
+                  borderRadius: "12px",
+                  border: "2px solid white",
+                  cursor: "pointer",
+                  transition: "all 0.3s",
+                }}
+                onMouseOver={(e) => {
+                  e.target.style.background = "rgba(255, 255, 255, 0.2)";
+                  e.target.style.transform = "translateY(-2px)";
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.background = "transparent";
+                  e.target.style.transform = "translateY(0)";
+                }}
+              >
+                🏠 Ajukan Kredit Multiguna
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Simple Modal */}
+      {modalOpen && (
+        <div
+          onClick={() => setModalOpen(false)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
+            padding: "20px",
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "white",
+              padding: "40px",
+              borderRadius: "16px",
+              maxWidth: "500px",
+              width: "100%",
+            }}
+          >
+            <h3 style={{ fontSize: "24px", marginBottom: "16px", color: "#111827" }}>Hubungi Kami</h3>
+            <p style={{ color: "#6b7280", marginBottom: "24px" }}>
+              Untuk mengajukan pembiayaan, silakan hubungi:
+            </p>
+            <p style={{ fontSize: "18px", fontWeight: "600", color: "#10b981", marginBottom: "24px" }}>
+              📱 0812-3456-7890
+            </p>
+            <button
+              onClick={() => setModalOpen(false)}
+              style={{
+                background: "#10b981",
+                color: "white",
+                padding: "12px 24px",
+                borderRadius: "8px",
+                border: "none",
+                cursor: "pointer",
+                fontSize: "16px",
+                fontWeight: "600",
+                width: "100%",
+              }}
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   );
-};
+}
