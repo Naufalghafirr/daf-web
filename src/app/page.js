@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Spinner, List } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import {
   FaBolt,
@@ -25,6 +26,13 @@ export default function Home() {
   const [cicilan, setCicilan] = useState(null);
   const [mounted, setMounted] = useState(false);
   const [openFaq, setOpenFaq] = useState([]);
+  const [query, setQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [highlight, setHighlight] = useState(-1);
+  const [loading, setLoading] = useState(false);
+
+  const [openRegion, setOpenRegion] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   const hitungCicilan = () => {
     const r = bunga / 12 / 100;
@@ -41,7 +49,56 @@ export default function Home() {
     } else {
       setCicilan(null);
     }
-  }, [pinjaman, bunga, tenor]);
+
+    if (!query) {
+      setSearchResults([]);
+      return;
+    }
+
+    const fetchResults = setTimeout(async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+        const data = await response.json();
+        setSearchResults(data);
+        
+      } catch (error) {
+        console.error("Error fetching search results:", error);
+      } finally {
+        setLoading(false);
+      }
+    }, 500);
+
+    return () => clearTimeout(fetchResults);
+  }, [pinjaman, bunga, tenor, query]);
+
+  const handleSelect = (item) => {
+    setQuery(item.display_name);
+    setSearchResults([]); // tutup dropdown
+  };
+
+  const selectAddress = (e) => {
+    if (!searchResults.length) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setSelectedIdx((prev) =>
+        prev < searchResults.length - 1 ? prev + 1 : prev
+      );
+    }
+
+    if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setSelectedIdx((prev) =>
+        prev > 0 ? prev - 1 : 0
+      );
+    }
+
+    if (e.key === "Enter" && selectedIdx >= 0) {
+      e.preventDefault();
+      handleSelect(data[selectedIdx]);
+    }
+  };
 
   const toggleFaq = (index) => {
     setOpenFaq((prev) =>
@@ -264,33 +321,6 @@ export default function Home() {
                   onMouseOut={(e) => (e.target.style.transform = "translateY(0)")}
                 >
                   🚗 Ajukan Sekarang
-                </button>
-                <button
-                  onClick={() => setModalOpen(true)}
-                  style={{
-                    background: "transparent",
-                    color: "white",
-                    padding: "16px 32px",
-                    fontSize: "18px",
-                    fontWeight: "700",
-                    borderRadius: "12px",
-                    border: "2px solid white",
-                    cursor: "pointer",
-                    transition: "all 0.3s",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                  onMouseOver={(e) => {
-                    e.target.style.background = "rgba(255, 255, 255, 0.2)";
-                    e.target.style.transform = "translateY(-2px)";
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.background = "transparent";
-                    e.target.style.transform = "translateY(0)";
-                  }}
-                >
-                  🏠 Kredit Multiguna
                 </button>
               </div>
 
@@ -1121,30 +1151,6 @@ export default function Home() {
               >
                 🚗 Ajukan Pembiayaan Mobil
               </button>
-              <button
-                onClick={() => setModalOpen(true)}
-                style={{
-                  background: "transparent",
-                  color: "white",
-                  padding: "20px 40px",
-                  fontSize: "18px",
-                  fontWeight: "700",
-                  borderRadius: "12px",
-                  border: "2px solid white",
-                  cursor: "pointer",
-                  transition: "all 0.3s",
-                }}
-                onMouseOver={(e) => {
-                  e.target.style.background = "rgba(255, 255, 255, 0.2)";
-                  e.target.style.transform = "translateY(-2px)";
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.background = "transparent";
-                  e.target.style.transform = "translateY(0)";
-                }}
-              >
-                🏠 Ajukan Kredit Multiguna
-              </button>
             </div>
           </div>
         </div>
@@ -1177,27 +1183,121 @@ export default function Home() {
           >
             <h3 style={{ fontSize: "24px", marginBottom: "16px", color: "#111827" }}>Hubungi Kami</h3>
             <p style={{ color: "#6b7280", marginBottom: "24px" }}>
-              Untuk mengajukan pembiayaan, silakan hubungi:
+              Untuk mengajukan pembiayaan mobil, silahkan isi data berikut:
             </p>
-            <p style={{ fontSize: "18px", fontWeight: "600", color: "#10b981", marginBottom: "24px" }}>
-              📱 0812-3456-7890
-            </p>
-            <button
-              onClick={() => setModalOpen(false)}
-              style={{
-                background: "#10b981",
-                color: "white",
-                padding: "12px 24px",
-                borderRadius: "8px",
-                border: "none",
-                cursor: "pointer",
-                fontSize: "16px",
-                fontWeight: "600",
-                width: "100%",
-              }}
-            >
-              Tutup
-            </button>
+            <div style={{ position: "relative" }}>
+              <label>Nama Lengkap:</label>
+              <input
+                type="text"
+                placeholder="Masukkan nama lengkap Anda"
+                style={{
+                  width: "100%",
+                  padding: "12px 16px",
+                  fontSize: "16px",
+                  borderRadius: "12px",
+                  border: "2px solid",
+                  borderColor: focused ? "#10b981" : "#e5e7eb",
+                  background: "white",
+                  outline: "none",
+                }}
+                />
+              <label>Kota:</label>
+              <input
+                type="text"
+                placeholder="Cari kota Anda"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                onFocus={() => {
+                  setFocused(true);
+                  setOpenRegion(true);
+                }}
+                onBlur={() => setFocused(false)}
+                style={{
+                  width: "100%",
+                  padding: "12px 16px",
+                  fontSize: "16px",
+                  borderRadius: "12px",
+                  border: "2px solid",
+                  borderColor: focused ? "#10b981" : "#e5e7eb",
+                  background: "white",
+                  outline: "none",
+                }}
+              />
+
+              {loading && <Spinner mt={2} />}
+
+              {openRegion && searchResults.length > 0 && (
+                <ul
+                  style={{
+                    position: "absolute",
+                    top: "105%",
+                    left: 0,
+                    right: 0,
+                    background: "white",
+                    border: "1px solid #ddd",
+                    borderRadius: 8,
+                    boxShadow: "0 10px 20px rgba(0,0,0,.08)",
+                    listStyle: "none",
+                    margin: 0,
+                    padding: 6,
+                    maxHeight: 250,
+                    overflowY: "auto",
+                    zIndex: 20,
+                  }}
+                >
+                  {searchResults.map((item, index) => (
+                    <li
+                      key={item.place_id}
+                      onMouseDown={() => selectAddress(item)}   // ⬅️ hanya ini yang diganti
+                      onMouseEnter={() => setHighlight(index)}
+                      style={{
+                        padding: "10px 12px",
+                        borderRadius: 6,
+                        cursor: "pointer",
+                        background: highlight === index ? "#e6f3ff" : "transparent",
+                      }}
+                    >
+                      <strong>{item.display_name.split(",")[0]}</strong>
+                      <div style={{ fontSize: 13, color: "#666" }} onClick={() => { setQuery(item.display_name);setOpenRegion(false);}}>
+                        {item.display_name}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <div style={{ display: "flex", justifyContent: "flex-end", gap: "16px" }}>
+              <button
+                onClick={() => setModalOpen(false)}
+                style={{
+                  background: "#D54D4DFF",
+                  color: "white",
+                  padding: "12px 24px",
+                  borderRadius: "8px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontSize: "16px",
+                  fontWeight: "600"
+                }}
+              >
+                Tutup
+              </button>
+              <button
+                onClick={() => setModalOpen(false)}
+                style={{
+                  background: "#10b981",
+                  color: "white",
+                  padding: "12px 24px",
+                  borderRadius: "8px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontSize: "16px",
+                  fontWeight: "600"
+                }}
+              >
+                Kirim
+              </button>
+            </div>
           </div>
         </div>
       )}
