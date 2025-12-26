@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Spinner, List } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import {
   FaBolt,
@@ -29,6 +29,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [highlight, setHighlight] = useState(-1);
+  const [selectedIdx, setSelectedIdx] = useState(-1);
   const [loading, setLoading] = useState(false);
 
   const [openRegion, setOpenRegion] = useState(false);
@@ -74,7 +75,9 @@ export default function Home() {
 
   const handleSelect = (item) => {
     setQuery(item.display_name);
-    setSearchResults([]); // tutup dropdown
+    setSearchResults([]);
+    setOpenRegion(false);
+    setSelectedIdx(-1);
   };
 
   const selectAddress = (e) => {
@@ -82,21 +85,17 @@ export default function Home() {
 
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      setSelectedIdx((prev) =>
-        prev < searchResults.length - 1 ? prev + 1 : prev
-      );
+      setSelectedIdx((prev) => (prev < searchResults.length - 1 ? prev + 1 : prev));
     }
 
     if (e.key === "ArrowUp") {
       e.preventDefault();
-      setSelectedIdx((prev) =>
-        prev > 0 ? prev - 1 : 0
-      );
+      setSelectedIdx((prev) => (prev > 0 ? prev - 1 : 0));
     }
 
     if (e.key === "Enter" && selectedIdx >= 0) {
       e.preventDefault();
-      handleSelect(data[selectedIdx]);
+      handleSelect(searchResults[selectedIdx]);
     }
   };
 
@@ -279,7 +278,7 @@ export default function Home() {
                   width: "fit-content",
                 }}
               >
-                🚗 Pembiayaan Kendaraan Terpercaya
+                 Pembiayaan Kendaraan Terpercaya
               </span>
 
               <h1
@@ -320,22 +319,10 @@ export default function Home() {
                   onMouseOver={(e) => (e.target.style.transform = "translateY(-2px)")}
                   onMouseOut={(e) => (e.target.style.transform = "translateY(0)")}
                 >
-                  🚗 Ajukan Sekarang
+                  Ajukan Sekarang
                 </button>
               </div>
 
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "32px" }}>
-                {[
-                  { icon: "⚡", text: "Proses 48 Jam" },
-                  { icon: "🔒", text: "Aman & Terpercaya" },
-                  { icon: "✓", text: "Diawasi OJK" },
-                ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px", color: "white" }}>
-                    <span style={{ fontSize: "18px" }}>{item.icon}</span>
-                    <span style={{ fontSize: "14px", fontWeight: "500" }}>{item.text}</span>
-                  </div>
-                ))}
-              </div>
             </motion.div>
 
             <motion.div
@@ -356,7 +343,7 @@ export default function Home() {
                 onMouseOut={(e) => (e.currentTarget.style.transform = "rotate(-2deg)")}
               >
                 <img
-                  src="https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg"
+                  src="/images/hero-section.png"
                   alt="Pembiayaan Kendaraan"
                   style={{ width: "100%", height: "450px", objectFit: "cover", display: "block" }}
                 />
@@ -1149,8 +1136,9 @@ export default function Home() {
                   e.target.style.transform = "translateY(0)";
                 }}
               >
-                🚗 Ajukan Pembiayaan Mobil
+                Ajukan Pembiayaan Mobil
               </button>
+
             </div>
           </div>
         </div>
