@@ -1,0 +1,5006 @@
+{
+  "success": 1,
+  "message": "success",
+  "data": {
+    "total_record": 26899,
+    "page": 1,
+    "size": 999,
+    "data": [
+      {
+        "id": "1MT.HOISTSYSTEMANDFRAMEFORHOISTSYSTEM.LENGTH23M",
+        "value": "1MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M",
+        "description": "1MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M"
+      },
+      {
+        "id": "250L.THREELAYER.MIXINGTANKWITHSCRAPER",
+        "value": "250L-THREE LAYER-MIXING TANK WITH SCRAPER",
+        "description": "250L-THREE LAYER-MIXING TANK WITH SCRAPER"
+      },
+      {
+        "id": "3MT.HOISTSYSTEMANDFRAMEFORHOISTSYSTEM.LENGTH23M",
+        "value": "3MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M",
+        "description": "3MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M"
+      },
+      {
+        "id": "5MT.HOISTSYSTEMANDFRAMEFORHOISTSYSTEM.LENGTH23M",
+        "value": "5MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M",
+        "description": "5MT-HOISTSYSTEMANDFRAMEFORHOISTSYSTEM-LENGTH23M"
+      },
+      {
+        "id": "AAAAUTO.POWERPRESSMACHINE.45TON",
+        "value": "AAA AUTO-POWER PRESS MACHINE-45 TON",
+        "description": "AAA AUTO-POWER PRESS MACHINE-45 TON"
+      },
+      {
+        "id": "ABA.BLOWFILMMACHINE.SJGMZ80X30X22800MM",
+        "value": "ABA-BLOWFILMMACHINE-SJGM Z80X30X22800MM",
+        "description": "ABA-BLOWFILMMACHINE-SJGM Z80X30X22800MM"
+      },
+      {
+        "id": "ABA.MOLDINGMACHINE.000",
+        "value": "ABA-MOLDINGMACHINE-000",
+        "description": "ABA-MOLDINGMACHINE-000"
+      },
+      {
+        "id": "ABB.IRB6700.200/260",
+        "value": "ABB-IRB 6700-200/2.60",
+        "description": "ABB-IRB 6700-200/2.60"
+      },
+      {
+        "id": "ABB.IRB.1520 ID-4/15",
+        "value": "ABB-IRB-1520 ID4/1.5",
+        "description": "ABB-IRB-1520 ID4/1.5"
+      },
+      {
+        "id": "ABCYANMAR.GENSET.35kVASILENTTYPEABCY35S",
+        "value": "ABC YANMAR-GENSET-35kVA SILENT TYPE (ABCY35S)",
+        "description": "ABC YANMAR-GENSET-35kVA SILENT TYPE (ABCY35S)"
+      },
+      {
+        "id": "ABESEIKI.DIESPOTTINGPRESS.CDS2000",
+        "value": "ABE SEIKI-DIE SPOTTING PRESS-CDS 2000",
+        "description": "ABE SEIKI-DIE SPOTTING PRESS-CDS 2000"
+      },
+      {
+        "id": "ABTECH.PASSENGERLIFT.1000KG",
+        "value": "ABTECH-PASSENGER LIFT-1000KG",
+        "description": "ABTECH-PASSENGER LIFT-1000KG"
+      },
+      {
+        "id": "Accretech.C-PH-300JSDAMJ106.CamTesterMachine",
+        "value": "Accretech-CPH300JSD AMJ106-Cam Tester Machine",
+        "description": "Accretech-CPH300JSD AMJ106-Cam Tester Machine"
+      },
+      {
+        "id": "Accretech.XYZAXAXCEL.CNC3DCoordinateMeasuringMcn",
+        "value": "Accretech-XYZAX AXCEL-CNC3DCoordinateMeasuringMcn",
+        "description": "Accretech-XYZAX AXCEL-CNC3DCoordinateMeasuringMcn"
+      },
+      {
+        "id": "ACCURL.LASERCUTTINGMACHINE.YAG750W3015\t\t",
+        "value": "ACCURL-LASER CUTTING MACHINE-YAG750W 3015",
+        "description": "ACCURL-LASER CUTTING MACHINE-YAG750W 3015"
+      },
+      {
+        "id": "ACEMICROMATIC.PRECUNIVCYLGRDR.GCU350x500",
+        "value": "ACE MICROMATIC-PRECUNIVCYLGRDR-GCU350x500",
+        "description": "ACE MICROMATIC-PRECUNIVCYLGRDR-GCU350x500"
+      },
+      {
+        "id": "ACE.CNCLATHE.J300LM",
+        "value": "ACE-CNC LATHE-J300LM",
+        "description": "ACE-CNC LATHE-J300LM"
+      },
+      {
+        "id": "ACL.HYDRAULICPRESSBRAKEMC.WA67Y1003200",
+        "value": "ACL-HYDRAULIC PRESS BRAKE MC-WA67Y100/3200",
+        "description": "ACL-HYDRAULIC PRESS BRAKE MC-WA67Y100/3200"
+      },
+      {
+        "id": "ACL.HYDRAULICPRESSBRAKE.WCG7Y-100/3200",
+        "value": "ACL-HYDRAULIC PRESS BRAKE-WCG7Y100/3200",
+        "description": "ACL-HYDRAULIC PRESS BRAKE-WCG7Y100/3200"
+      },
+      {
+        "id": "ACL.HYDRAULICSWINGBEAMSHEARINGMC.QC12Y12X3200",
+        "value": "ACL-HYDRAULIC SWING BEAM SHEARING MC-QC12Y 12X3200",
+        "description": "ACL-HYDRAULIC SWING BEAM SHEARING MC-QC12Y 12X3200"
+      },
+      {
+        "id": "ACL.NCSTRAIGHTENINGFEEDERWDECOILERMC.NCMF800",
+        "value": "ACL-NC STRAIGHTENING FEEDER W/ DECOILER MC-NCMF800",
+        "description": "ACL-NC STRAIGHTENING FEEDER W/ DECOILER MC-NCMF800"
+      },
+      {
+        "id": "ACL.NEWDOUBLEACTHYDPRESSMC.YF160/100 AM\t\t",
+        "value": "ACL-NEW DOUBLE ACT HYD PRESS MC-YF160/100 AM",
+        "description": "ACL-NEW DOUBLE ACT HYD PRESS MC-YF160/100 AM"
+      },
+      {
+        "id": "ACL.NEWDOUBLEACTHYDPRESSMC.YF160100AM",
+        "value": "ACL-NEW DOUBLE ACT HYD PRESS MC-YF160/100AM",
+        "description": "ACL-NEW DOUBLE ACT HYD PRESS MC-YF160/100AM"
+      },
+      {
+        "id": "ACOMA.ANASTESIMACHINE.PRO55",
+        "value": "ACOMA-ANASTESI MACHINE-PRO 55",
+        "description": "ACOMA-ANASTESI MACHINE-PRO 55"
+      },
+      {
+        "id": "ACR.PRESSBRAKEMCH.200TX4000",
+        "value": "ACR-PRESS BRAKE MCH-200TX4000",
+        "description": "ACR-PRESS BRAKE MCH-200TX4000"
+      },
+      {
+        "id": "ADSPARK.CNCDIESINKINGEDMMACHINE.AF1000",
+        "value": "AD SPARK CNC DIE SINKING EDM MACHINE AF1000",
+        "description": "AD SPARK CNC DIE SINKING EDM MACHINE AF1000"
+      },
+      {
+        "id": "ADAST.DOMINANT.745",
+        "value": "ADAST-DOMINANT-745",
+        "description": "ADAST-DOMINANT-745"
+      },
+      {
+        "id": "ADELCO.DOUBLEBELTCONVEYOR.ET180G",
+        "value": "ADELCO-DOUBLE BELT CONVEYOR-ET 180G",
+        "description": "ADELCO-DOUBLE BELT CONVEYOR-ET 180G"
+      },
+      {
+        "id": "ADELCO.DRAWERDRYINGCABINETS.DDC6A",
+        "value": "ADELCO-DRAWER DRYING CABINETS-DDC6A",
+        "description": "ADELCO-DRAWER DRYING CABINETS-DDC6A"
+      },
+      {
+        "id": "ADELCO.ECO.TEXDRYER",
+        "value": "ADELCO-ECO-TEXDRYER",
+        "description": "ADELCO-ECO-TEXDRYER"
+      },
+      {
+        "id": "ADELCO.PRINTINGMACHINE.ET75G137560300",
+        "value": "ADELCO-PRINTING MACHINE-ET75G1375.60300",
+        "description": "ADELCO-PRINTING MACHINE-ET75G1375.60300"
+      },
+      {
+        "id": "ADELCO.SB.180G3",
+        "value": "ADELCO-SB-180G3",
+        "description": "ADELCO-SB-180G3"
+      },
+      {
+        "id": "ADH.CNCVGROOVINGCUTTINGMCH.AHDK1250X3200",
+        "value": "ADH-CNCVGROOVINGCUTTINGMCH-AHDK 1250 X 3200",
+        "description": "ADH-CNCVGROOVINGCUTTINGMCH-AHDK 1250 X 3200"
+      },
+      {
+        "id": "ADH.HYDRAULICPRESSBRAKEMC.WA67Y1003200",
+        "value": "ADH-HYDRAULIC PRESS BRAKE MC-WA67Y100/3200",
+        "description": "ADH-HYDRAULIC PRESS BRAKE MC-WA67Y100/3200"
+      },
+      {
+        "id": "ADH.HYDRAULICPRESSBRAKEMC.WC67K1003200",
+        "value": "ADH-HYDRAULIC PRESS BRAKE MC-WC67K100/3200",
+        "description": "ADH-HYDRAULIC PRESS BRAKE MC-WC67K100/3200"
+      },
+      {
+        "id": "ADH.HYDRAULICSWINGBEAMSHEARINGMC.QC12Y6X3200",
+        "value": "ADH-HYDRAULIC SWING BEAM SHEARING MC-QC12Y 6X3200",
+        "description": "ADH-HYDRAULIC SWING BEAM SHEARING MC-QC12Y 6X3200"
+      },
+      {
+        "id": "ADH.HYDRAULICSWINGBEAMSHEARINGMC.QC12Y63200",
+        "value": "ADH-HYDRAULIC SWING BEAM SHEARING MC-QC12Y6/3200",
+        "description": "ADH-HYDRAULIC SWING BEAM SHEARING MC-QC12Y6/3200"
+      },
+      {
+        "id": "ADVATX.MEDICALLASERSYSTEM.5891319NM",
+        "value": "ADVATX-MEDICAL LASER SYSTEM-589 1319NM",
+        "description": "ADVATX-MEDICAL LASER SYSTEM-589 1319NM"
+      },
+      {
+        "id": "AEROS.AERATORMACHINE.A50",
+        "value": "AEROS-AERATOR MACHINE-A50",
+        "description": "AEROS-AERATOR MACHINE-A50"
+      },
+      {
+        "id": "AEROS.SPONGECAKELINE.A50AUTO",
+        "value": "AEROS-SPONGE CAKE LINE-A50 AUTO",
+        "description": "AEROS-SPONGE CAKE LINE-A50 AUTO"
+      },
+      {
+        "id": "AF.COMPRESOR.CE46S160KW",
+        "value": "AF-COMPRESOR-CE46S 160 KW",
+        "description": "AF-COMPRESOR-CE46S 160 KW"
+      },
+      {
+        "id": "AGFAAVALON.CTPMACHINE.A8TF",
+        "value": "AGFA AVALON CTP MACHINE A8 TF",
+        "description": "AGFA AVALON CTP MACHINE A8 TF"
+      },
+      {
+        "id": "AGFAAVALON.CTPMACHINE.C848",
+        "value": "AGFA AVALON CTP MACHINE-C 8 48",
+        "description": "AGFA AVALON CTP MACHINE-C 8 48"
+      },
+      {
+        "id": "AGFAHEALTHCARENV.CR10-X.5151/100",
+        "value": "AGFA HEALTHCARE N.V-CR 10X-5151/100",
+        "description": "AGFA HEALTHCARE N.V-CR 10X-5151/100"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.CMMNSSTMFRD.1000KVASTC1100D5",
+        "value": "AGG POWER SOLUTIONS-CMMNSSTMFRD-1000KVASTC1100D5",
+        "description": "AGG POWER SOLUTIONS-CMMNSSTMFRD-1000KVASTC1100D5"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.CUMMINSSTAMFORD.1000KVAST",
+        "value": "AGG POWER SOLUTIONS-CUMMINS STAMFORD-1000 KVA S T",
+        "description": "AGG POWER SOLUTIONS-CUMMINS STAMFORD-1000 KVA S T"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.DNGFGCMSSTMFRD.250KVAST",
+        "value": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-250 KVA S T",
+        "description": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-250 KVA S T"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.DNGFGCMSSTMFRD.250KVASTC275D5",
+        "value": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-250KVASTC275D5",
+        "description": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-250KVASTC275D5"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.DNGFGCMSSTMFRD.500KVASTC513E5",
+        "value": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-500KVASTC513E5",
+        "description": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-500KVASTC513E5"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.DNGFGCMSSTMFRD.625KVASTC688D5",
+        "value": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-625KVASTC688D5",
+        "description": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-625KVASTC688D5"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.DNGFGCMSSTMFRD.C550D5500KVAST",
+        "value": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-C550D5500KVAST",
+        "description": "AGG POWER SOLUTIONS-DNGFGCMSSTMFRD-C550D5500KVAST"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.PRKNSSTMFRD.300KVSLNTTYP",
+        "value": "AGG POWER SOLUTIONS-PRKNS STMFRD-300KV SLNT TYP",
+        "description": "AGG POWER SOLUTIONS-PRKNS STMFRD-300KV SLNT TYP"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.PRKNSSTMFRD.800KVAOPENTYPE",
+        "value": "AGG POWER SOLUTIONS-PRKNS STMFRD-800 KVA OPEN TYPE",
+        "description": "AGG POWER SOLUTIONS-PRKNS STMFRD-800 KVA OPEN TYPE"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.PRKNSSTMFRD.800KVAOPTPP880D5",
+        "value": "AGG POWER SOLUTIONS-PRKNS STMFRD-800KVAOPTPP880D5",
+        "description": "AGG POWER SOLUTIONS-PRKNS STMFRD-800KVAOPTPP880D5"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.PRKNSSTMFRD.P1100D51000KVAST",
+        "value": "AGG POWER SOLUTIONS-PRKNS STMFRD-P1100D51000KVAST",
+        "description": "AGG POWER SOLUTIONS-PRKNS STMFRD-P1100D51000KVAST"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONS.PRKNSSTMFRD.P1375D51250KVAOT",
+        "value": "AGG POWER SOLUTIONS-PRKNS STMFRD-P1375D51250KVAOT",
+        "description": "AGG POWER SOLUTIONS-PRKNS STMFRD-P1375D51250KVAOT"
+      },
+      {
+        "id": "AGGPOWERSOLUTIONSPERKINS.STMFRD.P1100D51000KVAST",
+        "value": "AGGPOWERSOLUTIONSPERKINS-STMFRD-P1100D51000KVAST",
+        "description": "AGGPOWERSOLUTIONSPERKINS-STMFRD-P1100D51000KVAST"
+      },
+      {
+        "id": "AGGPWRSLTNSCMMNSSTMFRD.C1100D5.1000KVASLNTTYPE",
+        "value": "AGGPWRSLTNSCMMNSSTMFRD-C1100D5-1000KVASLNTTYPE",
+        "description": "AGGPWRSLTNSCMMNSSTMFRD-C1100D5-1000KVASLNTTYPE"
+      },
+      {
+        "id": "AHYW.CNCBENDINGMCH.100T2500",
+        "value": "AHYW-CNCBENDINGMCH-100T2500",
+        "description": "AHYW-CNCBENDINGMCH-100T2500"
+      },
+      {
+        "id": "AHYW.NCBENDING.W67K100T2500",
+        "value": "AHYW-NC BENDING-W67K 100T 2500",
+        "description": "AHYW-NC BENDING-W67K 100T 2500"
+      },
+      {
+        "id": "AHYW.NCBENDING.W76K100T2500",
+        "value": "AHYW-NC BENDING-W76K 100T 2500",
+        "description": "AHYW-NC BENDING-W76K 100T 2500"
+      },
+      {
+        "id": "AHYW.NCBENDING.WC67K100T2500",
+        "value": "AHYW-NC BENDING-WC67K 100T 2500",
+        "description": "AHYW-NC BENDING-WC67K 100T 2500"
+      },
+      {
+        "id": "AIDA.FORGINGTRIMINGMACHINE.NC11502",
+        "value": "AIDA-FORGING TRIMING MACHINE-NC1150 (2)",
+        "description": "AIDA-FORGING TRIMING MACHINE-NC1150 (2)"
+      },
+      {
+        "id": "AIDA.MESINPRESS.160TON",
+        "value": "AIDA-MESIN PRESS-160 TON",
+        "description": "AIDA-MESIN PRESS-160 TON"
+      },
+      {
+        "id": "AIDA.POWERPRESSMCH.100TON",
+        "value": "AIDA-POWER PRESS MACHINE-100 TON",
+        "description": "AIDA-POWER PRESS MACHINE-100 TON"
+      },
+      {
+        "id": "AIDA.POWERPRESSMCH.60TON",
+        "value": "AIDA-POWER PRESS MACHINE-60TON",
+        "description": "AIDA-POWER PRESS MACHINE-60TON"
+      },
+      {
+        "id": "AIDA.POWERPRESSMCH.80TON",
+        "value": "AIDA-POWER PRESS MACHINE-80 TON",
+        "description": "AIDA-POWER PRESS MACHINE-80 TON"
+      },
+      {
+        "id": "AIDA.PRESSMCGRINDINGMANUAL.200T",
+        "value": "AIDA-PRESS MC GRINDING MANUAL-200T",
+        "description": "AIDA-PRESS MC GRINDING MANUAL-200T"
+      },
+      {
+        "id": "AIFLO.PRINTING.DST",
+        "value": "AIFLO-PRINTING-DST",
+        "description": "AIFLO-PRINTING-DST"
+      },
+      {
+        "id": "AIHU.DIGITALINKJETPRINTER.L2208L",
+        "value": "AIHU-DIGITAL INKJET PRINTER-L2208 L",
+        "description": "AIHU-DIGITAL INKJET PRINTER-L2208 L"
+      },
+      {
+        "id": "AIMIXSELFLOADER.MIXER.AS40D",
+        "value": "AIMIX SELF LOADER-MIXER-AS4.0D",
+        "description": "AIMIX SELF LOADER-MIXER-AS4.0D"
+      },
+      {
+        "id": "AIMIX SELF LOADING.MIXER.AS 35",
+        "value": "AIMIX SELF LOADING-MIXER-AS 3.5",
+        "description": "AIMIX SELF LOADING-MIXER-AS 3.5"
+      },
+      {
+        "id": "AIMIX SELF LOADING.MIXER.TRUCKAS40",
+        "value": "AIMIX SELF LOADING-MIXER-TRUCKAS40",
+        "description": "AIMIX SELF LOADING-MIXER-TRUCKAS40"
+      },
+      {
+        "id": "AIMIX TRAILER CONCRETE.PUMP.ABT40C1082R",
+        "value": "AIMIX TRAILER CONCRETE-PUMP-ABT40C 10 82R",
+        "description": "AIMIX TRAILER CONCRETE-PUMP-ABT40C 10 82R"
+      },
+      {
+        "id": "AIRBLASTFREEZER.OPENTYPCOMP.BITZERS6F2",
+        "value": "AIR BLAST FREEZER-OPEN TYP COMP-BITZER S6F 2",
+        "description": "AIR BLAST FREEZER-OPEN TYP COMP-BITZER S6F 2"
+      },
+      {
+        "id": "AIRBLASTFREEZER.OPENTYPCOMP.BITZERS6F302",
+        "value": "AIR BLAST FREEZER-OPEN TYP COMP-BITZER S6F 302",
+        "description": "AIR BLAST FREEZER-OPEN TYP COMP-BITZER S6F 302"
+      },
+      {
+        "id": "AIRCOMPRESSOR.INGERSOLL.RANDMH45A",
+        "value": "AIR COMPRESSOR-INGERSOLL-RAND MH45A",
+        "description": "AIR COMPRESSOR-INGERSOLL-RAND MH45A"
+      },
+      {
+        "id": "AIR.BUBBLEFILMMACHINERY.ZT1255T",
+        "value": "AIR-BUBBLE FILM MACHINERY-ZT 125 5T",
+        "description": "AIR-BUBBLE FILM MACHINERY-ZT 125 5T"
+      },
+      {
+        "id": "AIR.COMPRESSORINGERSOLL.RANDMH45A",
+        "value": "AIR-COMPRESSOR INGERSOLL-RAND MH45A",
+        "description": "AIR-COMPRESSOR INGERSOLL-RAND MH45A"
+      },
+      {
+        "id": "AIR.COMPRESSORINGERSOLL.RANDMH45A50",
+        "value": "AIR-COMPRESSOR INGERSOLL-RAND MH45A/50",
+        "description": "AIR-COMPRESSOR INGERSOLL-RAND MH45A/50"
+      },
+      {
+        "id": "AIRMAN.COMPRESSORPORTABLE.PDS175",
+        "value": "AIRMAN COMPRESSOR PORTABLE PDS 175",
+        "description": "AIRMAN COMPRESSOR PORTABLE PDS 175"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS185SC62",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS 185S C62",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS 185S C62"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS18556C2",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS18556C2",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS18556C2"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS185S6C2",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS185S 6C2",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS185S 6C2"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS185S6C2WHEELTYPE",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS185S6C2WHEELTYPE",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS185S6C2WHEELTYPE"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS390S4B1F",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S 4B1F",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S 4B1F"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS390S4B1",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S4B1",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S4B1"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS390S4B1WHEELTYPE",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S4B1WHEELTYPE",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS390S4B1WHEELTYPE"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS400S",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS400S6B5",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS400S6B5WT",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5(WT)",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5(WT)"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS400S6B5PRESSURE",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5PRESSURE",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS400S6B5PRESSURE"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDS750S4B1",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS750S4B1",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDS750S4B1"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDSF330DP6B5",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF330DP6B5",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF330DP6B5"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDSF330DP6BS",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF330DP6BS",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF330DP6BS"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPRESSOR.PDSF750S4B3",
+        "value": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF750S4B3",
+        "description": "AIRMAN PORTABLE-AIR COMPRESSOR-PDSF750S4B3"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPR.MODELPDS750S4B1WHEELTYP",
+        "value": "AIRMAN PORTABLE-AIRCOMPR-MODELPDS750S4B1(WHEELTYP)",
+        "description": "AIRMAN PORTABLE-AIRCOMPR-MODELPDS750S4B1(WHEELTYP)"
+      },
+      {
+        "id": "AIRMANPORTABLE.AIRCOMPR.PDS400S6B5DOUBLEPRESSURE",
+        "value": "AIRMAN PORTABLE-AIRCOMPR-PDS400S6B5DOUBLEPRESSURE",
+        "description": "AIRMAN PORTABLE-AIRCOMPR-PDS400S6B5DOUBLEPRESSURE"
+      },
+      {
+        "id": "AIRMAN.AIRCOMPRESSOR.PDS390S4B1",
+        "value": "AIRMAN-AIRCOMPRESSOR-PDS390S 4B1",
+        "description": "AIRMAN-AIRCOMPRESSOR-PDS390S 4B1"
+      },
+      {
+        "id": "AIRMAN.COMPRESSOR.PDS185SC62",
+        "value": "AIRMAN-COMPRESSOR-PDS 185S C62",
+        "description": "AIRMAN-COMPRESSOR-PDS 185S C62"
+      },
+      {
+        "id": "AIRMAN.COMPRESSOR.PDS400SSC6B5",
+        "value": "AIRMAN-COMPRESSOR-PDS 400S/SC6B5",
+        "description": "AIRMAN-COMPRESSOR-PDS 400S/SC6B5"
+      },
+      {
+        "id": "AIRMAN.COMPRESSOR.PDS185S6C2",
+        "value": "AIRMAN-COMPRESSOR-PDS185S6C2",
+        "description": "AIRMAN-COMPRESSOR-PDS185S6C2"
+      },
+      {
+        "id": "AIRMAN.COMPRESSOR.PDS390S",
+        "value": "AIRMAN-COMPRESSOR-PDS390S",
+        "description": "AIRMAN-COMPRESSOR-PDS390S"
+      },
+      {
+        "id": "AIRMAN.COMPRESSOR.PDS390S4B1",
+        "value": "AIRMAN-COMPRESSOR-PDS390S4B1",
+        "description": "AIRMAN-COMPRESSOR-PDS390S4B1"
+      },
+      {
+        "id": "AIRMAN.GENERATOR.SDG100AS36A",
+        "value": "AIRMAN-GENERATOR-SDG100AS36A",
+        "description": "AIRMAN-GENERATOR-SDG100AS36A"
+      },
+      {
+        "id": "AIRMAN.GENERATOR.SDG100S3A5",
+        "value": "AIRMAN-GENERATOR-SDG100S3A5",
+        "description": "AIRMAN-GENERATOR-SDG100S3A5"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDS390S4B1F",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS390S4B1F",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS390S4B1F"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDS400S6B5",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS400S6B5",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS400S6B5"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDS400S6B5WHEELTYPE",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS400S6B5WHEELTYPE",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDS400S6B5WHEELTYPE"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDSF330DP6B5",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF330DP6B5",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF330DP6B5"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDSF330DP6BS",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF330DP6BS",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF330DP6BS"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRESSOR.PDSF750S4B3",
+        "value": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF750S4B3",
+        "description": "AIRMAN-PORTABLE AIR COMPRESSOR-PDSF750S4B3"
+      },
+      {
+        "id": "AIRMAN.PORTABLECOMPRESSOR.PDS400S6B5",
+        "value": "AIRMAN-PORTABLE COMPRESSOR-PDS400S6B5",
+        "description": "AIRMAN-PORTABLE COMPRESSOR-PDS400S6B5"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRE.MODELPDS750S4B1WHEELTYP",
+        "value": "AIRMAN-PORTABLEAIRCOMPRE-MODELPDS750S4B1WHEELTYP",
+        "description": "AIRMAN-PORTABLEAIRCOMPRE-MODELPDS750S4B1WHEELTYP"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRE.PDS18556C2",
+        "value": "AIRMAN-PORTABLEAIRCOMPRE-PDS18556C2",
+        "description": "AIRMAN-PORTABLEAIRCOMPRE-PDS18556C2"
+      },
+      {
+        "id": "AIRMAN.PORTABLEAIRCOMPRE.PDSF750S4B3",
+        "value": "AIRMAN-PORTABLEAIRCOMPRE-PDSF750S4B3",
+        "description": "AIRMAN-PORTABLEAIRCOMPRE-PDSF750S4B3"
+      },
+      {
+        "id": "AJCE.BREAKER.AT810M",
+        "value": "AJCE BREAKER AT810M",
+        "description": "AJCE BREAKER AT810M"
+      },
+      {
+        "id": "AJCE.HYDRAULICBREAKER.AJCEBOXAOB810M",
+        "value": "AJCE-HYDRAULIC BREAKER-AJCE BOX AOB810M",
+        "description": "AJCE-HYDRAULIC BREAKER-AJCE BOX AOB810M"
+      },
+      {
+        "id": "AJCE.HYDRAULICBREAKER.AT430M",
+        "value": "AJCE-HYDRAULIC BREAKER-AT430M",
+        "description": "AJCE-HYDRAULIC BREAKER-AT430M"
+      },
+      {
+        "id": "AKEBONO.CUTTINGMACHINE.MP600SL",
+        "value": "AKEBONO-CUTTING MACHINE-MP600SL",
+        "description": "AKEBONO-CUTTING MACHINE-MP600SL"
+      },
+      {
+        "id": "AKIRASEIKI.VERTICALMACHININGCENTER.KV410B",
+        "value": "AKIRA SEIKI VERTICAL MACHINING CENTER KV 410 B",
+        "description": "AKIRA SEIKI VERTICAL MACHINING CENTER KV 410 B"
+      },
+      {
+        "id": "AKIYAMA.JPRINT.440",
+        "value": "AKIYAMA-JPRINT-440",
+        "description": "AKIYAMA-JPRINT-440"
+      },
+      {
+        "id": "AKS.AUTODRILLINGANDMILLING.AD50GA",
+        "value": "AKS-AUTODRILLINGANDMILLING-AD50GA",
+        "description": "AKS-AUTODRILLINGANDMILLING-AD50GA"
+      },
+      {
+        "id": "AKS.BIOMASGRANULATOR90KW.JC1200BGN",
+        "value": "AKS-BIOMAS GRANULATOR 90 KW-JC1200BGN",
+        "description": "AKS-BIOMAS GRANULATOR 90 KW-JC1200BGN"
+      },
+      {
+        "id": "AKS.BL.4250H",
+        "value": "AKS-BL-4250H",
+        "description": "AKS-BL-4250H"
+      },
+      {
+        "id": "AKS.CIRCULARMETALSAWING.HR13SA",
+        "value": "AKS-CIRCULARMETALSAWING-HR 13 SA",
+        "description": "AKS-CIRCULARMETALSAWING-HR 13 SA"
+      },
+      {
+        "id": "AKS.DM.5025",
+        "value": "AKS-DM-5025",
+        "description": "AKS-DM-5025"
+      },
+      {
+        "id": "AKS.GAPBEDLATHEMACHINE.AKSHI2660",
+        "value": "AKS-GAP BED LATHE MACHINE-AKSHI2660",
+        "description": "AKS-GAP BED LATHE MACHINE-AKSHI2660"
+      },
+      {
+        "id": "AKS.GLUESPREADER9FEETMACHINE.SM273",
+        "value": "AKS-GLUE SPREADER 9 FEET MACHINE-SM 273",
+        "description": "AKS-GLUE SPREADER 9 FEET MACHINE-SM 273"
+      },
+      {
+        "id": "AKS.HYDRPLANECUT.XCLP2400",
+        "value": "AKS-HYDR PLANE CUT-XCLP2 400",
+        "description": "AKS-HYDR PLANE CUT-XCLP2 400"
+      },
+      {
+        "id": "AKS.HYDRACOMBINEDSHEARINGPUNCHING.CSA207D",
+        "value": "AKS-HYDRACOMBINEDSHEARINGPUNCHING-CSA 207 D",
+        "description": "AKS-HYDRACOMBINEDSHEARINGPUNCHING-CSA 207 D"
+      },
+      {
+        "id": "AKS.HYDRAULICSHEARERPRESS.DM6332",
+        "value": "AKS-HYDRAULICSHEARERPRESS-DM6332",
+        "description": "AKS-HYDRAULICSHEARERPRESS-DM6332"
+      },
+      {
+        "id": "AKS.HYDRAULICSHEARERPRESS.DM8250H",
+        "value": "AKS-HYDRAULICSHEARERPRESS-DM8250H",
+        "description": "AKS-HYDRAULICSHEARERPRESS-DM8250H"
+      },
+      {
+        "id": "AKS.LATHEMACHINE.HI2660",
+        "value": "AKS-LATHE MACHINE-HI2660",
+        "description": "AKS-LATHE MACHINE-HI2660"
+      },
+      {
+        "id": "AKS.MACHINEAIRCOMPRESSOR.MT23010",
+        "value": "AKS-MACHINEAIRCOMPRESSOR-MT 23010",
+        "description": "AKS-MACHINEAIRCOMPRESSOR-MT 23010"
+      },
+      {
+        "id": "AKS.POWERPRESS.AYS42",
+        "value": "AKS-POWERPRESS-AYS42",
+        "description": "AKS-POWERPRESS-AYS42"
+      },
+      {
+        "id": "AKS.POWERPRESS.DY100T",
+        "value": "AKS-POWERPRESS-DY100T",
+        "description": "AKS-POWERPRESS-DY100T"
+      },
+      {
+        "id": "AKS.POWERPRESS.DY16T",
+        "value": "AKS-POWERPRESS-DY16T",
+        "description": "AKS-POWERPRESS-DY16T"
+      },
+      {
+        "id": "AKS.POWERPRESS.DY25T",
+        "value": "AKS-POWERPRESS-DY25T",
+        "description": "AKS-POWERPRESS-DY25T"
+      },
+      {
+        "id": "AKS.POWERPRESS.DY40T",
+        "value": "AKS-POWERPRESS-DY40T",
+        "description": "AKS-POWERPRESS-DY40T"
+      },
+      {
+        "id": "AKS.POWERPRESS.DY63T",
+        "value": "AKS-POWERPRESS-DY63T",
+        "description": "AKS-POWERPRESS-DY63T"
+      },
+      {
+        "id": "AKS.PRESSBALLERMCH.GG100T",
+        "value": "AKS-PRESS BALLER MCH-GG100T",
+        "description": "AKS-PRESS BALLER MCH-GG100T"
+      },
+      {
+        "id": "AKS.PRESSBALLERMCH.GG150T",
+        "value": "AKS-PRESS BALLER MCH-GG150T",
+        "description": "AKS-PRESS BALLER MCH-GG150T"
+      },
+      {
+        "id": "AKS.PRESSBALLERMCH.YL150",
+        "value": "AKS-PRESS BALLER MCH-YL150",
+        "description": "AKS-PRESS BALLER MCH-YL150"
+      },
+      {
+        "id": "AKS.WOODSHREDDER30KW.SG600WS",
+        "value": "AKS-WOOD SHREDDER 30 KW-SG600WS",
+        "description": "AKS-WOOD SHREDDER 30 KW-SG600WS"
+      },
+      {
+        "id": "AKYAPAK.CNCBEAMDRILLINGLINE.3ADM1250",
+        "value": "AKYAPAK CNC BEAM DRILLING LINE 3ADM1250",
+        "description": "AKYAPAK CNC BEAM DRILLING LINE 3ADM1250"
+      },
+      {
+        "id": "AKYAPAK.HYDPROFILEBENDINGMACHINE.APK101",
+        "value": "AKYAPAK-HYD PROFILE BENDING MACHINE-APK 101",
+        "description": "AKYAPAK-HYD PROFILE BENDING MACHINE-APK 101"
+      },
+      {
+        "id": "AL78.POWERGENSET.6LTAA89G2",
+        "value": "AL78-POWERGENSET-6LTAA8 9 G2",
+        "description": "AL78-POWERGENSET-6LTAA8 9 G2"
+      },
+      {
+        "id": "ALAWINDOSS.DRILLMCHFORPRESSCG.CBP20CHDP20WYP20",
+        "value": "ALAWINDO SS-DRILLMCHFORPRESSCG-CBP20CHDP20WYP20",
+        "description": "ALAWINDO SS-DRILLMCHFORPRESSCG-CBP20CHDP20WYP20"
+      },
+      {
+        "id": "ALAWINDOSS.LATHEMACHINE.CQ62125F6000",
+        "value": "ALAWINDO SS-LATHEMACHINE-CQ62125F 6000",
+        "description": "ALAWINDO SS-LATHEMACHINE-CQ62125F 6000"
+      },
+      {
+        "id": "ALAWINDOSS.LATHEMACHINE.CY6266B2000",
+        "value": "ALAWINDO SS-LATHEMACHINE-CY6266B 2000",
+        "description": "ALAWINDO SS-LATHEMACHINE-CY6266B 2000"
+      },
+      {
+        "id": "ALAWINDOSS.MILLINGMACHINE.X5032A",
+        "value": "ALAWINDO SS-MILLINGMACHINE-X5032A",
+        "description": "ALAWINDO SS-MILLINGMACHINE-X5032A"
+      },
+      {
+        "id": "ALBA.LASERCUTTINGMACHINE.1325D",
+        "value": "ALBA-LASER CUTTING MACHINE-1325D",
+        "description": "ALBA-LASER CUTTING MACHINE-1325D"
+      },
+      {
+        "id": "ALEXCO.DIGITALPRINTER.MODELXPLUS1500",
+        "value": "ALEXCO-DIGITAL PRINTER-MODEL XPLUS 1500",
+        "description": "ALEXCO-DIGITAL PRINTER-MODEL XPLUS 1500"
+      },
+      {
+        "id": "ALHC.DIGITALPRINTER.EY1800UV",
+        "value": "ALHC-DIGITAL PRINTER-EY1800UV",
+        "description": "ALHC-DIGITAL PRINTER-EY1800UV"
+      },
+      {
+        "id": "ALHC.FLATBED.2513",
+        "value": "ALHC-FLAT BED-2513",
+        "description": "ALHC-FLAT BED-2513"
+      },
+      {
+        "id": "ALHC.PRINTINGMACHINE.EYECOLOR2513UV",
+        "value": "ALHC-PRINTINGMACHINE-EYECOLOR 2513UV",
+        "description": "ALHC-PRINTINGMACHINE-EYECOLOR 2513UV"
+      },
+      {
+        "id": "ALHC.PRINTINGMACHINE.FLATBED2153",
+        "value": "ALHC-PRINTINGMACHINE-FLATBED2153",
+        "description": "ALHC-PRINTINGMACHINE-FLATBED2153"
+      },
+      {
+        "id": "ALHC.UVPRINTBODYW2CMYKWBODYCONFIG.1800UV18M",
+        "value": "ALHC-UV PRINT BODY W 2CMYKW BODY CONFIG-1800UV1.8M",
+        "description": "ALHC-UV PRINT BODY W 2CMYKW BODY CONFIG-1800UV1.8M"
+      },
+      {
+        "id": "ALICON.BREAKER.B230",
+        "value": "ALICON BREAKER B230",
+        "description": "ALICON BREAKER B230"
+      },
+      {
+        "id": "ALLNEWASTRADAIHATSU.AYLA.10XCVT",
+        "value": "ALL NEW ASTRA DAIHATSU-AYLA-1.0 X CVT",
+        "description": "ALL NEW ASTRA DAIHATSU-AYLA-1.0 X CVT"
+      },
+      {
+        "id": "ALLSTARGRINDER.INLINE.LX850",
+        "value": "ALL STAR GRINDER-IN LINE-LX 850",
+        "description": "ALL STAR GRINDER-IN LINE-LX 850"
+      },
+      {
+        "id": "ALLCOLOUR.DTGPRINTER.8H",
+        "value": "ALLCOLOUR-DTGPRINTER-8H",
+        "description": "ALLCOLOUR-DTGPRINTER-8H"
+      },
+      {
+        "id": "ALLENGERS.XRAY.525FCHT",
+        "value": "ALLENGERS-X RAY-525FC HT",
+        "description": "ALLENGERS-X RAY-525FC HT"
+      },
+      {
+        "id": "ALLIFLAFALO.HOTPRESS.MANUALSUBLIMASI",
+        "value": "ALLIF LAFALO-HOT PRESS-MANUAL SUBLIMASI",
+        "description": "ALLIF LAFALO-HOT PRESS-MANUAL SUBLIMASI"
+      },
+      {
+        "id": "ALLMAKES.TOWERLIGHT.4000W",
+        "value": "ALLMAKES-TOWERLIGHT-4000W",
+        "description": "ALLMAKES-TOWERLIGHT-4000W"
+      },
+      {
+        "id": "ALLWIN8PH.UV.RTR32M1024A",
+        "value": "ALLWIN 8 PH-UV-RTR 3.2M 1024 A",
+        "description": "ALLWIN 8 PH-UV-RTR 3.2M 1024 A"
+      },
+      {
+        "id": "ALLWIN.2513GV.FLATBED",
+        "value": "ALLWIN-2513 GV-FLAT BED",
+        "description": "ALLWIN-2513 GV-FLAT BED"
+      },
+      {
+        "id": "ALLWIN.76CM.DTF",
+        "value": "ALLWIN-76 CM-DTF",
+        "description": "ALLWIN-76 CM-DTF"
+      },
+      {
+        "id": "ALLWIN.C1024i.30PL4HEAD",
+        "value": "ALLWIN-C1024i-30PL4HEAD",
+        "description": "ALLWIN-C1024i-30PL4HEAD"
+      },
+      {
+        "id": "ALLWIN.C1024i.E500",
+        "value": "ALLWIN-C1024i-E500",
+        "description": "ALLWIN-C1024i-E500"
+      },
+      {
+        "id": "ALLWIN.C1024i.PLUS8HEAD",
+        "value": "ALLWIN-C1024i-PLUS 8 HEAD",
+        "description": "ALLWIN-C1024i-PLUS 8 HEAD"
+      },
+      {
+        "id": "ALLWIN.C4.512i",
+        "value": "ALLWIN-C4-512i",
+        "description": "ALLWIN-C4-512i"
+      },
+      {
+        "id": "ALLWIN.C4i4HEAD.KONICA512i",
+        "value": "ALLWIN-C4i 4HEAD-KONICA 512i",
+        "description": "ALLWIN-C4i 4HEAD-KONICA 512i"
+      },
+      {
+        "id": "ALLWIN.C51.2i",
+        "value": "ALLWIN-C51-2i",
+        "description": "ALLWIN-C51-2i"
+      },
+      {
+        "id": "ALLWIN.C512i.4HEAD",
+        "value": "ALLWIN-C512i-4 HEAD",
+        "description": "ALLWIN-C512i-4 HEAD"
+      },
+      {
+        "id": "ALLWIN.C512i.8Head",
+        "value": "ALLWIN-C512i-8 Head",
+        "description": "ALLWIN-C512i-8 Head"
+      },
+      {
+        "id": "ALLWIN.C512i.8HEADKONIKA30PL",
+        "value": "ALLWIN-C512i-8 HEAD KONIKA 30 PL",
+        "description": "ALLWIN-C512i-8 HEAD KONIKA 30 PL"
+      },
+      {
+        "id": "ALLWIN.C512i.KM512i30pl",
+        "value": "ALLWIN-C512i-KM512i/30pl",
+        "description": "ALLWIN-C512i-KM512i/30pl"
+      },
+      {
+        "id": "ALLWIN.C512i.PLUS8PH",
+        "value": "ALLWIN-C512i-PLUS 8 PH",
+        "description": "ALLWIN-C512i-PLUS 8 PH"
+      },
+      {
+        "id": "ALLWIN.C512iPLUS.4HEAD",
+        "value": "ALLWIN-C512iPLUS-4 HEAD",
+        "description": "ALLWIN-C512iPLUS-4 HEAD"
+      },
+      {
+        "id": "ALLWIN.C512iPLUS.4PH",
+        "value": "ALLWIN-C512iPLUS-4 PH",
+        "description": "ALLWIN-C512iPLUS-4 PH"
+      },
+      {
+        "id": "ALLWIN.C512iPLUS.8HEAD",
+        "value": "ALLWIN-C512iPLUS-8HEAD",
+        "description": "ALLWIN-C512iPLUS-8HEAD"
+      },
+      {
+        "id": "ALLWIN.C512iPLUS.8PRINTHEAD",
+        "value": "ALLWIN-C512iPLUS-8PRINTHEAD",
+        "description": "ALLWIN-C512iPLUS-8PRINTHEAD"
+      },
+      {
+        "id": "ALLWIN.C8.4HEAD42PL",
+        "value": "ALLWIN-C8-4 HEAD 42 PL",
+        "description": "ALLWIN-C8-4 HEAD 42 PL"
+      },
+      {
+        "id": "ALLWIN.C8.512i",
+        "value": "ALLWIN-C8-512i",
+        "description": "ALLWIN-C8-512i"
+      },
+      {
+        "id": "ALLWIN.DIGITALINKJETPRINTER.A180",
+        "value": "ALLWIN-DIGITAL INK JET PRINTER-A180",
+        "description": "ALLWIN-DIGITAL INK JET PRINTER-A180"
+      },
+      {
+        "id": "ALLWIN.DIGITALINKJETPRINTER.C4512I",
+        "value": "ALLWIN-DIGITAL INK JET PRINTER-C4 512I",
+        "description": "ALLWIN-DIGITAL INK JET PRINTER-C4 512I"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C1024I4PH",
+        "value": "ALLWIN-DIGITAL PRINTING-C1024 I 4 PH",
+        "description": "ALLWIN-DIGITAL PRINTING-C1024 I 4 PH"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C1024I",
+        "value": "ALLWIN-DIGITAL PRINTING-C1024I",
+        "description": "ALLWIN-DIGITAL PRINTING-C1024I"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C1024IPLUS",
+        "value": "ALLWIN-DIGITAL PRINTING-C1024I PLUS",
+        "description": "ALLWIN-DIGITAL PRINTING-C1024I PLUS"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C41i4HEAD\t",
+        "value": "ALLWIN-DIGITAL PRINTING-C41i (4HEAD)",
+        "description": "ALLWIN-DIGITAL PRINTING-C41i (4HEAD)"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C4i",
+        "value": "ALLWIN-DIGITAL PRINTING-C4i",
+        "description": "ALLWIN-DIGITAL PRINTING-C4i"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C4i4HEAD",
+        "value": "ALLWIN-DIGITAL PRINTING-C4i 4HEAD",
+        "description": "ALLWIN-DIGITAL PRINTING-C4i 4HEAD"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C512iPLUS",
+        "value": "ALLWIN-DIGITAL PRINTING-C512i PLUS",
+        "description": "ALLWIN-DIGITAL PRINTING-C512i PLUS"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.C8512IPRO",
+        "value": "ALLWIN-DIGITAL PRINTING-C8 512I PRO",
+        "description": "ALLWIN-DIGITAL PRINTING-C8 512I PRO"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.E180",
+        "value": "ALLWIN-DIGITAL PRINTING-E180",
+        "description": "ALLWIN-DIGITAL PRINTING-E180"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.E1805113",
+        "value": "ALLWIN-DIGITAL PRINTING-E180 5113",
+        "description": "ALLWIN-DIGITAL PRINTING-E180 5113"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.E5208PH",
+        "value": "ALLWIN-DIGITAL PRINTING-E520 8PH",
+        "description": "ALLWIN-DIGITAL PRINTING-E520 8PH"
+      },
+      {
+        "id": "ALLWIN.DIGITALPRINTING.E520L12H",
+        "value": "ALLWIN-DIGITAL PRINTING-E520L 12H",
+        "description": "ALLWIN-DIGITAL PRINTING-E520L 12H"
+      },
+      {
+        "id": "ALLWIN.E.160UV",
+        "value": "ALLWIN-E-160 UV",
+        "description": "ALLWIN-E-160 UV"
+      },
+      {
+        "id": "ALLWIN.E320UV.KM1024i6PL8H",
+        "value": "ALLWIN-E320UV-KM1024i6PL8H",
+        "description": "ALLWIN-E320UV-KM1024i6PL8H"
+      },
+      {
+        "id": "ALLWIN.E520.KM512I",
+        "value": "ALLWIN-E520-KM 512 I",
+        "description": "ALLWIN-E520-KM 512 I"
+      },
+      {
+        "id": "ALLWIN.ECOPRINTHEAD.A180SGi3200",
+        "value": "ALLWIN-ECO PRINTHEAD-A180SGi3200",
+        "description": "ALLWIN-ECO PRINTHEAD-A180SGi3200"
+      },
+      {
+        "id": "ALLWIN.EP.16UV",
+        "value": "ALLWIN-EP-16 UV",
+        "description": "ALLWIN-EP-16 UV"
+      },
+      {
+        "id": "ALLWIN.INKJETPRINTMCH.C4512I",
+        "value": "ALLWIN-INK JET PRINT MCH-C4 512I",
+        "description": "ALLWIN-INK JET PRINT MCH-C4 512I"
+      },
+      {
+        "id": "ALLWIN.INKJETPRINTMCH.HB3200UV",
+        "value": "ALLWIN-INK JET PRINT MCH-HB3200UV",
+        "description": "ALLWIN-INK JET PRINT MCH-HB3200UV"
+      },
+      {
+        "id": "ALLWIN.KONICA512i.C4i4PH",
+        "value": "ALLWIN-KONICA 512i-C4i 4PH",
+        "description": "ALLWIN-KONICA 512i-C4i 4PH"
+      },
+      {
+        "id": "ALLWIN.PRINTHEAD.A760",
+        "value": "ALLWIN-PRINTHEAD-A760",
+        "description": "ALLWIN-PRINTHEAD-A760"
+      },
+      {
+        "id": "ALLWIN.PRINTHEAD.A7644HEAD",
+        "value": "ALLWIN-PRINTHEAD-A764 4 HEAD",
+        "description": "ALLWIN-PRINTHEAD-A764 4 HEAD"
+      },
+      {
+        "id": "ALLWIN.PRINTHEAD.C512i30PL8",
+        "value": "ALLWIN-PRINTHEAD-C512i 30 PL 8",
+        "description": "ALLWIN-PRINTHEAD-C512i 30 PL 8"
+      },
+      {
+        "id": "ALLWIN.PRINTHEAD.C8512i4",
+        "value": "ALLWIN-PRINTHEAD-C8 512i 4",
+        "description": "ALLWIN-PRINTHEAD-C8 512i 4"
+      },
+      {
+        "id": "ALLWIN.SOLVENTDIGITALPRINTING.E500512i8HEAD",
+        "value": "ALLWIN-SOLVENT DIGITAL PRINTING-E500 512i8 HEAD",
+        "description": "ALLWIN-SOLVENT DIGITAL PRINTING-E500 512i8 HEAD"
+      },
+      {
+        "id": "ALLWIN.SOLVENTDIGITALPRINTING.E500E1024I8HEAD",
+        "value": "ALLWIN-SOLVENT DIGITAL PRINTING-E500E1024I8HEAD",
+        "description": "ALLWIN-SOLVENT DIGITAL PRINTING-E500E1024I8HEAD"
+      },
+      {
+        "id": "ALPHA.PRINTINGMACHINE.NT1802H",
+        "value": "ALPHA-PRINTING MACHINE-NT 1802H",
+        "description": "ALPHA-PRINTING MACHINE-NT 1802H"
+      },
+      {
+        "id": "ALPHA.PRINTINGMACHINE.NT1820H",
+        "value": "ALPHA-PRINTING MACHINE-NT 1820H",
+        "description": "ALPHA-PRINTING MACHINE-NT 1820H"
+      },
+      {
+        "id": "ALPHA.SUBLIMATIONPRINTER.NT194L",
+        "value": "ALPHA-SUBLIMATION PRINTER-NT 194 L",
+        "description": "ALPHA-SUBLIMATION PRINTER-NT 194 L"
+      },
+      {
+        "id": "ALS.FOAMCRUSHERMACINE.ALS350CFM",
+        "value": "ALS-FOAM CRUSHER MACINE-ALS 350 CFM",
+        "description": "ALS-FOAM CRUSHER MACINE-ALS 350 CFM"
+      },
+      {
+        "id": "ALS.HORIZONTALFOAMCUTTING.ALS313HOR",
+        "value": "ALS-HORIZONTAL FOAM CUTTING-ALS 313 HOR",
+        "description": "ALS-HORIZONTAL FOAM CUTTING-ALS 313 HOR"
+      },
+      {
+        "id": "ALS.MESINCRUSHERFOAM.ALS350-FCM",
+        "value": "ALS-MESIN CRUSHER FOAM-ALS350FCM",
+        "description": "ALS-MESIN CRUSHER FOAM-ALS350FCM"
+      },
+      {
+        "id": "ALS.MESINCRUSHERFOAM.ALS354-FCM",
+        "value": "ALS-MESIN CRUSHER FOAM-ALS354FCM",
+        "description": "ALS-MESIN CRUSHER FOAM-ALS354FCM"
+      },
+      {
+        "id": "ALS.MESINPOTONGHORIZONTAL.ALS313-HOR",
+        "value": "ALS-MESIN POTONG HORIZONTAL-ALS313HOR",
+        "description": "ALS-MESIN POTONG HORIZONTAL-ALS313HOR"
+      },
+      {
+        "id": "ALS.MESINPOTONGVERTICAL.ALS313-VER",
+        "value": "ALS-MESIN POTONG VERTICAL-ALS313VER",
+        "description": "ALS-MESIN POTONG VERTICAL-ALS313VER"
+      },
+      {
+        "id": "ALS.MESINREBONDED.ALS411-FRM",
+        "value": "ALS-MESIN REBONDED-ALS411FRM",
+        "description": "ALS-MESIN REBONDED-ALS411FRM"
+      },
+      {
+        "id": "ALS.REBONDEDFOAMMACHINE.ALS411RFM",
+        "value": "ALS-REBONDED FOAM MACHINE-ALS 411 RFM",
+        "description": "ALS-REBONDED FOAM MACHINE-ALS 411 RFM"
+      },
+      {
+        "id": "ALS.VERTICALFOAMCUTTING.ALS300VER",
+        "value": "ALS-VERTICAL FOAM CUTTING-ALS 300 VER",
+        "description": "ALS-VERTICAL FOAM CUTTING-ALS 300 VER"
+      },
+      {
+        "id": "ALTAFIBERMACHINE.LASERCUTTINGMCN.LF3015E1500W",
+        "value": "ALTA FIBER MACHINE-LASER CUTTING MCN-LF3015E1500W",
+        "description": "ALTA FIBER MACHINE-LASER CUTTING MCN-LF3015E1500W"
+      },
+      {
+        "id": "ALTA.LASER.AC132SN",
+        "value": "ALTA-LASER-AC132SN",
+        "description": "ALTA-LASER-AC132SN"
+      },
+      {
+        "id": "ALTA.LASERCUTMCH.1325D",
+        "value": "ALTA-LASERCUTMCH-1325D",
+        "description": "ALTA-LASERCUTMCH-1325D"
+      },
+      {
+        "id": "ALTA.LASERCUTMCH.LF3015E1500W",
+        "value": "ALTA-LASERCUTMCH-LF 3015E 1500W",
+        "description": "ALTA-LASERCUTMCH-LF 3015E 1500W"
+      },
+      {
+        "id": "ALTENDORF.TILTARBORSLIDING.TABLESAWMACHINEWA8T",
+        "value": "ALTENDORF-TILTARBORSLIDING-TABLESAWMACHINEWA8T",
+        "description": "ALTENDORF-TILTARBORSLIDING-TABLESAWMACHINEWA8T"
+      },
+      {
+        "id": "ALTENDROF.SLIDINGTABLESAWMACHINE.F25",
+        "value": "ALTENDROF-SLIDING TABLE SAW MACHINE-F 25",
+        "description": "ALTENDROF-SLIDING TABLE SAW MACHINE-F 25"
+      },
+      {
+        "id": "ALTRAKPOWER.GENSET.6CTA83G1ALPC175",
+        "value": "ALTRAKPOWER-GENSET-6CTA8 3 G1ALP C175",
+        "description": "ALTRAKPOWER-GENSET-6CTA8 3 G1ALP C175"
+      },
+      {
+        "id": "AMA.ROASTER.KAKAO",
+        "value": "AMA-ROASTER-KAKAO",
+        "description": "AMA-ROASTER-KAKAO"
+      },
+      {
+        "id": "AMADA.BENDINGPLATEMACHINE.RG150L",
+        "value": "AMADA BENDING PLATE MACHINE RG150 L",
+        "description": "AMADA BENDING PLATE MACHINE RG150 L"
+      },
+      {
+        "id": "AMADA.AUTOBANDSAW.HA250",
+        "value": "AMADA-AUTO BANDSAW-HA 250",
+        "description": "AMADA-AUTO BANDSAW-HA 250"
+      },
+      {
+        "id": "AMADA.AUTOFEEDER.BANDSAWHA250",
+        "value": "AMADA-AUTO FEEDER-BANDSAW HA 250",
+        "description": "AMADA-AUTO FEEDER-BANDSAW HA 250"
+      },
+      {
+        "id": "AMADA.BANDSAWMACHINE.AMADA300",
+        "value": "AMADA-BAND SAW MACHINE-AMADA 300",
+        "description": "AMADA-BAND SAW MACHINE-AMADA 300"
+      },
+      {
+        "id": "AMADA.CNCLATHE.G07+SRON",
+        "value": "AMADA-CNC LATHE-G07+SRON",
+        "description": "AMADA-CNC LATHE-G07+SRON"
+      },
+      {
+        "id": "AMADA.MACHINEPRESS.110TDOUBLECRANK",
+        "value": "AMADA-MACHINE PRESS-110T DOUBLE CRANK",
+        "description": "AMADA-MACHINE PRESS-110T DOUBLE CRANK"
+      },
+      {
+        "id": "AMADA.MACHINEPRESS.110TDOUBLECRANKSTRAIGHTENER",
+        "value": "AMADA-MACHINE PRESS-110T DOUBLE CRANK STRAIGHTENER",
+        "description": "AMADA-MACHINE PRESS-110T DOUBLE CRANK STRAIGHTENER"
+      },
+      {
+        "id": "AMADA.POWERPRESSMACHINE.60TON",
+        "value": "AMADA-POWER PRESS MACHINE-60 TON",
+        "description": "AMADA-POWER PRESS MACHINE-60 TON"
+      },
+      {
+        "id": "AMADA.PRESS.150TON",
+        "value": "AMADA-PRESS-150 TON",
+        "description": "AMADA-PRESS-150 TON"
+      },
+      {
+        "id": "AMADA.SHEARINGMACHINE.GPN840",
+        "value": "AMADA-SHEARING MACHINE-GPN840",
+        "description": "AMADA-SHEARING MACHINE-GPN840"
+      },
+      {
+        "id": "AMCOVEBA.FROMITALIA.TIPE8253SLAADBAKFLETDECK",
+        "value": "AMCOVEBA-FROM ITALIA-TIPE 825 3S+LAADBAKFLETDECK",
+        "description": "AMCOVEBA-FROM ITALIA-TIPE 825 3S+LAADBAKFLETDECK"
+      },
+      {
+        "id": "AME.PRESSTAEISELENOTCHINGSAW.PRISMA650E",
+        "value": "AME-PRESSTA EISELE NOTCHING SAW-PRISMA 650E",
+        "description": "AME-PRESSTA EISELE NOTCHING SAW-PRISMA 650E"
+      },
+      {
+        "id": "AMMANN.VIBRO.ASC100",
+        "value": "AMMANN SINGLEDRUMROLLER ASC 100",
+        "description": "AMMANN SINGLEDRUMROLLER ASC 100"
+      },
+      {
+        "id": "AMMANN.VIBRO.ASC100PADFOOT",
+        "value": "AMMANN SINGLEDRUMROLLER ASC 100 + PADFOOT",
+        "description": "AMMANN SINGLEDRUMROLLER ASC 100 + PADFOOT"
+      },
+      {
+        "id": "AMS.DTC.400XL",
+        "value": "AMS-DTC-400XL",
+        "description": "AMS-DTC-400XL"
+      },
+      {
+        "id": "AMSKY.CTCPMACHINE.12PLANO32CHANEL",
+        "value": "AMSKY CTCP MACHINE 1/2 PLANO 32 CHANEL",
+        "description": "AMSKY CTCP MACHINE 1/2 PLANO 32 CHANEL"
+      },
+      {
+        "id": "AMSKY.AUSETTER.400UHE",
+        "value": "AMSKY-AUSETTER-400U HE",
+        "description": "AMSKY-AUSETTER-400U HE"
+      },
+      {
+        "id": "AMSKY.CTCP.1PLANO48CHANNEL",
+        "value": "AMSKY-CTCP-1 PLANO 48 CHANNEL",
+        "description": "AMSKY-CTCP-1 PLANO 48 CHANNEL"
+      },
+      {
+        "id": "AMSKY.CTCP.AUSETTER800",
+        "value": "AMSKY-CTCP-AUSETTER 800",
+        "description": "AMSKY-CTCP-AUSETTER 800"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.40032C",
+        "value": "AMSKY-CTP AUSETTER-400 32C",
+        "description": "AMSKY-CTP AUSETTER-400 32C"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.400UV32C",
+        "value": "AMSKY-CTP AUSETTER-400 UV 32 C",
+        "description": "AMSKY-CTP AUSETTER-400 UV 32 C"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.400UV48C",
+        "value": "AMSKY-CTP AUSETTER-400 UV 48 C",
+        "description": "AMSKY-CTP AUSETTER-400 UV 48 C"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.800UV32C",
+        "value": "AMSKY-CTP AUSETTER-800UV 32 C",
+        "description": "AMSKY-CTP AUSETTER-800UV 32 C"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.800UV48C",
+        "value": "AMSKY-CTP AUSETTER-800UV 48C",
+        "description": "AMSKY-CTP AUSETTER-800UV 48C"
+      },
+      {
+        "id": "AMSKY.CTPAUSETTER.U848",
+        "value": "AMSKY-CTP AUSETTER-U848",
+        "description": "AMSKY-CTP AUSETTER-U848"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.40032CH",
+        "value": "AMSKY-CTPS AUSETTER-400 32 CH",
+        "description": "AMSKY-CTPS AUSETTER-400 32 CH"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.40032CHANNEL",
+        "value": "AMSKY-CTPS AUSETTER-400 32 CHANNEL",
+        "description": "AMSKY-CTPS AUSETTER-400 32 CHANNEL"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.40048C",
+        "value": "AMSKY-CTPS AUSETTER-400 48 C",
+        "description": "AMSKY-CTPS AUSETTER-400 48 C"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.448CH",
+        "value": "AMSKY-CTPS AUSETTER-448 CH",
+        "description": "AMSKY-CTPS AUSETTER-448 CH"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.80048C",
+        "value": "AMSKY-CTPS AUSETTER-800 48C",
+        "description": "AMSKY-CTPS AUSETTER-800 48C"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.80064C",
+        "value": "AMSKY-CTPS AUSETTER-80064C",
+        "description": "AMSKY-CTPS AUSETTER-80064C"
+      },
+      {
+        "id": "AMSKY.CTPSAUSETTER.U832",
+        "value": "AMSKY-CTPS AUSETTER-U832",
+        "description": "AMSKY-CTPS AUSETTER-U832"
+      },
+      {
+        "id": "AMSKY.MESINPOTONGKERTAS.QZX1150",
+        "value": "AMSKY-MESIN POTONG KERTAS-QZX1150",
+        "description": "AMSKY-MESIN POTONG KERTAS-QZX1150"
+      },
+      {
+        "id": "AMTEC.FLATWORKIRONER.IP1478",
+        "value": "AMTEC-FLATWORK IRONER-IP 1478",
+        "description": "AMTEC-FLATWORK IRONER-IP 1478"
+      },
+      {
+        "id": "AMTEC.HEAVYDUTYTUMBLERDRYER.DE50",
+        "value": "AMTEC-HEAVY DUTY TUMBLER DRYER-DE 50",
+        "description": "AMTEC-HEAVY DUTY TUMBLER DRYER-DE 50"
+      },
+      {
+        "id": "AMTEC.HEAVYDUTYWASHEREXTRACTOR.SP60",
+        "value": "AMTEC-HEAVY DUTY WASHER EXTRACTOR-SP 60",
+        "description": "AMTEC-HEAVY DUTY WASHER EXTRACTOR-SP 60"
+      },
+      {
+        "id": "AMTECH.AM.019SPD",
+        "value": "AMTECH-AM-019 SPD",
+        "description": "AMTECH-AM-019 SPD"
+      },
+      {
+        "id": "AMTECH.AMT.022SP5F",
+        "value": "AMTECH-AMT-022 SP5F",
+        "description": "AMTECH-AMT-022 SP5F"
+      },
+      {
+        "id": "AMTECH.ATSTACKERVACUUMMACHINE.AMAS",
+        "value": "AMTECH-AUTOSTACKERVACUUMMACHINE-AM/AS",
+        "description": "AMTECH-AUTOSTACKERVACUUMMACHINE-AM/AS"
+      },
+      {
+        "id": "AMTECH.ATSTACKERVACUUMMACHINE.AMAS2018",
+        "value": "AMTECH-AUTOSTACKERVACUUMMACHINE-AM/AS2018",
+        "description": "AMTECH-AUTOSTACKERVACUUMMACHINE-AM/AS2018"
+      },
+      {
+        "id": "AMTECH.COLDPRESS.4X8FEET500T",
+        "value": "AMTECH-COLD PRESS-4X8 FEET 500T",
+        "description": "AMTECH-COLD PRESS-4X8 FEET 500T"
+      },
+      {
+        "id": "AMTECH.COLDPRESS.AMTCP11521",
+        "value": "AMTECH-COLD PRESS-AMT CP 115 21",
+        "description": "AMTECH-COLD PRESS-AMT CP 115 21"
+      },
+      {
+        "id": "AMTECH.COLDPRESS.PRESSBANDING",
+        "value": "AMTECH-COLD PRESS-PRESS BANDING",
+        "description": "AMTECH-COLD PRESS-PRESS BANDING"
+      },
+      {
+        "id": "AMTECH.DEBARKER.5FEET",
+        "value": "AMTECH-DEBARKER-5 FEET",
+        "description": "AMTECH-DEBARKER-5 FEET"
+      },
+      {
+        "id": "AMTECH.DOUBLEPLANERMACHINE.AM610",
+        "value": "AMTECH-DOUBLE PLANER MACHINE-AM610",
+        "description": "AMTECH-DOUBLE PLANER MACHINE-AM610"
+      },
+      {
+        "id": "AMTECH.DOUBLEPLANERMACHINE.AM6102017",
+        "value": "AMTECH-DOUBLE PLANER MACHINE-AM610 2017",
+        "description": "AMTECH-DOUBLE PLANER MACHINE-AM610 2017"
+      },
+      {
+        "id": "AMTECH.DRUMWOODCHIPPERMACHINE.AM1262018",
+        "value": "AMTECH-DRUM WOOD CHIPPER MACHINE-AM126 2018",
+        "description": "AMTECH-DRUM WOOD CHIPPER MACHINE-AM126 2018"
+      },
+      {
+        "id": "AMTECH.DRUMWOODCHIPPERMACHINE.AM216",
+        "value": "AMTECH-DRUM WOOD CHIPPER MACHINE-AM216",
+        "description": "AMTECH-DRUM WOOD CHIPPER MACHINE-AM216"
+      },
+      {
+        "id": "AMTECH.FINGERJOINTSETMACHINE.AM530AE2017",
+        "value": "AMTECH-FINGER JOINT SET MACHINE-AM 530 AE 2017",
+        "description": "AMTECH-FINGER JOINT SET MACHINE-AM 530 AE 2017"
+      },
+      {
+        "id": "AMTECH.FINGERJOINTSETMACHINE.AM530A",
+        "value": "AMTECH-FINGER JOINT SET MACHINE-AM530 A",
+        "description": "AMTECH-FINGER JOINT SET MACHINE-AM530 A"
+      },
+      {
+        "id": "AMTECH.GENERATOR.HF",
+        "value": "AMTECH-GENERATOR-HF",
+        "description": "AMTECH-GENERATOR-HF"
+      },
+      {
+        "id": "AMTECH.GLUESPREADER5FT.AMTGS5FT21",
+        "value": "AMTECH-GLUE SPREADER 5FT-AMT GS 5FT 21",
+        "description": "AMTECH-GLUE SPREADER 5FT-AMT GS 5FT 21"
+      },
+      {
+        "id": "AMTECH.HIGHFREQUENCYDOORLAMINATING.HFDL0205",
+        "value": "AMTECH-HIGHFREQUENCYDOORLAMINATING-HFDL0205",
+        "description": "AMTECH-HIGHFREQUENCYDOORLAMINATING-HFDL0205"
+      },
+      {
+        "id": "AMTECH.HTPRS15OPENING.AMTHP1512021",
+        "value": "AMTECH-HT PRS 15 OPENING-AMT HP 15 120 21",
+        "description": "AMTECH-HT PRS 15 OPENING-AMT HP 15 120 21"
+      },
+      {
+        "id": "AMTECH.HYDROLICCOLDPRESSMACHINE.AM200CP",
+        "value": "AMTECH-HYDROLIC COLD PRESS MACHINE-AM 200 CP",
+        "description": "AMTECH-HYDROLIC COLD PRESS MACHINE-AM 200 CP"
+      },
+      {
+        "id": "AMTECH.HYDROLICCOLDPRESSMACHINE.AM200CP2018",
+        "value": "AMTECH-HYDROLIC COLD PRESS MACHINE-AM 200 CP 2018",
+        "description": "AMTECH-HYDROLIC COLD PRESS MACHINE-AM 200 CP 2018"
+      },
+      {
+        "id": "AMTECH.MOULDINGMACHINESYC720.AM7C812018",
+        "value": "AMTECH-MOULDING MACHINE SY C 720-AM7C81 2018",
+        "description": "AMTECH-MOULDING MACHINE SY C 720-AM7C81 2018"
+      },
+      {
+        "id": "AMTECH.MOULDINGMACHINESYC720.AM7C81",
+        "value": "AMTECH-MOULDING MACHINE SY C 720-AM–7C–81",
+        "description": "AMTECH-MOULDING MACHINE SY C 720-AM–7C–81"
+      },
+      {
+        "id": "AMTECH.RIPSAWMACHINE.AM300",
+        "value": "AMTECH-RIP SAW MACHINE-AM300",
+        "description": "AMTECH-RIP SAW MACHINE-AM300"
+      },
+      {
+        "id": "AMTECH.RIPSAWMACHINE.AM3002017",
+        "value": "AMTECH-RIP SAW MACHINE-AM300 2017",
+        "description": "AMTECH-RIP SAW MACHINE-AM300 2017"
+      },
+      {
+        "id": "AMTECH.ROTARY.5FEET",
+        "value": "AMTECH-ROTARY-5 FEET",
+        "description": "AMTECH-ROTARY-5 FEET"
+      },
+      {
+        "id": "AMTECH.SANDINGMACHINE.KCSB21300",
+        "value": "AMTECH-SANDING MACHINE-KCSB21300",
+        "description": "AMTECH-SANDING MACHINE-KCSB21300"
+      },
+      {
+        "id": "AMTECH.SANDINGMACHINE.KSCB213002017",
+        "value": "AMTECH-SANDING MACHINE-KSCB21300 2017",
+        "description": "AMTECH-SANDING MACHINE-KSCB21300 2017"
+      },
+      {
+        "id": "AMTECH.SEMIATLACKBOARDCOMPOSEMCH.AM8003",
+        "value": "AMTECH-SEMIATLACKBOARDCOMPOSEMACHINE-AM8003",
+        "description": "AMTECH-SEMIATLACKBOARDCOMPOSEMACHINE-AM8003"
+      },
+      {
+        "id": "AMTECH.SEMIATLACKBOARDCOMPOSEMCH.AM80032018",
+        "value": "AMTECH-SEMIATLACKBOARDCOMPOSEMACHINE-AM8003 2018",
+        "description": "AMTECH-SEMIATLACKBOARDCOMPOSEMACHINE-AM8003 2018"
+      },
+      {
+        "id": "AMTECH.SPINDLE5ftMACHINE.AM151310",
+        "value": "AMTECH-SPINDLE 5 ft MACHINE-AM1513/10",
+        "description": "AMTECH-SPINDLE 5 ft MACHINE-AM1513/10"
+      },
+      {
+        "id": "AMTECH.SPINDLE5ftMACHINE.AM1513102018",
+        "value": "AMTECH-SPINDLE 5 ft MACHINE-AM1513/10 2018",
+        "description": "AMTECH-SPINDLE 5 ft MACHINE-AM1513/10 2018"
+      },
+      {
+        "id": "AMTECH.SPINDLESS.5FEET",
+        "value": "AMTECH-SPINDLESS-5 FEET",
+        "description": "AMTECH-SPINDLESS-5 FEET"
+      },
+      {
+        "id": "AMTECH.TABLELIFTERCOLDPRESS.4x8FEET500T",
+        "value": "AMTECH-TABLE LIFTER COLD PRESS-4x8FEET 500 T",
+        "description": "AMTECH-TABLE LIFTER COLD PRESS-4x8FEET 500 T"
+      },
+      {
+        "id": "AMTECH.TABLELIFTER.4X8FEET500T",
+        "value": "AMTECH-TABLE LIFTER-4X8 FEET 500T",
+        "description": "AMTECH-TABLE LIFTER-4X8 FEET 500T"
+      },
+      {
+        "id": "ANDAMCH.PRINTINGMCH.PVC53128",
+        "value": "ANDAMCH-PRINTING MCH-PVC 53 128",
+        "description": "ANDAMCH-PRINTING MCH-PVC 53 128"
+      },
+      {
+        "id": "ANDERSON.UVFLATBEDPRINTER.COJET2612C7H8",
+        "value": "ANDERSON-UV FLATBED PRINTER-COJET 2612 C7H8",
+        "description": "ANDERSON-UV FLATBED PRINTER-COJET 2612 C7H8"
+      },
+      {
+        "id": "ANEKAMESINGRESIK.MESINPEMBERSIJAGUNG.CLEANER",
+        "value": "ANEKA MESIN GRESIK-MESIN PEMBERSI JAGUNG-CLEANER",
+        "description": "ANEKA MESIN GRESIK-MESIN PEMBERSI JAGUNG-CLEANER"
+      },
+      {
+        "id": "ANEKAMESINGRESIK.MESINPENGERING.BOXDRYYER",
+        "value": "ANEKA MESIN GRESIK-MESIN PENGERING-BOX DRYYER",
+        "description": "ANEKA MESIN GRESIK-MESIN PENGERING-BOX DRYYER"
+      },
+      {
+        "id": "ANEKAMESINGRESIK.MESINPENYEDOTJAGUNG.BLOWER",
+        "value": "ANEKA MESIN GRESIK-MESIN PENYEDOT JAGUNG-BLOWER",
+        "description": "ANEKA MESIN GRESIK-MESIN PENYEDOT JAGUNG-BLOWER"
+      },
+      {
+        "id": "ANEKAMESIN.MESINPENGEMASOTOMATIS.AM150",
+        "value": "ANEKA MESIN-MESIN PENGEMAS OTOMATIS-AM 150",
+        "description": "ANEKA MESIN-MESIN PENGEMAS OTOMATIS-AM 150"
+      },
+      {
+        "id": "ANGGATEHNIK.WASHERCAPSULE.ATC60",
+        "value": "ANGGATEHNIK-WASHER CAPSULE-ATC60",
+        "description": "ANGGATEHNIK-WASHER CAPSULE-ATC60"
+      },
+      {
+        "id": "ANHUIZHONGRUI.HYDRAPRESSBRAKEMCH.WC67YNC",
+        "value": "ANHUI ZHONGRUI-HYDRAULIC PRESS BRAKE MCH-WC67YNC",
+        "description": "ANHUI ZHONGRUI-HYDRAULIC PRESS BRAKE MCH-WC67YNC"
+      },
+      {
+        "id": "ANJIPLASTIC.SCREENCHARGER.AJSZGBBF1550DOUBLEPISTON",
+        "value": "ANJIPLASTIC-SCREENCHARGER-AJSZGBBF1550DOUBLEPISTON",
+        "description": "ANJIPLASTIC-SCREENCHARGER-AJSZGBBF1550DOUBLEPISTON"
+      },
+      {
+        "id": "ANKAR.CUTTINGMACHINE.PUNCH",
+        "value": "ANKAR-CUTTING MACHINE-PUNCH",
+        "description": "ANKAR-CUTTING MACHINE-PUNCH"
+      },
+      {
+        "id": "ANKAR.CUTTINGSEALING.DOUBLEDECK",
+        "value": "ANKAR-CUTTING SEALING-DOUBLEDECK",
+        "description": "ANKAR-CUTTING SEALING-DOUBLEDECK"
+      },
+      {
+        "id": "ANKAR.HDPEDOUBLE.DIES",
+        "value": "ANKAR-HDPE DOUBLE-DIES",
+        "description": "ANKAR-HDPE DOUBLE-DIES"
+      },
+      {
+        "id": "ANNAN.MECHANICAL3ROLLSYMCLPLATEROLLING.TXW1112X250",
+        "value": "ANNAN MECHANICAL 3 ROLLER SYMMETRICAL PLATE ROLLING TXW11 -12X2500",
+        "description": "ANNAN MECHANICAL 3 ROLLER SYMMETRICAL PLATE ROLLING TXW11 -12X2500"
+      },
+      {
+        "id": "ANNAN.MCHNICAL3ROLLSYMCLPLTROLLING.TXW1112X250",
+        "value": "ANNAN-MCHNICAL3ROLLSYMCLPLATEROLLING-TXW1112X250",
+        "description": "ANNAN-MCHNICAL3ROLLSYMCLPLATEROLLING-TXW1112X250"
+      },
+      {
+        "id": "ANRITSU.METALDETECTOR.KD8138AW",
+        "value": "ANRITSU-METAL DETECTOR-KD8138AW",
+        "description": "ANRITSU-METAL DETECTOR-KD8138AW"
+      },
+      {
+        "id": "ANRITSU.METALDETECTOR.KDS8115BW",
+        "value": "ANRITSU-METAL DETECTOR-KDS8115BW",
+        "description": "ANRITSU-METAL DETECTOR-KDS8115BW"
+      },
+      {
+        "id": "ANRITSU.XRAYMACHINE.KXS7534AWCLE",
+        "value": "ANRITSU-X RAY MACHINE-KXS7534AWCLE",
+        "description": "ANRITSU-X RAY MACHINE-KXS7534AWCLE"
+      },
+      {
+        "id": "AOBEAD.DIGITALPRTUVROLLTOROLL.DSMART330II",
+        "value": "AOBEAD-DIGITALPRTUVROLLTOROLL-DSMART 330 II",
+        "description": "AOBEAD-DIGITALPRTUVROLLTOROLL-DSMART 330 II"
+      },
+      {
+        "id": "AOER.AUTOFLATBEDDIECUTMACHINE.AEM800",
+        "value": "AOER-AUTOFLATBEDDIECUTMACHINE-AEM 800",
+        "description": "AOER-AUTOFLATBEDDIECUTMACHINE-AEM 800"
+      },
+      {
+        "id": "AOER.COMPUTERIZEDGILDING&CUTTINGMCH.TYMK-930",
+        "value": "AOER-COMPUTERIZED GILDING & CUTTING MCH-TYMK930",
+        "description": "AOER-COMPUTERIZED GILDING & CUTTING MCH-TYMK930"
+      },
+      {
+        "id": "AOER.COMPUTERIZEDGILDINGCUTTINGMACHINE.TYMK930RRC",
+        "value": "AOER-COMPUTERIZEDGILDING+CUTTINGMACHINE-TYMK930RRC",
+        "description": "AOER-COMPUTERIZEDGILDING+CUTTINGMACHINE-TYMK930RRC"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGMACHINE.ML800",
+        "value": "AOER-CREASING AND CUTTING MACHINE-ML 800",
+        "description": "AOER-CREASING AND CUTTING MACHINE-ML 800"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGMACHINE.ML1300",
+        "value": "AOER-CREASING AND CUTTING MACHINE-ML1300",
+        "description": "AOER-CREASING AND CUTTING MACHINE-ML1300"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGMACHINE.ML750",
+        "value": "AOER-CREASING AND CUTTING MACHINE-ML750",
+        "description": "AOER-CREASING AND CUTTING MACHINE-ML750"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGPRESSMACHINE.ML800",
+        "value": "AOER-CREASING AND CUTTING PRESS MACHINE-ML 800",
+        "description": "AOER-CREASING AND CUTTING PRESS MACHINE-ML 800"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGPRESSMACHINE.ML930",
+        "value": "AOER-CREASING AND CUTTING PRESS MACHINE-ML 930",
+        "description": "AOER-CREASING AND CUTTING PRESS MACHINE-ML 930"
+      },
+      {
+        "id": "AOER.CREASINGANDCUTTINGPRESSMACHINE.ML750",
+        "value": "AOER-CREASING AND CUTTING PRESS MACHINE-ML750",
+        "description": "AOER-CREASING AND CUTTING PRESS MACHINE-ML750"
+      },
+      {
+        "id": "AOER.CREASINGANDDIECUTTINGMACHINE.ML750",
+        "value": "AOER-CREASING AND DIE CUTTING MACHINE-ML 750",
+        "description": "AOER-CREASING AND DIE CUTTING MACHINE-ML 750"
+      },
+      {
+        "id": "AOER.DIECUTTING.AEM800",
+        "value": "AOER-DIE CUTTING-AEM 800",
+        "description": "AOER-DIE CUTTING-AEM 800"
+      },
+      {
+        "id": "AOER.DIECUTTING.ML750",
+        "value": "AOER-DIE CUTTING-ML 750",
+        "description": "AOER-DIE CUTTING-ML 750"
+      },
+      {
+        "id": "AOER.HOTSTAMPING.TYMK930",
+        "value": "AOER-HOT STAMPING-TYMK – 930",
+        "description": "AOER-HOT STAMPING-TYMK – 930"
+      },
+      {
+        "id": "AOER.POND.AEM800",
+        "value": "AOER-POND-AEM 800",
+        "description": "AOER-POND-AEM 800"
+      },
+      {
+        "id": "AOER.POND.ML750",
+        "value": "AOER-POND-ML – 750",
+        "description": "AOER-POND-ML – 750"
+      },
+      {
+        "id": "AOER.TYMK.750",
+        "value": "AOER-TYMK-750",
+        "description": "AOER-TYMK-750"
+      },
+      {
+        "id": "AOGERPOND.DIGITALPRINTING.ML750",
+        "value": "AOGER POND-DIGITAL PRINTING-ML750",
+        "description": "AOGER POND-DIGITAL PRINTING-ML750"
+      },
+      {
+        "id": "AOGER.DIECUTANDCREASINGMACHINE.ML1400",
+        "value": "AOGER-DIE CUT AND CREASING MACHINE-ML1400",
+        "description": "AOGER-DIE CUT AND CREASING MACHINE-ML1400"
+      },
+      {
+        "id": "AOGER.DIECUTMACHINE.ML750",
+        "value": "AOGER-DIE CUT MACHINE-ML750",
+        "description": "AOGER-DIE CUT MACHINE-ML750"
+      },
+      {
+        "id": "AOKI.DIRECTHEATCNDTNSTRCTH.SBIII350LL40",
+        "value": "AOKI-DIRECT HEAT CONDITIONING STRECTH-SBIII350LL40",
+        "description": "AOKI-DIRECT HEAT CONDITIONING STRECTH-SBIII350LL40"
+      },
+      {
+        "id": "AOSIF.POWERGENERATORSET.AP715",
+        "value": "AOSIF-POWER GENERATOR SET-AP715",
+        "description": "AOSIF-POWER GENERATOR SET-AP715"
+      },
+      {
+        "id": "APLAB.WP360.AUTOMATEDHEMATOLOGYANALYZER",
+        "value": "AP LAB-WP 360-AUTOMATED HEMATOLOGY ANALYZER",
+        "description": "AP LAB-WP 360-AUTOMATED HEMATOLOGY ANALYZER"
+      },
+      {
+        "id": "APOLLOHANMA.LASERCUTTING.1310CCD",
+        "value": "APOLLO HANMA-LASER CUTTING-1310CCD",
+        "description": "APOLLO HANMA-LASER CUTTING-1310CCD"
+      },
+      {
+        "id": "APOLLOSUBLIMATION.HEATPRESSMCH.HDPS1216",
+        "value": "APOLLO SUBLIMATION-HEAT PRESS MCH-HDPS 1216",
+        "description": "APOLLO SUBLIMATION-HEAT PRESS MCH-HDPS 1216"
+      },
+      {
+        "id": "APOLLO.AG.1038x38",
+        "value": "APOLLO-AG-10 38 x 38",
+        "description": "APOLLO-AG-10 38 x 38"
+      },
+      {
+        "id": "APOLLO.HEATROLLPRESS.1742",
+        "value": "APOLLO-HEAT ROLL PRESS-1742",
+        "description": "APOLLO-HEAT ROLL PRESS-1742"
+      },
+      {
+        "id": "APOLLO.HEATTRANSFERMACHINE.HDP1737",
+        "value": "APOLLO-HEAT TRANSFER MACHINE-HDP 1737",
+        "description": "APOLLO-HEAT TRANSFER MACHINE-HDP 1737"
+      },
+      {
+        "id": "APOLLO.HEATTRANSFERMACHINE.HDP1732",
+        "value": "APOLLO-HEAT TRANSFER MACHINE-HDP1732",
+        "description": "APOLLO-HEAT TRANSFER MACHINE-HDP1732"
+      },
+      {
+        "id": "APOLLO.MESINPRESS.AG10STH",
+        "value": "APOLLO-MESIN PRESS-AG 10 STH",
+        "description": "APOLLO-MESIN PRESS-AG 10 STH"
+      },
+      {
+        "id": "APOLLO.MESINPRESS.HDP1737",
+        "value": "APOLLO-MESIN PRESS-HDP 1737",
+        "description": "APOLLO-MESIN PRESS-HDP 1737"
+      },
+      {
+        "id": "APOLLO.OILBASE.ROTARYHEATPRESSWIDTH1680",
+        "value": "APOLLO-OIL BASE-ROTARY HEAT PRESS WIDTH 1680",
+        "description": "APOLLO-OIL BASE-ROTARY HEAT PRESS WIDTH 1680"
+      },
+      {
+        "id": "APOLLO.ROLLPRESSTRANSFERMACHINE.HDP1722",
+        "value": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1722",
+        "description": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1722"
+      },
+      {
+        "id": "APOLLO.ROLLPRESSTRANSFERMACHINE.HDP1737",
+        "value": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1737",
+        "description": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1737"
+      },
+      {
+        "id": "APOLLO.ROLLPRESSTRANSFERMACHINE.HDP1742",
+        "value": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1742",
+        "description": "APOLLO-ROLL PRESS TRANSFER MACHINE-HDP 1742"
+      },
+      {
+        "id": "APOLLO.SUBLIMATIONHEATTRFDRUMPRESSMCH.HDPS1232",
+        "value": "APOLLO-SUBLIMATIONHEATTRFDRUMPRESSMCH-HDPS 1232",
+        "description": "APOLLO-SUBLIMATIONHEATTRFDRUMPRESSMCH-HDPS 1232"
+      },
+      {
+        "id": "APOLLO.SUBLIMATIONHEATTRFDRUMPRESSMCH.HDPS1942",
+        "value": "APOLLO-SUBLIMATIONHEATTRFDRUMPRESSMCH-HDPS1942",
+        "description": "APOLLO-SUBLIMATIONHEATTRFDRUMPRESSMCH-HDPS1942"
+      },
+      {
+        "id": "APOLLOROTARYMANUAL.TSHIRTPRINTER.TP2120",
+        "value": "APOLLOROTARYMANUAL-TSHIRT PRINTER-TP 2120",
+        "description": "APOLLOROTARYMANUAL-TSHIRT PRINTER-TP 2120"
+      },
+      {
+        "id": "APPLE.MACBOOKPRO13.M28CORE(5)",
+        "value": "APPLE-MACBOOK PRO 13-M2 8 CORE (5)",
+        "description": "APPLE-MACBOOK PRO 13-M2 8 CORE (5)"
+      },
+      {
+        "id": "APPLE.MACBOOKPRO13.Z16S",
+        "value": "APPLE-MACBOOK PRO 13-Z16S",
+        "description": "APPLE-MACBOOK PRO 13-Z16S"
+      },
+      {
+        "id": "AQUA.86KGWASHER.FQW850636QD",
+        "value": "AQUA-8 6KG WASHER-FQW850636QD",
+        "description": "AQUA-8 6KG WASHER-FQW850636QD"
+      },
+      {
+        "id": "AQUASTAR.FLATWORKIRONER.BMM1300/3300",
+        "value": "AQUASTAR-FLATWORK IRONER-BMM 1300/3300",
+        "description": "AQUASTAR-FLATWORK IRONER-BMM 1300/3300"
+      },
+      {
+        "id": "AQUASTAR.WASHEREXTRACTOR.WED120",
+        "value": "AQUASTAR-WASHER EXTRACTOR-WED 120",
+        "description": "AQUASTAR-WASHER EXTRACTOR-WED 120"
+      },
+      {
+        "id": "AQUASTAR.WASHEREXTRACTOR.WED40",
+        "value": "AQUASTAR-WASHER EXTRACTOR-WED 40",
+        "description": "AQUASTAR-WASHER EXTRACTOR-WED 40"
+      },
+      {
+        "id": "AQUASTAR.WASHEREXTRACTOR.WED60",
+        "value": "AQUASTAR-WASHER EXTRACTOR-WED 60",
+        "description": "AQUASTAR-WASHER EXTRACTOR-WED 60"
+      },
+      {
+        "id": "AQUASTAR.WASHSANITARYBARSPRSPINWASHEXT.ASEP16",
+        "value": "AQUASTAR-WASHSANITARYBARSPRSPINWASHEXT-ASEP 16",
+        "description": "AQUASTAR-WASHSANITARYBARSPRSPINWASHEXT-ASEP 16"
+      },
+      {
+        "id": "AQUILA.HORIZONTALPACKAGINGMACHINE.250iLimited",
+        "value": "AQUILA-HORIZONTAL PACKAGING MACHINE-250i Limited",
+        "description": "AQUILA-HORIZONTAL PACKAGING MACHINE-250i Limited"
+      },
+      {
+        "id": "AQUILA.PACKAGINGMACHINE.250",
+        "value": "AQUILA-PACKAGING MACHINE-250",
+        "description": "AQUILA-PACKAGING MACHINE-250"
+      },
+      {
+        "id": "ARBURG.INJCTNMLDNGMCNLLRNDR.920S5000-3200/1300",
+        "value": "ARBURG-INJCTNMLDNGMCNLLRNDR-920 S 50003200/1300",
+        "description": "ARBURG-INJCTNMLDNGMCNLLRNDR-920 S 50003200/1300"
+      },
+      {
+        "id": "ARCHANAMAKE.PEARLGRINDERMILL.PM10",
+        "value": "ARCHANA MAKE-PEARL GRINDER MILL-PM10",
+        "description": "ARCHANA MAKE-PEARL GRINDER MILL-PM10"
+      },
+      {
+        "id": "ARD.EDMMACHINE.M50CA",
+        "value": "ARD EDM MACHINE M50CA",
+        "description": "ARD EDM MACHINE M50CA"
+      },
+      {
+        "id": "ARDOR.MESINPLASTIKBLOWING.ADM55D",
+        "value": "ARDOR-MESIN PLASTIK BLOWING-ADM 55D",
+        "description": "ARDOR-MESIN PLASTIK BLOWING-ADM 55D"
+      },
+      {
+        "id": "ARETA.DIGITALLABELDIECUTTER.VD33502",
+        "value": "ARETA-DIGITAL LABEL DIE CUTTER-VD 3350 2",
+        "description": "ARETA-DIGITAL LABEL DIE CUTTER-VD 3350 2"
+      },
+      {
+        "id": "ARGO.VERTICALFURRETMILLING.4S",
+        "value": "ARGO-VERTICAL FURRET MILLING-4S",
+        "description": "ARGO-VERTICAL FURRET MILLING-4S"
+      },
+      {
+        "id": "ARINTHASYSTEM.FLAKEICE.CAP20DAY",
+        "value": "ARINTHA SYSTEM-FLAKE ICE-CAP20/DAY",
+        "description": "ARINTHA SYSTEM-FLAKE ICE-CAP20/DAY"
+      },
+      {
+        "id": "ARINTHASYSTEM.LINETUNNELFREZZER.CAP500KGHR",
+        "value": "ARINTHA SYSTEM-LINE TUNNEL FREZZER-CAP 500KG/HR",
+        "description": "ARINTHA SYSTEM-LINE TUNNEL FREZZER-CAP 500KG/HR"
+      },
+      {
+        "id": "ARIOLI.WASHINGMCHRLR.UNIWASHW2200M",
+        "value": "ARIOLI-WASHING MCH RLR-UNIWASH W 2200M",
+        "description": "ARIOLI-WASHING MCH RLR-UNIWASH W 2200M"
+      },
+      {
+        "id": "ARIRANG.ZSFQ.1600C",
+        "value": "ARIRANG-ZSFQ-1600C",
+        "description": "ARIRANG-ZSFQ-1600C"
+      },
+      {
+        "id": "ARMADILLO.SWEEPER.10XDSL",
+        "value": "ARMADILLO-SWEEPER-10XDSL",
+        "description": "ARMADILLO-SWEEPER-10XDSL"
+      },
+      {
+        "id": "ARNEG.SHOWCASES.AOFKA125MP2",
+        "value": "ARNEG-SHOWCASES-AOFKA125MP2",
+        "description": "ARNEG-SHOWCASES-AOFKA125MP2"
+      },
+      {
+        "id": "ARNEG.SHOWCASES.AOMTB2522GB2IDLX3",
+        "value": "ARNEG-SHOWCASES-AOMTB2522GB2 IDLX3",
+        "description": "ARNEG-SHOWCASES-AOMTB2522GB2 IDLX3"
+      },
+      {
+        "id": "ARNEG.SHOWCASES.AOMTB3722GB2 IDLX3",
+        "value": "ARNEG-SHOWCASES-AOMTB3722GB2 IDLX3",
+        "description": "ARNEG-SHOWCASES-AOMTB3722GB2 IDLX3"
+      },
+      {
+        "id": "ARNEG.VERTICALGLASSDOOR.BLC1531FID5DW",
+        "value": "ARNEG-VERTICAL GLASSDOOR-BLC1531F ID5DW",
+        "description": "ARNEG-VERTICAL GLASSDOOR-BLC1531F ID5DW"
+      },
+      {
+        "id": "ASA.2042.HEATPRESSMACHINE",
+        "value": "ASA-2042-HEAT PRESS MACHINE",
+        "description": "ASA-2042-HEAT PRESS MACHINE"
+      },
+      {
+        "id": "ASA.HEATROLLPRESS.1860",
+        "value": "ASA-HEAT ROLL PRESS-1860",
+        "description": "ASA-HEAT ROLL PRESS-1860"
+      },
+      {
+        "id": "ASA.HEATROLLPRESS.2060",
+        "value": "ASA-HEAT ROLL PRESS-2060",
+        "description": "ASA-HEAT ROLL PRESS-2060"
+      },
+      {
+        "id": "ASA.HEATROLLPRESS.2080",
+        "value": "ASA-HEAT ROLL PRESS-2080",
+        "description": "ASA-HEAT ROLL PRESS-2080"
+      },
+      {
+        "id": "ASA.INKJETPRINTER.FD61916E",
+        "value": "ASA-INKJET PRINTER-FD 61916 E",
+        "description": "ASA-INKJET PRINTER-FD 61916 E"
+      },
+      {
+        "id": "ASA.INKJETPRINTER.FD6198E",
+        "value": "ASA-INKJET PRINTER-FD 6198 E",
+        "description": "ASA-INKJET PRINTER-FD 6198 E"
+      },
+      {
+        "id": "ASA.INKJETPRINTER.FD1924S",
+        "value": "ASA-INKJET PRINTER-FD1924S",
+        "description": "ASA-INKJET PRINTER-FD1924S"
+      },
+      {
+        "id": "ASA.INKJETPRINTER.FD5194E",
+        "value": "ASA-INKJET PRINTER-FD5194E",
+        "description": "ASA-INKJET PRINTER-FD5194E"
+      },
+      {
+        "id": "ASA.INKJETPRINTER.FD61924E",
+        "value": "ASA-INKJET PRINTER-FD61924E",
+        "description": "ASA-INKJET PRINTER-FD61924E"
+      },
+      {
+        "id": "ASA.LASERENGRAVINGCUTTINGMCN.JHX180150",
+        "value": "ASA-LASER ENGRAVING CUTTING MCN-JHX180150",
+        "description": "ASA-LASER ENGRAVING CUTTING MCN-JHX180150"
+      },
+      {
+        "id": "ASA.LASERENGRAVINGCUTTINGMCN.JHX180250",
+        "value": "ASA-LASER ENGRAVING CUTTING MCN-JHX180250",
+        "description": "ASA-LASER ENGRAVING CUTTING MCN-JHX180250"
+      },
+      {
+        "id": "ASAHI.AUTODIECUT.AP103E",
+        "value": "ASAHI-AUTO DIE CUT-AP 103E",
+        "description": "ASAHI-AUTO DIE CUT-AP 103E"
+      },
+      {
+        "id": "ASAHI.PANORAMICXRAYWITHCHEPALLO.IIIECM",
+        "value": "ASAHI-PANORAMIC X RAY WITH CHEPALLO-III ECM",
+        "description": "ASAHI-PANORAMIC X RAY WITH CHEPALLO-III ECM"
+      },
+      {
+        "id": "ASCACO.2.GROUP",
+        "value": "ASCACO-2-GROUP",
+        "description": "ASCACO-2-GROUP"
+      },
+      {
+        "id": "ASCACO.COFFEEMACHINE.2GROUP",
+        "value": "ASCACO-COFFEE MACHINE-2 GROUP",
+        "description": "ASCACO-COFFEE MACHINE-2 GROUP"
+      },
+      {
+        "id": "ASCASO.2.GROUP",
+        "value": "ASCASO-2-GROUP",
+        "description": "ASCASO-2-GROUP"
+      },
+      {
+        "id": "ASCLEPION.QUADROSTARPROYELLOW.LASER1493",
+        "value": "ASCLEPION-QUADROSTARPROYELLOW-LASER1493",
+        "description": "ASCLEPION-QUADROSTARPROYELLOW-LASER1493"
+      },
+      {
+        "id": "ASKME.COLOUR.12",
+        "value": "ASKME-COLOUR-12",
+        "description": "ASKME-COLOUR-12"
+      },
+      {
+        "id": "ASKME.DIGITALPRINTING.50PALET60x80P103",
+        "value": "ASKME-DIGITAL PRINTING-50 PALET 60 x 80 P103",
+        "description": "ASKME-DIGITAL PRINTING-50 PALET 60 x 80 P103"
+      },
+      {
+        "id": "ASKME.OVALSCREENPRINTING.P103",
+        "value": "ASKME-OVAL SCREEN PRINTING MACHINE-P103",
+        "description": "ASKME-OVAL SCREEN PRINTING MACHINE-P103"
+      },
+      {
+        "id": "ASM.HYDRAULICPRESSBRAKEMC.WC67Y400T6000",
+        "value": "ASM-HYDRAULIC PRESS BRAKE MC-WC67Y400T/6000",
+        "description": "ASM-HYDRAULIC PRESS BRAKE MC-WC67Y400T/6000"
+      },
+      {
+        "id": "ASPE.SUBLIME.LP4C4FL10P",
+        "value": "ASPE-SUBLIME-LP 4C 4FL 10P",
+        "description": "ASPE-SUBLIME-LP 4C 4FL 10P"
+      },
+      {
+        "id": "ASSY.BREAKER.TGP250",
+        "value": "ASSY-BREAKER-TGP 250",
+        "description": "ASSY-BREAKER-TGP 250"
+      },
+      {
+        "id": "ASTONMARTIN.DB9.59AT",
+        "value": "ASTONMARTIN-DB9-5.9 AT",
+        "description": "ASTONMARTIN-DB9-5.9 AT"
+      },
+      {
+        "id": "ASUS.EXPECTCENTERD5TOWER.D500TC(18unit)",
+        "value": "ASUS-EXPECT CENTER D5 TOWER-D500TC (18 unit)",
+        "description": "ASUS-EXPECT CENTER D5 TOWER-D500TC (18 unit)"
+      },
+      {
+        "id": "ASUS.ExpertbookCorei5.1235U(13Unit)",
+        "value": "ASUS-Expertbook Core i5-1235U (13 Unit)",
+        "description": "ASUS-Expertbook Core i5-1235U (13 Unit)"
+      },
+      {
+        "id": "ATEXCO.DIGITALPRINTER.MODELXPLUS",
+        "value": "ATEXCO-DIGITAL PRINTER-MODEL X PLUS",
+        "description": "ATEXCO-DIGITAL PRINTER-MODEL X PLUS"
+      },
+      {
+        "id": "ATEXCO.DIGITALPRINTING.MODELXPLUS",
+        "value": "ATEXCO-DIGITAL PRINTING-MODEL X PLUS",
+        "description": "ATEXCO-DIGITAL PRINTING-MODEL X PLUS"
+      },
+      {
+        "id": "ATEXCO.DIGITALPRINTING.XPLUS",
+        "value": "ATEXCO-DIGITAL PRINTING-X PLUS",
+        "description": "ATEXCO-DIGITAL PRINTING-X PLUS"
+      },
+      {
+        "id": "ATEXCO.HEATPRESSMACHINE.GS-QD4/60*40CM",
+        "value": "ATEXCO-HEAT PRESS MACHINE-GSQD4/60*40CM",
+        "description": "ATEXCO-HEAT PRESS MACHINE-GSQD4/60*40CM"
+      },
+      {
+        "id": "ATEXCO.HeatTransferMachine.GS80100",
+        "value": "ATEXCO-Heat Transfer Machine-GS80100",
+        "description": "ATEXCO-Heat Transfer Machine-GS80100"
+      },
+      {
+        "id": "ATEXCO.HeatTransferMachine.ZH6002040",
+        "value": "ATEXCO-Heat Transfer Machine-ZH 600 2040",
+        "description": "ATEXCO-Heat Transfer Machine-ZH 600 2040"
+      },
+      {
+        "id": "ATEXCO.HSPRINTER1800.XPLUS",
+        "value": "ATEXCO-HS PRINTER 1800-X PLUS",
+        "description": "ATEXCO-HS PRINTER 1800-X PLUS"
+      },
+      {
+        "id": "ATEXCO.HSPRINTER.1800Y",
+        "value": "ATEXCO-HS PRINTER-1800Y",
+        "description": "ATEXCO-HS PRINTER-1800Y"
+      },
+      {
+        "id": "ATEXCO.PRINTERMCH.HS18008PHXPLUS",
+        "value": "ATEXCO-PRINTER MCH-HS18008PHXPLUS",
+        "description": "ATEXCO-PRINTER MCH-HS18008PHXPLUS"
+      },
+      {
+        "id": "ATEXCO.SUBLIM.4HEAD",
+        "value": "ATEXCO-SUBLIM-4 HEAD",
+        "description": "ATEXCO-SUBLIM-4 HEAD"
+      },
+      {
+        "id": "ATEXCO.SUBLIMATIONPRINTER.SSERIES",
+        "value": "ATEXCO-SUBLIMATION PRINTER-S SERIES",
+        "description": "ATEXCO-SUBLIMATION PRINTER-S SERIES"
+      },
+      {
+        "id": "ATEXCO.SUBLIMATIONPRINTER.YSERIES",
+        "value": "ATEXCO-SUBLIMATION PRINTER-Y SERIES",
+        "description": "ATEXCO-SUBLIMATION PRINTER-Y SERIES"
+      },
+      {
+        "id": "ATEXCO.VEGAKYOCERAHEADS.IX548",
+        "value": "ATEXCO-VEGA KYOCERA HEADS-IX5 48",
+        "description": "ATEXCO-VEGA KYOCERA HEADS-IX5 48"
+      },
+      {
+        "id": "ATEXCO.XPLUS.4U4",
+        "value": "ATEXCO-X PLUS-4 U4",
+        "description": "ATEXCO-X PLUS-4 U4"
+      },
+      {
+        "id": "ATLASCOPCOCOMPRESOR.PRTBLEAIRCOMP.XAS88",
+        "value": "ATLAS COPCO COMPRESOR-PRTBLE AIR COMP-XAS 88",
+        "description": "ATLAS COPCO COMPRESOR-PRTBLE AIR COMP-XAS 88"
+      },
+      {
+        "id": "ATLASCOPCOCOMPRESOR.PRTBLEAIRCOMP.XAS400",
+        "value": "ATLAS COPCO COMPRESOR-PRTBLE AIR COMP-XAS400",
+        "description": "ATLAS COPCO COMPRESOR-PRTBLE AIR COMP-XAS400"
+      },
+      {
+        "id": "ATLASCOPCO.CNGCOMPRESSOR.BBR4216",
+        "value": "ATLAS COPCO-CNG COMPRESSOR-BBR 4216",
+        "description": "ATLAS COPCO-CNG COMPRESSOR-BBR 4216"
+      },
+      {
+        "id": "ATLASCOPCO.COMPRESSORPACKAGE.PAR270HE35018",
+        "value": "ATLAS COPCO-COMPRESSOR PACKAGE-PAR 270HE 35018",
+        "description": "ATLAS COPCO-COMPRESSOR PACKAGE-PAR 270HE 35018"
+      },
+      {
+        "id": "ATLASCOPCO.INTERMECHCOMPR.BBR34216",
+        "value": "ATLAS COPCO-INTERMECH COMPR-BBR3 4216",
+        "description": "ATLAS COPCO-INTERMECH COMPR-BBR3 4216"
+      },
+      {
+        "id": "ATLASCOPCO.XAHS400PACE.PORTABLEAIRCOMP",
+        "value": "ATLAS COPCO-XAHS 400 PACE-PORTABLEAIRCOMP",
+        "description": "ATLAS COPCO-XAHS 400 PACE-PORTABLEAIRCOMP"
+      },
+      {
+        "id": "ATLASCOPCO.XAS400.PORTABLEAIRCOMP",
+        "value": "ATLAS COPCO-XAS400-PORTABLEAIRCOMP",
+        "description": "ATLAS COPCO-XAS400-PORTABLEAIRCOMP"
+      },
+      {
+        "id": "ATLAS.CNCROUTER.TLD561325",
+        "value": "ATLAS-CNC ROUTER-TLD56 1325",
+        "description": "ATLAS-CNC ROUTER-TLD56 1325"
+      },
+      {
+        "id": "ATLAS.COPCO–XAHS400PACE.PORTABLEAIRCOMP",
+        "value": "ATLAS-COPCO – XAHS 400 PACE-PORTABLEAIRCOMP",
+        "description": "ATLAS-COPCO – XAHS 400 PACE-PORTABLEAIRCOMP"
+      },
+      {
+        "id": "ATLAS.PRESSMACHINE.SLEDDING80X120CM",
+        "value": "ATLAS-PRESS MACHINE-SLEDDING 80X120CM",
+        "description": "ATLAS-PRESS MACHINE-SLEDDING 80X120CM"
+      },
+      {
+        "id": "ATLAS.TCM.1530L",
+        "value": "ATLAS-TCM-1530L",
+        "description": "ATLAS-TCM-1530L"
+      },
+      {
+        "id": "ATLAS.XPE.1600",
+        "value": "ATLAS-XPE-1600",
+        "description": "ATLAS-XPE-1600"
+      },
+      {
+        "id": "ATM.COFFEEROASTINGMACHINE.IDCM-30",
+        "value": "ATM-COFFEE ROASTING MACHINE-IDCM30",
+        "description": "ATM-COFFEE ROASTING MACHINE-IDCM30"
+      },
+      {
+        "id": "ATM.ROTARYHEATTRANSFERMCH.370",
+        "value": "ATM-ROTARY HEAT TRANSFER MCH-370",
+        "description": "ATM-ROTARY HEAT TRANSFER MCH-370"
+      },
+      {
+        "id": "ATPJET.INKJETPLOTTER.2185E",
+        "value": "ATP JET-INKJET PLOTTER-2185E",
+        "description": "ATP JET-INKJET PLOTTER-2185E"
+      },
+      {
+        "id": "ATT.NUSSBAUM.UNILIFT",
+        "value": "ATT-NUSSBAUM-UNI LIFT",
+        "description": "ATT-NUSSBAUM-UNI LIFT"
+      },
+      {
+        "id": "ATT.WHEELALIGNMENT.SYSTEMCURAR2000EAGLE",
+        "value": "ATT-WHEEL ALIGNMENT-SYSTEM CURA R 2000 EAGLE",
+        "description": "ATT-WHEEL ALIGNMENT-SYSTEM CURA R 2000 EAGLE"
+      },
+      {
+        "id": "AUDI.A4.16FTZ",
+        "value": "AUDI A4 1.6 FTZ",
+        "description": "AUDI A4 1.6 FTZ"
+      },
+      {
+        "id": "AUDI.A4.18FTZ",
+        "value": "AUDI A4 1.8 FTZ",
+        "description": "AUDI A4 1.8 FTZ"
+      },
+      {
+        "id": "AUDI.A4.18SEFTZ",
+        "value": "AUDI A4 1.8 SPECIAL EDITION FTZ",
+        "description": "AUDI A4 1.8 SPECIAL EDITION FTZ"
+      },
+      {
+        "id": "AUDI.A4.20MLTRXNFTZ",
+        "value": "AUDI A4 2.0 MULTITRONIC XENON AT FTZ",
+        "description": "AUDI A4 2.0 MULTITRONIC XENON AT FTZ"
+      },
+      {
+        "id": "AUDI.A4.26FTZ",
+        "value": "AUDI A4 2.6 FTZ",
+        "description": "AUDI A4 2.6 FTZ"
+      },
+      {
+        "id": "AUDI.A4.26V6FTZ",
+        "value": "AUDI A4 2.6 V6 TRIPTONIC AT FTZ",
+        "description": "AUDI A4 2.6 V6 TRIPTONIC AT FTZ"
+      },
+      {
+        "id": "AUDI.A4.18AT",
+        "value": "AUDI A4-1.8 AT",
+        "description": "AUDI A4-1.8 AT"
+      },
+      {
+        "id": "AUDI.A4.18ATDF",
+        "value": "AUDI A4-1.8 AT DF",
+        "description": "AUDI A4-1.8 AT DF"
+      },
+      {
+        "id": "AUDI.A4.18AVANTTURBOATFTZ",
+        "value": "AUDI A4-1.8 AVANT TURBO AT FTZ",
+        "description": "AUDI A4-1.8 AVANT TURBO AT FTZ"
+      },
+      {
+        "id": "AUDI.A4.18TFSIMLTRXNFTZ",
+        "value": "AUDI A4-1.8 TFSI MULTITRONIC FTZ",
+        "description": "AUDI A4-1.8 TFSI MULTITRONIC FTZ"
+      },
+      {
+        "id": "AUDI.A4.20LAT",
+        "value": "AUDI A4-2.0 L AT",
+        "description": "AUDI A4-2.0 L AT"
+      },
+      {
+        "id": "AUDI.A4.20LATFTZ",
+        "value": "AUDI A4-2.0 L AT FTZ",
+        "description": "AUDI A4-2.0 L AT FTZ"
+      },
+      {
+        "id": "AUDI.A4.QUATTROTFSI20AT",
+        "value": "AUDI A4-QUATTRO TFSI 2.0 AT",
+        "description": "AUDI A4-QUATTRO TFSI 2.0 AT"
+      },
+      {
+        "id": "AUDI.A5.20TFSIAT",
+        "value": "AUDI A5-2.0 TFSI AT",
+        "description": "AUDI A5-2.0 TFSI AT"
+      },
+      {
+        "id": "AUDI.A5.TFSI20AT",
+        "value": "AUDI A5-TFSI 2.0 AT",
+        "description": "AUDI A5-TFSI 2.0 AT"
+      },
+      {
+        "id": "AUDI.A6.24MULTIFTZ",
+        "value": "AUDI A6 2.4 MULTITRONIC AT FTZ",
+        "description": "AUDI A6 2.4 MULTITRONIC AT FTZ"
+      },
+      {
+        "id": "AUDI.A6.27ALLRDQUATFTZ",
+        "value": "AUDI A6 2.7 ALLROAD QUATTRO FTZ",
+        "description": "AUDI A6 2.7 ALLROAD QUATTRO FTZ"
+      },
+      {
+        "id": "AUDI.A6.28.AT",
+        "value": "AUDI A6 2.8 AT",
+        "description": "AUDI A6 2.8 AT"
+      },
+      {
+        "id": "AUDI.A6.28TRIPFTZ",
+        "value": "AUDI A6 2.8 TRIPTONIC AT FTZ",
+        "description": "AUDI A6 2.8 TRIPTONIC AT FTZ"
+      },
+      {
+        "id": "AUDI.A6.20AT",
+        "value": "AUDI A6-2.0 AT",
+        "description": "AUDI A6-2.0 AT"
+      },
+      {
+        "id": "AUDI.A6.20ATFTZ",
+        "value": "AUDI A6-2.0 AT FTZ",
+        "description": "AUDI A6-2.0 AT FTZ"
+      },
+      {
+        "id": "AUDI.A6.24AT",
+        "value": "AUDI A6-2.4 AT",
+        "description": "AUDI A6-2.4 AT"
+      },
+      {
+        "id": "AUDI.A6.FSI28AT",
+        "value": "AUDI A6-FSI 2.8 AT",
+        "description": "AUDI A6-FSI 2.8 AT"
+      },
+      {
+        "id": "AUDI.A6.MULTITRONIK30AT",
+        "value": "AUDI A6-MULTITRONIK 3.0 AT",
+        "description": "AUDI A6-MULTITRONIK 3.0 AT"
+      },
+      {
+        "id": "AUDI.A6.QUATTRO30AT",
+        "value": "AUDI A6-QUATTRO 3.0 AT",
+        "description": "AUDI A6-QUATTRO 3.0 AT"
+      },
+      {
+        "id": "AUDI.A6.TFSI18AT",
+        "value": "AUDI A6-TFSI 1.8 AT",
+        "description": "AUDI A6-TFSI 1.8 AT"
+      },
+      {
+        "id": "AUDI.A6.TFSI20AT",
+        "value": "AUDI A6-TFSI 2.0 AT",
+        "description": "AUDI A6-TFSI 2.0 AT"
+      },
+      {
+        "id": "AUDI.A6.TFSI20ATDF",
+        "value": "AUDI A6-TFSI 2.0 AT DF",
+        "description": "AUDI A6-TFSI 2.0 AT DF"
+      },
+      {
+        "id": "AUDI.A8.42QTROFTZ",
+        "value": "AUDI A8 4.2 QUALTRO FTZ",
+        "description": "AUDI A8 4.2 QUALTRO FTZ"
+      },
+      {
+        "id": "AUDI.A8.28AT",
+        "value": "AUDI A8-2.8 AT",
+        "description": "AUDI A8-2.8 AT"
+      },
+      {
+        "id": "AUDI.A3.18AT",
+        "value": "AUDI-A3-1.8 AT",
+        "description": "AUDI-A3-1.8 AT"
+      },
+      {
+        "id": "AUDI.A3.18ATFTZ",
+        "value": "AUDI-A3-1.8 AT FTZ",
+        "description": "AUDI-A3-1.8 AT FTZ"
+      },
+      {
+        "id": "AUDI.A3.20AT",
+        "value": "AUDI-A3-2.0 AT",
+        "description": "AUDI-A3-2.0 AT"
+      },
+      {
+        "id": "AUDI.A7.30AT",
+        "value": "AUDI-A7-3.0 AT",
+        "description": "AUDI-A7-3.0 AT"
+      },
+      {
+        "id": "AUDI.Q3.14AT",
+        "value": "AUDI-Q3-1.4 AT",
+        "description": "AUDI-Q3-1.4 AT"
+      },
+      {
+        "id": "AUDI.Q3.TFSI20AT",
+        "value": "AUDI-Q3-TFSI 2.0 AT",
+        "description": "AUDI-Q3-TFSI 2.0 AT"
+      },
+      {
+        "id": "AUDI.Q5.TFSI20AT",
+        "value": "AUDI-Q5-T FSI 2.0 AT",
+        "description": "AUDI-Q5-T FSI 2.0 AT"
+      },
+      {
+        "id": "AUDI.Q7.42AT",
+        "value": "AUDI-Q7-4.2 AT",
+        "description": "AUDI-Q7-4.2 AT"
+      },
+      {
+        "id": "AUDI.Q7.TFSI30AT",
+        "value": "AUDI-Q7-TFSI 3.0 AT",
+        "description": "AUDI-Q7-TFSI 3.0 AT"
+      },
+      {
+        "id": "AUDI.RS.5TFSI29AT",
+        "value": "AUDI-RS-5 TFSI 2.9 AT",
+        "description": "AUDI-RS-5 TFSI 2.9 AT"
+      },
+      {
+        "id": "AUDI.RS4.TFSI29AT",
+        "value": "AUDI-RS4-TFSI 2.9 AT",
+        "description": "AUDI-RS4-TFSI 2.9 AT"
+      },
+      {
+        "id": "AUDI.TT.18ROADSTERFTZ",
+        "value": "AUDI-TT-1.8 ROADSTER FTZ",
+        "description": "AUDI-TT-1.8 ROADSTER FTZ"
+      },
+      {
+        "id": "AUDI.TT.RS25AT",
+        "value": "AUDI-TT-RS 2.5 AT",
+        "description": "AUDI-TT-RS 2.5 AT"
+      },
+      {
+        "id": "AUDI.TT.TFSI20AT",
+        "value": "AUDI-TT-TFSI 2.0 AT",
+        "description": "AUDI-TT-TFSI 2.0 AT"
+      },
+      {
+        "id": "AUDLEY.DTF.S20703B4720",
+        "value": "AUDLEY-DTF-S2070 3B 4720",
+        "description": "AUDLEY-DTF-S2070 3B 4720"
+      },
+      {
+        "id": "AURORA.VENDINGMACHINE.XV810S1",
+        "value": "AURORA-VENDING MACHINE-XV 810S1",
+        "description": "AURORA-VENDING MACHINE-XV 810S1"
+      },
+      {
+        "id": "AURORA.VENDINGMACHINE.XV810S2",
+        "value": "AURORA-VENDING MACHINE-XV 810S2",
+        "description": "AURORA-VENDING MACHINE-XV 810S2"
+      },
+      {
+        "id": "AUSETTER.CTPSMACHINE.40048C",
+        "value": "AUSETTER CTPS MACHINE 400-48CHANNEL",
+        "description": "AUSETTER CTPS MACHINE 400-48CHANNEL"
+      },
+      {
+        "id": "AUSETTER.CTPSMACHINE.40032C",
+        "value": "AUSETTER CTPS MACHINE-400 32 CHANNEL",
+        "description": "AUSETTER CTPS MACHINE-400 32 CHANNEL"
+      },
+      {
+        "id": "AUSETTER.CTPSMACHINE.80048C",
+        "value": "AUSETTER CTPS MACHINE-800 48CHANNEL",
+        "description": "AUSETTER CTPS MACHINE-800 48CHANNEL"
+      },
+      {
+        "id": "AUTOCHEMISTRYANALYZER.TECOM.TC2",
+        "value": "AUTO CHEMISTRY ANALYZER-TECOM-TC2",
+        "description": "AUTO CHEMISTRY ANALYZER-TECOM-TC2"
+      },
+      {
+        "id": "AUTO.BAKINGCUP.BCA11421",
+        "value": "AUTO-BAKING CUP-BC A1 142 1",
+        "description": "AUTO-BAKING CUP-BC A1 142 1"
+      },
+      {
+        "id": "AUTO.DUCT.LINE31",
+        "value": "AUTO-DUCT-LINE 3 1",
+        "description": "AUTO-DUCT-LINE 3 1"
+      },
+      {
+        "id": "AUTOCUPFILLER.SEALER.16LINE",
+        "value": "AUTOCUP FILLER-SEALER-16 LINE",
+        "description": "AUTOCUP FILLER-SEALER-16 LINE"
+      },
+      {
+        "id": "AUTODONER.VERTICALBROILER.G400",
+        "value": "AUTODONER-VERTICALBROILER-G400",
+        "description": "AUTODONER-VERTICALBROILER-G400"
+      },
+      {
+        "id": "AUTOMATICINTELLIGENT.PPRLNCHBXFRMNGMCN.FHJDA",
+        "value": "AUTOMATIC INTELLIGENT-PPRLNCHBXFRMNGMCN-FHJDA",
+        "description": "AUTOMATIC INTELLIGENT-PPRLNCHBXFRMNGMCN-FHJDA"
+      },
+      {
+        "id": "AUTOMATIC.FOILSTAMPING&DIECUTTINGMCN.TYM920II",
+        "value": "AUTOMATIC-FOILSTAMPING&DIECUTTINGMCN-TYM 920 II",
+        "description": "AUTOMATIC-FOILSTAMPING&DIECUTTINGMCN-TYM 920 II"
+      },
+      {
+        "id": "AUTOMATIC.GRINDINGMACHINE1500MM.KG1500BFOREST1",
+        "value": "AUTOMATIC-GRINDING MACHINE 1500MM-KG1500BFOREST1",
+        "description": "AUTOMATIC-GRINDING MACHINE 1500MM-KG1500BFOREST1"
+      },
+      {
+        "id": "AUTOMATIC.OILCOATINGMACHINE.SGZJ1060",
+        "value": "AUTOMATIC-OIL COATING MACHINE-SGZJ 1060",
+        "description": "AUTOMATIC-OIL COATING MACHINE-SGZJ 1060"
+      },
+      {
+        "id": "AUTOMATIC.PAPERBOXFORMINGMACHINE.FHJATS",
+        "value": "AUTOMATIC-PAPER BOX FORMING MACHINE-FHJ ATS",
+        "description": "AUTOMATIC-PAPER BOX FORMING MACHINE-FHJ ATS"
+      },
+      {
+        "id": "AUTOPRINT.AUTOMATICDIECUTTER.REPETTO65V2",
+        "value": "AUTOPRINT-AUTOMATICDIECUTTER-REPETTO65V2",
+        "description": "AUTOPRINT-AUTOMATICDIECUTTER-REPETTO65V2"
+      },
+      {
+        "id": "AUTOPRINT.AUTOMATICDIECUTTER.REPETTO80",
+        "value": "AUTOPRINT-AUTOMATICDIECUTTER-REPETTO80",
+        "description": "AUTOPRINT-AUTOMATICDIECUTTER-REPETTO80"
+      },
+      {
+        "id": "AUTOPRINT.OFFSETPRINTING.DION450",
+        "value": "AUTOPRINT-OFFSET PRINTING-DION 450",
+        "description": "AUTOPRINT-OFFSET PRINTING-DION 450"
+      },
+      {
+        "id": "AVANT.528.A21658PLUSBACKHOE260A35248",
+        "value": "AVANT-528-A21658+BACKHOE 260A35248",
+        "description": "AVANT-528-A21658+BACKHOE 260A35248"
+      },
+      {
+        "id": "AVANT.528.GENERALBUCKETPALLETFORKLOGGRAB",
+        "value": "AVANT-528-GENERAL BUCKET + PALLET FORK + LOG GRAB",
+        "description": "AVANT-528-GENERAL BUCKET + PALLET FORK + LOG GRAB"
+      },
+      {
+        "id": "AVANT.528.GENERALBUCKETPALLETFORKBACKHOE260",
+        "value": "AVANT-528-GENERALBUCKET+PALLET FORK+BACKHOE260",
+        "description": "AVANT-528-GENERALBUCKET+PALLET FORK+BACKHOE260"
+      },
+      {
+        "id": "AVANT.528.GENERALBUCKETPOLLET FORKBACKHOE260",
+        "value": "AVANT-528-GENERALBUCKET+POLLET FORK+BACKHOE260",
+        "description": "AVANT-528-GENERALBUCKET+POLLET FORK+BACKHOE260"
+      },
+      {
+        "id": "AVEMAX.MILLINGMACHINE.2TM",
+        "value": "AVEMAX-MILLING MACHINE-2 TM",
+        "description": "AVEMAX-MILLING MACHINE-2 TM"
+      },
+      {
+        "id": "AVENGER.MESINPACKING.VERTICALSACHET",
+        "value": "AVENGER-MESIN PACKING-VERTICAL SACHET",
+        "description": "AVENGER-MESIN PACKING-VERTICAL SACHET"
+      },
+      {
+        "id": "AWEA.BRIDGETYPEVERTICALMACHININGCENTER.SP2016",
+        "value": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER SP 2016",
+        "description": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER SP 2016"
+      },
+      {
+        "id": "AWEA.BRIDGETYPEVERTICALMACHININGCENTER.NFP2015",
+        "value": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER-NFP2015",
+        "description": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER-NFP2015"
+      },
+      {
+        "id": "AWEA.BRIDGETYPEVERTICALMACHININGCENTER.VP2012",
+        "value": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER-VP2012",
+        "description": "AWEA BRIDGE TYPE VERTICAL MACHINING CENTER-VP2012"
+      },
+      {
+        "id": "AWEA.MAXPERFORMANCEVERTICALMACHININGCENTER.BM1400",
+        "value": "AWEA MAX PERFORMANCE VERTICAL MACHINING CENTER BM 1400",
+        "description": "AWEA MAX PERFORMANCE VERTICAL MACHINING CENTER BM 1400"
+      },
+      {
+        "id": "AWEA.HIGHSPDCNCMACHININGCENTER.AF1060",
+        "value": "AWEA-HIGHSPDCNCMACHININGCENTER-AF 1060",
+        "description": "AWEA-HIGHSPDCNCMACHININGCENTER-AF 1060"
+      },
+      {
+        "id": "AWEA.VerticalmchCenter.AF1250",
+        "value": "AWEA-Vertical Machining Center-AF 1250",
+        "description": "AWEA-Vertical Machining Center-AF 1250"
+      },
+      {
+        "id": "AWEA.VerticalmchCenter.SP2016",
+        "value": "AWEA-Vertical Machining Center-SP 2016",
+        "description": "AWEA-Vertical Machining Center-SP 2016"
+      },
+      {
+        "id": "AXZA.CNCMACHINE.AX1504AXIZ",
+        "value": "AXZA-CNC MACHINE-AX150 4 AXIZ",
+        "description": "AXZA-CNC MACHINE-AX150 4 AXIZ"
+      },
+      {
+        "id": "AZAMJAYA.METALCHIP.MCHYDPRESS",
+        "value": "AZAM JAYA-METAL CHIP-MC HYD PRESS",
+        "description": "AZAM JAYA-METAL CHIP-MC HYD PRESS"
+      },
+      {
+        "id": "AZURA.EMBROIDERYMACHINE.BENXT906",
+        "value": "AZURA-EMBROIDERY MACHINE-BENXT 906",
+        "description": "AZURA-EMBROIDERY MACHINE-BENXT 906"
+      },
+      {
+        "id": "AZURA.EMBROIDERYMACHINE.BENXT912\t\t",
+        "value": "AZURA-EMBROIDERY MACHINE-BENXT 912",
+        "description": "AZURA-EMBROIDERY MACHINE-BENXT 912"
+      },
+      {
+        "id": "AZURA.EMBROIDERYMACHINE.BENXT912AREA800MMX400MM",
+        "value": "AZURA-EMBROIDERY MACHINE-BENXT912 AREA800MMX400MM",
+        "description": "AZURA-EMBROIDERY MACHINE-BENXT912 AREA800MMX400MM"
+      },
+      {
+        "id": "AZURA.EMBROIDERYMACHINE.BEXT906",
+        "value": "AZURA-EMBROIDERY MACHINE-BEXT 906",
+        "description": "AZURA-EMBROIDERY MACHINE-BEXT 906"
+      },
+      {
+        "id": "BAGUS88EKSSETIA.KAPAL.KAPALGENERALCARGO",
+        "value": "BAGUS 88 EKS SETIA-KAPAL-KAPAL GENERAL CARGO",
+        "description": "BAGUS 88 EKS SETIA-KAPAL-KAPAL GENERAL CARGO"
+      },
+      {
+        "id": "BAIC.BJ40.PLUS4X420AT",
+        "value": "BAIC-BJ40-PLUS 4X4 2.0 AT",
+        "description": "BAIC-BJ40-PLUS 4X4 2.0 AT"
+      },
+      {
+        "id": "BAISENG.LASERCUTTING.AS1610",
+        "value": "BAISENG-LASER CUTTING-AS1610",
+        "description": "BAISENG-LASER CUTTING-AS1610"
+      },
+      {
+        "id": "BAISENG.LASER.AS160DOUBELHEAD",
+        "value": "BAISENG-LASER-AS160 DOUBEL HEAD",
+        "description": "BAISENG-LASER-AS160 DOUBEL HEAD"
+      },
+      {
+        "id": "BAISENG.LASER.AS1610DOUBELHEAD",
+        "value": "BAISENG-LASER-AS1610 DOUBEL HEAD",
+        "description": "BAISENG-LASER-AS1610 DOUBEL HEAD"
+      },
+      {
+        "id": "BAISHENG.AS.1310",
+        "value": "BAISHENG-AS-1310",
+        "description": "BAISHENG-AS-1310"
+      },
+      {
+        "id": "BAISHENG.AS.906080 WATT",
+        "value": "BAISHENG-AS-9060 80 WATT",
+        "description": "BAISHENG-AS-9060 80 WATT"
+      },
+      {
+        "id": "BAISHENG.CUTTINGMACHINE.BS1310",
+        "value": "BAISHENG-CUTTING MACHINE-BS 1310",
+        "description": "BAISHENG-CUTTING MACHINE-BS 1310"
+      },
+      {
+        "id": "BAISHENG.FIBERLASERCUTTINGMCH.F3015E",
+        "value": "BAISHENG-FIBERLASERCUTTINGMCH-F3015E",
+        "description": "BAISHENG-FIBERLASERCUTTINGMCH-F3015E"
+      },
+      {
+        "id": "BAISHENG.LASERCUTTINGENGRAVING.BSL1310",
+        "value": "BAISHENG-LASER CUTTING ENGRAVING-BSL1310",
+        "description": "BAISHENG-LASER CUTTING ENGRAVING-BSL1310"
+      },
+      {
+        "id": "BAISHENG.LASERCUTTINGENGRAVING.ES1310",
+        "value": "BAISHENG-LASER CUTTING ENGRAVING-ES 1310",
+        "description": "BAISHENG-LASER CUTTING ENGRAVING-ES 1310"
+      },
+      {
+        "id": "BAISHENG.LASERENGRAVINGMACHINE.AS1490",
+        "value": "BAISHENG-LASER ENGRAVING MACHINE-AS 1490",
+        "description": "BAISHENG-LASER ENGRAVING MACHINE-AS 1490"
+      },
+      {
+        "id": "BAISHENG.LASERENGRAVINGMACHINE.AS1490C",
+        "value": "BAISHENG-LASER ENGRAVING MACHINE-AS 1490C",
+        "description": "BAISHENG-LASER ENGRAVING MACHINE-AS 1490C"
+      },
+      {
+        "id": "BAISHENG.LASERNONMETALMACHINE.AS1490120W",
+        "value": "BAISHENG-LASER NON METAL MACHINE-AS 1490120W",
+        "description": "BAISHENG-LASER NON METAL MACHINE-AS 1490120W"
+      },
+      {
+        "id": "BAISHENG.LASER.AS1310C",
+        "value": "BAISHENG-LASER-AS 1310C",
+        "description": "BAISHENG-LASER-AS 1310C"
+      },
+      {
+        "id": "BAISHENG.LASER.AS1310",
+        "value": "BAISHENG-LASER-AS1310",
+        "description": "BAISHENG-LASER-AS1310"
+      },
+      {
+        "id": "BAISHENG.LASER.BS1310",
+        "value": "BAISHENG-LASER-BS 1310",
+        "description": "BAISHENG-LASER-BS 1310"
+      },
+      {
+        "id": "BAISHENG.LASER.BS2513",
+        "value": "BAISHENG-LASER-BS 2513",
+        "description": "BAISHENG-LASER-BS 2513"
+      },
+      {
+        "id": "BAISHENG.LASER.BSL2513",
+        "value": "BAISHENG-LASER-BSL2513",
+        "description": "BAISHENG-LASER-BSL2513"
+      },
+      {
+        "id": "BAISHENG.MESINLASER.AS1490",
+        "value": "BAISHENG-MESIN LASER-AS 1490",
+        "description": "BAISHENG-MESIN LASER-AS 1490"
+      },
+      {
+        "id": "BAISHENG.MESINLASER.AS1490C",
+        "value": "BAISHENG-MESIN LASER-AS 1490C",
+        "description": "BAISHENG-MESIN LASER-AS 1490C"
+      },
+      {
+        "id": "BAISON.E.C3",
+        "value": "BAISON-E-C3",
+        "description": "BAISON-E-C3"
+      },
+      {
+        "id": "BAIYI.BY800HDJ.PAPERBAGMACHINE",
+        "value": "BAIYI-BY 800 HDJ-PAPER BAG MACHINE",
+        "description": "BAIYI-BY 800 HDJ-PAPER BAG MACHINE"
+      },
+      {
+        "id": "BAIYI.BY800HDC.CEMENTVALVEPAPERBAGMAKINGMCH",
+        "value": "BAIYI-BY 800HDC-CEMENTVALVEPAPERBAGMAKINGMCH",
+        "description": "BAIYI-BY 800HDC-CEMENTVALVEPAPERBAGMAKINGMCH"
+      },
+      {
+        "id": "BAIYI.BY880HDC.CEMENTVALVEPAPERBAGMAKINGMCH",
+        "value": "BAIYI-BY 880HDC-CEMENTVALVE PAPER BAG MAKING MCH",
+        "description": "BAIYI-BY 880HDC-CEMENTVALVE PAPER BAG MAKING MCH"
+      },
+      {
+        "id": "BALTUR.BURNER.COMIST300DSPGM",
+        "value": "BALTUR-BURNER-COMIST 300DSPGM",
+        "description": "BALTUR-BURNER-COMIST 300DSPGM"
+      },
+      {
+        "id": "BALTUR.BURNER.TBG120P",
+        "value": "BALTUR-BURNER-TBG 120P",
+        "description": "BALTUR-BURNER-TBG 120P"
+      },
+      {
+        "id": "BALTUR.BURNER.TBG150P",
+        "value": "BALTUR-BURNER-TBG 150P",
+        "description": "BALTUR-BURNER-TBG 150P"
+      },
+      {
+        "id": "BALTUR.BURNER.TBG260ME",
+        "value": "BALTUR-BURNER-TBG 260 ME",
+        "description": "BALTUR-BURNER-TBG 260 ME"
+      },
+      {
+        "id": "BALTUR.BURNER.TBG358UNIT",
+        "value": "BALTUR-BURNER-TBG 35 (8 UNIT)",
+        "description": "BALTUR-BURNER-TBG 35 (8 UNIT)"
+      },
+      {
+        "id": "BALTUR.BURNER.TBG35P13UNIT",
+        "value": "BALTUR-BURNER-TBG 35P (13 UNIT)",
+        "description": "BALTUR-BURNER-TBG 35P (13 UNIT)"
+      },
+      {
+        "id": "BANDKNIFE.CUTMCHCMPTSTWFRQNCYCNVRSCTRLR.NSBK900B",
+        "value": "BAND KNIFE-CUTMCHCMPTSTWFRQNCYCNVRSCTRLR-NSBK900B",
+        "description": "BAND KNIFE-CUTMCHCMPTSTWFRQNCYCNVRSCTRLR-NSBK900B"
+      },
+      {
+        "id": "BANDKNIFE.MESIN.CZD700A",
+        "value": "BAND KNIFE-MESIN-CZD 700A",
+        "description": "BAND KNIFE-MESIN-CZD 700A"
+      },
+      {
+        "id": "BANDKNIFE.MESIN.CZD900A",
+        "value": "BAND KNIFE-MESIN-CZD 900A",
+        "description": "BAND KNIFE-MESIN-CZD 900A"
+      },
+      {
+        "id": "BANDKNIFE.NCA.BK900",
+        "value": "BAND KNIFE-NCA-BK 900",
+        "description": "BAND KNIFE-NCA-BK 900"
+      },
+      {
+        "id": "BAOHAO.CUPLIDFORMINGMACHINE.BH-450S",
+        "value": "BAO HAO-CUP LID FORMING MACHINE-BH450S",
+        "description": "BAO HAO-CUP LID FORMING MACHINE-BH450S"
+      },
+      {
+        "id": "BAOSHANBAOFENG.DBLHEADROLLFRMNG. CERAMICMCH",
+        "value": "BAO SHAN BAO FENG-DBLHEADROLLFRMNG-CERAMICMCH",
+        "description": "BAO SHAN BAO FENG-DBLHEADROLLFRMNG-CERAMICMCH"
+      },
+      {
+        "id": "BAOFENG.AUTOHIGHSPEEDVACUUMFORMMCH.BFI2272A1",
+        "value": "BAOFENG-AUTO HIGH SPEED VACUUM FORM MCH-BFI22 72A1",
+        "description": "BAOFENG-AUTO HIGH SPEED VACUUM FORM MCH-BFI22 72A1"
+      },
+      {
+        "id": "BAOJI(CNVNTNL).HRZNTLLATHEMCN.CS6266C*2000WITHTPPR",
+        "value": "BAOJI(CNVNTNL)-HRZNTLLATHEMCN-CS6266C*2000WITHTPPR",
+        "description": "BAOJI(CNVNTNL)-HRZNTLLATHEMCN-CS6266C*2000WITHTPPR"
+      },
+      {
+        "id": "BAOJI.BRANDCONVENLATHEMCH.CS6266BX2000",
+        "value": "BAOJI-BRAND CONVEN LATHE MCH-CS 6266B X 2000",
+        "description": "BAOJI-BRAND CONVEN LATHE MCH-CS 6266B X 2000"
+      },
+      {
+        "id": "BAOJI.BUBUTMACHINE.1640",
+        "value": "BAOJI-BUBUT MACHINE-1640",
+        "description": "BAOJI-BUBUT MACHINE-1640"
+      },
+      {
+        "id": "BAOJI.GABBEDLATHEMACHINE.CS6250B1000",
+        "value": "BAOJI-GAB BED LATHE MACHINE-CS6250B/1000",
+        "description": "BAOJI-GAB BED LATHE MACHINE-CS6250B/1000"
+      },
+      {
+        "id": "BAOJI.GABBEDLATHEMACHINE.CS6266B/2000",
+        "value": "BAOJI-GAB BED LATHE MACHINE-CS6266B/2000",
+        "description": "BAOJI-GAB BED LATHE MACHINE-CS6266B/2000"
+      },
+      {
+        "id": "BAOJI.GABBEDLATHEMACHINE.CS6266BX1000",
+        "value": "BAOJI-GAB BED LATHE MACHINE-CS6266BX1000",
+        "description": "BAOJI-GAB BED LATHE MACHINE-CS6266BX1000"
+      },
+      {
+        "id": "BAOJI.GABBEDLATHEMACHINE.CS6266BX2000",
+        "value": "BAOJI-GAB BED LATHE MACHINE-CS6266BX2000",
+        "description": "BAOJI-GAB BED LATHE MACHINE-CS6266BX2000"
+      },
+      {
+        "id": "BAOJI.GAPBEDLATHE.CQ6280Cx3000",
+        "value": "BAOJI-GAP BED LATHE-CQ6280Cx3000",
+        "description": "BAOJI-GAP BED LATHE-CQ6280Cx3000"
+      },
+      {
+        "id": "BAOJI.GAPBEDLATHE.CS6266CX2000",
+        "value": "BAOJI-GAP BED LATHE-CS6266C X 2000",
+        "description": "BAOJI-GAP BED LATHE-CS6266C X 2000"
+      },
+      {
+        "id": "BAOJI.GAPBEDLATHE.CS6266C2000",
+        "value": "BAOJI-GAP BED LATHE-CS6266C/2000",
+        "description": "BAOJI-GAP BED LATHE-CS6266C/2000"
+      },
+      {
+        "id": "BAOJI.GAPBEDLATHEMACHINE.CS6266B/2000",
+        "value": "BAOJI-GAPBEDLATHEMACHINE-CS6266B/2000",
+        "description": "BAOJI-GAPBEDLATHEMACHINE-CS6266B/2000"
+      },
+      {
+        "id": "BAOJI.HIGHSPEEDPRECISION.GAPBEDLATHEBJ1640GD",
+        "value": "BAOJI-HIGH SPEED PRECISION-GAPBEDLATHE BJ1640 G/D",
+        "description": "BAOJI-HIGH SPEED PRECISION-GAPBEDLATHE BJ1640 G/D"
+      },
+      {
+        "id": "BAOJI.HORIZONTALLATHEMACHINE.CS6266CX2000",
+        "value": "BAOJI-HORIZONTAL LATHE MACHINE-CS6266C X 2000",
+        "description": "BAOJI-HORIZONTAL LATHE MACHINE-CS6266C X 2000"
+      },
+      {
+        "id": "BAOJI.LATHEMACHINE.CQ6280Cx2000",
+        "value": "BAOJI-LATHEMACHINE-CQ6280Cx2000",
+        "description": "BAOJI-LATHEMACHINE-CQ6280Cx2000"
+      },
+      {
+        "id": "BAOJI.MESINBUBUT.CS6266B2000",
+        "value": "BAOJI-MESIN BUBUT-CS6266B 2000",
+        "description": "BAOJI-MESIN BUBUT-CS6266B 2000"
+      },
+      {
+        "id": "BAOJI.MESINBUBUT.CS6266BX2000",
+        "value": "BAOJI-MESIN BUBUT-CS6266B X 2000",
+        "description": "BAOJI-MESIN BUBUT-CS6266B X 2000"
+      },
+      {
+        "id": "BAOJI.POTENZAINJECTIONPLASTIKMACHINEPT130.POTENZA",
+        "value": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT130-POTENZA",
+        "description": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT130-POTENZA"
+      },
+      {
+        "id": "BAOJI.POTENZAINJECTIONPLASTIKMACHINEPT160.POTENZA",
+        "value": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT160-POTENZA",
+        "description": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT160-POTENZA"
+      },
+      {
+        "id": "BAOJI.POTENZAINJECTIONPLASTIKMACHINEPT200.POTENZA",
+        "value": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT200-POTENZA",
+        "description": "BAOJI-POTENZAINJECTIONPLASTIKMACHINEPT200-POTENZA"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.CPCD50VM300",
+        "value": "BAOLI-FORKLIFT TRUCK-CPCD50 VM300",
+        "description": "BAOLI-FORKLIFT TRUCK-CPCD50 VM300"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.CPCD50WVM300LF122FDT",
+        "value": "BAOLI-FORKLIFT TRUCK-CPCD50W VM300 LF122 FDT",
+        "description": "BAOLI-FORKLIFT TRUCK-CPCD50W VM300 LF122 FDT"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30FVFHM4300LF107,FST",
+        "value": "BAOLI-FORKLIFT TRUCK-KB 30 F VFHM 4300 LF107, FST",
+        "description": "BAOLI-FORKLIFT TRUCK-KB 30 F VFHM 4300 LF107, FST"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVFHM435LF107TJFTJR2SV",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30D VFHM435 LF107TJF TJR2SV",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30D VFHM435 LF107TJF TJR2SV"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVFHM4500LF107FST",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30D VFHM4500 LF107 FST",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30D VFHM4500 LF107 FST"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVFM300LF107FST",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30D VFM300 LF107 FST",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30D VFM300 LF107 FST"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVM300FDTSIDESHIFTER",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30D VM300 FDT SIDE SHIFTER",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30D VM300 FDT SIDE SHIFTER"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVM500FDT4SV",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30D VM500 FDT 4SV",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30D VM500 FDT 4SV"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVFHM435LF107FST",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30DVFHM435LF107FST",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30DVFHM435LF107FST"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30DVM300LF107FDTSIDESHIFTER",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30DVM300LF107FDTSIDESHIFTER",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30DVM300LF107FDTSIDESHIFTER"
+      },
+      {
+        "id": "BAOLI.FORKLIFTTRUCK.KB30FVFM300LF107FST",
+        "value": "BAOLI-FORKLIFT TRUCK-KB30FVFM300LF107FST",
+        "description": "BAOLI-FORKLIFT TRUCK-KB30FVFM300LF107FST"
+      },
+      {
+        "id": "BAOLI.FORKLIFT.CPCD50SVM300LF122TJFTJR2SV",
+        "value": "BAOLI-FORKLIFT-CPCD50SVM300LF122TJFTJR2SV",
+        "description": "BAOLI-FORKLIFT-CPCD50SVM300LF122TJFTJR2SV"
+      },
+      {
+        "id": "BAOLI.FORKLIFT.CPCD70W",
+        "value": "BAOLI-FORKLIFT-CPCD70W",
+        "description": "BAOLI-FORKLIFT-CPCD70W"
+      },
+      {
+        "id": "BAOLI.FORKLIFT.CPCD70WVM300LF122FDT",
+        "value": "BAOLI-FORKLIFT-CPCD70W VM300 LF122 FDT",
+        "description": "BAOLI-FORKLIFT-CPCD70W VM300 LF122 FDT"
+      },
+      {
+        "id": "BAOLI.FORKLIFT.ES15PVFHM480LF115",
+        "value": "BAOLI-FORKLIFT-ES15P VFHM480 LF115",
+        "description": "BAOLI-FORKLIFT-ES15P VFHM480 LF115"
+      },
+      {
+        "id": "BAOLI.FORKLIFT.KBD30W1MVFHM435LF107TJFTJR2SV",
+        "value": "BAOLI-FORKLIFT-KBD30W1MVFHM435LF107TJFTJR2SV",
+        "description": "BAOLI-FORKLIFT-KBD30W1MVFHM435LF107TJFTJR2SV"
+      },
+      {
+        "id": "BARCO.PROJECTOR.DP2K10S",
+        "value": "BARCO-PROJECTOR-DP2K 10S",
+        "description": "BARCO-PROJECTOR-DP2K 10S"
+      },
+      {
+        "id": "BARCO.PROJECTOR.DP2K20C",
+        "value": "BARCO-PROJECTOR-DP2K 20C",
+        "description": "BARCO-PROJECTOR-DP2K 20C"
+      },
+      {
+        "id": "BARCO.PROJECTOR.DP2K23B",
+        "value": "BARCO-PROJECTOR-DP2K23B",
+        "description": "BARCO-PROJECTOR-DP2K23B"
+      },
+      {
+        "id": "BARMAG.FK6.M900",
+        "value": "BARMAG-FK6-M900",
+        "description": "BARMAG-FK6-M900"
+      },
+      {
+        "id": "BARMAG.FK6.UF",
+        "value": "BARMAG-FK6-UF",
+        "description": "BARMAG-FK6-UF"
+      },
+      {
+        "id": "BARON.GASSALAMANDER.SE22",
+        "value": "BARON-GAS SALAMANDER-SE22",
+        "description": "BARON-GAS SALAMANDER-SE22"
+      },
+      {
+        "id": "BARUDAN.BEXYY912F.600X350",
+        "value": "BARUDAN-BEXY Y912F-600X350",
+        "description": "BARUDAN-BEXY Y912F-600X350"
+      },
+      {
+        "id": "BARUDAN.EMBROIDERYMCH.BEMIUG121",
+        "value": "BARUDAN-EMBROIDERY MCH-BE MI UG 121",
+        "description": "BARUDAN-EMBROIDERY MCH-BE MI UG 121"
+      },
+      {
+        "id": "BARUDAN.EMBROIDERYMCH.BEDSHYNB20S1000X300",
+        "value": "BARUDAN-EMBROIDERY MCH-BEDSHYNB20S 1000X300",
+        "description": "BARUDAN-EMBROIDERY MCH-BEDSHYNB20S 1000X300"
+      },
+      {
+        "id": "BASYSPRINT.CTPPRINTING.UVSETTER850",
+        "value": "BASYS PRINT CTP PRINTING UV SETTER 850",
+        "description": "BASYS PRINT CTP PRINTING UV SETTER 850"
+      },
+      {
+        "id": "BASYSPRINT.CTPPRINTING.UVSETTER860",
+        "value": "BASYS PRINT CTP PRINTING-UV SETTER 860",
+        "description": "BASYS PRINT CTP PRINTING-UV SETTER 860"
+      },
+      {
+        "id": "BASYSPRINT.CTPPRINTING.UV SETTER 860x",
+        "value": "BASYS PRINT CTP PRINTING-UV SETTER 860x",
+        "description": "BASYS PRINT CTP PRINTING-UV SETTER 860x"
+      },
+      {
+        "id": "BASYSPRINT.CTCP.850X",
+        "value": "BASYS PRINT-CTCP-850X",
+        "description": "BASYS PRINT-CTCP-850X"
+      },
+      {
+        "id": "BASYSPRINT.CTP.UV SETTER 860X",
+        "value": "BASYS PRINT-CTP-UV SETTER 860X",
+        "description": "BASYS PRINT-CTP-UV SETTER 860X"
+      },
+      {
+        "id": "BAYORANTEKNIK.MESINMIE.KL945",
+        "value": "BAYORAN TEKNIK-MESIN MIE-KL 945",
+        "description": "BAYORAN TEKNIK-MESIN MIE-KL 945"
+      },
+      {
+        "id": "BAYORANTEKNIK.MESINMIE.KT965",
+        "value": "BAYORAN TEKNIK-MESIN MIE-KT965",
+        "description": "BAYORAN TEKNIK-MESIN MIE-KT965"
+      },
+      {
+        "id": "BAYORAN TEKNIK.MIEMACHINE.KT955",
+        "value": "BAYORAN TEKNIK-MIE MACHINE-KT955",
+        "description": "BAYORAN TEKNIK-MIE MACHINE-KT955"
+      },
+      {
+        "id": "BDMG.EXCAVATOR.BD9080",
+        "value": "BDMG-EXCAVATOR-BD9080",
+        "description": "BDMG-EXCAVATOR-BD9080"
+      },
+      {
+        "id": "BDMG.SELFLOADINGCONCRETEMIXER.BD3500R",
+        "value": "BDMG-SELFLOADINGCONCRETEMIXER-BD3500R",
+        "description": "BDMG-SELFLOADINGCONCRETEMIXER-BD3500R"
+      },
+      {
+        "id": "BEAR.WINNOWER.BWI150",
+        "value": "BEAR-WINNOWER-BWI 150",
+        "description": "BEAR-WINNOWER-BWI 150"
+      },
+      {
+        "id": "BEHE.CONVEYORUVCURINGOFFSET.UVC01",
+        "value": "BEHE-CONVEYOR UV CURING OFFSET-UVC01",
+        "description": "BEHE-CONVEYOR UV CURING OFFSET-UVC01"
+      },
+      {
+        "id": "BEHE.DUSTCOLLECTORMCH.DC100Y",
+        "value": "BEHE-DUST COLLECTOR MCH-DC100Y",
+        "description": "BEHE-DUST COLLECTOR MCH-DC100Y"
+      },
+      {
+        "id": "BEHE.ETCHINGKLISEMCH.K5050",
+        "value": "BEHE-ETCHING KLISE MCH-K5050",
+        "description": "BEHE-ETCHING KLISE MCH-K5050"
+      },
+      {
+        "id": "BEHE.SCREENPRINTINGMCH.LS560",
+        "value": "BEHE-SCREEN PRINTING MCH-LS560",
+        "description": "BEHE-SCREEN PRINTING MCH-LS560"
+      },
+      {
+        "id": "BEIERDE.AUTOBOTTLEWASHING.FILLINGCAPPINGMCH",
+        "value": "BEIERDE-AUTO BOTTLE WASHING-FILLING CAPPING MCH",
+        "description": "BEIERDE-AUTO BOTTLE WASHING-FILLING CAPPING MCH"
+      },
+      {
+        "id": "BEKO.DRYER.DA8012GA(208 UNIT)",
+        "value": "BEKO-DRYER-DA8012GA (208 UNIT)",
+        "description": "BEKO-DRYER-DA8012GA (208 UNIT)"
+      },
+      {
+        "id": "BEKUM.SINGLESTBLOWMOLD.BA25CMPLTWACCANDBM",
+        "value": "BEKUM-SINGLE ST BLOW MOLD-BA25 CMPLT W ACC AND BM",
+        "description": "BEKUM-SINGLE ST BLOW MOLD-BA25 CMPLT W ACC AND BM"
+      },
+      {
+        "id": "BELARUS.AGRICULTURETRACTORS.110HPTRCBELARUS10253",
+        "value": "BELARUS-AGRICULTURE TRACTORS-110HPTRCBELARUS10253",
+        "description": "BELARUS-AGRICULTURE TRACTORS-110HPTRCBELARUS10253"
+      },
+      {
+        "id": "BELARUS.AGRICULTURETRACTORS.90HPTRACTORBELARUS8922",
+        "value": "BELARUS-AGRICULTURE TRACTORS-90HP, 892.2",
+        "description": "BELARUS-AGRICULTURE TRACTORS-90HP, 892.2"
+      },
+      {
+        "id": "BELMONT..CLESTA",
+        "value": "BELMONT-.-CLESTA",
+        "description": "BELMONT-.-CLESTA"
+      },
+      {
+        "id": "BELMONT.DENTALUNIT.CLESTA",
+        "value": "BELMONT-DENTAL UNIT-CLESTA",
+        "description": "BELMONT-DENTAL UNIT-CLESTA"
+      },
+      {
+        "id": "BEMAJET.DIGITALPRINTINGOUTDOOR.BJKM3204512i4HEAD",
+        "value": "BEMAJET-DIGITAL PRINTING OUTDOOR-BJKM3204512i 4H",
+        "description": "BEMAJET-DIGITAL PRINTING OUTDOOR-BJKM3204512i 4H"
+      },
+      {
+        "id": "BENCHTOP.OPTICALEMISSION.SPECTROMETER",
+        "value": "BENCHTOP-OPTICAL EMISSION-SPECTROMETER",
+        "description": "BENCHTOP-OPTICAL EMISSION-SPECTROMETER"
+      },
+      {
+        "id": "BENDINGMACHINE.WC67Y.125-3200",
+        "value": "BENDING MACHINE-WC67Y-1253200",
+        "description": "BENDING MACHINE-WC67Y-1253200"
+      },
+      {
+        "id": "BENTLEY.CONTINEN.FLYSPURAT59AT",
+        "value": "BENTLEY-CONTINEN-FLY SPURAT 5.9 AT",
+        "description": "BENTLEY-CONTINEN-FLY SPURAT 5.9 AT"
+      },
+      {
+        "id": "BENTLEY.CONTINENTAL.60AT",
+        "value": "BENTLEY-CONTINENTAL-6.0 AT",
+        "description": "BENTLEY-CONTINENTAL-6.0 AT"
+      },
+      {
+        "id": "BENTLEY.FLYINGSPUR.40AT",
+        "value": "BENTLEY-FLYINGSPUR-4.0 AT",
+        "description": "BENTLEY-FLYINGSPUR-4.0 AT"
+      },
+      {
+        "id": "BERCAPOWER.GENSET.BP350G4NTA855G4",
+        "value": "BERCA POWER GENERATOR SET BP350G4/NTA855G4",
+        "description": "BERCA POWER GENERATOR SET BP350G4/NTA855G4"
+      },
+      {
+        "id": "BERCAPOWER.GENSET.BP140KVA",
+        "value": "BERCA POWER GENSET-BP140KVA",
+        "description": "BERCA POWER GENSET-BP140KVA"
+      },
+      {
+        "id": "BERCAPOWER.GENSET.BP350NTA855G4",
+        "value": "BERCA POWER GENSET-BP350/NTA855G4",
+        "description": "BERCA POWER GENSET-BP350/NTA855G4"
+      },
+      {
+        "id": "BERCAPOWER.GENSET.CUMMINS6BTAA59G2BP140KVA",
+        "value": "BERCA POWER GENSET-CUMMINS6BTAA5,9G2 BP140KVA",
+        "description": "BERCA POWER GENSET-CUMMINS6BTAA5,9G2 BP140KVA"
+      },
+      {
+        "id": "BERCAPOWER.GENSET.NTA855-G4",
+        "value": "BERCA POWER GENSET-NTA855G4",
+        "description": "BERCA POWER GENSET-NTA855G4"
+      },
+      {
+        "id": "BERCAPOWERGENSETS.BPC275DS.6LTAA89G2",
+        "value": "BERCA POWER GENSETS-BPC275DS-6LTAA8.9G2",
+        "description": "BERCA POWER GENSETS-BPC275DS-6LTAA8.9G2"
+      },
+      {
+        "id": "BERCAPOWER.DIESELGENERATINGSET.BF0825",
+        "value": "BERCA POWER-DIESEL GENERATING SET-BF 0825",
+        "description": "BERCA POWER-DIESEL GENERATING SET-BF 0825"
+      },
+      {
+        "id": "BERCAPOWER.DIESELGENERATINGSET.KTA38G2BF0825",
+        "value": "BERCA POWER-DIESEL GENERATING SET-KTA38 G2 BF 0825",
+        "description": "BERCA POWER-DIESEL GENERATING SET-KTA38 G2 BF 0825"
+      },
+      {
+        "id": "BERCAPOWER.GENSETSBPC275DS.6LTAA89G2",
+        "value": "BERCA POWER-GENSETS BPC275DS-6LTAA8.9G2",
+        "description": "BERCA POWER-GENSETS BPC275DS-6LTAA8.9G2"
+      },
+      {
+        "id": "BERCAPOWER.STAMFORDGENSET.BPC275DS6LTAA962",
+        "value": "BERCA POWER-STAMFORDGENSET-BPC275DS 6LTAA 9 62",
+        "description": "BERCA POWER-STAMFORDGENSET-BPC275DS 6LTAA 9 62"
+      },
+      {
+        "id": "BERTOCOFFEEROASTER.BERTOROASTER.DL-12",
+        "value": "BERTO COFFEE ROASTER-BERTO ROASTER-DL12",
+        "description": "BERTO COFFEE ROASTER-BERTO ROASTER-DL12"
+      },
+      {
+        "id": "BERTO.COFFEEROASTER.ESSENTIALAIR12KG",
+        "value": "BERTO-COFFEE ROASTER-ESSENTIAL AIR 12 KG",
+        "description": "BERTO-COFFEE ROASTER-ESSENTIAL AIR 12 KG"
+      },
+      {
+        "id": "BERTO.COFFEEROASTER.ESSENTIALAIR3KG",
+        "value": "BERTO-COFFEE ROASTER-ESSENTIAL AIR 3 KG",
+        "description": "BERTO-COFFEE ROASTER-ESSENTIAL AIR 3 KG"
+      },
+      {
+        "id": "BERTO.SIXX.COFFEEROASTER",
+        "value": "BERTO-SIX X-COFFEE ROASTER",
+        "description": "BERTO-SIX X-COFFEE ROASTER"
+      },
+      {
+        "id": "BEST.PACKAGINGMACHINE.700R",
+        "value": "BEST-PACKAGING MACHINE-700R",
+        "description": "BEST-PACKAGING MACHINE-700R"
+      },
+      {
+        "id": "BEST.PACKAGINGMACHINE.700S",
+        "value": "BEST-PACKAGING MACHINE-700S",
+        "description": "BEST-PACKAGING MACHINE-700S"
+      },
+      {
+        "id": "BESTER.INJECTIONMOLDINGMCH.BJ120S2",
+        "value": "BESTER-INJECTION MOLDING MCH-BJ 120 S2",
+        "description": "BESTER-INJECTION MOLDING MCH-BJ 120 S2"
+      },
+      {
+        "id": "BESTER.INJECTIONMOLDINGMCH.BJ160S2",
+        "value": "BESTER-INJECTION MOLDING MCH-BJ 160 S2",
+        "description": "BESTER-INJECTION MOLDING MCH-BJ 160 S2"
+      },
+      {
+        "id": "BESTMAK.GANGRIPSAW.SK305HA50HP",
+        "value": "BESTMAK-GANG RIP SAW-SK 305 HA 50HP",
+        "description": "BESTMAK-GANG RIP SAW-SK 305 HA 50HP"
+      },
+      {
+        "id": "BEYOND.DTFPRINTER.X3PRO",
+        "value": "BEYOND-DTF PRINTER-X3 PRO",
+        "description": "BEYOND-DTF PRINTER-X3 PRO"
+      },
+      {
+        "id": "BEYOND.DTF.X22PH",
+        "value": "BEYOND-DTF-X2 2 PH",
+        "description": "BEYOND-DTF-X2 2 PH"
+      },
+      {
+        "id": "BEYOND.DTG.S29COLORS",
+        "value": "BEYOND-DTG-S2 9 COLORS",
+        "description": "BEYOND-DTG-S2 9 COLORS"
+      },
+      {
+        "id": "BEYOND.HEATTRANSFERMCH.ZH2201900",
+        "value": "BEYOND-HEAT TRANSFER MCH-ZH220 1900",
+        "description": "BEYOND-HEAT TRANSFER MCH-ZH220 1900"
+      },
+      {
+        "id": "BEYOND.HPR.3019",
+        "value": "BEYOND-HPR-3019",
+        "description": "BEYOND-HPR-3019"
+      },
+      {
+        "id": "BEYOND.PHR.2202040",
+        "value": "BEYOND-PHR-220 2040",
+        "description": "BEYOND-PHR-220 2040"
+      },
+      {
+        "id": "BEYOND.X2.ZX650WXHS",
+        "value": "BEYOND-X2-ZX650WXHS",
+        "description": "BEYOND-X2-ZX650WXHS"
+      },
+      {
+        "id": "BIANCALANI.AIRFLWDRYANDSOFTMCH.AIRO24WB18GBCY",
+        "value": "BIANCALANI-AIR FLW DRY AND SOFT MCH-AIRO24WB18GBCY",
+        "description": "BIANCALANI-AIR FLW DRY AND SOFT MCH-AIRO24WB18GBCY"
+      },
+      {
+        "id": "BICA.CNCMACHINE.A40EDM",
+        "value": "BICA-CNC MACHINE-A40 EDM",
+        "description": "BICA-CNC MACHINE-A40 EDM"
+      },
+      {
+        "id": "BIELOMATIK.EXERCISEBOOKMACHINE.P1590",
+        "value": "BIELOMATIK-EXERCISE BOOK MACHINE-P1590",
+        "description": "BIELOMATIK-EXERCISE BOOK MACHINE-P1590"
+      },
+      {
+        "id": "BIESSE.BLAZE.120",
+        "value": "BIESSE-BLAZE-120",
+        "description": "BIESSE-BLAZE-120"
+      },
+      {
+        "id": "BIESSE.CALIBRATINGSANDINGMCH.VIETS1213RT",
+        "value": "BIESSE-CALIBRATING SANDING MCH-VIET S1 213RT",
+        "description": "BIESSE-CALIBRATING SANDING MCH-VIET S1 213RT"
+      },
+      {
+        "id": "BIESSE.FINISHINGCENTRE.VIETOPERA533",
+        "value": "BIESSE-FINISHING CENTRE-VIET OPERA 53.3",
+        "description": "BIESSE-FINISHING CENTRE-VIET OPERA 53.3"
+      },
+      {
+        "id": "BIESSE.JADE.340",
+        "value": "BIESSE-JADE-340",
+        "description": "BIESSE-JADE-340"
+      },
+      {
+        "id": "BIESSE.JADE.340A",
+        "value": "BIESSE-JADE-340A",
+        "description": "BIESSE-JADE-340A"
+      },
+      {
+        "id": "BIESSE.NCMACHININGCENTER.ROVERAS15",
+        "value": "BIESSE-NC MACHINING CENTER-ROVER AS 15",
+        "description": "BIESSE-NC MACHINING CENTER-ROVER AS 15"
+      },
+      {
+        "id": "BIESSE.NCMACHININGCENTER.ROVERAS1532",
+        "value": "BIESSE-NC MACHINING CENTER-ROVER AS 1532",
+        "description": "BIESSE-NC MACHINING CENTER-ROVER AS 1532"
+      },
+      {
+        "id": "BIESSE.NCMACHININGCENTER.ROVERGOLD1232",
+        "value": "BIESSE-NC MACHINING CENTER-ROVER GOLD 1232",
+        "description": "BIESSE-NC MACHINING CENTER-ROVER GOLD 1232"
+      },
+      {
+        "id": "BIESSE.PANELSAW.SELCOSK3",
+        "value": "BIESSE-PANEL SAW-SELCO SK 3",
+        "description": "BIESSE-PANEL SAW-SELCO SK 3"
+      },
+      {
+        "id": "BIESSE.PANELSAW.SELCOSK3370",
+        "value": "BIESSE-PANEL SAW-SELCO SK 3 370",
+        "description": "BIESSE-PANEL SAW-SELCO SK 3 370"
+      },
+      {
+        "id": "BIESSE.ROVERGOLD.1232",
+        "value": "BIESSE-ROVER GOLD-1232",
+        "description": "BIESSE-ROVER GOLD-1232"
+      },
+      {
+        "id": "BIESSE.ROVER.ASMART1632",
+        "value": "BIESSE-ROVER-A SMART 1632",
+        "description": "BIESSE-ROVER-A SMART 1632"
+      },
+      {
+        "id": "BIESSE.ROVER.ASMART1659",
+        "value": "BIESSE-ROVER-A SMART 1659",
+        "description": "BIESSE-ROVER-A SMART 1659"
+      },
+      {
+        "id": "BIESSE.ROVER.AS15",
+        "value": "BIESSE-ROVER-AS 15",
+        "description": "BIESSE-ROVER-AS 15"
+      },
+      {
+        "id": "BIESSE.ROVER.AS1532",
+        "value": "BIESSE-ROVER-AS 1532",
+        "description": "BIESSE-ROVER-AS 1532"
+      },
+      {
+        "id": "BIESSE.ROVER.K1224FT",
+        "value": "BIESSE-ROVER-K 1224 FT",
+        "description": "BIESSE-ROVER-K 1224 FT"
+      },
+      {
+        "id": "BIESSE.ROVER.K1124FT",
+        "value": "BIESSE-ROVER-K1124FT",
+        "description": "BIESSE-ROVER-K1124FT"
+      },
+      {
+        "id": "BIESSE.ROVER.S1224FT",
+        "value": "BIESSE-ROVER-S 1224FT",
+        "description": "BIESSE-ROVER-S 1224FT"
+      },
+      {
+        "id": "BIESSE.ROVERASMART.1632",
+        "value": "BIESSE-ROVERASMART-1632",
+        "description": "BIESSE-ROVERASMART-1632"
+      },
+      {
+        "id": "BIESSE.SEKTOR3.3200x3200",
+        "value": "BIESSE-SEKTOR 3-3200x3200",
+        "description": "BIESSE-SEKTOR 3-3200x3200"
+      },
+      {
+        "id": "BIESSE.SEKTOR.370",
+        "value": "BIESSE-SEKTOR-370",
+        "description": "BIESSE-SEKTOR-370"
+      },
+      {
+        "id": "BIESSE.SELCO.SK370",
+        "value": "BIESSE-SELCO-SK 370",
+        "description": "BIESSE-SELCO-SK 370"
+      },
+      {
+        "id": "BIESSE.SELCO.SK3370",
+        "value": "BIESSE-SELCO-SK3 370",
+        "description": "BIESSE-SELCO-SK3 370"
+      },
+      {
+        "id": "BIESSE.SINGLESIDEEDGEBANDER.AKRON1130J",
+        "value": "BIESSE-SINGLE SIDE EDGE BANDER-AKRON 1130 J",
+        "description": "BIESSE-SINGLE SIDE EDGE BANDER-AKRON 1130 J"
+      },
+      {
+        "id": "BIESSE.SINGLESIDEDEDGEBANDER.AKRON1440A",
+        "value": "BIESSE-SINGLE SIDED EDGEBANDER-AKRON 1440 A",
+        "description": "BIESSE-SINGLE SIDED EDGEBANDER-AKRON 1440 A"
+      },
+      {
+        "id": "BIESSE.SKILL.1224GFT",
+        "value": "BIESSE-SKILL-1224 GFT",
+        "description": "BIESSE-SKILL-1224 GFT"
+      },
+      {
+        "id": "BIESSE.SKIPPER.100L",
+        "value": "BIESSE-SKIPPER-100 L",
+        "description": "BIESSE-SKIPPER-100 L"
+      },
+      {
+        "id": "BIESSE.SKIPPER.V31",
+        "value": "BIESSE-SKIPPER-V31",
+        "description": "BIESSE-SKIPPER-V31"
+      },
+      {
+        "id": "BIESSE.STREAM.AK60",
+        "value": "BIESSE-STREAM-AK 6.0",
+        "description": "BIESSE-STREAM-AK 6.0"
+      },
+      {
+        "id": "BIESSE.STREAM.AK65",
+        "value": "BIESSE-STREAM-AK 6.5",
+        "description": "BIESSE-STREAM-AK 6.5"
+      },
+      {
+        "id": "BIESSE.STREAM.SK65",
+        "value": "BIESSE-STREAM-SK 6.5",
+        "description": "BIESSE-STREAM-SK 6.5"
+      },
+      {
+        "id": "BIESSE.VERTICALPANELMCHBREMA.EKO21",
+        "value": "BIESSE-VERTICAL PANEL MACHINE BREMA-EKO 2.1",
+        "description": "BIESSE-VERTICAL PANEL MACHINE BREMA-EKO 2.1"
+      },
+      {
+        "id": "BIESSE.VERTICALPANELMACHINE.EKO21",
+        "value": "BIESSE-VERTICAL PANEL MACHINE-EKO 2.1",
+        "description": "BIESSE-VERTICAL PANEL MACHINE-EKO 2.1"
+      },
+      {
+        "id": "BIESSE.VIET.S1211RKRT",
+        "value": "BIESSE-VIET-S1211 R KRT",
+        "description": "BIESSE-VIET-S1211 R KRT"
+      },
+      {
+        "id": "BIGDUTCHMAN.BOILERHOUSE.120mx15mx4,4m",
+        "value": "BIG DUTCHMAN-BOILERHOUSE-120mx15mx4,4m",
+        "description": "BIG DUTCHMAN-BOILERHOUSE-120mx15mx4,4m"
+      },
+      {
+        "id": "BIGDUTCHMAN.BOILERHOUSE.120mx15mx4,4m2Floors",
+        "value": "BIG DUTCHMAN-BOILERHOUSE-120mx15mx4,4m(2Floors)",
+        "description": "BIG DUTCHMAN-BOILERHOUSE-120mx15mx4,4m(2Floors)"
+      },
+      {
+        "id": "BIGDUTCHMAN.BOILERHOUSE.126mx15mx4,4m2Floors",
+        "value": "BIG DUTCHMAN-BOILERHOUSE-126mx15mx4,4m(2Floors)",
+        "description": "BIG DUTCHMAN-BOILERHOUSE-126mx15mx4,4m(2Floors)"
+      },
+      {
+        "id": "BIGDUTCHMAN.BOILERHOUSE.126mx15mx4,4mdoublestorey",
+        "value": "BIG DUTCHMAN-BOILERHOUSE-126mx15mx4,4mdoublestorey",
+        "description": "BIG DUTCHMAN-BOILERHOUSE-126mx15mx4,4mdoublestorey"
+      },
+      {
+        "id": "BILPLAST.BM22.TWINWRAPPACKINGMACHINE",
+        "value": "BILPLAST-BM 22-TWIN WRAP PACKING MACHINE",
+        "description": "BILPLAST-BM 22-TWIN WRAP PACKING MACHINE"
+      },
+      {
+        "id": "BINDTEC.CUTTINGMACHINE.670H",
+        "value": "BINDTEC-CUTTING MACHINE-670 H",
+        "description": "BINDTEC-CUTTING MACHINE-670 H"
+      },
+      {
+        "id": "BINDTEC.DIGITALCUTTINGPAPERMCH.4908",
+        "value": "BINDTEC-DIGITAL CUTTING PAPER MCH-4908",
+        "description": "BINDTEC-DIGITAL CUTTING PAPER MCH-4908"
+      },
+      {
+        "id": "BINDTEC.DIGITALCUTTINGPAPERMCH.4908S",
+        "value": "BINDTEC-DIGITAL CUTTING PAPER MCH-4908S",
+        "description": "BINDTEC-DIGITAL CUTTING PAPER MCH-4908S"
+      },
+      {
+        "id": "BINTERJET.DTF.PSDV2",
+        "value": "BINTERJET-DTF-PSD V2",
+        "description": "BINTERJET-DTF-PSD V2"
+      },
+      {
+        "id": "BINTERJET.JETRO.LN8",
+        "value": "BINTERJET-JETRO-LN 8",
+        "description": "BINTERJET-JETRO-LN 8"
+      },
+      {
+        "id": "BINTERJET.OUTDOOR.EXORA",
+        "value": "BINTERJET-OUTDOOR-EXORA",
+        "description": "BINTERJET-OUTDOOR-EXORA"
+      },
+      {
+        "id": "BITLER.ENGINELATHEMCH.BWM6240CX2000",
+        "value": "BITLER-ENGINE LATHE MCH-BWM 6240CX2000",
+        "description": "BITLER-ENGINE LATHE MCH-BWM 6240CX2000"
+      },
+      {
+        "id": "BITZER.ABF.TWOSTAGE30HP",
+        "value": "BITZER-ABF-TWO STAGE 30 HP",
+        "description": "BITZER-ABF-TWO STAGE 30 HP"
+      },
+      {
+        "id": "BITZER.CHILLERMACHINE.SEMIHERMETIC4HP",
+        "value": "BITZER-CHILLER MACHINE-SEMI HERMETIC 4 HP",
+        "description": "BITZER-CHILLER MACHINE-SEMI HERMETIC 4 HP"
+      },
+      {
+        "id": "BITZER.COLDSTORAGE.EDEN\t",
+        "value": "BITZER-COLD STORAGE-EDEN",
+        "description": "BITZER-COLD STORAGE-EDEN"
+      },
+      {
+        "id": "BITZER.COLDSTORAGE.SEMIHERMETIC25HP",
+        "value": "BITZER-COLD STORAGE-SEMI HERMETIC 25 HP",
+        "description": "BITZER-COLD STORAGE-SEMI HERMETIC 25 HP"
+      },
+      {
+        "id": "BITZER.COMPRESSOR.OA9111",
+        "value": "BITZER-COMPRESSOR-OA9111",
+        "description": "BITZER-COMPRESSOR-OA9111"
+      },
+      {
+        "id": "BITZER.COMPRESSOR.S6F302Y",
+        "value": "BITZER-COMPRESSOR-S6F30 2Y",
+        "description": "BITZER-COMPRESSOR-S6F30 2Y"
+      },
+      {
+        "id": "BITZER.COOLDROOMFREEZERTEMP.5000X3000X25005HP",
+        "value": "BITZER-COOLD ROOM FREEZER TEMP-5000X3000X25005HP",
+        "description": "BITZER-COOLD ROOM FREEZER TEMP-5000X3000X25005HP"
+      },
+      {
+        "id": "BITZER.HP600.HP602LHSN85712501",
+        "value": "BITZER-HP 600-HP 602 L HSN8571 250 1",
+        "description": "BITZER-HP 600-HP 602 L HSN8571 250 1"
+      },
+      {
+        "id": "BITZER.KUHLMASCHINENBAUGMBH.4NES14Y40P",
+        "value": "BITZER-KUHLMASCHINENBAUGMBH-4NES14Y40P",
+        "description": "BITZER-KUHLMASCHINENBAUGMBH-4NES14Y40P"
+      },
+      {
+        "id": "BITZER.KUHLMASCHINENBAUGMBH.S4G122Y40P",
+        "value": "BITZER-KUHLMASCHINENBAUGMBH-S4G122Y40P",
+        "description": "BITZER-KUHLMASCHINENBAUGMBH-S4G122Y40P"
+      },
+      {
+        "id": "BITZER.PROSESING.SEMIHERMETIC30HP",
+        "value": "BITZER-PROSESING-SEMI HERMETIC 30 HP",
+        "description": "BITZER-PROSESING-SEMI HERMETIC 30 HP"
+      },
+      {
+        "id": "BITZER.S6F.2Y",
+        "value": "BITZER-S6F-2Y",
+        "description": "BITZER-S6F-2Y"
+      },
+      {
+        "id": "BITZER.S6F.302",
+        "value": "BITZER-S6F-30 2",
+        "description": "BITZER-S6F-30 2"
+      },
+      {
+        "id": "BITZER.S6F.30240P",
+        "value": "BITZER-S6F-30 2 40P",
+        "description": "BITZER-S6F-30 2 40P"
+      },
+      {
+        "id": "BITZER.S6F.302Y",
+        "value": "BITZER-S6F-30 2Y",
+        "description": "BITZER-S6F-30 2Y"
+      },
+      {
+        "id": "BITZER.S6F.302Y40P",
+        "value": "BITZER-S6F-30 2Y 40P",
+        "description": "BITZER-S6F-30 2Y 40P"
+      },
+      {
+        "id": "BITZER.SEMIHERMATIC.4FC5240S35mx45mx3m20HP",
+        "value": "BITZER-SEMI HERMATIC-4FC5.240S(3.5mx4.5mx3m)20HP",
+        "description": "BITZER-SEMI HERMATIC-4FC5.240S(3.5mx4.5mx3m)20HP"
+      },
+      {
+        "id": "BITZER.SEMIHERMATIC.4PC10240P6mx8mx4m40HP",
+        "value": "BITZER-SEMI HERMATIC-4PC10.240P(6mx8mx4m)40HP",
+        "description": "BITZER-SEMI HERMATIC-4PC10.240P(6mx8mx4m)40HP"
+      },
+      {
+        "id": "BITZER.SEMIHERMATIC.4PCS10240P35mx6mx3m20HP",
+        "value": "BITZER-SEMI HERMATIC-4PCS10.240P(3.5mx6mx3m)20HP",
+        "description": "BITZER-SEMI HERMATIC-4PCS10.240P(3.5mx6mx3m)20HP"
+      },
+      {
+        "id": "BITZER.SEMIHERMETIC5HPFREEZERROOM.500X300X250CM",
+        "value": "BITZER-SEMIHERMETIC 5HP FREEZER ROOM-500X300X250CM",
+        "description": "BITZER-SEMIHERMETIC 5HP FREEZER ROOM-500X300X250CM"
+      },
+      {
+        "id": "BITZER.SEMIHERMETIC.4FES5Y40S500X300X250CM5HP",
+        "value": "BITZER-SEMIHERMETIC-4FES5Y40S 500X300X250CM5HP",
+        "description": "BITZER-SEMIHERMETIC-4FES5Y40S 500X300X250CM5HP"
+      },
+      {
+        "id": "BITZER.SF6.30240P",
+        "value": "BITZER-SF6-30 240P",
+        "description": "BITZER-SF6-30 240P"
+      },
+      {
+        "id": "BITZER.SF6.302Y40P",
+        "value": "BITZER-SF6-30 2Y40P",
+        "description": "BITZER-SF6-30 2Y40P"
+      },
+      {
+        "id": "BITZER.VESTREFICEMACHINE.4DES5Y40S",
+        "value": "BITZER-VESTREF ICE MACHINE-4DES5Y40S",
+        "description": "BITZER-VESTREF ICE MACHINE-4DES5Y40S"
+      },
+      {
+        "id": "BJETPDF.702.FZPDBDG",
+        "value": "BJET PDF-702-FZPDBDG",
+        "description": "BJET PDF-702-FZPDBDG"
+      },
+      {
+        "id": "BJET.IGO.1702XOGZPD",
+        "value": "BJET-IGO-1702X.OGZPD",
+        "description": "BJET-IGO-1702X.OGZPD"
+      },
+      {
+        "id": "BJET.RJ3200.M1904",
+        "value": "BJET-RJ3200-M 1904",
+        "description": "BJET-RJ3200-M 1904"
+      },
+      {
+        "id": "BJET.SVT.3204",
+        "value": "BJET-SVT-3204",
+        "description": "BJET-SVT-3204"
+      },
+      {
+        "id": "BK.MACHINE.Ultrasound",
+        "value": "BK-MACHINE-Ultrasound",
+        "description": "BK-MACHINE-Ultrasound"
+      },
+      {
+        "id": "BKM.HYDRAULICPRESSMACHINE.3AXIS",
+        "value": "BKM-HYDRAULIC PRESS MACHINE-3 AXIS",
+        "description": "BKM-HYDRAULIC PRESS MACHINE-3 AXIS"
+      },
+      {
+        "id": "BLACKKNIGHT.CUTTING.0604",
+        "value": "BLACK KNIGHT-CUTTING-0604",
+        "description": "BLACK KNIGHT-CUTTING-0604"
+      },
+      {
+        "id": "BLIN.CNCLATHEMACHINE.BLZ0640CONTROLLERGSK980TC3",
+        "value": "BLIN-CNCLATHEMACHINE-BLZ0640CONTROLLERGSK980TC3",
+        "description": "BLIN-CNCLATHEMACHINE-BLZ0640CONTROLLERGSK980TC3"
+      },
+      {
+        "id": "BLIN.CNCLATHEMACHINE.XG40",
+        "value": "BLIN-CNCLATHEMACHINE-XG 40",
+        "description": "BLIN-CNCLATHEMACHINE-XG 40"
+      },
+      {
+        "id": "BLOHM.SURFACEGRINDING.TABLE500X2000LCLMGNTCHUCK",
+        "value": "BLOHM-SURFACE GRINDING-TABLE500X2000LCLMGNTCHUCK",
+        "description": "BLOHM-SURFACE GRINDING-TABLE500X2000LCLMGNTCHUCK"
+      },
+      {
+        "id": "BLOODGASANALYZER.OPTI.CCATS",
+        "value": "BLOOD GAS ANALYZER-OPTI-CCA TS",
+        "description": "BLOOD GAS ANALYZER-OPTI-CCA TS"
+      },
+      {
+        "id": "BLOODGASANALYZER.OSTI.CCATS2",
+        "value": "BLOOD GAS ANALYZER-OSTI-CCA TS2",
+        "description": "BLOOD GAS ANALYZER-OSTI-CCA TS2"
+      },
+      {
+        "id": "BLUEPRINT.INKJETPRINTER.C8KM512i",
+        "value": "BLUEPRINT-INKJET PRINTER-C8 KM512i",
+        "description": "BLUEPRINT-INKJET PRINTER-C8 KM512i"
+      },
+      {
+        "id": "BLUEPRINT.INKJETPRINTER.KM512i30PL",
+        "value": "BLUEPRINT-INKJET PRINTER-KM512i 30PL",
+        "description": "BLUEPRINT-INKJET PRINTER-KM512i 30PL"
+      },
+      {
+        "id": "BLUEPRINT.INKJETPRINTER.KM512iB8",
+        "value": "BLUEPRINT-INKJET PRINTER-KM512i B/8",
+        "description": "BLUEPRINT-INKJET PRINTER-KM512i B/8"
+      },
+      {
+        "id": "BLUEPRINT.INKJETPRINTING.KM512iC8",
+        "value": "BLUEPRINT-INKJET PRINTING-KM512i C/8",
+        "description": "BLUEPRINT-INKJET PRINTING-KM512i C/8"
+      },
+      {
+        "id": "BLUEWIN.BLUEPRINT.INKJETPRINTINGC8",
+        "value": "BLUEWIN-BLUEPRINT-INKJET PRINTING C8",
+        "description": "BLUEWIN-BLUEPRINT-INKJET PRINTING C8"
+      },
+      {
+        "id": "BLUEWIN.BLW.512i",
+        "value": "BLUEWIN-BLW-512i",
+        "description": "BLUEWIN-BLW-512i"
+      },
+      {
+        "id": "BLUEWIN.BLW1024.C8K",
+        "value": "BLUEWIN-BLW1024-C8K",
+        "description": "BLUEWIN-BLW1024-C8K"
+      },
+      {
+        "id": "BLUEWIN.C8KPRINTER.KONICA1024i",
+        "value": "BLUEWIN-C8K PRINTER-KONICA 1024i",
+        "description": "BLUEWIN-C8K PRINTER-KONICA 1024i"
+      },
+      {
+        "id": "BLUEWIN.DGTLPRNTNGOUTDOOR.KM512i30PLMMKCG130SRIII",
+        "value": "BLUEWIN-DGTLPRNTNGOUTDOOR-KM512i30PL+MMKCG130SRIII",
+        "description": "BLUEWIN-DGTLPRNTNGOUTDOOR-KM512i30PL+MMKCG130SRIII"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.BLW1024B8K",
+        "value": "BLUEWIN-DIGITAL PRINTING-BLW1024 B8K",
+        "description": "BLUEWIN-DIGITAL PRINTING-BLW1024 B8K"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM1024",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 1024",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 1024"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM1024B8K",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 1024B8K",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 1024B8K"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM1024iC8",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 1024i C8",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 1024i C8"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM1024iC82018",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 1024i C8 2018",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 1024i C8 2018"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 512",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 512"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512iSeriC8k",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM 512i Seri C8k",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM 512i Seri C8k"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM1024i",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM1024i",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM1024i"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512C8",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM512 C8",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM512 C8"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512C8K4HEAD",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM512 C8K 4HEAD",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM512 C8K 4HEAD"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512I",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM512 I",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM512 I"
+      },
+      {
+        "id": "BLUEWIN.DIGITALPRINTING.KM512iC8K4HEAD",
+        "value": "BLUEWIN-DIGITAL PRINTING-KM512i C8K 4HEAD",
+        "description": "BLUEWIN-DIGITAL PRINTING-KM512i C8K 4HEAD"
+      },
+      {
+        "id": "BLUEWIN.INKJETPRINTER.B8",
+        "value": "BLUEWIN-INKJET PRINTER-B8",
+        "description": "BLUEWIN-INKJET PRINTER-B8"
+      },
+      {
+        "id": "BLUEWIN.INKJETPRINTER.C8",
+        "value": "BLUEWIN-INKJET PRINTER-C8",
+        "description": "BLUEWIN-INKJET PRINTER-C8"
+      },
+      {
+        "id": "BLUEWIN.INKJETPRINTER.OR1602UV",
+        "value": "BLUEWIN-INKJET PRINTER-OR 1602UV",
+        "description": "BLUEWIN-INKJET PRINTER-OR 1602UV"
+      },
+      {
+        "id": "BLUEWIN.INKJETPRINTER.ORCK32512I",
+        "value": "BLUEWIN-INKJET PRINTER-OR CK32 512I",
+        "description": "BLUEWIN-INKJET PRINTER-OR CK32 512I"
+      },
+      {
+        "id": "BLUEWIN.INKJETPRINTER.OR32",
+        "value": "BLUEWIN-INKJET PRINTER-OR32",
+        "description": "BLUEWIN-INKJET PRINTER-OR32"
+      },
+      {
+        "id": "BLUEWIN.KM512.B8K",
+        "value": "BLUEWIN-KM512-B8K",
+        "description": "BLUEWIN-KM512-B8K"
+      },
+      {
+        "id": "BLUEWIN.KM512.C8K",
+        "value": "BLUEWIN-KM512-C8K",
+        "description": "BLUEWIN-KM512-C8K"
+      },
+      {
+        "id": "BLUEWIN.KM512i.30PLC8",
+        "value": "BLUEWIN-KM512i-30PL C8",
+        "description": "BLUEWIN-KM512i-30PL C8"
+      },
+      {
+        "id": "BLUEWIN.KM512i.B4K",
+        "value": "BLUEWIN-KM512i-B4K",
+        "description": "BLUEWIN-KM512i-B4K"
+      },
+      {
+        "id": "BLUEWIN.KM512i.C8K",
+        "value": "BLUEWIN-KM512i-C8K",
+        "description": "BLUEWIN-KM512i-C8K"
+      },
+      {
+        "id": "BLUEWIN.KONICAMINOLTAPH30PL4H.KM512iC8K",
+        "value": "BLUEWIN-KONICA MINOLTA PH 30PL 4H-KM512i/C8K",
+        "description": "BLUEWIN-KONICA MINOLTA PH 30PL 4H-KM512i/C8K"
+      },
+      {
+        "id": "BLUEWIN.KONICAMINOLTAPH30PL8H.KM512iC8K",
+        "value": "BLUEWIN-KONICA MINOLTA PH 30PL 8H-KM512i/C8K",
+        "description": "BLUEWIN-KONICA MINOLTA PH 30PL 8H-KM512i/C8K"
+      },
+      {
+        "id": "BLUEWIN.KONICAMINOLTA.PRINTHEAD30PL8HKM512i",
+        "value": "BLUEWIN-KONICA MINOLTA-PRINT HEAD 30PL 8H KM512i",
+        "description": "BLUEWIN-KONICA MINOLTA-PRINT HEAD 30PL 8H KM512i"
+      },
+      {
+        "id": "BLUEWIN.OUTDOORDIGITALPRINTING.KM102442PLC8K",
+        "value": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM1024/42PL C8K",
+        "description": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM1024/42PL C8K"
+      },
+      {
+        "id": "BLUEWIN.OUTDOORDIGITALPRINTING.KM512i30PL",
+        "value": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM512i 30PL",
+        "description": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM512i 30PL"
+      },
+      {
+        "id": "BLUEWIN.OUTDOORDIGITALPRINTING.KM512i42PL",
+        "value": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM512i 42PL",
+        "description": "BLUEWIN-OUTDOOR DIGITAL PRINTING-KM512i 42PL"
+      },
+      {
+        "id": "BLUEWIN.PRINTINGMACHINE.UVRTROR1602",
+        "value": "BLUEWIN-PRINTING MACHINE-UV RTR OR 1602",
+        "description": "BLUEWIN-PRINTING MACHINE-UV RTR OR 1602"
+      },
+      {
+        "id": "BMW.318I.M40E3618ATFTZ",
+        "value": "BMW 318I M40 E36 1.8 AT FTZ",
+        "description": "BMW 318I M40 E36 1.8 AT FTZ"
+      },
+      {
+        "id": "BMW.318I.M40E3618MTFTZ",
+        "value": "BMW 318I M40 E36 1.8 MT FTZ",
+        "description": "BMW 318I M40 E36 1.8 MT FTZ"
+      },
+      {
+        "id": "BMW.318I.M43E3618ATFTZ",
+        "value": "BMW 318I M43 E36 1.8 AT FTZ",
+        "description": "BMW 318I M43 E36 1.8 AT FTZ"
+      },
+      {
+        "id": "BMW.318I.M43E3618MTFTZ",
+        "value": "BMW 318I M43 E36 1.8 MT FTZ",
+        "description": "BMW 318I M43 E36 1.8 MT FTZ"
+      },
+      {
+        "id": "BMW.318I.M43E4618MTFTZ",
+        "value": "BMW 318I M43 E46 1.8 MT FTZ",
+        "description": "BMW 318I M43 E46 1.8 MT FTZ"
+      },
+      {
+        "id": "BMW.318I.M43E4618TTFTZ",
+        "value": "BMW 318I M43 E46 1.8 TT FTZ",
+        "description": "BMW 318I M43 E46 1.8 TT FTZ"
+      },
+      {
+        "id": "BMW.318I.GRANDTOURER15AT",
+        "value": "BMW 318I-GRAND TOURER 1.5 AT",
+        "description": "BMW 318I-GRAND TOURER 1.5 AT"
+      },
+      {
+        "id": "BMW.320I.E3920TTFTZ",
+        "value": "BMW 320I E39 20 TT AT FTZ",
+        "description": "BMW 320I E39 20 TT AT FTZ"
+      },
+      {
+        "id": "BMW.320I.E9020ATFTZ",
+        "value": "BMW 320I E90 20 AT FTZ",
+        "description": "BMW 320I E90 20 AT FTZ"
+      },
+      {
+        "id": "BMW.320I.M5020ATFTZ",
+        "value": "BMW 320I M50 2.0 AT FTZ",
+        "description": "BMW 320I M50 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.320I.M5020LIMITEDATFTZ",
+        "value": "BMW 320I M50 2.0 LIMITED AT FTZ",
+        "description": "BMW 320I M50 2.0 LIMITED AT FTZ"
+      },
+      {
+        "id": "BMW.320I.M5020MTFTZ",
+        "value": "BMW 320I M50 2.0 MT FTZ",
+        "description": "BMW 320I M50 2.0 MT FTZ"
+      },
+      {
+        "id": "BMW.320I.M50LIMITED20MTFTZ",
+        "value": "BMW 320I M50 LIMITED 2.0 MT FTZ",
+        "description": "BMW 320I M50 LIMITED 2.0 MT FTZ"
+      },
+      {
+        "id": "BMW.320I.M52E36VANOS20ATFTZ",
+        "value": "BMW 320I M52 E36 VANOS 2.0 AT FTZ",
+        "description": "BMW 320I M52 E36 VANOS 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.320I.M52E36VANOS20MTFTZ",
+        "value": "BMW 320I M52 E36 VANOS 2.0 MT FTZ",
+        "description": "BMW 320I M52 E36 VANOS 2.0 MT FTZ"
+      },
+      {
+        "id": "BMW.320I.M52E36VANOSLIMITED20ATFTZ",
+        "value": "BMW 320I M52 E36 VANOS LIMITED 2.0 AT FTZ",
+        "description": "BMW 320I M52 E36 VANOS LIMITED 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.320I.M52E36VANOSLIMITED20MTFTZ",
+        "value": "BMW 320I M52 E36 VANOS LIMITED 2.0 MT FTZ",
+        "description": "BMW 320I M52 E36 VANOS LIMITED 2.0 MT FTZ"
+      },
+      {
+        "id": "BMW.320I.20AT",
+        "value": "BMW 320I-20AT",
+        "description": "BMW 320I-20AT"
+      },
+      {
+        "id": "BMW.320I.20ATDF",
+        "value": "BMW 320I-20AT DF",
+        "description": "BMW 320I-20AT DF"
+      },
+      {
+        "id": "BMW.320I.CKDAT",
+        "value": "BMW 320I-CKD AT",
+        "description": "BMW 320I-CKD AT"
+      },
+      {
+        "id": "BMW.320I.N20CKDAT DF",
+        "value": "BMW 320I-N20CKDAT DF",
+        "description": "BMW 320I-N20CKDAT DF"
+      },
+      {
+        "id": "BMW.320I.SPORTFTZ",
+        "value": "BMW 320I-SPORT FTZ",
+        "description": "BMW 320I-SPORT FTZ"
+      },
+      {
+        "id": "BMW.320I.TOURING20AT",
+        "value": "BMW 320I-TOURING 2.0 AT",
+        "description": "BMW 320I-TOURING 2.0 AT"
+      },
+      {
+        "id": "BMW.320I.TOURING20ATDF",
+        "value": "BMW 320I-TOURING 2.0 AT DF",
+        "description": "BMW 320I-TOURING 2.0 AT DF"
+      },
+      {
+        "id": "BMW.325I.E4625ATFTZ",
+        "value": "BMW 325I E46 2.5 AT FTZ",
+        "description": "BMW 325I E46 2.5 AT FTZ"
+      },
+      {
+        "id": "BMW.325I.E4625STREPATFTZ",
+        "value": "BMW 325I E46 2.5 STREP AT FTZ",
+        "description": "BMW 325I E46 2.5 STREP AT FTZ"
+      },
+      {
+        "id": "BMW.325I.E4625STREPTONICFTZ",
+        "value": "BMW 325I E46 2.5 STREPTONIC AT FTZ",
+        "description": "BMW 325I E46 2.5 STREPTONIC AT FTZ"
+      },
+      {
+        "id": "BMW.325I.E4625TTFTZ",
+        "value": "BMW 325I E46 2.5 TT AT FTZ",
+        "description": "BMW 325I E46 2.5 TT AT FTZ"
+      },
+      {
+        "id": "BMW.325I.EE9025STREPTONICFTZ",
+        "value": "BMW 325I EE90 2.5 STREPTONIC AT FTZ",
+        "description": "BMW 325I EE90 2.5 STREPTONIC AT FTZ"
+      },
+      {
+        "id": "BMW.325I.25AT",
+        "value": "BMW 325I-2.5 AT",
+        "description": "BMW 325I-2.5 AT"
+      },
+      {
+        "id": "BMW.325I.COUPE25ATFTZ",
+        "value": "BMW 325I-COUPE AT FTZ",
+        "description": "BMW 325I-COUPE AT FTZ"
+      },
+      {
+        "id": "BMW.520I.E3920ATFTZ",
+        "value": "BMW 520I E39 2.0 AT FTZ",
+        "description": "BMW 520I E39 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.520I.E3920STREPTONICFTZ",
+        "value": "BMW 520I E39 2.0 STREPTONIC AT FTZ",
+        "description": "BMW 520I E39 2.0 STREPTONIC AT FTZ"
+      },
+      {
+        "id": "BMW.520I.M50E34ABS20ATFTZ",
+        "value": "BMW 520I M50 E34 ABS 2.0 AT FTZ",
+        "description": "BMW 520I M50 E34 ABS 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.520I.M52E34VANOS20ATFTZ",
+        "value": "BMW 520I M52 E34 VANOS 2.0 AT FTZ",
+        "description": "BMW 520I M52 E34 VANOS 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.520I.M52E34VANOS20MTFTZ",
+        "value": "BMW 520I M52 E34 VANOS 2.0 MT FTZ",
+        "description": "BMW 520I M52 E34 VANOS 2.0 MT FTZ"
+      },
+      {
+        "id": "BMW.520I.20AT",
+        "value": "BMW 520I-2.0 AT",
+        "description": "BMW 520I-2.0 AT"
+      },
+      {
+        "id": "BMW.520I.20ATDF",
+        "value": "BMW 520I-2.0 AT DF",
+        "description": "BMW 520I-2.0 AT DF"
+      },
+      {
+        "id": "BMW.520I.22AT",
+        "value": "BMW 520I-2.2 AT",
+        "description": "BMW 520I-2.2 AT"
+      },
+      {
+        "id": "BMW.520I.CKDAT",
+        "value": "BMW 520I-CKD AT",
+        "description": "BMW 520I-CKD AT"
+      },
+      {
+        "id": "BMW.520I.MSPORT20AT",
+        "value": "BMW 520I-M SPORT 2.0 AT",
+        "description": "BMW 520I-M SPORT 2.0 AT"
+      },
+      {
+        "id": "BMW.523I.E3925TTFTZ",
+        "value": "BMW 523I E39 2.5 TT AT FTZ",
+        "description": "BMW 523I E39 2.5 TT AT FTZ"
+      },
+      {
+        "id": "BMW.523I.E6025STREPTONICFTZ",
+        "value": "BMW 523I E60 2.5 STREPTONIC AT FTZ",
+        "description": "BMW 523I E60 2.5 STREPTONIC AT FTZ"
+      },
+      {
+        "id": "BMW.523I.25AT",
+        "value": "BMW 523I-2.5 AT",
+        "description": "BMW 523I-2.5 AT"
+      },
+      {
+        "id": "BMW.523I.25ATDF",
+        "value": "BMW 523I-2.5 AT DF",
+        "description": "BMW 523I-2.5 AT DF"
+      },
+      {
+        "id": "BMW.523I.25MT",
+        "value": "BMW 523I-2.5 MT",
+        "description": "BMW 523I-2.5 MT"
+      },
+      {
+        "id": "BMW.523I.25MTFTZ",
+        "value": "BMW 523I-2.5 MT FTZ",
+        "description": "BMW 523I-2.5 MT FTZ"
+      },
+      {
+        "id": "BMW.523I.E6025AT",
+        "value": "BMW 523I-E 60 2.5 AT",
+        "description": "BMW 523I-E 60 2.5 AT"
+      },
+      {
+        "id": "BMW.523I.E6025ATDF",
+        "value": "BMW 523I-E 60 2.5 AT DF",
+        "description": "BMW 523I-E 60 2.5 AT DF"
+      },
+      {
+        "id": "BMW.525I.E3925ATFTZ",
+        "value": "BMW 525I E39 2.5 AT FTZ",
+        "description": "BMW 525I E39 2.5 AT FTZ"
+      },
+      {
+        "id": "BMW.525I.E3925TTFTZ",
+        "value": "BMW 525I E39 2.5 TT AT FTZ",
+        "description": "BMW 525I E39 2.5 TT AT FTZ"
+      },
+      {
+        "id": "BMW.528I.28AT",
+        "value": "BMW 528I 2.8 AT",
+        "description": "BMW 528I 2.8 AT"
+      },
+      {
+        "id": "BMW.528I.28ATFTZ",
+        "value": "BMW 528I 2.8 AT FTZ",
+        "description": "BMW 528I 2.8 AT FTZ"
+      },
+      {
+        "id": "BMW.528I.E3928STREPTONICFTZ",
+        "value": "BMW 528I E39 2.8 STREPTONIC AT FTZ",
+        "description": "BMW 528I E39 2.8 STREPTONIC AT FTZ"
+      },
+      {
+        "id": "BMW.528I.20AT",
+        "value": "BMW 528I-2.0 AT",
+        "description": "BMW 528I-2.0 AT"
+      },
+      {
+        "id": "BMW.528I.20ATDF",
+        "value": "BMW 528I-2.0 AT DF",
+        "description": "BMW 528I-2.0 AT DF"
+      },
+      {
+        "id": "BMW.528I.30AT",
+        "value": "BMW 528I-3.0 AT",
+        "description": "BMW 528I-3.0 AT"
+      },
+      {
+        "id": "BMW.528I.E3926ATFTZ",
+        "value": "BMW 528I-E39 2.6 AT FTZ",
+        "description": "BMW 528I-E39 2.6 AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E34V830AT",
+        "value": "BMW 530I E34 V8 3.0 AT",
+        "description": "BMW 530I E34 V8 3.0 AT"
+      },
+      {
+        "id": "BMW.530I.E34V830ATFTZ",
+        "value": "BMW 530I E34 V8 3.0 AT FTZ",
+        "description": "BMW 530I E34 V8 3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E3930TRIPTONICAT",
+        "value": "BMW 530I E39 3.0 TT AT",
+        "description": "BMW 530I E39 3.0 TT AT"
+      },
+      {
+        "id": "BMW.530I.E3930TT",
+        "value": "BMW 530I E39 3.0 TT AT",
+        "description": "BMW 530I E39 3.0 TT AT"
+      },
+      {
+        "id": "BMW.530I.E3930TTAT",
+        "value": "BMW 530I E39 3.0 TT AT",
+        "description": "BMW 530I E39 3.0 TT AT"
+      },
+      {
+        "id": "BMW.530I.E3930TRIPTONICATFTZ",
+        "value": "BMW 530I E39 3.0 TT AT FTZ",
+        "description": "BMW 530I E39 3.0 TT AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E3930TTATFTZ",
+        "value": "BMW 530I E39 3.0 TT AT FTZ",
+        "description": "BMW 530I E39 3.0 TT AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E3930TTFTZ",
+        "value": "BMW 530I E39 3.0 TT AT FTZ",
+        "description": "BMW 530I E39 3.0 TT AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E6030AT",
+        "value": "BMW 530I E60 3.0 AT",
+        "description": "BMW 530I E60 3.0 AT"
+      },
+      {
+        "id": "BMW.530I.E6030ATFTZ",
+        "value": "BMW 530I E60 3.0 AT FTZ",
+        "description": "BMW 530I E60 3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E6030TT",
+        "value": "BMW 530I E60 3.0 TT AT",
+        "description": "BMW 530I E60 3.0 TT AT"
+      },
+      {
+        "id": "BMW.530I.E6030TTAT",
+        "value": "BMW 530I E60 3.0 TT AT",
+        "description": "BMW 530I E60 3.0 TT AT"
+      },
+      {
+        "id": "BMW.530I.E6030TTATFTZ",
+        "value": "BMW 530I E60 3.0 TT AT FTZ",
+        "description": "BMW 530I E60 3.0 TT AT FTZ"
+      },
+      {
+        "id": "BMW.530I.E6030TTFTZ",
+        "value": "BMW 530I E60 3.0 TT AT FTZ",
+        "description": "BMW 530I E60 3.0 TT AT FTZ"
+      },
+      {
+        "id": "BMW.530I.20AT",
+        "value": "BMW 530I-20AT",
+        "description": "BMW 530I-20AT"
+      },
+      {
+        "id": "BMW.530I.E34V830MT",
+        "value": "BMW 530I-E34 V8 3.0 MT",
+        "description": "BMW 530I-E34 V8 3.0 MT"
+      },
+      {
+        "id": "BMW.530I.E34V830MTFTZ",
+        "value": "BMW 530I-E34 V8 3.0 MT FTZ",
+        "description": "BMW 530I-E34 V8 3.0 MT FTZ"
+      },
+      {
+        "id": "BMW.530I.E3930AT",
+        "value": "BMW 530I.E39 3.0 AT",
+        "description": "BMW 530I.E39 3.0 AT"
+      },
+      {
+        "id": "BMW.530I.E3930ATFTZ",
+        "value": "BMW 530I.E39 3.0 AT FTZ",
+        "description": "BMW 530I.E39 3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.735I.M60E38V835AT",
+        "value": "BMW 735I M60 E38 V8 3.5 AT",
+        "description": "BMW 735I M60 E38 V8 3.5 AT"
+      },
+      {
+        "id": "BMW.735I.M60E38V835ATFTZ",
+        "value": "BMW 735I M60 E38 V8 3.5 AT FTZ",
+        "description": "BMW 735I M60 E38 V8 3.5 AT FTZ"
+      },
+      {
+        "id": "BMW.735I.MSPORT30AT",
+        "value": "BMW 735I-M SPORT 3.0 AT",
+        "description": "BMW 735I-M SPORT 3.0 AT"
+      },
+      {
+        "id": "BMW.X3.25AT",
+        "value": "BMW X3 2.5 AT",
+        "description": "BMW X3 2.5 AT"
+      },
+      {
+        "id": "BMW.X3.25ATFTZ",
+        "value": "BMW X3 2.5 AT FTZ",
+        "description": "BMW X3 2.5 AT FTZ"
+      },
+      {
+        "id": "BMW.X3.30AT",
+        "value": "BMW X3 3.0 AT",
+        "description": "BMW X3 3.0 AT"
+      },
+      {
+        "id": "BMW.X3.30ATFTZ",
+        "value": "BMW X3 3.0 AT FTZ",
+        "description": "BMW X3 3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.X3.25AT4X4FTZ",
+        "value": "BMW X3-2.5 AT 4X4 FTZ",
+        "description": "BMW X3-2.5 AT 4X4 FTZ"
+      },
+      {
+        "id": "BMW.X3.SDRIVE20AT",
+        "value": "BMW X3-SDRIVE 2.0 AT",
+        "description": "BMW X3-SDRIVE 2.0 AT"
+      },
+      {
+        "id": "BMW.X3.SDRIVE20IXLINE20AT",
+        "value": "BMW X3-SDRIVE 20 IXLINE 2.0 AT",
+        "description": "BMW X3-SDRIVE 20 IXLINE 2.0 AT"
+      },
+      {
+        "id": "BMW.X3.XDRIVE20AT",
+        "value": "BMW X3-XDRIVE 2.0 AT",
+        "description": "BMW X3-XDRIVE 2.0 AT"
+      },
+      {
+        "id": "BMW.X3.XDRIVE20ATDF",
+        "value": "BMW X3-XDRIVE 2.0 AT DF",
+        "description": "BMW X3-XDRIVE 2.0 AT DF"
+      },
+      {
+        "id": "BMW.X3.XDRIVE20ATFTZ",
+        "value": "BMW X3-XDRIVE 2.0 AT FTZ",
+        "description": "BMW X3-XDRIVE 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.X3.XDRIVE35I30AT",
+        "value": "BMW X3-XDRIVE 35I 3.0 AT",
+        "description": "BMW X3-XDRIVE 35I 3.0 AT"
+      },
+      {
+        "id": "BMW.X5.30AT",
+        "value": "BMW X5 3.0 AT",
+        "description": "BMW X5 3.0 AT"
+      },
+      {
+        "id": "BMW.X5.30ATFTZ",
+        "value": "BMW X5 3.0 AT FTZ",
+        "description": "BMW X5 3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.X5.44AT",
+        "value": "BMW X5 4.4 AT",
+        "description": "BMW X5 4.4 AT"
+      },
+      {
+        "id": "BMW.X5.44ATFTZ",
+        "value": "BMW X5 4.4 AT FTZ",
+        "description": "BMW X5 4.4 AT FTZ"
+      },
+      {
+        "id": "BMW.X5.XDRIVE25D20AT",
+        "value": "BMW X5-X DRIVE 25D 2.0 AT",
+        "description": "BMW X5-X DRIVE 25D 2.0 AT"
+      },
+      {
+        "id": "BMW.X5.XDRIVE30I30AT",
+        "value": "BMW X5-X DRIVE 30I 3.0 AT",
+        "description": "BMW X5-X DRIVE 30I 3.0 AT"
+      },
+      {
+        "id": "BMW.X5.XDRIVE35I20ATDF",
+        "value": "BMW X5-XDRIVE 35I 2.0 AT DF",
+        "description": "BMW X5-XDRIVE 35I 2.0 AT DF"
+      },
+      {
+        "id": "BMW.X5.XDRIVE35I30AT",
+        "value": "BMW X5-XDRIVE 35I 3.0 AT",
+        "description": "BMW X5-XDRIVE 35I 3.0 AT"
+      },
+      {
+        "id": "BMW.X5.XDRIVE35I30ATDF",
+        "value": "BMW X5-XDRIVE 35I 3.0 AT DF",
+        "description": "BMW X5-XDRIVE 35I 3.0 AT DF"
+      },
+      {
+        "id": "BMW.X5.XDRIVE40I30AT",
+        "value": "BMW X5-XDRIVE 40I 3.0 AT",
+        "description": "BMW X5-XDRIVE 40I 3.0 AT"
+      },
+      {
+        "id": "BMW.X5.XDRIVE40IG05CKDAT",
+        "value": "BMW X5-XDRIVE40I G05 CKD AT",
+        "description": "BMW X5-XDRIVE40I G05 CKD AT"
+      },
+      {
+        "id": "BMW.116I.16AT",
+        "value": "BMW-116I-1.6 AT",
+        "description": "BMW-116I-1.6 AT"
+      },
+      {
+        "id": "BMW.116I.16ATFTZ",
+        "value": "BMW-116I-1.6 AT FTZ",
+        "description": "BMW-116I-1.6 AT FTZ"
+      },
+      {
+        "id": "BMW.118I.15AT",
+        "value": "BMW-118I-1.5 AT",
+        "description": "BMW-118I-1.5 AT"
+      },
+      {
+        "id": "BMW.218I.ACTIVETOURER15AT",
+        "value": "BMW-218I-ACTIVE TOURER 1.5 AT",
+        "description": "BMW-218I-ACTIVE TOURER 1.5 AT"
+      },
+      {
+        "id": "BMW.218I.GRANCOUPE15AT",
+        "value": "BMW-218I-GRAN COUPE 1.5 AT",
+        "description": "BMW-218I-GRAN COUPE 1.5 AT"
+      },
+      {
+        "id": "BMW.218I.GRANTOURER15AT",
+        "value": "BMW-218I-GRAN TOURER 1.5 AT",
+        "description": "BMW-218I-GRAN TOURER 1.5 AT"
+      },
+      {
+        "id": "BMW.218I.GRANTOURERAT",
+        "value": "BMW-218I-GRAN TOURER AT",
+        "description": "BMW-218I-GRAN TOURER AT"
+      },
+      {
+        "id": "BMW.220I.COUPEMSPORT20AT",
+        "value": "BMW-220I-COUPE M SPORT 2.0 AT",
+        "description": "BMW-220I-COUPE M SPORT 2.0 AT"
+      },
+      {
+        "id": "BMW.320D.20AT",
+        "value": "BMW-320D-2.0 AT",
+        "description": "BMW-320D-2.0 AT"
+      },
+      {
+        "id": "BMW.328I.20AT",
+        "value": "BMW-328I-2.0 AT",
+        "description": "BMW-328I-2.0 AT"
+      },
+      {
+        "id": "BMW.330I.20AT",
+        "value": "BMW-330I-2.0 AT",
+        "description": "BMW-330I-2.0 AT"
+      },
+      {
+        "id": "BMW.330I.20ATDF",
+        "value": "BMW-330I-2.0 AT DF",
+        "description": "BMW-330I-2.0 AT DF"
+      },
+      {
+        "id": "BMW.330I.E4630TTATFTZ",
+        "value": "BMW-330I-E46 30 TT AT FTZ",
+        "description": "BMW-330I-E46 30 TT AT FTZ"
+      },
+      {
+        "id": "BMW.330I.MSPORT20AT",
+        "value": "BMW-330I-M SPORT 2.0 AT",
+        "description": "BMW-330I-M SPORT 2.0 AT"
+      },
+      {
+        "id": "BMW.335I.30AT",
+        "value": "BMW-335I-3.0 AT",
+        "description": "BMW-335I-3.0 AT"
+      },
+      {
+        "id": "BMW.428I.CONVERTIBLE20AT",
+        "value": "BMW-428I-CONVERTIBLE 2.0 AT",
+        "description": "BMW-428I-CONVERTIBLE 2.0 AT"
+      },
+      {
+        "id": "BMW.428I.GRANCOUPE20AT",
+        "value": "BMW-428I-GRAN COUPE 2.0 AT",
+        "description": "BMW-428I-GRAN COUPE 2.0 AT"
+      },
+      {
+        "id": "BMW.428I.GRANCOUPE20ATDF",
+        "value": "BMW-428I-GRAN COUPE 2.0 AT DF",
+        "description": "BMW-428I-GRAN COUPE 2.0 AT DF"
+      },
+      {
+        "id": "BMW.430I.CONVERTIBLE20AT",
+        "value": "BMW-430I-CONVERTIBLE 2.0 AT",
+        "description": "BMW-430I-CONVERTIBLE 2.0 AT"
+      },
+      {
+        "id": "BMW.430I.COUPE20AT",
+        "value": "BMW-430I-COUPE 2.0 AT",
+        "description": "BMW-430I-COUPE 2.0 AT"
+      },
+      {
+        "id": "BMW.430I.MSPORTPRO20AT",
+        "value": "BMW-430I-M SPORT PRO 2.0 AT",
+        "description": "BMW-430I-M SPORT PRO 2.0 AT"
+      },
+      {
+        "id": "BMW.435I.COUPE30AT",
+        "value": "BMW-435I-COUPE 3.0 AT",
+        "description": "BMW-435I-COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.520D.20AT",
+        "value": "BMW-520D-2.0 AT",
+        "description": "BMW-520D-2.0 AT"
+      },
+      {
+        "id": "BMW.520D.20ATDF",
+        "value": "BMW-520D-2.0 AT DF",
+        "description": "BMW-520D-2.0 AT DF"
+      },
+      {
+        "id": "BMW.535I.30AT",
+        "value": "BMW-535I-3.0 AT",
+        "description": "BMW-535I-3.0 AT"
+      },
+      {
+        "id": "BMW.535I.30ATDF",
+        "value": "BMW-535I-3.0 AT DF",
+        "description": "BMW-535I-3.0 AT DF"
+      },
+      {
+        "id": "BMW.535I.GRANDTOURISMO20ATFTZ",
+        "value": "BMW-535I-GRAND TOURISMO 2.0 AT FTZ",
+        "description": "BMW-535I-GRAND TOURISMO 2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.535I.GRANDTOURISMO30AT",
+        "value": "BMW-535I-GRAND TOURISMO 3.0 AT",
+        "description": "BMW-535I-GRAND TOURISMO 3.0 AT"
+      },
+      {
+        "id": "BMW.630I.COUPE30AT",
+        "value": "BMW-630I-COUPE 3.0 AT",
+        "description": "BMW-630I-COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.640I.COUPE30AT",
+        "value": "BMW-640I-COUPE 3.0 AT",
+        "description": "BMW-640I-COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.640I.GRANCOUPE30AT",
+        "value": "BMW-640I-GRAN COUPE 3.0 AT",
+        "description": "BMW-640I-GRAN COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.730.LI20AT",
+        "value": "BMW-730-LI 2.0 AT",
+        "description": "BMW-730-LI 2.0 AT"
+      },
+      {
+        "id": "BMW.730.LI20ATDF",
+        "value": "BMW-730-LI 2.0 AT DF",
+        "description": "BMW-730-LI 2.0 AT DF"
+      },
+      {
+        "id": "BMW.730.LI30AT",
+        "value": "BMW-730-LI 30 AT",
+        "description": "BMW-730-LI 30 AT"
+      },
+      {
+        "id": "BMW.740LI.30AT",
+        "value": "BMW-740LI-3.0 AT",
+        "description": "BMW-740LI-3.0 AT"
+      },
+      {
+        "id": "BMW.740LI.ATDF",
+        "value": "BMW-740LI-AT DF",
+        "description": "BMW-740LI-AT DF"
+      },
+      {
+        "id": "BMW.750.LI44AT",
+        "value": "BMW-750-LI 4.4 AT",
+        "description": "BMW-750-LI 4.4 AT"
+      },
+      {
+        "id": "BMW.840I.GRANCOUPE30AT",
+        "value": "BMW-840I-GRAN COUPE 3.0 AT",
+        "description": "BMW-840I-GRAN COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.I4.EDRIVE35EV",
+        "value": "BMW-I4-E DRIVE 35 EV",
+        "description": "BMW-I4-E DRIVE 35 EV"
+      },
+      {
+        "id": "BMW.I440.GRANCOUPEAT",
+        "value": "BMW-I440-GRANCOUPEAT",
+        "description": "BMW-I440-GRANCOUPEAT"
+      },
+      {
+        "id": "BMW.I5.EDRIVE40MSPORTEV",
+        "value": "BMW-I5-E DRIVE 40 M SPORT EV",
+        "description": "BMW-I5-E DRIVE 40 M SPORT EV"
+      },
+      {
+        "id": "BMW.I7.XDRIVE60GRANLUSSOEV",
+        "value": "BMW-I7-XDRIVE 60 GRAN LUSSO EV",
+        "description": "BMW-I7-XDRIVE 60 GRAN LUSSO EV"
+      },
+      {
+        "id": "BMW.IX.XDRIVE40SPORTEV",
+        "value": "BMW-IX-XDRIVE 40 SPORT EV",
+        "description": "BMW-IX-XDRIVE 40 SPORT EV"
+      },
+      {
+        "id": "BMW.IX.XDRIVE40SPORTEVDF",
+        "value": "BMW-IX-XDRIVE 40 SPORT EV DF",
+        "description": "BMW-IX-XDRIVE 40 SPORT EV DF"
+      },
+      {
+        "id": "BMW.IX.XDRIVE50SPORTEV",
+        "value": "BMW-IX-XDRIVE 50 SPORT EV",
+        "description": "BMW-IX-XDRIVE 50 SPORT EV"
+      },
+      {
+        "id": "BMW.M135I.XDRIVE20AT",
+        "value": "BMW-M135I-XDRIVE 2.0 AT",
+        "description": "BMW-M135I-XDRIVE 2.0 AT"
+      },
+      {
+        "id": "BMW.M2.COUPE30AT",
+        "value": "BMW-M2-COUPE 3.0 AT",
+        "description": "BMW-M2-COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.M3.30AT",
+        "value": "BMW-M3-3.0 AT",
+        "description": "BMW-M3-3.0 AT"
+      },
+      {
+        "id": "BMW.M3.COMPETITION30AT",
+        "value": "BMW-M3-COMPETITION 3.0 AT",
+        "description": "BMW-M3-COMPETITION 3.0 AT"
+      },
+      {
+        "id": "BMW.M3.COUPE40AT",
+        "value": "BMW-M3-COUPE 4.0 AT",
+        "description": "BMW-M3-COUPE 4.0 AT"
+      },
+      {
+        "id": "BMW.M4.30AT",
+        "value": "BMW-M4-3.0 AT",
+        "description": "BMW-M4-3.0 AT"
+      },
+      {
+        "id": "BMW.M4.COUPE30AT",
+        "value": "BMW-M4-COUPE 3.0 AT",
+        "description": "BMW-M4-COUPE 3.0 AT"
+      },
+      {
+        "id": "BMW.M5.44AT",
+        "value": "BMW-M5-4.4 AT",
+        "description": "BMW-M5-4.4 AT"
+      },
+      {
+        "id": "BMW.M6.COUPE44AT",
+        "value": "BMW-M6-COUPE 4.4 AT",
+        "description": "BMW-M6-COUPE 4.4 AT"
+      },
+      {
+        "id": "BMW.X1.SDRIVE18I15ATDF",
+        "value": "BMW-X1-DRIVE 18I 1.5 ATDF",
+        "description": "BMW-X1-DRIVE 18I 1.5 ATDF"
+      },
+      {
+        "id": "BMW.X1.SDRIVE18I20AT",
+        "value": "BMW-X1-S DRIVE 18 I 2.0 AT",
+        "description": "BMW-X1-S DRIVE 18 I 2.0 AT"
+      },
+      {
+        "id": "BMW.X1.SDRIVE18I20ATDF",
+        "value": "BMW-X1-S DRIVE 18 I 2.0 AT DF",
+        "description": "BMW-X1-S DRIVE 18 I 2.0 AT DF"
+      },
+      {
+        "id": "BMW.X1.SDRIVE18I15AT",
+        "value": "BMW-X1-SDRIVE 18I 1.5 AT",
+        "description": "BMW-X1-SDRIVE 18I 1.5 AT"
+      },
+      {
+        "id": "BMW.X1.SDRIVE20AT",
+        "value": "BMW-X1-SDRIVE 2.0 AT",
+        "description": "BMW-X1-SDRIVE 2.0 AT"
+      },
+      {
+        "id": "BMW.X1.SDRIVE20DATFTZ",
+        "value": "BMW-X1-SDRIVE 2.0 D AT FTZ",
+        "description": "BMW-X1-SDRIVE 2.0 D AT FTZ"
+      },
+      {
+        "id": "BMW.X4.MCOMPETITION30AT",
+        "value": "BMW-X4-M COMPETITION 3.0 AT",
+        "description": "BMW-X4-M COMPETITION 3.0 AT"
+      },
+      {
+        "id": "BMW.X4.XDRIVE28I20AT",
+        "value": "BMW-X4-X DRIVE 28I 2.0 AT",
+        "description": "BMW-X4-X DRIVE 28I 2.0 AT"
+      },
+      {
+        "id": "BMW.X4.XDRIVE30IMSPORT20AT",
+        "value": "BMW-X4-XDRIVE 30I M SPORT 2.0 AT",
+        "description": "BMW-X4-XDRIVE 30I M SPORT 2.0 AT"
+      },
+      {
+        "id": "BMW.X6.30AT",
+        "value": "BMW-X6-3.0 AT",
+        "description": "BMW-X6-3.0 AT"
+      },
+      {
+        "id": "BMW.X6.30ATFTZ",
+        "value": "BMW-X6-3.0 AT FTZ",
+        "description": "BMW-X6-3.0 AT FTZ"
+      },
+      {
+        "id": "BMW.X6.35I30AT",
+        "value": "BMW-X6-35I 3.0 AT",
+        "description": "BMW-X6-35I 3.0 AT"
+      },
+      {
+        "id": "BMW.X6.XDRIVE30AT",
+        "value": "BMW-X6-X DRIVE 3.0 AT",
+        "description": "BMW-X6-X DRIVE 3.0 AT"
+      },
+      {
+        "id": "BMW.X6.XDRIVE35I30AT",
+        "value": "BMW-X6-XDRIVE 35I 3.0 AT",
+        "description": "BMW-X6-XDRIVE 35I 3.0 AT"
+      },
+      {
+        "id": "BMW.X6.XDRIVE40IMSPORT30AT",
+        "value": "BMW-X6-XDRIVE 40I MSPORT 3.0 AT",
+        "description": "BMW-X6-XDRIVE 40I MSPORT 3.0 AT"
+      },
+      {
+        "id": "BMW.X7.XDRIVE40IMSPORT30AT",
+        "value": "BMW-X7-XDRIVE 40I MSPORT 3.0 AT",
+        "description": "BMW-X7-XDRIVE 40I MSPORT 3.0 AT"
+      },
+      {
+        "id": "BMW.Z3.20AT",
+        "value": "BMW-Z3-2.0 AT",
+        "description": "BMW-Z3-2.0 AT"
+      },
+      {
+        "id": "BMW.Z3.20ATFTZ",
+        "value": "BMW-Z3-2.0 AT FTZ",
+        "description": "BMW-Z3-2.0 AT FTZ"
+      },
+      {
+        "id": "BMW.Z4.M40I30AT",
+        "value": "BMW-Z4-M 40I 3.0 AT",
+        "description": "BMW-Z4-M 40I 3.0 AT"
+      },
+      {
+        "id": "BMW.Z4.SDRIVE20AT",
+        "value": "BMW-Z4-S DRIVE 20 AT",
+        "description": "BMW-Z4-S DRIVE 20 AT"
+      },
+      {
+        "id": "BMW.Z4.SDRIVE25AT",
+        "value": "BMW-Z4-SDRIVE 2.5 AT",
+        "description": "BMW-Z4-SDRIVE 2.5 AT"
+      },
+      {
+        "id": "BMW.Z4.SDRIVE25ATFTZ",
+        "value": "BMW-Z4-SDRIVE 2.5 AT FTZ",
+        "description": "BMW-Z4-SDRIVE 2.5 AT FTZ"
+      },
+      {
+        "id": "BMW.Z4.SDRIVE30IMSPORT20AT",
+        "value": "BMW-Z4-SDRIVE 30I M SPORT 2.0 AT",
+        "description": "BMW-Z4-SDRIVE 30I M SPORT 2.0 AT"
+      },
+      {
+        "id": "BNL.AUTOPACKINGSTRAWMACHINE.BM22INDIVIDUAL",
+        "value": "BNL-AUTO PACKING STRAW MACHINE-BM 22 INDIVIDUAL",
+        "description": "BNL-AUTO PACKING STRAW MACHINE-BM 22 INDIVIDUAL"
+      },
+      {
+        "id": "BNL.BM22.FLEXIBLESTRAW",
+        "value": "BNL-BM 22-FLEXIBLE STRAW",
+        "description": "BNL-BM 22-FLEXIBLE STRAW"
+      },
+      {
+        "id": "BNL.BM22.TWINWRAPPACKINGMACHINE",
+        "value": "BNL-BM 22-TWIN WRAP PACKING MACHINE",
+        "description": "BNL-BM 22-TWIN WRAP PACKING MACHINE"
+      },
+      {
+        "id": "BNL.BM26.FLEXIBLESTRAW",
+        "value": "BNL-BM26-FLEXIBLE STRAW",
+        "description": "BNL-BM26-FLEXIBLE STRAW"
+      },
+      {
+        "id": "BNL.INDIVIDUALAUTOPACKINGSTRAWMCH.SB22",
+        "value": "BNL-INDIVIDUAL AUTO PACKING STRAW MCH-SB 22",
+        "description": "BNL-INDIVIDUAL AUTO PACKING STRAW MCH-SB 22"
+      },
+      {
+        "id": "BNL.MULTIPLESTRAWAUTOMATICPACKINGMACHINE.BM42",
+        "value": "BNL-MULTIPLE STRAW AUTOMATIC PACKING MACHINE-BM 42",
+        "description": "BNL-MULTIPLE STRAW AUTOMATIC PACKING MACHINE-BM 42"
+      },
+      {
+        "id": "BNL.MULTIPLESTRAWAUTOMATICPACKINGMACHINE.SB42",
+        "value": "BNL-MULTIPLE STRAW AUTOMATIC PACKING MACHINE-SB 42",
+        "description": "BNL-MULTIPLE STRAW AUTOMATIC PACKING MACHINE-SB 42"
+      },
+      {
+        "id": "BNL.STRAWEXTRUDER.BM50",
+        "value": "BNL-STRAW EXTRUDER-BM 50",
+        "description": "BNL-STRAW EXTRUDER-BM 50"
+      },
+      {
+        "id": "BNL.STRETCHBLOWMOLDING.MW-1000PP",
+        "value": "BNL-STRETCHBLOWMOLDING-MW-1000PP",
+        "description": "BNL-STRETCHBLOWMOLDING-MW-1000PP"
+      },
+      {
+        "id": "BOBCAT.COMPACTEXCAVATOR.PLUSCABINPLUSAUGERE45",
+        "value": "BOBCAT-COMPACT EXCAVATOR-+CABIN+AUGER E45",
+        "description": "BOBCAT-COMPACT EXCAVATOR-+CABIN+AUGER E45"
+      },
+      {
+        "id": "BOBCAT.COMPACTEXCAVATOR.E45",
+        "value": "BOBCAT-COMPACT EXCAVATOR-E45",
+        "description": "BOBCAT-COMPACT EXCAVATOR-E45"
+      },
+      {
+        "id": "BOBCAT.COMPACTEXCAVATOR.E45ANGLEBLADE",
+        "value": "BOBCAT-COMPACT EXCAVATOR-E45ANGLEBLADE",
+        "description": "BOBCAT-COMPACT EXCAVATOR-E45ANGLEBLADE"
+      },
+      {
+        "id": "BOBCAT.MINIEXCAVATOR.E45",
+        "value": "BOBCAT-MINI EXCAVATOR-E45",
+        "description": "BOBCAT-MINI EXCAVATOR-E45"
+      },
+      {
+        "id": "BOBCAT.MINIEXCAVATOR.E45BUCKET",
+        "value": "BOBCAT-MINI EXCAVATOR-E45 BUCKET",
+        "description": "BOBCAT-MINI EXCAVATOR-E45 BUCKET"
+      },
+      {
+        "id": "BOBCAT.MINIEXCAVATOR.E45M5535U145",
+        "value": "BOBCAT-MINI EXCAVATOR-E45 M5535 U145",
+        "description": "BOBCAT-MINI EXCAVATOR-E45 M5535 U145"
+      },
+      {
+        "id": "BOBCAT.MINIEXCAVATOR.E45USEDM5535U148",
+        "value": "BOBCAT-MINI EXCAVATOR-E45 USED M5535 U148",
+        "description": "BOBCAT-MINI EXCAVATOR-E45 USED M5535 U148"
+      },
+      {
+        "id": "BOBCAT.MINIEXCAVATOR.E80",
+        "value": "BOBCAT-MINI EXCAVATOR-E80",
+        "description": "BOBCAT-MINI EXCAVATOR-E80"
+      },
+      {
+        "id": "BOBCAT.SKIDSTEERLOADER.S450STDBUCKET",
+        "value": "BOBCAT-SKIDSTEERLOADER-S 450 STD BUCKET",
+        "description": "BOBCAT-SKIDSTEERLOADER-S 450 STD BUCKET"
+      },
+      {
+        "id": "BOBCAT.SKIDSTEERLOADER.S570STDBUCKET",
+        "value": "BOBCAT-SKIDSTEERLOADER-S570 STD BUCKET",
+        "description": "BOBCAT-SKIDSTEERLOADER-S570 STD BUCKET"
+      },
+      {
+        "id": "BOBCAT.SKIDSTEERLOADER.S650HIGHFLOWWHEELSAWWS18",
+        "value": "BOBCAT-SKIDSTEERLOADER-S650HIGHFLOW+WHEELSAWWS18",
+        "description": "BOBCAT-SKIDSTEERLOADER-S650HIGHFLOW+WHEELSAWWS18"
+      },
+      {
+        "id": "BOBSTSA.AUTOPLATINE.SP102E",
+        "value": "BOBST SA-AUTOPLATINE-SP102E",
+        "description": "BOBST SA-AUTOPLATINE-SP102E"
+      },
+      {
+        "id": "BOBST.AUTOPLATINE.SP102E",
+        "value": "BOBST-AUTOPLATINE-SP 102 E",
+        "description": "BOBST-AUTOPLATINE-SP 102 E"
+      },
+      {
+        "id": "BOBST.AUTOPLATINE.SP102SE",
+        "value": "BOBST-AUTOPLATINE-SP 102SE",
+        "description": "BOBST-AUTOPLATINE-SP 102SE"
+      },
+      {
+        "id": "BOBST.DIECUTTINGMCH.SP1120ER",
+        "value": "BOBST-DIE CUTTING MCH-SP1120ER",
+        "description": "BOBST-DIE CUTTING MCH-SP1120ER"
+      },
+      {
+        "id": "BOBST.DIE.CUT",
+        "value": "BOBST-DIE-CUT",
+        "description": "BOBST-DIE-CUT"
+      },
+      {
+        "id": "BOBST.NOVACUT.106E30",
+        "value": "BOBST-NOVACUT-106 E 3.0",
+        "description": "BOBST-NOVACUT-106 E 3.0"
+      },
+      {
+        "id": "BODA.CNCCUTTINGMACHINE.3500X10000",
+        "value": "BODA-CNC CUTTING MACHINE-3500 X 10000",
+        "description": "BODA-CNC CUTTING MACHINE-3500 X 10000"
+      },
+      {
+        "id": "BODOR.BCL.1309XM",
+        "value": "BODOR-BCL-1309 XM",
+        "description": "BODOR-BCL-1309 XM"
+      },
+      {
+        "id": "BODOR.BCL.1309XU",
+        "value": "BODOR-BCL-1309 XU",
+        "description": "BODOR-BCL-1309 XU"
+      },
+      {
+        "id": "BODOR.BCL.1325B",
+        "value": "BODOR-BCL-1325 B",
+        "description": "BODOR-BCL-1325 B"
+      },
+      {
+        "id": "BODOR.BCL.1325BM",
+        "value": "BODOR-BCL-1325 BM",
+        "description": "BODOR-BCL-1325 BM"
+      },
+      {
+        "id": "BODOR.LSRCUTMCH.A3",
+        "value": "BODOR-LSR CUT MCH-A3",
+        "description": "BODOR-LSR CUT MCH-A3"
+      },
+      {
+        "id": "BODOR.LSRCUTMCH.A3T3",
+        "value": "BODOR-LSR CUT MCH-A3T3",
+        "description": "BODOR-LSR CUT MCH-A3T3"
+      },
+      {
+        "id": "BODOR.LSRCUTMCH.HD102SL",
+        "value": "BODOR-LSR CUT MCH-HD102SL",
+        "description": "BODOR-LSR CUT MCH-HD102SL"
+      },
+      {
+        "id": "BOLE.PLASTICINJECTIONMOLDINGMCH.BL650EKII",
+        "value": "BOLE-PLASTICINJECTIONMOLDINGMCH-BL650EKII",
+        "description": "BOLE-PLASTICINJECTIONMOLDINGMCH-BL650EKII"
+      },
+      {
+        "id": "BOLE.PLASTICINJECTIONMOLDINGMCH.BL850EKII",
+        "value": "BOLE-PLASTICINJECTIONMOLDINGMCH-BL850EKII",
+        "description": "BOLE-PLASTICINJECTIONMOLDINGMCH-BL850EKII"
+      },
+      {
+        "id": "BOM.FORCOLOR1000iPRESS.CHARMONIX",
+        "value": "BOM-FOR COLOR 1000i PRESS-CHARMONIX",
+        "description": "BOM-FOR COLOR 1000i PRESS-CHARMONIX"
+      },
+      {
+        "id": "BOMAC.DIESELFORKLIFT.CAP30TL3MRD30AIC240",
+        "value": "BOMAC-DIESELFORKLIFT-CAP 3.0TL 3MRD30AIC240",
+        "description": "BOMAC-DIESELFORKLIFT-CAP 3.0TL 3MRD30AIC240"
+      }
+    ]
+  }
+}

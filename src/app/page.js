@@ -166,7 +166,7 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }}>
+    <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }} id="home">
       {/* Hero Section */}
       <div
         style={{
@@ -344,7 +344,7 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <div style={{ padding: "96px 0", background: "#f9fafb" }}>
+      <div style={{ padding: "96px 0", background: "#f9fafb" }} id="keunggulan_kami">
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
             <div style={{ textAlign: "center", maxWidth: "768px", margin: "0 auto" }}>

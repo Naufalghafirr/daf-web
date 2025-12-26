@@ -1,7 +1,7 @@
 import { Box, Container, Flex, HStack, Text, Link, Button, SimpleGrid, Heading, VStack, IconButton, Dialog} from "@chakra-ui/react";
 import { FaWhatsapp, FaBars } from "react-icons/fa";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { smoothScroll } from "./utils/smoothScroll";
 import AjukanModal from "./ajukanmodal";
 
 function Navbar(){
@@ -42,11 +42,9 @@ function Navbar(){
                 display={{ base: "none", md: "flex" }}
                 align="center"
               >
-                <Link href="#home" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >Home</Link>
-                <Link href="#keunggulan_kami" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >Keunggulan Kami</Link>
-                <Link href="#simulasi" _hover={{ color: "green.600", textDecoration: "none", transition: "all 0.2s" }} >
-                  Simulasi
-                </Link>
+                <Text cursor="pointer" _hover={{ color: "green.600",  }} onClick={() => smoothScroll("home")}>Home</Text>
+                <Text cursor="pointer" _hover={{ color: "green.600", }} onClick={() => smoothScroll("keunggulan_kami")}>Keunggulan Kami</Text>
+                <Text cursor="pointer" _hover={{ color: "green.600", }} onClick={() => smoothScroll("simulasi")}>Simulasi</Text>
               </HStack>
   
               {/* CTA DESKTOP */}
