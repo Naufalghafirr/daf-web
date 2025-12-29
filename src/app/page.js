@@ -17,9 +17,11 @@ import {
   FaArrowRight,
   FaFileAlt,
 } from "react-icons/fa";
+import AjukanModal from "./ajukanmodal.js";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(null);
   const [pinjaman, setPinjaman] = useState("");
   const [bunga] = useState(0.76);
   const [tenor, setTenor] = useState("");
@@ -34,6 +36,109 @@ export default function Home() {
 
   const [openRegion, setOpenRegion] = useState(false);
   const [focused, setFocused] = useState(false);
+
+  // Car selection states
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedType, setSelectedType] = useState("");
+  const [selectedCar, setSelectedCar] = useState(null);
+  const [carBrands, setCarBrands] = useState([]);
+  const [carTypes, setCarTypes] = useState([]);
+  const [carModels, setCarModels] = useState([]);
+  const [loadingCars, setLoadingCars] = useState(false);
+
+  // Fetch car data from API
+  useEffect(() => {
+    const fetchCarData = async () => {
+      try {
+        setLoadingCars(true);
+        const response = await fetch('/api/cars');
+        const data = await response.json();
+        setCarBrands(data.brands || []);
+      } catch (error) {
+        console.error("Error fetching car data:", error);
+      } finally {
+        setLoadingCars(false);
+      }
+    };
+
+    fetchCarData();
+  }, []);
+
+  // Fetch types and models when brand is selected
+  useEffect(() => {
+    if (selectedBrand) {
+      const fetchCarData = async () => {
+        try {
+          setLoadingCars(true);
+          const response = await fetch('/api/cars');
+          const data = await response.json();
+          setCarTypes(data.types[selectedBrand] || []);
+          setCarModels([]);
+        } catch (error) {
+          console.error("Error fetching car types:", error);
+        } finally {
+          setLoadingCars(false);
+        }
+      };
+
+      fetchCarData();
+    }
+  }, [selectedBrand]);
+
+  // Fetch models when type is selected
+  useEffect(() => {
+    if (selectedBrand && selectedType) {
+      const fetchCarData = async () => {
+        try {
+          setLoadingCars(true);
+          const response = await fetch('/api/cars');
+          const data = await response.json();
+          setCarModels(data.models[selectedBrand][selectedType] || []);
+        } catch (error) {
+          console.error("Error fetching car models:", error);
+        } finally {
+          setLoadingCars(false);
+        }
+      };
+
+      fetchCarData();
+    }
+  }, [selectedBrand, selectedType]);
+
+  // Handle brand selection
+  const handleBrandSelect = (brand) => {
+    setSelectedBrand(brand);
+    setSelectedType("");
+    setSelectedCar(null);
+    setPinjaman("");
+    setCicilan(null);
+    setTenor("");
+  };
+
+  // Handle type selection
+  const handleTypeSelect = (type) => {
+    setSelectedType(type);
+    setSelectedCar(null);
+    setPinjaman("");
+    setCicilan(null);
+    setTenor("");
+  };
+
+  // Handle car selection
+  const handleCarSelect = (car) => {
+    setSelectedCar(car);
+    setPinjaman(""); // Kosongkan awalnya
+    setCicilan(null);
+    setTenor("");
+  };
+
+  // Handle maksimal pinjaman
+  const handleMaxPinjaman = () => {
+    if (selectedCar) {
+      const maxPinjaman = Math.floor(selectedCar.price * 0.85);
+      setPinjaman(maxPinjaman.toString());
+    }
+  };
 
   const hitungCicilan = () => {
     const r = bunga / 12 / 100;
@@ -443,198 +548,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Calculator Section */}
-      <div style={{ padding: "96px 0", background: "white" }} id="simulasi">
-        <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 32px" }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
-            <div style={{ textAlign: "center", maxWidth: "768px", margin: "0 auto" }}>
-              <span
-                style={{
-                  background: "#dbeafe",
-                  color: "#1e40af",
-                  padding: "6px 16px",
-                  borderRadius: "999px",
-                  fontSize: "14px",
-                  fontWeight: "600",
-                }}
-              >
-                Simulasi Kredit
-              </span>
-              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
-                Hitung Cicilan Anda
-              </h2>
-              <p style={{ fontSize: "18px", color: "#6b7280" }}>
-                Masukkan jumlah pinjaman dan tenor untuk melihat estimasi cicilan bulanan
-              </p>
-            </div>
-
-            <div
-              style={{
-                background: "linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%)",
-                borderRadius: "24px",
-                padding: "48px",
-                boxShadow: "0 20px 50px rgba(0,0,0,0.1)",
-                border: "1px solid #e5e7eb",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
-                  <div>
-                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                      Jumlah Pinjaman
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Contoh: 100000000"
-                      value={pinjaman}
-                      onChange={(e) => setPinjaman(e.target.value)}
-                      style={{
-                        width: "100%",
-                        padding: "12px 16px",
-                        fontSize: "16px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        background: "white",
-                        outline: "none",
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                    />
-                  </div>
-
-                  <div>
-                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                      Bunga (%)
-                    </label>
-                    <input
-                      type="number"
-                      value={0.76}
-                      disabled
-                      style={{
-                        width: "100%",
-                        padding: "12px 16px",
-                        fontSize: "16px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        background: "#f3f4f6",
-                        cursor: "not-allowed",
-                      }}
-                    />
-                  </div>
-
-                  <div>
-                    <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                      Tenor (bulan)
-                    </label>
-                    <select
-                      value={tenor}
-                      onChange={(e) => setTenor(Number(e.target.value) || "")}
-                      style={{
-                        width: "100%",
-                        padding: "12px 16px",
-                        fontSize: "16px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        background: "white",
-                        outline: "none",
-                        cursor: "pointer",
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                    >
-                      <option value="">Pilih tenor</option>
-                      <option value={6}>6 bulan</option>
-                      <option value={12}>12 bulan (1 tahun)</option>
-                      <option value={24}>24 bulan (2 tahun)</option>
-                      <option value={36}>36 bulan (3 tahun)</option>
-                      <option value={48}>48 bulan (4 tahun)</option>
-                      <option value={60}>60 bulan (5 tahun)</option>
-                    </select>
-                  </div>
-                </div>
-
-                {cicilan && (
-                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
-                    <div
-                      style={{
-                        background: "white",
-                        padding: "32px",
-                        borderRadius: "16px",
-                        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-                        border: "2px solid #86efac",
-                      }}
-                    >
-                      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                          <div
-                            style={{
-                              background: "#10b981",
-                              color: "white",
-                              width: "32px",
-                              height: "32px",
-                              borderRadius: "8px",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
-                          >
-                            ⚡
-                          </div>
-                          <span style={{ fontSize: "14px", fontWeight: "600", color: "#15803d" }}>
-                            Cicilan per Bulan
-                          </span>
-                        </div>
-                        <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#15803d", margin: 0 }}>
-                          Rp {Math.round(cicilan).toLocaleString("id-ID")}
-                        </h3>
-                      </div>
-                    </div>
-
-                    <div
-                      style={{
-                        background: "white",
-                        padding: "32px",
-                        borderRadius: "16px",
-                        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-                        border: "2px solid #93c5fd",
-                      }}
-                    >
-                      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                          <div
-                            style={{
-                              background: "#3b82f6",
-                              color: "white",
-                              width: "32px",
-                              height: "32px",
-                              borderRadius: "8px",
-                              display: "flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
-                          >
-                            💰
-                          </div>
-                          <span style={{ fontSize: "14px", fontWeight: "600", color: "#1e40af" }}>
-                            Total Pembayaran
-                          </span>
-                        </div>
-                        <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#1e40af", margin: 0 }}>
-                          Rp {Math.round(cicilan * tenor).toLocaleString("id-ID")}
-                        </h3>
-                        <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
-                          Total Bunga: Rp {Math.round((cicilan * tenor * bunga) / 100).toLocaleString("id-ID")}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Steps Section */}
       <div style={{ padding: "96px 0", background: "#111827", color: "white" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 32px" }}>
@@ -828,6 +741,431 @@ export default function Home() {
                   </div>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Car Selection & Calculator Section */}
+      <div style={{ padding: "96px 0", background: "white" }} id="simulasi">
+        <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 32px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
+            <div style={{ textAlign: "center", maxWidth: "768px", margin: "0 auto" }}>
+              <span
+                style={{
+                  background: "#dbeafe",
+                  color: "#1e40af",
+                  padding: "6px 16px",
+                  borderRadius: "999px",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                }}
+              >
+                Simulasi Kredit Mobil
+              </span>
+              <h2 style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#111827", margin: "16px 0" }}>
+                Pilih Mobil dan Hitung Cicilan
+              </h2>
+              <p style={{ fontSize: "18px", color: "#6b7280" }}>
+                Pilih mobil impian Anda dan hitung estimasi cicilan dengan maksimal 85% dari harga mobil
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%)",
+                borderRadius: "24px",
+                padding: "48px",
+                boxShadow: "0 20px 50px rgba(0,0,0,0.1)",
+                border: "1px solid #e5e7eb",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+                
+                {/* Step 1: Brand Selection */}
+                <div>
+                  <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
+                    1. Pilih Merek Mobil
+                  </h3>
+                  <select
+                    value={selectedBrand}
+                    onChange={(e) => handleBrandSelect(e.target.value)}
+                    disabled={loadingCars}
+                    style={{
+                      width: "100%",
+                      padding: "16px",
+                      fontSize: "16px",
+                      borderRadius: "12px",
+                      border: "2px solid #e5e7eb",
+                      background: loadingCars ? "#f3f4f6" : "white",
+                      outline: "none",
+                      cursor: loadingCars ? "not-allowed" : "pointer",
+                      marginBottom: "8px",
+                      opacity: loadingCars ? 0.6 : 1,
+                    }}
+                    onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                    onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                  >
+                    <option value="">-- Pilih Merek Mobil --</option>
+                    {carBrands.map((brand) => (
+                      <option key={brand.id} value={brand.id}>
+                        {brand.logo} {brand.name}
+                      </option>
+                    ))}
+                  </select>
+                  {loadingCars && (
+                    <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                      Memuat data merek mobil...
+                    </div>
+                  )}
+                </div>
+
+                {/* Step 2: Type Selection */}
+                {selectedBrand && (
+                  <div>
+                    <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
+                      2. Pilih Tipe Mobil
+                    </h3>
+                    <select
+                      value={selectedType}
+                      onChange={(e) => handleTypeSelect(e.target.value)}
+                      disabled={loadingCars}
+                      style={{
+                        width: "100%",
+                        padding: "16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: loadingCars ? "#f3f4f6" : "white",
+                        outline: "none",
+                        cursor: loadingCars ? "not-allowed" : "pointer",
+                        marginBottom: "8px",
+                        opacity: loadingCars ? 0.6 : 1,
+                      }}
+                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                    >
+                      <option value="">-- Pilih Tipe Mobil --</option>
+                      {carTypes.map((type) => (
+                        <option key={type.id} value={type.id}>
+                          {type.name}
+                        </option>
+                      ))}
+                    </select>
+                    {loadingCars && (
+                      <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                        Memuat data tipe mobil...
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Step 3: Model Selection */}
+                {selectedType && carModels.length > 0 && (
+                  <div>
+                    <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
+                      3. Pilih Model Mobil
+                    </h3>
+                    <select
+                      value={selectedCar?.id || ""}
+                      onChange={(e) => {
+                        const model = carModels.find(m => m.id === e.target.value);
+                        if (model) handleCarSelect(model);
+                      }}
+                      disabled={loadingCars}
+                      style={{
+                        width: "100%",
+                        padding: "16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: loadingCars ? "#f3f4f6" : "white",
+                        outline: "none",
+                        cursor: loadingCars ? "not-allowed" : "pointer",
+                        marginBottom: "8px",
+                        opacity: loadingCars ? 0.6 : 1,
+                      }}
+                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                    >
+                      <option value="">-- Pilih Model Mobil --</option>
+                      {carModels.map((model) => (
+                        <option key={model.id} value={model.id}>
+                          {model.image} {model.name} - Rp {model.price.toLocaleString("id-ID")}
+                        </option>
+                      ))}
+                    </select>
+                    {loadingCars && (
+                      <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                        Memuat data model mobil...
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Step 4: Loan Calculator */}
+                {selectedCar && (
+                  <div>
+                    <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
+                      4. Detail Pinjaman
+                    </h3>
+                    
+                    {/* Selected Car Summary */}
+                    <div
+                      style={{
+                        background: "white",
+                        padding: "20px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        marginBottom: "24px",
+                      }}
+                    >
+                      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                        <div style={{ fontSize: "40px" }}>{selectedCar.image}</div>
+                        <div style={{ flex: 1 }}>
+                          <h4 style={{ fontSize: "18px", fontWeight: "600", color: "#111827", margin: "0 0 4px 0" }}>
+                            {selectedCar.name}
+                          </h4>
+                          <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
+                            Harga: Rp {selectedCar.price.toLocaleString("id-ID")}
+                          </p>
+                          <p style={{ fontSize: "12px", color: "#10b981", margin: "4px 0 0 0" }}>
+                            Maksimal pinjaman: 85% = Rp {Math.floor(selectedCar.price * 0.85).toLocaleString("id-ID")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
+                      <div>
+                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                          Jumlah Pinjaman
+                        </label>
+                        <div style={{ display: "flex", gap: "8px" }}>
+                          <input
+                            type="number"
+                            max={Math.floor(selectedCar.price * 0.85)}
+                            value={pinjaman}
+                            onChange={(e) => {
+                              const value = Number(e.target.value);
+                              if (value <= Math.floor(selectedCar.price * 0.85)) {
+                                setPinjaman(e.target.value);
+                              }
+                            }}
+                            placeholder="Masukkan jumlah pinjaman"
+                            style={{
+                              flex: 1,
+                              padding: "12px 16px",
+                              fontSize: "16px",
+                              borderRadius: "12px",
+                              border: "2px solid #e5e7eb",
+                              background: "white",
+                              outline: "none",
+                            }}
+                            onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                            onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                          />
+                          <button
+                            onClick={handleMaxPinjaman}
+                            style={{
+                              padding: "12px 20px",
+                              fontSize: "14px",
+                              fontWeight: "600",
+                              borderRadius: "12px",
+                              border: "2px solid #10b981",
+                              background: "#10b981",
+                              color: "white",
+                              cursor: "pointer",
+                              transition: "all 0.3s ease",
+                              whiteSpace: "nowrap",
+                            }}
+                            onMouseOver={(e) => (e.target.style.background = "#059669")}
+                            onMouseOut={(e) => (e.target.style.background = "#10b981")}
+                          >
+                            Maks
+                          </button>
+                        </div>
+                        <p style={{ fontSize: "12px", color: "#6b7280", margin: "4px 0 0 0" }}>
+                          Maksimal: Rp {Math.floor(selectedCar.price * 0.85).toLocaleString("id-ID")} (85% dari harga mobil)
+                        </p>
+                      </div>
+
+                      <div>
+                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                          Bunga (%)
+                        </label>
+                        <input
+                          type="number"
+                          value={0.76}
+                          disabled
+                          style={{
+                            width: "100%",
+                            padding: "12px 16px",
+                            fontSize: "16px",
+                            borderRadius: "12px",
+                            border: "2px solid #e5e7eb",
+                            background: "#f3f4f6",
+                            cursor: "not-allowed",
+                          }}
+                        />
+                      </div>
+
+                      <div>
+                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
+                          Tenor (bulan)
+                        </label>
+                        <select
+                          value={tenor}
+                          onChange={(e) => setTenor(Number(e.target.value) || "")}
+                          style={{
+                            width: "100%",
+                            padding: "12px 16px",
+                            fontSize: "16px",
+                            borderRadius: "12px",
+                            border: "2px solid #e5e7eb",
+                            background: "white",
+                            outline: "none",
+                            cursor: "pointer",
+                          }}
+                          onFocus={(e) => (e.target.style.borderColor = "#10b981")}
+                          onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
+                        >
+                          <option value="">Pilih tenor</option>
+                          <option value={6}>6 bulan</option>
+                          <option value={12}>12 bulan (1 tahun)</option>
+                          <option value={24}>24 bulan (2 tahun)</option>
+                          <option value={36}>36 bulan (3 tahun)</option>
+                          <option value={48}>48 bulan (4 tahun)</option>
+                          <option value={60}>60 bulan (5 tahun)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Loan Results */}
+                {cicilan && selectedCar && (
+                  <>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+                      <div
+                        style={{
+                          background: "white",
+                          padding: "32px",
+                          borderRadius: "16px",
+                          boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                          border: "2px solid #86efac",
+                        }}
+                      >
+                        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                            <div
+                              style={{
+                                background: "#10b981",
+                                color: "white",
+                                width: "32px",
+                                height: "32px",
+                                borderRadius: "8px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                              }}
+                            >
+                              ⚡
+                            </div>
+                            <span style={{ fontSize: "14px", fontWeight: "600", color: "#15803d" }}>
+                              Cicilan per Bulan
+                            </span>
+                          </div>
+                          <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#15803d", margin: 0 }}>
+                            Rp {Math.round(cicilan).toLocaleString("id-ID")}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div
+                        style={{
+                          background: "white",
+                          padding: "32px",
+                          borderRadius: "16px",
+                          boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                          border: "2px solid #93c5fd",
+                        }}
+                      >
+                        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                            <div
+                              style={{
+                                background: "#3b82f6",
+                                color: "white",
+                                width: "32px",
+                                height: "32px",
+                                borderRadius: "8px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                              }}
+                            >
+                              💰
+                            </div>
+                            <span style={{ fontSize: "14px", fontWeight: "600", color: "#1e40af" }}>
+                              Total Pembayaran
+                            </span>
+                          </div>
+                          <h3 style={{ fontSize: "36px", fontWeight: "700", color: "#1e40af", margin: 0 }}>
+                            Rp {Math.round(cicilan * tenor).toLocaleString("id-ID")}
+                          </h3>
+                          <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
+                            Total Bunga: Rp {Math.round((cicilan * tenor * bunga) / 100).toLocaleString("id-ID")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Ajukan Button dengan Data Mobil */}
+                    <div style={{ textAlign: "center", marginTop: "32px" }}>
+                      <button
+                        onClick={() => {
+                          setModalData({
+                            withCarData: true, 
+                            carData: {
+                              mobil: selectedCar.name,
+                              pinjaman: pinjaman,
+                              tenor: tenor,
+                              cicilan: Math.round(cicilan)
+                            }
+                          });
+                          setModalOpen(true);
+                        }}
+                        style={{
+                          background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                          color: "white",
+                          padding: "16px 32px",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                          borderRadius: "12px",
+                          border: "none",
+                          cursor: "pointer",
+                          transition: "all 0.3s",
+                          boxShadow: "0 4px 15px rgba(16, 185, 129, 0.3)",
+                        }}
+                        onMouseOver={(e) => {
+                          e.target.style.transform = "translateY(-2px)";
+                          e.target.style.boxShadow = "0 6px 20px rgba(16, 185, 129, 0.4)";
+                        }}
+                        onMouseOut={(e) => {
+                          e.target.style.transform = "translateY(0)";
+                          e.target.style.boxShadow = "0 4px 15px rgba(16, 185, 129, 0.3)";
+                        }}
+                      >
+                        🚗 Ajukan Pembiayaan Ini
+                      </button>
+                      <p style={{ fontSize: "14px", color: "#6b7280", marginTop: "8px" }}>
+                        Data mobil akan otomatis terisi di form
+                      </p>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -1115,7 +1453,10 @@ export default function Home() {
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "center" }}>
               <button
-                onClick={() => setModalOpen(true)}
+                onClick={() => {
+                  setModalData({ withCarData: false });
+                  setModalOpen(true);
+                }}
                 style={{
                   background: "#10b981",
                   color: "white",
@@ -1144,151 +1485,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Simple Modal */}
-      {modalOpen && (
-        <div
-          onClick={() => setModalOpen(false)}
-          style={{
-            position: "fixed",
-            inset: 0,
-            background: "rgba(0,0,0,0.7)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 9999,
-            padding: "20px",
-          }}
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              background: "white",
-              padding: "40px",
-              borderRadius: "16px",
-              maxWidth: "500px",
-              width: "100%",
-            }}
-          >
-            <h3 style={{ fontSize: "24px", marginBottom: "16px", color: "#111827" }}>Hubungi Kami</h3>
-            <p style={{ color: "#6b7280", marginBottom: "24px" }}>
-              Untuk mengajukan pembiayaan mobil, silahkan isi data berikut:
-            </p>
-            <div style={{ position: "relative" }}>
-              <label>Nama Lengkap:</label>
-              <input
-                type="text"
-                placeholder="Masukkan nama lengkap Anda"
-                style={{
-                  width: "100%",
-                  padding: "12px 16px",
-                  fontSize: "16px",
-                  borderRadius: "12px",
-                  border: "2px solid",
-                  borderColor: focused ? "#10b981" : "#e5e7eb",
-                  background: "white",
-                  outline: "none",
-                }}
-                />
-              <label>Kota:</label>
-              <input
-                type="text"
-                placeholder="Cari kota Anda"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                onFocus={() => {
-                  setFocused(true);
-                  setOpenRegion(true);
-                }}
-                onBlur={() => setFocused(false)}
-                style={{
-                  width: "100%",
-                  padding: "12px 16px",
-                  fontSize: "16px",
-                  borderRadius: "12px",
-                  border: "2px solid",
-                  borderColor: focused ? "#10b981" : "#e5e7eb",
-                  background: "white",
-                  outline: "none",
-                }}
-              />
-
-              {loading && <Spinner mt={2} />}
-
-              {openRegion && searchResults.length > 0 && (
-                <ul
-                  style={{
-                    position: "absolute",
-                    top: "105%",
-                    left: 0,
-                    right: 0,
-                    background: "white",
-                    border: "1px solid #ddd",
-                    borderRadius: 8,
-                    boxShadow: "0 10px 20px rgba(0,0,0,.08)",
-                    listStyle: "none",
-                    margin: 0,
-                    padding: 6,
-                    maxHeight: 250,
-                    overflowY: "auto",
-                    zIndex: 20,
-                  }}
-                >
-                  {searchResults.map((item, index) => (
-                    <li
-                      key={item.place_id}
-                      onMouseDown={() => selectAddress(item)}   // ⬅️ hanya ini yang diganti
-                      onMouseEnter={() => setHighlight(index)}
-                      style={{
-                        padding: "10px 12px",
-                        borderRadius: 6,
-                        cursor: "pointer",
-                        background: highlight === index ? "#e6f3ff" : "transparent",
-                      }}
-                    >
-                      <strong>{item.display_name.split(",")[0]}</strong>
-                      <div style={{ fontSize: 13, color: "#666" }} onClick={() => { setQuery(item.display_name);setOpenRegion(false);}}>
-                        {item.display_name}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-            <div style={{ display: "flex", justifyContent: "flex-end", gap: "16px" }}>
-              <button
-                onClick={() => setModalOpen(false)}
-                style={{
-                  background: "#D54D4DFF",
-                  color: "white",
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: "16px",
-                  fontWeight: "600"
-                }}
-              >
-                Tutup
-              </button>
-              <button
-                onClick={() => setModalOpen(false)}
-                style={{
-                  background: "#10b981",
-                  color: "white",
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: "16px",
-                  fontWeight: "600"
-                }}
-              >
-                Kirim
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* AjukanModal Component */}
+      <AjukanModal isOpen={modalOpen} setOpen={setModalOpen} modalData={modalData} />
     </div>
   );
 }
