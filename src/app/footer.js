@@ -55,7 +55,7 @@ function Footer() {
         <Box borderTopWidth="1px" borderColor="whiteAlpha.300">
           <Container maxW="6xl" py={4}>
             <Text fontSize="xs" color="whiteAlpha.700" textAlign="center">
-              Copyright © PT BIRU KONSULTASI INDONESIA 2024-2025.
+              Copyright © DanaAuto Finance 2025.
               All Rights Reserved.
             </Text>
           </Container>
