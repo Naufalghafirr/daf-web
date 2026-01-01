@@ -1,5 +1,5 @@
 "use client";
-import { Dialog, Portal, VStack, Field, Input, Button, Text, Textarea } from "@chakra-ui/react";
+import { Dialog, Portal, VStack, Field, Input, Button, Text, Textarea, Select } from "@chakra-ui/react";
 import { IoIosSend } from "react-icons/io";
 import { useState, useEffect } from "react";
 
@@ -11,6 +11,13 @@ function AjukanModal({isOpen, setOpen, modalData}){
     const [mobilDituju, setMobilDituju] = useState("");
     const [pertanyaan, setPertanyaan] = useState("");
     const [withCarData, setWithCarData] = useState(false);
+    
+    // Vehicle form states
+    const [jenisKendaraan, setJenisKendaraan] = useState("");
+    const [merkKendaraan, setMerkKendaraan] = useState("");
+    const [typeKendaraan, setTypeKendaraan] = useState("");
+    const [platNomor, setPlatNomor] = useState("");
+    const [tahunKendaraan, setTahunKendaraan] = useState("");
     
     // Search states
     const [searchQuery, setSearchQuery] = useState("");
@@ -71,19 +78,26 @@ function AjukanModal({isOpen, setOpen, modalData}){
         if (withCarData) {
             text = `🚗 *Form Ajukan Pembiayaan - DanaAuto Finance*
 
-👤 *Data Pribadi:*
+*Data Pribadi:*
 • Nama Lengkap: ${nama || "-"}
 • Kota Domisili: ${kota || "-"}
 • No. HP: ${noHp || "-"}
 • Email: ${email || "-"}
 
-🚙 *Data Kendaraan & Simulasi:*
+*Data Kendaraan & Simulasi:*
 ${modalData?.carData ? `• Mobil: ${modalData.carData.mobil}
 • Pinjaman: Rp ${modalData.carData.pinjaman?.toLocaleString("id-ID")}
-• Tenor: ${modalData.carData.tenor} bulan
-• Cicilan: Rp ${modalData.carData.cicilan?.toLocaleString("id-ID")}/bulan` : mobilDituju || "-"}
+• Tenor: ${modalData.carData.tenor} bulan` : mobilDituju || "-"}
 
-💬 *Pertanyaan/Pesan:*
+${jenisKendaraan ? `
+*Data Kendaraan Manual:*
+• Jenis Kendaraan: ${jenisKendaraan === "mobil" ? "Mobil" : "Motor"}
+• Merk: ${merkKendaraan || "-"}
+• Type: ${typeKendaraan || "-"}
+• Plat Nomor: ${platNomor || "-"}
+• Tahun: ${tahunKendaraan || "-"}` : ""}
+
+*Pertanyaan/Pesan:*
 ${pertanyaan || "-"}
 
 ---
@@ -91,13 +105,18 @@ Form ini dikirim dari hasil simulasi website DanaAuto Finance. Mohon segera dipr
         } else {
             text = `📝 *Form Pengajuan - DanaAuto Finance*
 
-👤 *Data Pribadi:*
+*Data Pribadi:*
 • Nama Lengkap: ${nama || "-"}
 • Kota Domisili: ${kota || "-"}
 • No. HP: ${noHp || "-"}
 • Email: ${email || "-"}
 
-💬 *Pertanyaan/Pengajuan:*
+${jenisKendaraan ? `*Data Kendaraan:*
+• Jenis Kendaraan: ${jenisKendaraan === "mobil" ? "Mobil" : "Motor"}
+• Merk: ${merkKendaraan || "-"}
+• Type: ${typeKendaraan || "-"}
+• Plat Nomor: ${platNomor || "-"}
+• Tahun: ${tahunKendaraan || "-"}` : ""}*Pertanyaan/Pengajuan:*
 ${pertanyaan || "-"}
 
 ---
@@ -123,6 +142,12 @@ Form ini dikirim melalui website DanaAuto Finance. Mohon segera diproses dan fol
         setWithCarData(false);
         setShowSearchResults(false);
         setSearchResults([]);
+        // Reset vehicle form
+        setJenisKendaraan("");
+        setMerkKendaraan("");
+        setTypeKendaraan("");
+        setPlatNomor("");
+        setTahunKendaraan("");
     };
     
     return (
@@ -218,15 +243,85 @@ Form ini dikirim melalui website DanaAuto Finance. Mohon segera diproses dan fol
                     />
                 </Field.Root>
 
-                {!withCarData && (
-                    <Field.Root>
-                        <Field.Label>Mobil yang Dituju (opsional)</Field.Label>
-                        <Input
-                        placeholder="Contoh: Toyota Avanza, Honda Civic, dll"
-                        value={mobilDituju}
-                        onChange={(e) => setMobilDituju(e.target.value)}
-                        />
-                    </Field.Root>
+                <Field.Root>
+                    <Field.Label>Pilih jenis kendaraan</Field.Label>
+                    <select
+                        value={jenisKendaraan}
+                        onChange={(e) => setJenisKendaraan(e.target.value)}
+                        style={{
+                            width: "100%",
+                            padding: "8px 12px",
+                            border: "1px solid #e2e8f0",
+                            borderRadius: "6px",
+                            fontSize: "14px",
+                            backgroundColor: "white",
+                            outline: "none",
+                            transition: "border-color 0.2s"
+                        }}
+                        onFocus={(e) => e.target.style.borderColor = "#3182ce"}
+                        onBlur={(e) => e.target.style.borderColor = "#e2e8f0"}
+                    >
+                        <option value="">Pilih</option>
+                        <option value="mobil">Mobil</option>
+                        <option value="motor">Motor</option>
+                    </select>
+                </Field.Root>
+
+                {jenisKendaraan && (
+                    <>
+                        <Field.Root>
+                            <Field.Label>Merk Kendaraan *</Field.Label>
+                            <Input
+                                placeholder={jenisKendaraan === "mobil" ? "Contoh: Toyota, Honda, Mitsubishi" : "Contoh: Honda, Yamaha, Suzuki"}
+                                value={merkKendaraan}
+                                onChange={(e) => setMerkKendaraan(e.target.value)}
+                            />
+                        </Field.Root>
+
+                        <Field.Root>
+                            <Field.Label>Type Kendaraan *</Field.Label>
+                            <Input
+                                placeholder={jenisKendaraan === "mobil" ? "Contoh: Avanza, Civic, Pajero" : "Contoh: Beat, Nmax, Vixion"}
+                                value={typeKendaraan}
+                                onChange={(e) => setTypeKendaraan(e.target.value)}
+                            />
+                        </Field.Root>
+
+                        <Field.Root>
+                            <Field.Label>Plat Nomor *</Field.Label>
+                            <Input
+                                placeholder="Contoh: B 1234 ABC atau DK 5678 XYZ"
+                                value={platNomor}
+                                onChange={(e) => setPlatNomor(e.target.value)}
+                            />
+                        </Field.Root>
+
+                        <Field.Root>
+                            <Field.Label>Tahun Kendaraan *</Field.Label>
+                            <select
+                                value={tahunKendaraan}
+                                onChange={(e) => setTahunKendaraan(e.target.value)}
+                                style={{
+                                    width: "100%",
+                                    padding: "8px 12px",
+                                    border: "1px solid #e2e8f0",
+                                    borderRadius: "6px",
+                                    fontSize: "14px",
+                                    backgroundColor: "white",
+                                    outline: "none",
+                                    transition: "border-color 0.2s"
+                                }}
+                                onFocus={(e) => e.target.style.borderColor = "#3182ce"}
+                                onBlur={(e) => e.target.style.borderColor = "#e2e8f0"}
+                            >
+                                <option value="">Pilih tahun</option>
+                                {Array.from({ length: 35 }, (_, i) => {
+                                    const year = new Date().getFullYear() - i;
+                                    return <option key={year} value={year}>{year}</option>;
+                                })}
+                            </select>
+                        </Field.Root>
+                    </>
                 )}
 
                 <Field.Root>
@@ -257,7 +352,7 @@ Form ini dikirim melalui website DanaAuto Finance. Mohon segera diproses dan fol
                     _hover={{ bg: "green.600" }} 
                     onClick={handleApplySubmit}
                     leftIcon={<IoIosSend />}
-                    isDisabled={!nama || !kota || !noHp || (!withCarData && !pertanyaan)}
+                    isDisabled={!nama || !kota || !noHp || (!withCarData && !pertanyaan) || (jenisKendaraan && (!merkKendaraan || !typeKendaraan || !platNomor || !tahunKendaraan))}
                 >
                     Kirim ke WhatsApp
                 </Button>

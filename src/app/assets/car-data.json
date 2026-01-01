@@ -1,0 +1,954 @@
+{
+  "last_updated": "2025-12-31",
+  "currency": "IDR",
+  "price_categories": {
+    "ekonomis": { "min": 100000000, "max": 300000000 },
+    "menengah": { "min": 300000000, "max": 600000000 },
+    "premium": { "min": 600000000, "max": 1500000000 },
+    "mewah": { "min": 1500000000, "max": 5000000000 }
+  },
+  "brands": [
+
+    {
+      "brand": "CHEVROLET",
+      "brand_info": {
+        "country": "Amerika Serikat",
+        "founded": "1911",
+        "logo": "🏁",
+        "popular_models": ["Trailblazer", "Colorado", "Spark"]
+      },
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "Trailblazer", 
+              "price_new": "450000000-650000000", 
+              "market_price_used": "250000000-450000000", 
+              "description": "SUV tangguh bermesin diesel.",
+              "specs": {
+                "engine": "2.8L Duramax Turbo Diesel",
+                "power": "200 HP",
+                "transmission": "6-Speed Automatic",
+                "fuel_type": "Diesel",
+                "seats": 7,
+                "drive_type": "4WD"
+              }
+            },
+            { 
+              "model": "Captiva", 
+              "price_new": "380000000-550000000", 
+              "market_price_used": "160000000-350000000", 
+              "description": "SUV keluarga bertenaga.",
+              "specs": {
+                "engine": "2.4L ECOTEC",
+                "power": "167 HP",
+                "transmission": "6-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 7,
+                "drive_type": "2WD/4WD"
+              }
+            },
+            { 
+              "model": "Traverse", 
+              "price_new": "800000000-1000000000", 
+              "market_price_used": "500000000-800000000", 
+              "description": "SUV besar premium.",
+              "specs": {
+                "engine": "3.6L V6",
+                "power": "310 HP",
+                "transmission": "9-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 8,
+                "drive_type": "AWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Pickup",
+          "models": [
+            { "model": "Colorado", "price_new": "450000000-650000000", "market_price_used": "250000000-420000000", "description": "Pickup double cabin serbaguna." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Spark", "price_new": "180000000-230000000", "market_price_used": "80000000-150000000", "description": "City car kompak dan ekonomis." }
+          ]
+        },
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Spin", "price_new": "190000000-230000000", "market_price_used": "90000000-160000000", "description": "MPV kompak yang irit bahan bakar." }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "Cruze", "price_new": "350000000-450000000", "market_price_used": "120000000-260000000", "description": "Sedan medium dengan desain elegan." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "DAIHATSU",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Xenia", "price_new": "280000000-340000000", "market_price_used": "160000000-250000000", "description": "MPV ekonomis keluarga." },
+            { "model": "Sigra", "price_new": "170000000-230000000", "market_price_used": "100000000-180000000", "description": "MPV murah ramah lingkungan." },
+            { "model": "Luxio", "price_new": "250000000-300000000", "market_price_used": "170000000-250000000", "description": "Minibus nyaman untuk usaha dan keluarga." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Terios", "price_new": "300000000-350000000", "market_price_used": "200000000-290000000", "description": "SUV keluarga yang tangguh." },
+            { "model": "Rocky", "price_new": "240000000-300000000", "market_price_used": "180000000-260000000", "description": "SUV kecil modern dan efisien." }
+          ]
+        },
+        {
+          "type": "LCGC",
+          "models": [
+            { "model": "Ayla", "price_new": "150000000-210000000", "market_price_used": "90000000-150000000", "description": "Mobil murah ramah lingkungan." }
+          ]
+        },
+        {
+          "type": "Van",
+          "models": [
+            { "model": "Gran Max", "price_new": "200000000-300000000", "market_price_used": "120000000-230000000", "description": "Mobil niaga serbaguna." }
+          ]
+        },
+        {
+          "type": "Pickup",
+          "models": [
+            { "model": "Gran Max Pickup", "price_new": "180000000-250000000", "market_price_used": "100000000-200000000", "description": "Pickup andalan untuk usaha." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "DATSUN",
+      "types": [
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "GO", "price_new": "110000000-140000000", "market_price_used": "60000000-100000000", "description": "LCGC ekonomis." },
+            { "model": "GO+", "price_new": "120000000-160000000", "market_price_used": "70000000-110000000", "description": "Hatchback 3 baris terjangkau." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "FORD",
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Everest", "price_new": "700000000-900000000", "market_price_used": "400000000-700000000", "description": "SUV besar bertenaga diesel." },
+            { "model": "EcoSport", "price_new": "250000000-330000000", "market_price_used": "140000000-230000000", "description": "SUV kompak untuk perkotaan." }
+          ]
+        },
+        {
+          "type": "Pickup",
+          "models": [
+            { "model": "Ranger", "price_new": "450000000-750000000", "market_price_used": "250000000-550000000", "description": "Pickup double cabin populer." }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "Fiesta Sedan", "price_new": "230000000-280000000", "market_price_used": "90000000-170000000", "description": "Sedan kompak irit bahan bakar." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "HINO",
+      "types": [
+        {
+          "type": "Truck",
+          "models": [
+            { "model": "Dutro", "price_new": "350000000-600000000", "market_price_used": "200000000-450000000", "description": "Truk ringan untuk distribusi." },
+            { "model": "Ranger", "price_new": "600000000-1200000000", "market_price_used": "350000000-850000000", "description": "Truk medium tangguh." },
+            { "model": "Profia", "price_new": "1200000000-2500000000", "market_price_used": "800000000-1800000000", "description": "Truk berat untuk logistik besar." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "HONDA",
+      "types": [
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Brio", "price_new": "180000000-250000000", "market_price_used": "120000000-190000000", "description": "City car kompak dan irit." },
+            { "model": "Jazz", "price_new": "250000000-320000000", "market_price_used": "150000000-260000000", "description": "Hatchback populer dengan kabin fleksibel." },
+            { "model": "Civic Hatchback", "price_new": "600000000-750000000", "market_price_used": "450000000-650000000", "description": "Hatchback sporty premium." }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "City", "price_new": "350000000-450000000", "market_price_used": "200000000-330000000", "description": "Sedan ringkas nyaman." },
+            { "model": "Civic", "price_new": "600000000-800000000", "market_price_used": "350000000-650000000", "description": "Sedan sporty performa tinggi." },
+            { "model": "Accord", "price_new": "800000000-1000000000", "market_price_used": "450000000-800000000", "description": "Sedan eksekutif premium." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "HR-V", "price_new": "350000000-450000000", "market_price_used": "250000000-380000000", "description": "SUV kompak stylish." },
+            { "model": "CR-V", "price_new": "600000000-800000000", "market_price_used": "350000000-650000000", "description": "SUV premium keluarga." },
+            { "model": "WR-V", "price_new": "280000000-330000000", "market_price_used": "240000000-300000000", "description": "SUV kecil desain sporty." }
+          ]
+        },
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Mobilio", "price_new": "250000000-300000000", "market_price_used": "150000000-250000000", "description": "MPV ekonomis keluarga." },
+            { "model": "Odyssey", "price_new": "900000000-1200000000", "market_price_used": "450000000-800000000", "description": "MPV mewah kabin luas." }
+          ]
+        },
+        {
+          "type": "Sport",
+          "models": [
+            { "model": "Civic Type R", "price_new": "1400000000-1600000000", "market_price_used": "1000000000-1300000000", "description": "Hatchback performa tinggi." }
+          ]
+        },
+        {
+          "type": "Hybrid",
+          "models": [
+            { "model": "CR-V Hybrid", "price_new": "800000000-1000000000", "market_price_used": "600000000-850000000", "description": "SUV hybrid efisien." },
+            { "model": "Accord Hybrid", "price_new": "1100000000-1300000000", "market_price_used": "800000000-1100000000", "description": "Sedan hybrid premium." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "HYUNDAI",
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Creta", "price_new": "300000000-400000000", "market_price_used": "240000000-340000000", "description": "SUV kompak modern." },
+            { "model": "Santa Fe", "price_new": "600000000-900000000", "market_price_used": "350000000-750000000", "description": "SUV keluarga premium." },
+            { "model": "Palisade", "price_new": "900000000-1200000000", "market_price_used": "700000000-1000000000", "description": "SUV besar mewah." }
+          ]
+        },
+        {
+          "type": "Electric",
+          "models": [
+            { "model": "IONIQ 5", "price_new": "800000000-1000000000", "market_price_used": "650000000-900000000", "description": "Mobil listrik futuristik." },
+            { "model": "Kona Electric", "price_new": "600000000-750000000", "market_price_used": "450000000-650000000", "description": "SUV listrik kompak." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "i20", "price_new": "250000000-300000000", "market_price_used": "160000000-240000000", "description": "Hatchback modern dan efisien." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "ISUZU",
+      "types": [
+        {
+          "type": "Pickup",
+          "models": [
+            { "model": "D-Max", "price_new": "450000000-700000000", "market_price_used": "250000000-500000000", "description": "Pickup diesel tangguh." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "mu-X", "price_new": "550000000-850000000", "market_price_used": "350000000-700000000", "description": "SUV diesel untuk keluarga." }
+          ]
+        },
+        {
+          "type": "Truck",
+          "models": [
+            { "model": "Elf", "price_new": "300000000-700000000", "market_price_used": "200000000-500000000", "description": "Truk ringan andalan bisnis." },
+            { "model": "Giga", "price_new": "900000000-2000000000", "market_price_used": "600000000-1500000000", "description": "Truk berat untuk logistik." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "KIA",
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Seltos", "price_new": "350000000-450000000", "market_price_used": "260000000-380000000", "description": "SUV kompak stylish." },
+            { "model": "Sportage", "price_new": "500000000-700000000", "market_price_used": "320000000-550000000", "description": "SUV modern dengan fitur lengkap." },
+            { "model": "Sorento", "price_new": "700000000-900000000", "market_price_used": "450000000-750000000", "description": "SUV keluarga 7-seater." }
+          ]
+        },
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Carnival", "price_new": "900000000-1200000000", "market_price_used": "600000000-1000000000", "description": "MPV mewah berkapasitas besar." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Rio", "price_new": "250000000-300000000", "market_price_used": "150000000-240000000", "description": "Hatchback kompak irit BBM." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "MAZDA",
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "CX-3", "price_new": "400000000-500000000", "market_price_used": "300000000-420000000", "description": "SUV kompak premium." },
+            { "model": "CX-5", "price_new": "500000000-700000000", "market_price_used": "350000000-550000000", "description": "SUV favorit dengan desain elegan." },
+            { "model": "CX-8", "price_new": "700000000-900000000", "market_price_used": "550000000-750000000", "description": "SUV 7 penumpang mewah." }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "Mazda 2 Sedan", "price_new": "300000000-350000000", "market_price_used": "200000000-280000000", "description": "Sedan kompak stylish." },
+            { "model": "Mazda 6", "price_new": "600000000-800000000", "market_price_used": "350000000-650000000", "description": "Sedan premium menawan." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Mazda 2", "price_new": "300000000-350000000", "market_price_used": "200000000-280000000", "description": "Hatchback premium kompak." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "MERCEDESBENZ",
+      "types": [
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "C-Class", "price_new": "1000000000-1300000000", "market_price_used": "600000000-1000000000", "description": "Sedan eksekutif mewah." },
+            { "model": "E-Class", "price_new": "1500000000-2200000000", "market_price_used": "900000000-1600000000", "description": "Sedan bisnis premium." },
+            { "model": "S-Class", "price_new": "3000000000-6000000000", "market_price_used": "2000000000-4500000000", "description": "Sedan flagship ultra mewah." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "GLA", "price_new": "900000000-1200000000", "market_price_used": "600000000-900000000", "description": "SUV kompak premium." },
+            { "model": "GLC", "price_new": "1400000000-1800000000", "market_price_used": "900000000-1400000000", "description": "SUV mewah populer." }
+          ]
+        },
+        {
+          "type": "Coupe",
+          "models": [
+            { "model": "CLA", "price_new": "1000000000-1300000000", "market_price_used": "650000000-950000000", "description": "Coupe 4 pintu stylish." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "MITSUBISHI",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Xpander", "price_new": "300000000-350000000", "market_price_used": "230000000-300000000", "description": "MPV stylish keluarga." },
+            { "model": "Xpander Cross", "price_new": "330000000-400000000", "market_price_used": "250000000-330000000", "description": "MPV crossover tangguh." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Pajero Sport", "price_new": "600000000-850000000", "market_price_used": "400000000-700000000", "description": "SUV diesel populer." },
+            { "model": "Outlander", "price_new": "450000000-600000000", "market_price_used": "250000000-450000000", "description": "SUV crossover modern." }
+          ]
+        },
+        {
+          "type": "Pickup",
+          "models": [
+            { "model": "Triton", "price_new": "400000000-650000000", "market_price_used": "250000000-450000000", "description": "Pickup tangguh untuk kerja berat." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "MORRIS",
+      "types": [
+        {
+          "type": "Classic",
+          "models": [
+            { "model": "Morris Minor", "price_new": "Import/Kolektor", "market_price_used": "200000000-700000000", "description": "Mobil klasik Inggris legendaris." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "NISSAN",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Serena", "price_new": "500000000-600000000", "market_price_used": "250000000-450000000", "description": "MPV keluarga nyaman." },
+            { "model": "Livina", "price_new": "280000000-330000000", "market_price_used": "180000000-260000000", "description": "MPV kompak ekonomis." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "X-Trail", "price_new": "500000000-700000000", "market_price_used": "250000000-500000000", "description": "SUV crossover populer." },
+            { "model": "Terra", "price_new": "600000000-800000000", "market_price_used": "400000000-650000000", "description": "SUV ladder-frame tangguh." }
+          ]
+        },
+        {
+          "type": "Electric",
+          "models": [
+            { "model": "Leaf", "price_new": "700000000-900000000", "market_price_used": "450000000-700000000", "description": "Mobil listrik pionir dunia." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "PEUGEOT",
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "3008", "price_new": "700000000-900000000", "market_price_used": "500000000-750000000", "description": "SUV Eropa modern dan elegan." },
+            { "model": "5008", "price_new": "800000000-1000000000", "market_price_used": "600000000-850000000", "description": "SUV 7-seater premium." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "208", "price_new": "450000000-600000000", "market_price_used": "300000000-450000000", "description": "Hatchback stylish khas Eropa." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "SUZUKI",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Ertiga", "price_new": "300000000-350000000", "market_price_used": "200000000-280000000", "description": "MPV ekonomis keluarga." },
+            { "model": "APV", "price_new": "250000000-300000000", "market_price_used": "150000000-240000000", "description": "MPV luas untuk usaha dan keluarga." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Baleno", "price_new": "250000000-300000000", "market_price_used": "150000000-240000000", "description": "Hatchback elegan dan nyaman." },
+            { "model": "Ignis", "price_new": "200000000-250000000", "market_price_used": "140000000-200000000", "description": "Hatchback mungil bergaya SUV." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "XL7", "price_new": "300000000-350000000", "market_price_used": "220000000-300000000", "description": "SUV crossover berbasis Ertiga." },
+            { "model": "Jimny", "price_new": "450000000-550000000", "market_price_used": "350000000-500000000", "description": "SUV offroad kecil legendaris." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "TOYOTA",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Avanza", "price_new": "300000000-350000000", "market_price_used": "180000000-260000000", "description": "MPV keluarga populer." },
+            { "model": "Veloz", "price_new": "330000000-380000000", "market_price_used": "240000000-320000000", "description": "MPV stylish modern." },
+            { "model": "Innova Zenix", "price_new": "450000000-650000000", "market_price_used": "380000000-520000000", "description": "MPV premium hybrid." },
+            { "model": "Alphard", "price_new": "1500000000-2500000000", "market_price_used": "950000000-1800000000", "description": "MPV mewah kelas atas." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Fortuner", "price_new": "600000000-850000000", "market_price_used": "400000000-700000000", "description": "SUV besar tangguh." },
+            { "model": "Raize", "price_new": "250000000-300000000", "market_price_used": "200000000-260000000", "description": "SUV kompak modern." },
+            { "model": "Rush", "price_new": "300000000-350000000", "market_price_used": "220000000-290000000", "description": "SUV keluarga 7 kursi." }
+          ]
+        },
+        {
+          "type": "Hatchback",
+          "models": [
+            { "model": "Yaris", "price_new": "300000000-350000000", "market_price_used": "200000000-290000000", "description": "Hatchback sporty." },
+            { "model": "Agya", "price_new": "170000000-220000000", "market_price_used": "90000000-170000000", "description": "LCGC ekonomis." }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "Camry", "price_new": "700000000-950000000", "market_price_used": "350000000-750000000", "description": "Sedan premium." }
+          ]
+        },
+        {
+          "type": "Electric",
+          "models": [
+            { "model": "bZ4X", "price_new": "1200000000-1400000000", "market_price_used": "900000000-1200000000", "description": "SUV listrik Toyota." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "WULING",
+      "types": [
+        {
+          "type": "MPV",
+          "models": [
+            { "model": "Confero", "price_new": "200000000-250000000", "market_price_used": "130000000-200000000", "description": "MPV terjangkau 7 penumpang." },
+            { "model": "Cortez", "price_new": "300000000-350000000", "market_price_used": "200000000-300000000", "description": "MPV medium nyaman." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "Almaz", "price_new": "350000000-450000000", "market_price_used": "250000000-380000000", "description": "SUV modern dengan fitur canggih." }
+          ]
+        },
+        {
+          "type": "Electric",
+          "models": [
+            { "model": "Air EV", "price_new": "250000000-315000000", "market_price_used": "200000000-280000000", "description": "Mobil listrik kompak perkotaan." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "BMW",
+      "types": [
+        {
+          "type": "Sedan",
+          "models": [
+            { "model": "320i", "price_new": "900000000-1200000000", "market_price_used": "500000000-900000000", "description": "Sedan sporty premium." },
+            { "model": "330i", "price_new": "1100000000-1400000000", "market_price_used": "700000000-1100000000", "description": "Sedan performa tinggi." },
+            { "model": "5 Series", "price_new": "1800000000-2600000000", "market_price_used": "1200000000-1900000000", "description": "Sedan eksekutif mewah." }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { "model": "X1", "price_new": "900000000-1200000000", "market_price_used": "600000000-900000000", "description": "SUV kompak premium." },
+            { "model": "X3", "price_new": "1400000000-1800000000", "market_price_used": "900000000-1400000000", "description": "SUV performa tinggi." },
+            { "model": "X5", "price_new": "2000000000-3000000000", "market_price_used": "1500000000-2300000000", "description": "SUV besar mewah." }
+          ]
+        },
+        {
+          "type": "Electric",
+          "models": [
+            { "model": "i4", "price_new": "2000000000-2500000000", "market_price_used": "1500000000-2200000000", "description": "Sedan listrik premium." },
+            { "model": "iX", "price_new": "2500000000-3500000000", "market_price_used": "1800000000-3000000000", "description": "SUV listrik futuristik." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "LEXUS",
+      "brand_info": {
+        "country": "Jepang",
+        "founded": "1989",
+        "logo": "🔷",
+        "popular_models": ["RX", "ES", "NX"]
+      },
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "RX 350", 
+              "price_new": "1500000000-2000000000", 
+              "market_price_used": "900000000-1500000000", 
+              "description": "SUV mewah hybrid.",
+              "specs": {
+                "engine": "3.5L V6 Hybrid",
+                "power": "308 HP",
+                "transmission": "8-Speed Automatic",
+                "fuel_type": "Hybrid",
+                "seats": 5,
+                "drive_type": "AWD"
+              }
+            },
+            { 
+              "model": "NX 300", 
+              "price_new": "1200000000-1500000000", 
+              "market_price_used": "800000000-1200000000", 
+              "description": "SUV kompak premium.",
+              "specs": {
+                "engine": "2.0L Turbo",
+                "power": "235 HP",
+                "transmission": "6-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "AWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Sedan",
+          "models": [
+            { 
+              "model": "ES 250", 
+              "price_new": "1300000000-1600000000", 
+              "market_price_used": "700000000-1200000000", 
+              "description": "Sedan mewah nyaman.",
+              "specs": {
+                "engine": "2.5L 4-Cylinder",
+                "power": "203 HP",
+                "transmission": "8-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "FWD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "AUDI",
+      "brand_info": {
+        "country": "Jerman",
+        "founded": "1909",
+        "logo": "⭕",
+        "popular_models": ["A4", "Q5", "Q7"]
+      },
+      "types": [
+        {
+          "type": "Sedan",
+          "models": [
+            { 
+              "model": "A4", 
+              "price_new": "900000000-1200000000", 
+              "market_price_used": "500000000-800000000", 
+              "description": "Sedan premium teknologi tinggi.",
+              "specs": {
+                "engine": "2.0L TFSI",
+                "power": "190 HP",
+                "transmission": "7-Speed S Tronic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "Quattro AWD"
+              }
+            },
+            { 
+              "model": "A6", 
+              "price_new": "1400000000-1800000000", 
+              "market_price_used": "800000000-1400000000", 
+              "description": "Sedan eksekutif modern.",
+              "specs": {
+                "engine": "2.0L TFSI",
+                "power": "245 HP",
+                "transmission": "7-Speed S Tronic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "Quattro AWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "Q5", 
+              "price_new": "1500000000-2000000000", 
+              "market_price_used": "900000000-1500000000", 
+              "description": "SUV premium keluarga.",
+              "specs": {
+                "engine": "2.0L TFSI",
+                "power": "249 HP",
+                "transmission": "7-Speed S Tronic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "Quattro AWD"
+              }
+            },
+            { 
+              "model": "Q7", 
+              "price_new": "2000000000-3000000000", 
+              "market_price_used": "1200000000-2000000000", 
+              "description": "SUV besar 7-seater mewah.",
+              "specs": {
+                "engine": "3.0L V6 TFSI",
+                "power": "340 HP",
+                "transmission": "8-Speed Tiptronic",
+                "fuel_type": "Bensin",
+                "seats": 7,
+                "drive_type": "Quattro AWD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "VOLKSWAGEN",
+      "brand_info": {
+        "country": "Jerman",
+        "founded": "1937",
+        "logo": "🚙",
+        "popular_models": ["Polo", "Golf", "Tiguan"]
+      },
+      "types": [
+        {
+          "type": "Hatchback",
+          "models": [
+            { 
+              "model": "Polo", 
+              "price_new": "350000000-450000000", 
+              "market_price_used": "200000000-350000000", 
+              "description": "Hatchback kompak Eropa.",
+              "specs": {
+                "engine": "1.0L TSI",
+                "power": "95 HP",
+                "transmission": "6-Speed Manual",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "FWD"
+              }
+            },
+            { 
+              "model": "Golf", 
+              "price_new": "600000000-800000000", 
+              "market_price_used": "350000000-600000000", 
+              "description": "Hatchback ikonik Eropa.",
+              "specs": {
+                "engine": "1.5L TSI",
+                "power": "150 HP",
+                "transmission": "7-Speed DSG",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "FWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "Tiguan", 
+              "price_new": "700000000-900000000", 
+              "market_price_used": "400000000-700000000", 
+              "description": "SUV kompak Eropa.",
+              "specs": {
+                "engine": "1.5L TSI",
+                "power": "150 HP",
+                "transmission": "7-Speed DSG",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "4MOTION"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "MINI",
+      "brand_info": {
+        "country": "Inggris",
+        "founded": "1959",
+        "logo": "🔘",
+        "popular_models": ["Cooper", "Countryman"]
+      },
+      "types": [
+        {
+          "type": "Hatchback",
+          "models": [
+            { 
+              "model": "Cooper S", 
+              "price_new": "700000000-900000000", 
+              "market_price_used": "400000000-700000000", 
+              "description": "Hatchback sporty ikonik.",
+              "specs": {
+                "engine": "2.0L TwinPower Turbo",
+                "power": "189 HP",
+                "transmission": "7-Speed Steptronic",
+                "fuel_type": "Bensin",
+                "seats": 4,
+                "drive_type": "FWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "Countryman", 
+              "price_new": "800000000-1000000000", 
+              "market_price_used": "500000000-800000000", 
+              "description": "SUV kompak bergaya retro.",
+              "specs": {
+                "engine": "2.0L TwinPower Turbo",
+                "power": "189 HP",
+                "transmission": "8-Speed Steptronic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "ALL4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "JAGUAR",
+      "brand_info": {
+        "country": "Inggris",
+        "founded": "1922",
+        "logo": "🐆",
+        "popular_models": ["XE", "F-Pace", "E-Pace"]
+      },
+      "types": [
+        {
+          "type": "Sedan",
+          "models": [
+            { 
+              "model": "XE", 
+              "price_new": "1200000000-1600000000", 
+              "market_price_used": "700000000-1200000000", 
+              "description": "Sedan sport mewah.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "250 HP",
+                "transmission": "8-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "RWD"
+              }
+            }
+          ]
+        },
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "F-Pace", 
+              "price_new": "1800000000-2500000000", 
+              "market_price_used": "1000000000-1800000000", 
+              "description": "SUV premium performa tinggi.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "250 HP",
+                "transmission": "8-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "AWD"
+              }
+            },
+            { 
+              "model": "E-Pace", 
+              "price_new": "1200000000-1600000000", 
+              "market_price_used": "700000000-1200000000", 
+              "description": "SUV kompak sporty.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "249 HP",
+                "transmission": "9-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "AWD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "brand": "LAND ROVER",
+      "brand_info": {
+        "country": "Inggris",
+        "founded": "1948",
+        "logo": "🦁",
+        "popular_models": ["Defender", "Discovery", "Range Rover"]
+      },
+      "types": [
+        {
+          "type": "SUV",
+          "models": [
+            { 
+              "model": "Defender", 
+              "price_new": "2500000000-4000000000", 
+              "market_price_used": "1500000000-2500000000", 
+              "description": "SUV offroad legendaris.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "300 HP",
+                "transmission": "8-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 7,
+                "drive_type": "4WD"
+              }
+            },
+            { 
+              "model": "Discovery Sport", 
+              "price_new": "1800000000-2500000000", 
+              "market_price_used": "1000000000-1800000000", 
+              "description": "SUV keluarga 7-seater.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "249 HP",
+                "transmission": "9-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 7,
+                "drive_type": "AWD"
+              }
+            },
+            { 
+              "model": "Range Rover Evoque", 
+              "price_new": "2000000000-2800000000", 
+              "market_price_used": "1200000000-2000000000", 
+              "description": "SUV premium stylish.",
+              "specs": {
+                "engine": "2.0L Ingenium",
+                "power": "249 HP",
+                "transmission": "9-Speed Automatic",
+                "fuel_type": "Bensin",
+                "seats": 5,
+                "drive_type": "AWD"
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}

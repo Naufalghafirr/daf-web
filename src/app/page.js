@@ -18,6 +18,7 @@ import {
   FaFileAlt,
 } from "react-icons/fa";
 import AjukanModal from "./ajukanmodal.js";
+import carData from "./assets/car-data.json";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -46,33 +47,58 @@ export default function Home() {
   const [carModels, setCarModels] = useState([]);
   const [loadingCars, setLoadingCars] = useState(false);
 
-  // Fetch car data from API
+  // Focus states for dropdowns
+  const [brandFocused, setBrandFocused] = useState(false);
+  const [typeFocused, setTypeFocused] = useState(false);
+  const [modelFocused, setModelFocused] = useState(false);
+
+  // Initialize car data from car-data.json
   useEffect(() => {
-    const fetchCarData = async () => {
+    const initializeCarData = () => {
       try {
         setLoadingCars(true);
-        const response = await fetch('/api/cars');
-        const data = await response.json();
-        setCarBrands(data.brands || []);
+        
+        // Extract brands from car-data.json
+        const brands = carData.brands.map((brand) => ({
+          id: brand.brand,
+          name: brand.brand,
+          logo: brand.brand_info?.logo || "🚗",
+          info: brand.brand_info
+        }));
+        
+        setCarBrands(brands.sort((a, b) => a.name.localeCompare(b.name)));
       } catch (error) {
-        console.error("Error fetching car data:", error);
+        console.error("Error initializing car data:", error);
       } finally {
         setLoadingCars(false);
       }
     };
 
-    fetchCarData();
+    initializeCarData();
   }, []);
 
-  // Fetch types and models when brand is selected
+  // Fetch types when brand is selected
   useEffect(() => {
     if (selectedBrand) {
-      const fetchCarData = async () => {
+      const fetchCarTypes = () => {
         try {
           setLoadingCars(true);
-          const response = await fetch('/api/cars');
-          const data = await response.json();
-          setCarTypes(data.types[selectedBrand] || []);
+          
+          // Find selected brand data
+          const selectedBrandData = carData.brands.find(b => b.brand === selectedBrand);
+          if (!selectedBrandData) {
+            setCarTypes([]);
+            return;
+          }
+          
+          // Extract types from car-data.json
+          const types = selectedBrandData.types.map((type, index) => ({
+            id: `${selectedBrand}-${type.type}`,
+            name: type.type,
+            models: type.models
+          }));
+          
+          setCarTypes(types);
           setCarModels([]);
         } catch (error) {
           console.error("Error fetching car types:", error);
@@ -81,19 +107,45 @@ export default function Home() {
         }
       };
 
-      fetchCarData();
+      fetchCarTypes();
     }
   }, [selectedBrand]);
 
   // Fetch models when type is selected
   useEffect(() => {
     if (selectedBrand && selectedType) {
-      const fetchCarData = async () => {
+      const fetchCarModels = () => {
         try {
           setLoadingCars(true);
-          const response = await fetch('/api/cars');
-          const data = await response.json();
-          setCarModels(data.models[selectedBrand][selectedType] || []);
+          
+          // Find selected type to get the models
+          const selectedTypeData = carTypes.find(t => t.id === selectedType);
+          if (!selectedTypeData || !selectedTypeData.models) {
+            setCarModels([]);
+            return;
+          }
+          
+          // Extract models from car-data.json
+          const models = selectedTypeData.models.map((model, index) => {
+            // Parse price range to get average price
+            const priceRange = model.price_new.split('-');
+            const minPrice = parseInt(priceRange[0].replace(/\D/g, ''));
+            const maxPrice = priceRange[1] ? parseInt(priceRange[1].replace(/\D/g, '')) : minPrice;
+            const avgPrice = Math.floor((minPrice + maxPrice) / 2);
+            
+            return {
+              id: `${selectedBrand}-${selectedTypeData.name}-${model.model}`,
+              name: model.model,
+              price: avgPrice,
+              price_range: model.price_new,
+              market_price_used: model.market_price_used,
+              description: model.description,
+              specs: model.specs,
+              image: "🚗"
+            };
+          });
+          
+          setCarModels(models);
         } catch (error) {
           console.error("Error fetching car models:", error);
         } finally {
@@ -101,13 +153,13 @@ export default function Home() {
         }
       };
 
-      fetchCarData();
+      fetchCarModels();
     }
-  }, [selectedBrand, selectedType]);
+  }, [selectedBrand, selectedType, carTypes]);
 
   // Handle brand selection
-  const handleBrandSelect = (brand) => {
-    setSelectedBrand(brand);
+  const handleBrandSelect = (brandId) => {
+    setSelectedBrand(brandId);
     setSelectedType("");
     setSelectedCar(null);
     setPinjaman("");
@@ -135,7 +187,7 @@ export default function Home() {
   // Handle maksimal pinjaman
   const handleMaxPinjaman = () => {
     if (selectedCar) {
-      const maxPinjaman = Math.floor(selectedCar.price * 0.85);
+      const maxPinjaman = Math.floor(selectedCar.price * 0.8);
       setPinjaman(maxPinjaman.toString());
     }
   };
@@ -767,7 +819,7 @@ export default function Home() {
                 Pilih Mobil dan Hitung Cicilan
               </h2>
               <p style={{ fontSize: "18px", color: "#6b7280" }}>
-                Pilih mobil impian Anda dan hitung estimasi cicilan dengan maksimal 85% dari harga mobil
+                Hitung estimasi cicilan dengan maksimal 85% dari harga mobil
               </p>
             </div>
 
@@ -782,268 +834,283 @@ export default function Home() {
             >
               <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
                 
-                {/* Step 1: Brand Selection */}
-                <div>
-                  <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
-                    1. Pilih Merek Mobil
-                  </h3>
-                  <select
-                    value={selectedBrand}
-                    onChange={(e) => handleBrandSelect(e.target.value)}
-                    disabled={loadingCars}
-                    style={{
-                      width: "100%",
-                      padding: "16px",
-                      fontSize: "16px",
-                      borderRadius: "12px",
-                      border: "2px solid #e5e7eb",
-                      background: loadingCars ? "#f3f4f6" : "white",
-                      outline: "none",
-                      cursor: loadingCars ? "not-allowed" : "pointer",
-                      marginBottom: "8px",
-                      opacity: loadingCars ? 0.6 : 1,
-                    }}
-                    onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                    onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                  >
-                    <option value="">-- Pilih Merek Mobil --</option>
-                    {carBrands.map((brand) => (
-                      <option key={brand.id} value={brand.id}>
-                        {brand.logo} {brand.name}
-                      </option>
-                    ))}
-                  </select>
-                  {loadingCars && (
-                    <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
-                      Memuat data merek mobil...
-                    </div>
-                  )}
-                </div>
+                {/* Step 1: Brand Selection */ }
+                <div style={{ position: "relative" }}>
+                    <label style={{ fontSize: "14px", fontWeight: "600", color: "#374151", marginBottom: "8px", display: "block" }}>
+                      Merek Mobil
+                    </label>
+                    <select
+                      value={selectedBrand || ""}
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        if (value) {
+                          handleBrandSelect(value);
+                        } else {
+                          setSelectedBrand("");
+                          setSelectedType("");
+                          setSelectedCar(null);
+                          setCarTypes([]);
+                          setCarModels([]);
+                        }
+                      }}
+                      disabled={loadingCars}
+                      style={{
+                        width: "100%",
+                        padding: "16px",
+                        fontSize: "16px",
+                        borderRadius: "12px",
+                        border: "2px solid #e5e7eb",
+                        background: loadingCars ? "#f3f4f6" : "white",
+                        outline: "none",
+                        cursor: loadingCars ? "not-allowed" : "pointer",
+                        marginBottom: "8px",
+                        opacity: loadingCars ? 0.6 : 1,
+                        appearance: "none",
+                        backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E\")",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "right 16px center",
+                        paddingRight: "40px",
+                      }}
+                    >
+                      <option value="">Pilih merek mobil...</option>
+                      {!loadingCars && carBrands
+                        .sort((a, b) => a.name.localeCompare(b.name))
+                        .map((brand) => (
+                          <option key={brand.id} value={brand.id}>
+                            {brand.logo} {brand.name}
+                          </option>
+                        ))}
+                    </select>
+                    {selectedBrand && (
+                      <div style={{ fontSize: "14px", color: "#10b981", marginTop: "4px" }}>
+                        Dipilih: {carBrands.find(b => b.id === selectedBrand)?.name}
+                      </div>
+                    )}
+                    {loadingCars && (
+                      <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                        Memuat data merek mobil...
+                      </div>
+                    )}
+                  </div>
+                
 
-                {/* Step 2: Type Selection */}
                 {selectedBrand && (
                   <div>
                     <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
                       2. Pilih Tipe Mobil
                     </h3>
-                    <select
-                      value={selectedType}
-                      onChange={(e) => handleTypeSelect(e.target.value)}
-                      disabled={loadingCars}
-                      style={{
-                        width: "100%",
-                        padding: "16px",
-                        fontSize: "16px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        background: loadingCars ? "#f3f4f6" : "white",
-                        outline: "none",
-                        cursor: loadingCars ? "not-allowed" : "pointer",
-                        marginBottom: "8px",
-                        opacity: loadingCars ? 0.6 : 1,
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                    >
-                      <option value="">-- Pilih Tipe Mobil --</option>
-                      {carTypes.map((type) => (
-                        <option key={type.id} value={type.id}>
-                          {type.name}
-                        </option>
-                      ))}
-                    </select>
-                    {loadingCars && (
-                      <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
-                        Memuat data tipe mobil...
-                      </div>
-                    )}
+                    <div style={{ position: "relative" }}>
+                      <select
+                        value={selectedType || ""}
+                        onChange={(e) => {
+                          const value = e.target.value;
+                          if (value) {
+                            handleTypeSelect(value);
+                          } else {
+                            setSelectedType("");
+                            setSelectedCar(null);
+                            setCarModels([]);
+                          }
+                        }}
+                        disabled={loadingCars}
+                        style={{
+                          width: "100%",
+                          padding: "16px",
+                          fontSize: "16px",
+                          borderRadius: "12px",
+                          border: "2px solid #e5e7eb",
+                          background: loadingCars ? "#f3f4f6" : "white",
+                          outline: "none",
+                          cursor: loadingCars ? "not-allowed" : "pointer",
+                          marginBottom: "8px",
+                          opacity: loadingCars ? 0.6 : 1,
+                          appearance: "none",
+                          backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E\")",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "right 16px center",
+                          paddingRight: "40px",
+                        }}
+                      >
+                        <option value="">Pilih tipe mobil...</option>
+                        {!loadingCars && carTypes
+                          .sort((a, b) => a.name.localeCompare(b.name))
+                          .map((type) => (
+                            <option key={type.id} value={type.id}>
+                              {type.name}
+                            </option>
+                          ))}
+                      </select>
+                      {selectedType && (
+                        <div style={{ fontSize: "14px", color: "#10b981", marginTop: "4px" }}>
+                          Dipilih: {carTypes.find(t => t.id === selectedType)?.name}
+                        </div>
+                      )}
+                      {loadingCars && (
+                        <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                          Memuat data tipe mobil...
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
 
-                {/* Step 3: Model Selection */}
                 {selectedType && carModels.length > 0 && (
                   <div>
                     <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
                       3. Pilih Model Mobil
                     </h3>
-                    <select
-                      value={selectedCar?.id || ""}
-                      onChange={(e) => {
-                        const model = carModels.find(m => m.id === e.target.value);
-                        if (model) handleCarSelect(model);
-                      }}
-                      disabled={loadingCars}
-                      style={{
-                        width: "100%",
-                        padding: "16px",
-                        fontSize: "16px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        background: loadingCars ? "#f3f4f6" : "white",
-                        outline: "none",
-                        cursor: loadingCars ? "not-allowed" : "pointer",
-                        marginBottom: "8px",
-                        opacity: loadingCars ? 0.6 : 1,
-                      }}
-                      onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                      onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                    >
-                      <option value="">-- Pilih Model Mobil --</option>
-                      {carModels.map((model) => (
-                        <option key={model.id} value={model.id}>
-                          {model.image} {model.name} - Rp {model.price.toLocaleString("id-ID")}
-                        </option>
-                      ))}
-                    </select>
-                    {loadingCars && (
-                      <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
-                        Memuat data model mobil...
-                      </div>
-                    )}
+                    <div style={{ position: "relative" }}>
+                      <select
+                        value={selectedCar?.id || ""}
+                        onChange={(e) => {
+                          const value = e.target.value;
+                          if (value) {
+                            const model = carModels.find(m => m.id === value);
+                            if (model) {
+                              handleCarSelect(model);
+                            }
+                          } else {
+                            setSelectedCar(null);
+                            setPinjaman("");
+                            setCicilan(null);
+                            setTenor("");
+                          }
+                        }}
+                        disabled={loadingCars}
+                        style={{
+                          width: "100%",
+                          padding: "16px",
+                          fontSize: "16px",
+                          borderRadius: "12px",
+                          border: "2px solid #e5e7eb",
+                          background: loadingCars ? "#f3f4f6" : "white",
+                          outline: "none",
+                          cursor: loadingCars ? "not-allowed" : "pointer",
+                          marginBottom: "8px",
+                          opacity: loadingCars ? 0.6 : 1,
+                          appearance: "none",
+                          backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E\")",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "right 16px center",
+                          paddingRight: "40px",
+                        }}
+                      >
+                        <option value="">Pilih model mobil...</option>
+                        {!loadingCars && carModels
+                          .sort((a, b) => a.name.localeCompare(b.name))
+                          .map((model) => (
+                            <option key={model.id} value={model.id}>
+                              {model.image} {model.name} - Rp {model.price.toLocaleString("id-ID")}
+                            </option>
+                          ))}
+                      </select>
+                      {selectedCar && (
+                        <div style={{ fontSize: "14px", color: "#10b981", marginTop: "4px" }}>
+                          Dipilih: {selectedCar.image} {selectedCar.name} - Rp {selectedCar.price.toLocaleString("id-ID")}
+                        </div>
+                      )}
+                      {loadingCars && (
+                        <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "4px" }}>
+                          Memuat data model mobil...
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
 
-                {/* Step 4: Loan Calculator */}
+                {/* Loan Configuration */}
                 {selectedCar && (
                   <div>
                     <h3 style={{ fontSize: "20px", fontWeight: "600", color: "#111827", marginBottom: "16px" }}>
-                      4. Detail Pinjaman
+                      4. Konfigurasi Pinjaman
                     </h3>
-                    
-                    {/* Selected Car Summary */}
-                    <div
-                      style={{
-                        background: "white",
-                        padding: "20px",
-                        borderRadius: "12px",
-                        border: "2px solid #e5e7eb",
-                        marginBottom: "24px",
-                      }}
-                    >
-                      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                        <div style={{ fontSize: "40px" }}>{selectedCar.image}</div>
-                        <div style={{ flex: 1 }}>
-                          <h4 style={{ fontSize: "18px", fontWeight: "600", color: "#111827", margin: "0 0 4px 0" }}>
-                            {selectedCar.name}
-                          </h4>
-                          <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
-                            Harga: Rp {selectedCar.price.toLocaleString("id-ID")}
-                          </p>
-                          <p style={{ fontSize: "12px", color: "#10b981", margin: "4px 0 0 0" }}>
-                            Maksimal pinjaman: 85% = Rp {Math.floor(selectedCar.price * 0.85).toLocaleString("id-ID")}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
                       <div>
-                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                          Jumlah Pinjaman
-                        </label>
-                        <div style={{ display: "flex", gap: "8px" }}>
-                          <input
-                            type="number"
-                            max={Math.floor(selectedCar.price * 0.85)}
-                            value={pinjaman}
-                            onChange={(e) => {
-                              const value = Number(e.target.value);
-                              if (value <= Math.floor(selectedCar.price * 0.85)) {
-                                setPinjaman(e.target.value);
-                              }
-                            }}
-                            placeholder="Masukkan jumlah pinjaman"
-                            style={{
-                              flex: 1,
-                              padding: "12px 16px",
-                              fontSize: "16px",
-                              borderRadius: "12px",
-                              border: "2px solid #e5e7eb",
-                              background: "white",
-                              outline: "none",
-                            }}
-                            onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                            onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
-                          />
-                          <button
-                            onClick={handleMaxPinjaman}
-                            style={{
-                              padding: "12px 20px",
-                              fontSize: "14px",
-                              fontWeight: "600",
-                              borderRadius: "12px",
-                              border: "2px solid #10b981",
-                              background: "#10b981",
-                              color: "white",
-                              cursor: "pointer",
-                              transition: "all 0.3s ease",
-                              whiteSpace: "nowrap",
-                            }}
-                            onMouseOver={(e) => (e.target.style.background = "#059669")}
-                            onMouseOut={(e) => (e.target.style.background = "#10b981")}
-                          >
-                            Maks
-                          </button>
-                        </div>
-                        <p style={{ fontSize: "12px", color: "#6b7280", margin: "4px 0 0 0" }}>
-                          Maksimal: Rp {Math.floor(selectedCar.price * 0.85).toLocaleString("id-ID")} (85% dari harga mobil)
-                        </p>
-                      </div>
-
-                      <div>
-                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                          Bunga (%)
+                        <label style={{ fontSize: "14px", fontWeight: "600", color: "#374151", marginBottom: "8px", display: "block" }}>
+                          Jumlah Pinjaman (Max 80% Harga Mobil)
                         </label>
                         <input
                           type="number"
-                          value={0.76}
-                          disabled
+                          placeholder="Masukkan jumlah pinjaman..."
+                          value={pinjaman}
+                          onChange={(e) => setPinjaman(e.target.value)}
+                          onBlur={(e) => {
+                            const maxPinjaman = Math.floor(selectedCar.price * 0.8);
+                            if (parseInt(pinjaman) > maxPinjaman) {
+                              setPinjaman(maxPinjaman.toString());
+                            }
+                            e.target.style.borderColor = "#e5e7eb";
+                          }}
                           style={{
                             width: "100%",
-                            padding: "12px 16px",
+                            padding: "16px",
                             fontSize: "16px",
                             borderRadius: "12px",
                             border: "2px solid #e5e7eb",
-                            background: "#f3f4f6",
-                            cursor: "not-allowed",
+                            background: "white",
+                            outline: "none",
+                            marginBottom: "8px",
                           }}
+                          onFocus={(e) => (e.target.style.borderColor = "#10b981")}
                         />
+                        <div style={{ fontSize: "12px", color: "#6b7280" }}>
+                          Maksimal: Rp {Math.floor(selectedCar.price * 0.8).toLocaleString("id-ID")}
+                        </div>
+                        <button
+                          onClick={handleMaxPinjaman}
+                          style={{
+                            marginTop: "8px",
+                            padding: "8px 16px",
+                            fontSize: "14px",
+                            background: "#10b981",
+                            color: "white",
+                            border: "none",
+                            borderRadius: "8px",
+                            cursor: "pointer",
+                          }}
+                        >
+                          Gunakan Maksimal Pinjaman
+                        </button>
                       </div>
-
+                      
                       <div>
-                        <label style={{ fontWeight: "600", color: "#374151", fontSize: "14px", display: "block", marginBottom: "8px" }}>
-                          Tenor (bulan)
+                        <label style={{ fontSize: "14px", fontWeight: "600", color: "#374151", marginBottom: "8px", display: "block" }}>
+                          Tenor (Bulan)
                         </label>
                         <select
                           value={tenor}
-                          onChange={(e) => setTenor(Number(e.target.value) || "")}
+                          onChange={(e) => setTenor(e.target.value)}
                           style={{
                             width: "100%",
-                            padding: "12px 16px",
+                            padding: "16px",
                             fontSize: "16px",
                             borderRadius: "12px",
                             border: "2px solid #e5e7eb",
                             background: "white",
                             outline: "none",
                             cursor: "pointer",
+                            appearance: "none",
+                            backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E\")",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "right 16px center",
+                            paddingRight: "40px",
                           }}
-                          onFocus={(e) => (e.target.style.borderColor = "#10b981")}
-                          onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")}
                         >
-                          <option value="">Pilih tenor</option>
-                          <option value={6}>6 bulan</option>
-                          <option value={12}>12 bulan (1 tahun)</option>
-                          <option value={24}>24 bulan (2 tahun)</option>
-                          <option value={36}>36 bulan (3 tahun)</option>
-                          <option value={48}>48 bulan (4 tahun)</option>
-                          <option value={60}>60 bulan (5 tahun)</option>
+                          <option value="">Pilih tenor...</option>
+                          {[12, 24, 36, 48, 60].map((month) => (
+                            <option key={month} value={month}>
+                              {month} Bulan ({month/12} Tahun)
+                            </option>
+                          ))}
                         </select>
+                        <div style={{ fontSize: "12px", color: "#6b7280", marginTop: "8px" }}>
+                          Suku bunga: 0.76% flat per tahun
+                        </div>
                       </div>
                     </div>
                   </div>
                 )}
 
-                {/* Loan Results */}
                 {cicilan && selectedCar && (
                   <>
                     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
@@ -1165,11 +1232,11 @@ export default function Home() {
                     </div>
                   </>
                 )}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
       {/* Requirements Section */}
       <div style={{ padding: "96px 0", background: "white" }}>
