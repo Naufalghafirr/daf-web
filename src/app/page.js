@@ -15,6 +15,7 @@ import {
   FaPhoneAlt,
   FaHome,
   FaArrowRight,
+  FaArrowLeft,
   FaFileAlt,
 } from "react-icons/fa";
 import AjukanModal from "./ajukanmodal.js";
@@ -28,7 +29,7 @@ export default function Home() {
   const [tenor, setTenor] = useState("");
   const [cicilan, setCicilan] = useState(null);
   const [mounted, setMounted] = useState(false);
-  const [openFaq, setOpenFaq] = useState([]);
+  const [activeFaqSlide, setActiveFaqSlide] = useState(0);
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [highlight, setHighlight] = useState(-1);
@@ -256,12 +257,6 @@ export default function Home() {
     }
   };
 
-  const toggleFaq = (index) => {
-    setOpenFaq((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
   if (!mounted) return null;
 
   const features = [
@@ -378,6 +373,46 @@ export default function Home() {
     },
   ];
 
+  const FAQS_PER_SLIDE = 1;
+  const faqSlides = faqs.reduce((slides, item, index) => {
+    if (index % FAQS_PER_SLIDE === 0) {
+      slides.push([]);
+    }
+    slides[slides.length - 1].push({ ...item, originalIndex: index });
+    return slides;
+  }, []);
+  const totalFaqSlides = faqSlides.length;
+  const canFaqPrev = totalFaqSlides > 1 && activeFaqSlide > 0;
+  const canFaqNext = totalFaqSlides > 1 && activeFaqSlide < totalFaqSlides - 1;
+
+  const goToFaqSlide = (index) => {
+    if (!totalFaqSlides) return;
+    setActiveFaqSlide(Math.min(Math.max(index, 0), totalFaqSlides - 1));
+  };
+
+  const handleFaqPrev = () => {
+    if (canFaqPrev) {
+      goToFaqSlide(activeFaqSlide - 1);
+    }
+  };
+
+  const handleFaqNext = () => {
+    if (canFaqNext) {
+      goToFaqSlide(activeFaqSlide + 1);
+    }
+  };
+
+  const handleFaqKeyDown = (event) => {
+    if (totalFaqSlides <= 1) return;
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      handleFaqNext();
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      handleFaqPrev();
+    }
+  };
+
   return (
     <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }} id="home">
       {/* Hero Section */}
@@ -385,7 +420,7 @@ export default function Home() {
         style={{
           position: "relative",
           background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
-          padding: "96px 0",
+          padding: "72px 0",
           overflow: "hidden",
         }}
       >
@@ -416,33 +451,40 @@ export default function Home() {
           />
         </div>
 
-        <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1, padding: "0 32px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "64px", alignItems: "center" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1, padding: "0 24px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "48px",
+              alignItems: "center",
+            }}
+          >
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              style={{ display: "flex", flexDirection: "column", gap: "32px" }}
+              style={{ display: "flex", flexDirection: "column", gap: "24px" }}
             >
               <span
                 style={{
                   background: "white",
                   color: "#15803d",
-                  padding: "8px 16px",
+                  padding: "6px 14px",
                   borderRadius: "999px",
-                  fontSize: "14px",
+                  fontSize: "12px",
                   fontWeight: "600",
                   width: "fit-content",
                 }}
               >
-                 Pembiayaan Kendaraan Terpercaya
+                Pembiayaan Kendaraan Terpercaya
               </span>
 
               <h1
                 style={{
-                  fontSize: "clamp(36px, 5vw, 60px)",
+                  fontSize: "clamp(32px, 4vw, 56px)",
                   color: "white",
-                  lineHeight: "1.2",
+                  lineHeight: "1.15",
                   fontWeight: "800",
                   margin: 0,
                 }}
@@ -451,35 +493,75 @@ export default function Home() {
                 <span style={{ color: "#a7f3d0" }}>Cepat & Mudah</span>
               </h1>
 
-              <p style={{ fontSize: "20px", color: "#d1fae5", lineHeight: "1.8", maxWidth: "550px", margin: 0 }}>
-                Bunga kompetitif mulai dari 0.76%, proses digital yang cepat, dan pencairan dana
-                hingga 1 Miliar. Kendaraan tetap bisa digunakan!
+              <p style={{ fontSize: "18px", color: "rgba(255,255,255,0.88)", lineHeight: "1.7", margin: 0 }}>
+                Bunga kompetitif mulai dari 0.76%, proses digital cepat, dan pencairan dana hingga 1 Miliar.
+                Kendaraan Anda tetap bisa digunakan!
               </p>
 
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
-                <button
-                  onClick={() => setModalOpen(true)}
-                  style={{
-                    background: "white",
-                    color: "#15803d",
-                    padding: "16px 32px",
-                    fontSize: "18px",
-                    fontWeight: "700",
-                    borderRadius: "12px",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "all 0.3s",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                  onMouseOver={(e) => (e.target.style.transform = "translateY(-2px)")}
-                  onMouseOut={(e) => (e.target.style.transform = "translateY(0)")}
-                >
-                  Ajukan Sekarang
-                </button>
-              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px", width: "100%" }}>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+                  <button
+                    onClick={() => {
+                      setModalData({ withCarData: false });
+                      setModalOpen(true);
+                    }}
+                    style={{
+                      background: "white",
+                      color: "#15803d",
+                      padding: "14px 28px",
+                      fontSize: "16px",
+                      fontWeight: "700",
+                      borderRadius: "12px",
+                      border: "none",
+                      cursor: "pointer",
+                      transition: "transform 0.3s",
+                    }}
+                    onMouseOver={(e) => (e.target.style.transform = "translateY(-2px)")}
+                    onMouseOut={(e) => (e.target.style.transform = "translateY(0)")}
+                  >
+                    Ajukan Sekarang
+                  </button>
+                  <button
+                    onClick={() => {
+                      setModalData({ withCarData: true });
+                      setModalOpen(true);
+                    }}
+                    style={{
+                      background: "rgba(255,255,255,0.15)",
+                      color: "white",
+                      padding: "14px 28px",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      borderRadius: "12px",
+                      border: "1px solid rgba(255,255,255,0.25)",
+                      cursor: "pointer",
+                      transition: "background 0.3s",
+                    }}
+                    onMouseOver={(e) => (e.target.style.background = "rgba(255,255,255,0.25)")}
+                    onMouseOut={(e) => (e.target.style.background = "rgba(255,255,255,0.15)")}
+                  >
+                    Lihat Simulasi
+                  </button>
+                </div>
 
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "16px",
+                    color: "white",
+                    fontSize: "14px",
+                    fontWeight: "500",
+                  }}
+                >
+                  {["Proses 48 jam", "Aman & Transparan", "Diawasi OJK"].map((text) => (
+                    <div key={text} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "white" }} />
+                      {text}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -492,7 +574,7 @@ export default function Home() {
                 style={{
                   borderRadius: "24px",
                   overflow: "hidden",
-                  boxShadow: "0 20px 50px rgba(0,0,0,0.3)",
+                  boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
                   transform: "rotate(-2deg)",
                   transition: "transform 0.3s",
                 }}
@@ -502,7 +584,7 @@ export default function Home() {
                 <img
                   src="/images/hero-section.png"
                   alt="Pembiayaan Kendaraan"
-                  style={{ width: "100%", height: "450px", objectFit: "cover", display: "block" }}
+                  style={{ width: "100%", height: "360px", objectFit: "cover", display: "block" }}
                 />
                 <div
                   style={{
@@ -819,7 +901,7 @@ export default function Home() {
                 Pilih Mobil dan Hitung Cicilan
               </h2>
               <p style={{ fontSize: "18px", color: "#6b7280" }}>
-                Hitung estimasi cicilan dengan maksimal 85% dari harga mobil
+                Hitung estimasi cicilan dengan maksimal 80% dari harga mobil
               </p>
             </div>
 
@@ -1403,69 +1485,130 @@ export default function Home() {
               </p>
             </div>
 
-            <div
-              style={{
-                background: "white",
-                borderRadius: "16px",
-                boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-                border: "1px solid #e5e7eb",
-                overflow: "hidden",
-              }}
-            >
-              {faqs.map((item, index) => (
+            <div style={{ position: "relative" }}>
+              <div
+                style={{
+                  maxWidth: "720px",
+                  margin: "0 auto",
+                  padding: "0 16px",
+                }}
+                onKeyDown={handleFaqKeyDown}
+                tabIndex={0}
+                aria-roledescription="carousel"
+                aria-label="Pertanyaan yang sering diajukan"
+              >
                 <div
-                  key={index}
                   style={{
-                    borderBottom: index !== faqs.length - 1 ? "1px solid #e5e7eb" : "none",
+                    overflow: "hidden",
+                    borderRadius: "24px",
+                    border: "1px solid #e2e8f0",
+                    boxShadow: "0 24px 40px rgba(15, 23, 42, 0.08)",
+                    background: "white",
                   }}
                 >
                   <div
-                    onClick={() => toggleFaq(index)}
                     style={{
-                      padding: "24px 32px",
-                      cursor: "pointer",
-                      transition: "background 0.2s",
                       display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      gap: "16px",
+                      transition: "transform 0.45s ease",
+                      transform: `translateX(-${activeFaqSlide * 100}%)`,
                     }}
-                    onMouseOver={(e) => (e.currentTarget.style.background = "#f9fafb")}
-                    onMouseOut={(e) => (e.currentTarget.style.background = "white")}
                   >
-                    <span style={{ fontWeight: "600", color: "#111827", fontSize: "16px", textAlign: "left" }}>
-                      {item.q}
-                    </span>
-                    <div
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        background: "#d1fae5",
-                        color: "#15803d",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontWeight: "700",
-                        fontSize: "20px",
-                        flexShrink: 0,
-                        transform: openFaq.includes(index) ? "rotate(45deg)" : "rotate(0deg)",
-                        transition: "transform 0.3s",
-                      }}
-                    >
-                      +
-                    </div>
+                    {faqSlides.map((slide, slideIndex) => (
+                      <div
+                        key={`faq-slide-${slideIndex}`}
+                        style={{
+                          flex: "0 0 100%",
+                          padding: "0 8px",
+                          boxSizing: "border-box",
+                        }}
+                      >
+                        {slide.map((item) => (
+                          <div
+                            key={item.originalIndex}
+                            style={{
+                              background: "white",
+                              padding: "32px 40px",
+                              minHeight: "200px",
+                              display: "flex",
+                              flexDirection: "column",
+                              gap: "12px",
+                            }}
+                          >
+                            <h3
+                              style={{
+                                fontSize: "22px",
+                                margin: 0,
+                                color: "#0f172a",
+                              }}
+                            >
+                              {item.q}
+                            </h3>
+                            <p
+                              style={{
+                                color: "#475569",
+                                fontSize: "17px",
+                                lineHeight: "1.7",
+                                margin: 0,
+                              }}
+                            >
+                              {item.a}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    ))}
                   </div>
 
-                  {openFaq.includes(index) && (
-                    <div style={{ padding: "0 32px 24px 32px" }}>
-                      <p style={{ color: "#374151", lineHeight: "1.8", fontSize: "16px", margin: 0 }}>
-                        {item.a}
-                      </p>
-                    </div>
-                  )}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: "12px",
+                      marginTop: "16px",
+                    }}
+                  >
+                    <button
+                      type="button"
+                      aria-label="FAQ sebelumnya"
+                      onClick={handleFaqPrev}
+                      disabled={!canFaqPrev}
+                      style={{
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "50%",
+                        border: "1px solid #d1d5db",
+                        background: canFaqPrev ? "white" : "#f4f4f5",
+                        color: canFaqPrev ? "#111827" : "#9ca3af",
+                        cursor: canFaqPrev ? "pointer" : "not-allowed",
+                        boxShadow: canFaqPrev ? "0 6px 16px rgba(15,23,42,0.12)" : "none",
+                        transition: "all 0.2s ease",
+                      }}
+                    >
+                      ←
+                    </button>
+                    <button
+                      type="button"
+                      aria-label="FAQ berikutnya"
+                      onClick={handleFaqNext}
+                      disabled={!canFaqNext}
+                      style={{
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "50%",
+                        border: "1px solid #d1d5db",
+                        background: canFaqNext ? "white" : "#f4f4f5",
+                        color: canFaqNext ? "#111827" : "#9ca3af",
+                        cursor: canFaqNext ? "pointer" : "not-allowed",
+                        boxShadow: canFaqNext ? "0 6px 16px rgba(15,23,42,0.12)" : "none",
+                        transition: "all 0.2s ease",
+                      }}
+                    >
+                      →
+                    </button>
+                  </div>
+
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
