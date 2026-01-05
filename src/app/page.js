@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Spinner } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import {
   FaBolt,
@@ -17,9 +16,13 @@ import {
   FaArrowRight,
   FaArrowLeft,
   FaFileAlt,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa";
 import AjukanModal from "./ajukanmodal.js";
 import carData from "./assets/car-data.json";
+import FeaturesCarousel from "../components/FeaturesCarousel";
+import StepsCarousel from "../components/StepsCarousel";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -30,7 +33,12 @@ export default function Home() {
   const [cicilan, setCicilan] = useState(null);
   const [mounted, setMounted] = useState(false);
   const [activeFaqSlide, setActiveFaqSlide] = useState(0);
+  const [activeFeatureSlide, setActiveFeatureSlide] = useState(0);
+  const [activeStepSlide, setActiveStepSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const [openFaqItems, setOpenFaqItems] = useState([]);
   const [query, setQuery] = useState("");
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [highlight, setHighlight] = useState(-1);
   const [selectedIdx, setSelectedIdx] = useState(-1);
@@ -205,15 +213,25 @@ export default function Home() {
     setMounted(true);
     if (pinjaman && bunga && tenor) {
       hitungCicilan();
-    } else {
-      setCicilan(null);
     }
+  }, [pinjaman, bunga, tenor]);
 
-    if (!query) {
-      setSearchResults([]);
-      return;
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Only run on client side
+    if (typeof window !== 'undefined') {
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+      
+      return () => window.removeEventListener('resize', checkMobile);
     }
+  }, []);
 
+  // Search functionality
+  useEffect(() => {
     const fetchResults = setTimeout(async () => {
       try {
         setLoading(true);
@@ -229,7 +247,7 @@ export default function Home() {
     }, 500);
 
     return () => clearTimeout(fetchResults);
-  }, [pinjaman, bunga, tenor, query]);
+  }, [query]);
 
   const handleSelect = (item) => {
     setQuery(item.display_name);
@@ -412,6 +430,125 @@ export default function Home() {
       handleFaqPrev();
     }
   };
+
+  // Features carousel handlers
+  const canFeaturePrev = activeFeatureSlide > 0;
+  const canFeatureNext = activeFeatureSlide < features.length - 1;
+
+  const handleFeatureKeyDown = (event) => {
+    if (features.length <= 1) return;
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      handleFeatureNext();
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      handleFeaturePrev();
+    }
+  };
+
+  // Steps carousel handlers
+  const canStepPrev = activeStepSlide > 0;
+  const canStepNext = activeStepSlide < steps.length - 1;
+
+  const handleStepKeyDown = (event) => {
+    if (steps.length <= 1) return;
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      handleStepNext();
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      handleStepPrev();
+    }
+  };
+
+  // Independent swipe handlers for Features
+  const handleFeatureSwipeStart = (e) => {
+    if (typeof window === 'undefined') return;
+    
+    const startX = e.touches ? e.touches[0].clientX : e.clientX;
+    
+    const handleSwipeMove = (moveEvent) => {
+      if (typeof window === 'undefined') return;
+      
+      const currentX = moveEvent.touches ? moveEvent.touches[0].clientX : moveEvent.clientX;
+      const diff = startX - currentX;
+      
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          handleFeatureNext();
+        } else {
+          handleFeaturePrev();
+        }
+        cleanup();
+      }
+    };
+    
+    const cleanup = () => {
+      document.removeEventListener('mousemove', handleSwipeMove);
+      document.removeEventListener('mouseup', cleanup);
+      document.removeEventListener('touchmove', handleSwipeMove);
+      document.removeEventListener('touchend', cleanup);
+    };
+    
+    document.addEventListener('mousemove', handleSwipeMove);
+    document.addEventListener('mouseup', cleanup);
+    document.addEventListener('touchmove', handleSwipeMove);
+    document.addEventListener('touchend', cleanup);
+  };
+
+  // Independent swipe handlers for Steps
+  const handleStepSwipeStart = (e) => {
+    if (typeof window === 'undefined') return;
+    
+    const startX = e.touches ? e.touches[0].clientX : e.clientX;
+    
+    const handleSwipeMove = (moveEvent) => {
+      if (typeof window === 'undefined') return;
+      
+      const currentX = moveEvent.touches ? moveEvent.touches[0].clientX : moveEvent.clientX;
+      const diff = startX - currentX;
+      
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          handleStepNext();
+        } else {
+          handleStepPrev();
+        }
+        cleanup();
+      }
+    };
+    
+    const cleanup = () => {
+      document.removeEventListener('mousemove', handleSwipeMove);
+      document.removeEventListener('mouseup', cleanup);
+      document.removeEventListener('touchmove', handleSwipeMove);
+      document.removeEventListener('touchend', cleanup);
+    };
+    
+    document.addEventListener('mousemove', handleSwipeMove);
+    document.addEventListener('mouseup', cleanup);
+    document.addEventListener('touchmove', handleSwipeMove);
+    document.addEventListener('touchend', cleanup);
+  };
+
+  // FAQ accordion handlers
+  const toggleFaqItem = (index) => {
+    setOpenFaqItems(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
+  
+  // Carousel handlers
+  const goToFeatureSlide = (index) => setActiveFeatureSlide(index);
+  const handleFeaturePrev = () => setActiveFeatureSlide(prev => (prev - 1 + features.length) % features.length);
+  const handleFeatureNext = () => setActiveFeatureSlide(prev => (prev + 1) % features.length);
+  
+  const goToStepSlide = (index) => setActiveStepSlide(index);
+  const handleStepPrev = () => setActiveStepSlide(prev => (prev - 1 + steps.length) % steps.length);
+  const handleStepNext = () => setActiveStepSlide(prev => (prev + 1) % steps.length);
 
   return (
     <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }} id="home">
@@ -625,58 +762,75 @@ export default function Home() {
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -8 }}
-                  style={{
-                    background: "white",
-                    padding: "32px",
-                    borderRadius: "16px",
-                    border: "1px solid #e5e7eb",
-                    position: "relative",
-                    overflow: "hidden",
-                  }}
-                >
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "-20px",
-                      right: "-20px",
-                      width: "80px",
-                      height: "80px",
-                      background: `${feature.color}20`,
-                      borderRadius: "50%",
-                      opacity: 0.5,
-                    }}
-                  />
-                  <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
-                    <div
+              {/* Desktop View - Grid */}
+              {!isMobile && (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+                  {features.map((feature, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      whileHover={{ y: -8 }}
                       style={{
-                        background: feature.color,
-                        color: "white",
-                        width: "48px",
-                        height: "48px",
-                        borderRadius: "12px",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "24px",
+                        background: "white",
+                        padding: "32px",
+                        borderRadius: "16px",
+                        border: "1px solid #e5e7eb",
+                        position: "relative",
+                        overflow: "hidden",
                       }}
                     >
-                      {feature.icon}
-                    </div>
-                    <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{feature.title}</h3>
-                    <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0 }}>
-                      {feature.desc}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: "-20px",
+                          right: "-20px",
+                          width: "80px",
+                          height: "80px",
+                          background: `${feature.color}20`,
+                          borderRadius: "50%",
+                          opacity: 0.5,
+                        }}
+                      />
+                      <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
+                        <div
+                          style={{
+                            background: feature.color,
+                            color: "white",
+                            width: "48px",
+                            height: "48px",
+                            borderRadius: "12px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "24px",
+                          }}
+                        >
+                          {feature.icon}
+                        </div>
+                        <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{feature.title}</h3>
+                        <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0 }}>
+                          {feature.desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              )}
+
+              {/* Mobile View - Carousel */}
+              <FeaturesCarousel
+                features={features}
+                activeSlide={activeFeatureSlide}
+                goToSlide={goToFeatureSlide}
+                handlePrev={handleFeaturePrev}
+                handleNext={handleFeatureNext}
+                canPrev={canFeaturePrev}
+                canNext={canFeatureNext}
+                swipeHandler={handleFeatureSwipeStart}
+              />
             </div>
           </div>
         </div>
@@ -708,60 +862,77 @@ export default function Home() {
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
-              {steps.map((step, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  style={{ position: "relative", textAlign: "center" }}
-                >
-                  <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-                    <div
-                      style={{
-                        position: "relative",
-                        width: "80px",
-                        height: "80px",
-                        background: "#10b981",
-                        borderRadius: "50%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        fontSize: "36px",
-                        boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
-                      }}
-                    >
-                      {step.icon}
+              {/* Desktop View - Grid */}
+              {!isMobile && (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
+                  {steps.map((step, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                    style={{ position: "relative", textAlign: "center" }}
+                  >
+                    <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
                       <div
                         style={{
-                          position: "absolute",
-                          top: "-4px",
-                          right: "-4px",
-                          background: "white",
-                          color: "#15803d",
-                          width: "32px",
-                          height: "32px",
+                          position: "relative",
+                          width: "80px",
+                          height: "80px",
+                          background: "#10b981",
                           borderRadius: "50%",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          fontWeight: "700",
-                          fontSize: "14px",
+                          fontSize: "36px",
+                          boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
                         }}
                       >
-                        {i + 1}
+                        {step.icon}
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: "-4px",
+                            right: "-4px",
+                            background: "white",
+                            color: "#15803d",
+                            width: "32px",
+                            height: "32px",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontWeight: "700",
+                            fontSize: "14px",
+                          }}
+                        >
+                          {i + 1}
+                        </div>
+                      </div>
+                      <div>
+                        <h3 style={{ fontSize: "20px", margin: "0 0 8px 0" }}>{step.title}</h3>
+                        <p style={{ color: "#9ca3af", fontSize: "14px", lineHeight: "1.8", margin: 0 }}>
+                          {step.desc}
+                        </p>
                       </div>
                     </div>
-                    <div>
-                      <h3 style={{ fontSize: "20px", margin: "0 0 8px 0" }}>{step.title}</h3>
-                      <p style={{ color: "#9ca3af", fontSize: "14px", lineHeight: "1.8", margin: 0 }}>
-                        {step.desc}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+                </div>
+              )}
+
+              {/* Mobile View - Carousel */}
+              <StepsCarousel
+                steps={steps}
+                activeSlide={activeStepSlide}
+                goToSlide={goToStepSlide}
+                handlePrev={handleStepPrev}
+                handleNext={handleStepNext}
+                canPrev={canStepPrev}
+                canNext={canStepNext}
+                swipeHandler={handleStepSwipeStart}
+              />
             </div>
           </div>
         </div>
@@ -1462,7 +1633,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <div style={{ padding: "96px 0", background: "#f9fafb" }}>
-        <div style={{ maxWidth: "1152px", margin: "0 auto", padding: "0 32px" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 32px" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
             <div style={{ textAlign: "center" }}>
               <span
@@ -1485,130 +1656,117 @@ export default function Home() {
               </p>
             </div>
 
-            <div style={{ position: "relative" }}>
-              <div
-                style={{
-                  maxWidth: "720px",
-                  margin: "0 auto",
-                  padding: "0 16px",
-                }}
-                onKeyDown={handleFaqKeyDown}
-                tabIndex={0}
-                aria-roledescription="carousel"
-                aria-label="Pertanyaan yang sering diajukan"
-              >
-                <div
-                  style={{
-                    overflow: "hidden",
-                    borderRadius: "24px",
-                    border: "1px solid #e2e8f0",
-                    boxShadow: "0 24px 40px rgba(15, 23, 42, 0.08)",
-                    background: "white",
-                  }}
-                >
-                  <div
+            {/* FAQ Accordion */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              {faqs.map((faq, index) => {
+                const isOpen = openFaqItems.includes(index);
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
                     style={{
-                      display: "flex",
-                      transition: "transform 0.45s ease",
-                      transform: `translateX(-${activeFaqSlide * 100}%)`,
+                      background: "white",
+                      borderRadius: "16px",
+                      border: "1px solid #e2e8f0",
+                      overflow: "hidden",
+                      boxShadow: "0 4px 20px rgba(15, 23, 42, 0.06)",
                     }}
                   >
-                    {faqSlides.map((slide, slideIndex) => (
-                      <div
-                        key={`faq-slide-${slideIndex}`}
+                    <button
+                      type="button"
+                      onClick={() => toggleFaqItem(index)}
+                      style={{
+                        width: "100%",
+                        padding: "24px 32px",
+                        background: "none",
+                        border: "none",
+                        textAlign: "left",
+                        cursor: "pointer",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        gap: "16px",
+                        transition: "all 0.2s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "#f8fafc";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "white";
+                      }}
+                    >
+                      <h3
                         style={{
-                          flex: "0 0 100%",
-                          padding: "0 8px",
-                          boxSizing: "border-box",
+                          fontSize: "18px",
+                          fontWeight: "600",
+                          color: "#0f172a",
+                          margin: 0,
+                          lineHeight: "1.5",
                         }}
                       >
-                        {slide.map((item) => (
-                          <div
-                            key={item.originalIndex}
-                            style={{
-                              background: "white",
-                              padding: "32px 40px",
-                              minHeight: "200px",
-                              display: "flex",
-                              flexDirection: "column",
-                              gap: "12px",
-                            }}
-                          >
-                            <h3
-                              style={{
-                                fontSize: "22px",
-                                margin: 0,
-                                color: "#0f172a",
-                              }}
-                            >
-                              {item.q}
-                            </h3>
-                            <p
-                              style={{
-                                color: "#475569",
-                                fontSize: "17px",
-                                lineHeight: "1.7",
-                                margin: 0,
-                              }}
-                            >
-                              {item.a}
-                            </p>
-                          </div>
-                        ))}
+                        {faq.q}
+                      </h3>
+                      <div
+                        style={{
+                          width: "32px",
+                          height: "32px",
+                          borderRadius: "50%",
+                          background: "#f1f5f9",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          transition: "transform 0.3s ease",
+                          transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                          flexShrink: 0,
+                        }}
+                      >
+                        <span
+                          style={{
+                            color: "#64748b",
+                            fontSize: "16px",
+                            fontWeight: "600",
+                            lineHeight: 1,
+                          }}
+                        >
+                          ↓
+                        </span>
                       </div>
-                    ))}
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: "12px",
-                      marginTop: "16px",
-                    }}
-                  >
-                    <button
-                      type="button"
-                      aria-label="FAQ sebelumnya"
-                      onClick={handleFaqPrev}
-                      disabled={!canFaqPrev}
+                    </button>
+                    
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{
+                        height: isOpen ? "auto" : 0,
+                        opacity: isOpen ? 1 : 0,
+                      }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
                       style={{
-                        width: "48px",
-                        height: "48px",
-                        borderRadius: "50%",
-                        border: "1px solid #d1d5db",
-                        background: canFaqPrev ? "white" : "#f4f4f5",
-                        color: canFaqPrev ? "#111827" : "#9ca3af",
-                        cursor: canFaqPrev ? "pointer" : "not-allowed",
-                        boxShadow: canFaqPrev ? "0 6px 16px rgba(15,23,42,0.12)" : "none",
-                        transition: "all 0.2s ease",
+                        overflow: "hidden",
                       }}
                     >
-                      ←
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="FAQ berikutnya"
-                      onClick={handleFaqNext}
-                      disabled={!canFaqNext}
-                      style={{
-                        width: "48px",
-                        height: "48px",
-                        borderRadius: "50%",
-                        border: "1px solid #d1d5db",
-                        background: canFaqNext ? "white" : "#f4f4f5",
-                        color: canFaqNext ? "#111827" : "#9ca3af",
-                        cursor: canFaqNext ? "pointer" : "not-allowed",
-                        boxShadow: canFaqNext ? "0 6px 16px rgba(15,23,42,0.12)" : "none",
-                        transition: "all 0.2s ease",
-                      }}
-                    >
-                      →
-                    </button>
-                  </div>
-
-                </div>
-              </div>
+                      <div
+                        style={{
+                          padding: "0 32px 24px 32px",
+                        }}
+                      >
+                        <p
+                          style={{
+                            color: "#475569",
+                            fontSize: "16px",
+                            lineHeight: "1.7",
+                            margin: 0,
+                          }}
+                        >
+                          {faq.a}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
