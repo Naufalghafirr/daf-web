@@ -718,7 +718,7 @@ export default function Home() {
                     fontWeight: "500",
                   }}
                 >
-                  {["Proses 48 jam", "Aman & Transparan", "Diawasi OJK"].map((text) => (
+                  {["Proses 24 jam", "Aman & Transparan", "Diawasi OJK"].map((text) => (
                     <div key={text} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                       <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "white" }} />
                       {text}
