@@ -1,14 +1,6 @@
 import { Box, Container, SimpleGrid, Heading, Text, VStack, Link } from "@chakra-ui/react";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { useState, useEffect } from "react";
 function Footer() {
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
     return (
         <Box bg="blue.900" color="white" mt={4}>
         <Container maxW="6xl" py={10}>

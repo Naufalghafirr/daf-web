@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import {
   FaBolt,
@@ -31,14 +31,13 @@ export default function Home() {
   const [bunga] = useState(0.76);
   const [tenor, setTenor] = useState("");
   const [cicilan, setCicilan] = useState(null);
-  const [mounted, setMounted] = useState(false);
   const [activeFaqSlide, setActiveFaqSlide] = useState(0);
   const [activeFeatureSlide, setActiveFeatureSlide] = useState(0);
   const [activeStepSlide, setActiveStepSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [openFaqItems, setOpenFaqItems] = useState([]);
   const [query, setQuery] = useState("");
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [searchResults, setSearchResults] = useState([]);
   const [highlight, setHighlight] = useState(-1);
   const [selectedIdx, setSelectedIdx] = useState(-1);
@@ -201,20 +200,19 @@ export default function Home() {
     }
   };
 
-  const hitungCicilan = () => {
+  const hitungCicilan = useCallback(() => {
     const r = bunga / 12 / 100;
     const n = tenor;
     if (!pinjaman || !bunga || !tenor) return;
     const c = (pinjaman * r) / (1 - Math.pow(1 + r, -n));
     setCicilan(c);
-  };
+  }, [bunga, pinjaman, tenor]);
 
   useEffect(() => {
-    setMounted(true);
     if (pinjaman && bunga && tenor) {
       hitungCicilan();
     }
-  }, [pinjaman, bunga, tenor]);
+  }, [pinjaman, bunga, tenor, hitungCicilan]);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -274,8 +272,6 @@ export default function Home() {
       handleSelect(searchResults[selectedIdx]);
     }
   };
-
-  if (!mounted) return null;
 
   const features = [
     {
@@ -431,9 +427,40 @@ export default function Home() {
     }
   };
 
+  const featureSlidesPerView = 1;
+  const stepSlidesPerView = 1;
+  const maxFeatureIndex = Math.max(0, features.length - featureSlidesPerView);
+  const maxStepIndex = Math.max(0, steps.length - stepSlidesPerView);
+
+  useEffect(() => {
+    setActiveFeatureSlide((prev) => Math.max(0, Math.min(prev, maxFeatureIndex)));
+  }, [maxFeatureIndex]);
+
+  useEffect(() => {
+    setActiveStepSlide((prev) => Math.max(0, Math.min(prev, maxStepIndex)));
+  }, [maxStepIndex]);
+
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    if (maxFeatureIndex <= 0) return;
+    const id = setInterval(() => {
+      setActiveFeatureSlide((prev) => (prev >= maxFeatureIndex ? 0 : prev + 1));
+    }, 4500);
+    return () => clearInterval(id);
+  }, [isAutoPlaying, maxFeatureIndex]);
+
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    if (maxStepIndex <= 0) return;
+    const id = setInterval(() => {
+      setActiveStepSlide((prev) => (prev >= maxStepIndex ? 0 : prev + 1));
+    }, 5200);
+    return () => clearInterval(id);
+  }, [isAutoPlaying, maxStepIndex]);
+
   // Features carousel handlers
   const canFeaturePrev = activeFeatureSlide > 0;
-  const canFeatureNext = activeFeatureSlide < features.length - 1;
+  const canFeatureNext = activeFeatureSlide < maxFeatureIndex;
 
   const handleFeatureKeyDown = (event) => {
     if (features.length <= 1) return;
@@ -448,7 +475,7 @@ export default function Home() {
 
   // Steps carousel handlers
   const canStepPrev = activeStepSlide > 0;
-  const canStepNext = activeStepSlide < steps.length - 1;
+  const canStepNext = activeStepSlide < maxStepIndex;
 
   const handleStepKeyDown = (event) => {
     if (steps.length <= 1) return;
@@ -542,13 +569,13 @@ export default function Home() {
 
   
   // Carousel handlers
-  const goToFeatureSlide = (index) => setActiveFeatureSlide(index);
-  const handleFeaturePrev = () => setActiveFeatureSlide(prev => (prev - 1 + features.length) % features.length);
-  const handleFeatureNext = () => setActiveFeatureSlide(prev => (prev + 1) % features.length);
+  const goToFeatureSlide = (index) => setActiveFeatureSlide(Math.max(0, Math.min(index, maxFeatureIndex)));
+  const handleFeaturePrev = () => setActiveFeatureSlide((prev) => Math.max(0, prev - 1));
+  const handleFeatureNext = () => setActiveFeatureSlide((prev) => Math.min(maxFeatureIndex, prev + 1));
   
-  const goToStepSlide = (index) => setActiveStepSlide(index);
-  const handleStepPrev = () => setActiveStepSlide(prev => (prev - 1 + steps.length) % steps.length);
-  const handleStepNext = () => setActiveStepSlide(prev => (prev + 1) % steps.length);
+  const goToStepSlide = (index) => setActiveStepSlide(Math.max(0, Math.min(index, maxStepIndex)));
+  const handleStepPrev = () => setActiveStepSlide((prev) => Math.max(0, prev - 1));
+  const handleStepNext = () => setActiveStepSlide((prev) => Math.min(maxStepIndex, prev + 1));
 
   return (
     <div style={{ background: "white", minHeight: "100vh", overflow: "hidden" }} id="home">
@@ -761,77 +788,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-              {/* Desktop View - Grid */}
-              {!isMobile && (
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-                  {features.map((feature, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      whileHover={{ y: -8 }}
-                      style={{
-                        background: "white",
-                        padding: "32px",
-                        borderRadius: "16px",
-                        border: "1px solid #e5e7eb",
-                        position: "relative",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <div
-                        style={{
-                          position: "absolute",
-                          top: "-20px",
-                          right: "-20px",
-                          width: "80px",
-                          height: "80px",
-                          background: `${feature.color}20`,
-                          borderRadius: "50%",
-                          opacity: 0.5,
-                        }}
-                      />
-                      <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
-                        <div
-                          style={{
-                            background: feature.color,
-                            color: "white",
-                            width: "48px",
-                            height: "48px",
-                            borderRadius: "12px",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontSize: "24px",
-                          }}
-                        >
-                          {feature.icon}
-                        </div>
-                        <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{feature.title}</h3>
-                        <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0 }}>
-                          {feature.desc}
-                        </p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              )}
-
-              {/* Mobile View - Carousel */}
-              <FeaturesCarousel
-                features={features}
-                activeSlide={activeFeatureSlide}
-                goToSlide={goToFeatureSlide}
-                handlePrev={handleFeaturePrev}
-                handleNext={handleFeatureNext}
-                canPrev={canFeaturePrev}
-                canNext={canFeatureNext}
-                swipeHandler={handleFeatureSwipeStart}
-              />
-            </div>
+            <FeaturesCarousel
+              features={features}
+              activeSlide={activeFeatureSlide}
+              goToSlide={goToFeatureSlide}
+              handlePrev={handleFeaturePrev}
+              handleNext={handleFeatureNext}
+              canPrev={canFeaturePrev}
+              canNext={canFeatureNext}
+              swipeHandler={handleFeatureSwipeStart}
+              slidesPerView={featureSlidesPerView}
+            />
           </div>
         </div>
       </div>
@@ -861,79 +828,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
-              {/* Desktop View - Grid */}
-              {!isMobile && (
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "32px" }}>
-                  {steps.map((step, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
-                    style={{ position: "relative", textAlign: "center" }}
-                  >
-                    <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-                      <div
-                        style={{
-                          position: "relative",
-                          width: "80px",
-                          height: "80px",
-                          background: "#10b981",
-                          borderRadius: "50%",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          fontSize: "36px",
-                          boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
-                        }}
-                      >
-                        {step.icon}
-                        <div
-                          style={{
-                            position: "absolute",
-                            top: "-4px",
-                            right: "-4px",
-                            background: "white",
-                            color: "#15803d",
-                            width: "32px",
-                            height: "32px",
-                            borderRadius: "50%",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontWeight: "700",
-                            fontSize: "14px",
-                          }}
-                        >
-                          {i + 1}
-                        </div>
-                      </div>
-                      <div>
-                        <h3 style={{ fontSize: "20px", margin: "0 0 8px 0" }}>{step.title}</h3>
-                        <p style={{ color: "#9ca3af", fontSize: "14px", lineHeight: "1.8", margin: 0 }}>
-                          {step.desc}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-                </div>
-              )}
-
-              {/* Mobile View - Carousel */}
-              <StepsCarousel
-                steps={steps}
-                activeSlide={activeStepSlide}
-                goToSlide={goToStepSlide}
-                handlePrev={handleStepPrev}
-                handleNext={handleStepNext}
-                canPrev={canStepPrev}
-                canNext={canStepNext}
-                swipeHandler={handleStepSwipeStart}
-              />
-            </div>
+            <StepsCarousel
+              steps={steps}
+              activeSlide={activeStepSlide}
+              goToSlide={goToStepSlide}
+              handlePrev={handleStepPrev}
+              handleNext={handleStepNext}
+              canPrev={canStepPrev}
+              canNext={canStepNext}
+              swipeHandler={handleStepSwipeStart}
+              slidesPerView={stepSlidesPerView}
+            />
           </div>
         </div>
       </div>
@@ -1037,7 +942,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p style={{ color: "#374151", fontSize: "14px", lineHeight: "1.8", fontStyle: "italic", margin: 0 }}>
-                      "{item.quote}"
+                      &quot;{item.quote}&quot;
                     </p>
                     <div style={{ paddingTop: "16px", borderTop: "1px solid #e5e7eb" }}>
                       <p style={{ fontWeight: "700", color: "#111827", margin: "0 0 4px 0" }}>{item.name}</p>

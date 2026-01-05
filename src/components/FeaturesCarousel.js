@@ -9,8 +9,14 @@ const FeaturesCarousel = ({
   handleNext, 
   canPrev, 
   canNext, 
-  swipeHandler 
+  swipeHandler,
+  slidesPerView = 1,
 }) => {
+  const safeSlidesPerView = Math.max(1, Math.min(slidesPerView, features.length || 1));
+  const maxIndex = Math.max(0, (features.length || 0) - safeSlidesPerView);
+  const positions = Array.from({ length: maxIndex + 1 }, (_, i) => i);
+  const translatePct = safeSlidesPerView > 0 ? (activeSlide * 100) / safeSlidesPerView : 0;
+
   return (
     <div
       data-carousel="features"
@@ -83,7 +89,7 @@ const FeaturesCarousel = ({
       </button>
 
       {/* Card Container */}
-      <div style={{ maxWidth: "320px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1152px", margin: "0 auto" }}>
         <div
           style={{
             overflow: "hidden",
@@ -99,14 +105,14 @@ const FeaturesCarousel = ({
             style={{
               display: "flex",
               transition: "transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-              transform: `translateX(-${activeSlide * 100}%)`,
+              transform: `translateX(-${translatePct}%)`,
             }}
           >
             {features.map((feature, index) => (
               <div
                 key={`feature-slide-${index}`}
                 style={{
-                  flex: "0 0 100%",
+                  flex: `0 0 ${100 / safeSlidesPerView}%`,
                   padding: "32px",
                   boxSizing: "border-box",
                 }}
@@ -162,7 +168,7 @@ const FeaturesCarousel = ({
 
       {/* Slide Indicators */}
       <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "16px" }}>
-        {features.map((_, index) => (
+        {positions.map((index) => (
           <button
             key={index}
             type="button"
