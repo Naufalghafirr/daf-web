@@ -138,7 +138,7 @@ const FeaturesCarousel = ({
                       opacity: 0.5,
                     }}
                   />
-                  <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative" }}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "16px", position: "relative", alignItems: "center", textAlign: "center" }}>
                     <div
                       style={{
                         background: feature.color,
@@ -154,8 +154,8 @@ const FeaturesCarousel = ({
                     >
                       {feature.icon}
                     </div>
-                    <h3 style={{ fontSize: "20px", color: "#111827", margin: 0 }}>{feature.title}</h3>
-                    <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0 }}>
+                    <h3 style={{ fontSize: "20px", color: "#111827", margin: 0, textAlign: "center" }}>{feature.title}</h3>
+                    <p style={{ color: "#6b7280", lineHeight: "1.8", fontSize: "14px", margin: 0, textAlign: "center" }}>
                       {feature.desc}
                     </p>
                   </div>
